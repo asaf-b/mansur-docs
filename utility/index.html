@@ -1,0 +1,2237 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the Mansur project, including the mansurPlugins library">
+      
+      
+      
+        <meta name="author" content="Assaf Ben Zur">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Utility - Mansur</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#utility" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Mansur" class="md-header-nav__button md-logo">
+          
+            <img src="../images/mansur_01.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Mansur
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Utility
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Mansur" class="md-nav__button md-logo">
+      
+        <img src="../images/mansur_01.png" width="48" height="48">
+      
+    </a>
+    Mansur
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shelfs/" title="the Mansur Shelfs" class="md-nav__link">
+      the Mansur Shelfs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About Mansur" class="md-nav__link">
+      About Mansur
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Code Refrences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Code Refrences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1">
+      mansur
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        mansur
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-1" type="checkbox" id="nav-5-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arguments/" title="Arguments" class="md-nav__link">
+      Arguments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../globals/" title="Globals" class="md-nav__link">
+      Globals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../log/" title="Log" class="md-nav__link">
+      Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nodes/" title="Nodes" class="md-nav__link">
+      Nodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prefixSuffix/" title="prefixSuffix" class="md-nav__link">
+      prefixSuffix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settingsGlobals/" title="settingsGlobals" class="md-nav__link">
+      settingsGlobals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../string/" title="String" class="md-nav__link">
+      String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../UIUtils/" title="UIUtils" class="md-nav__link">
+      UIUtils
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Utility
+      </label>
+    
+    <a href="./" title="Utility" class="md-nav__link md-nav__link--active">
+      Utility
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defenitions" class="md-nav__link">
+    Defenitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addattrtoobj" class="md-nav__link">
+    addAttrToObj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addblockclasidtoobj" class="md-nav__link">
+    addBlockClasIDToObj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkifobjexistsandset" class="md-nav__link">
+    checkIfObjExistsAndSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertalphatoint" class="md-nav__link">
+    convertAlphaToInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertinttoalpha" class="md-nav__link">
+    convertIntToAlpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertnodetonamestd" class="md-nav__link">
+    convertNodeToNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createaxislamberts" class="md-nav__link">
+    createAxisLamberts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createnodereturnnamestd" class="md-nav__link">
+    createNodeReturnNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deletefile" class="md-nav__link">
+    deleteFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixshapesname" class="md-nav__link">
+    fixShapesName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfirstlevelparentforobject" class="md-nav__link">
+    getFirstLevelParentForObject
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnumlinesfordir" class="md-nav__link">
+    getNumLinesForDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsidefromnode" class="md-nav__link">
+    getSideFromNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettopparentforobj" class="md-nav__link">
+    getTopParentForObj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettopparentforsel" class="md-nav__link">
+    getTopParentForSel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importmodulefrompath" class="md-nav__link">
+    importModuleFromPath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockandhidealltransforms" class="md-nav__link">
+    lockAndHideAllTransforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockandhidetransforms" class="md-nav__link">
+    lockAndHideTransforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objectarrayvalidexistscheckreturn" class="md-nav__link">
+    objectArrayValidExistsCheckReturn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readsetteingfromfile" class="md-nav__link">
+    readSetteingFromFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnindexfromsidedict" class="md-nav__link">
+    returnIndexFromSideDict
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnkeyfromelementtypedict" class="md-nav__link">
+    returnKeyFromElementTypeDict
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnnamestdchangeelement" class="md-nav__link">
+    returnNameStdChangeElement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setctrlcoloridx" class="md-nav__link">
+    setCtrlColorIdx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setctrlcolorrgb" class="md-nav__link">
+    setCtrlColorRGB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortnamestdarraybyid" class="md-nav__link">
+    sortNameStdArrayByID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitdatetimestringtolist" class="md-nav__link">
+    splitDateTimeStringToList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitenumattrtochannelcontrollist" class="md-nav__link">
+    splitEnumAttrToChannelControlList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitenumattrtocolorschemefloattuplelist" class="md-nav__link">
+    splitEnumAttrToColorSchemeFloatTupleList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitenumtostringlist" class="md-nav__link">
+    splitEnumToStringList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitnamestringtonamestd" class="md-nav__link">
+    splitNameStringToNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatenamestd" class="md-nav__link">
+    validateNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zerotransforms" class="md-nav__link">
+    zeroTransforms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2" type="checkbox" id="nav-5-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2">
+      globalUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-2">
+        globalUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-1" type="checkbox" id="nav-5-1-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-2-1">
+      defSearch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-1">
+        defSearch
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../defSearch/" title="defSearch" class="md-nav__link">
+      defSearch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-2" type="checkbox" id="nav-5-1-2-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2-2">
+      logViewer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-2">
+        logViewer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logviewer/" title="Logviewer" class="md-nav__link">
+      Logviewer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dynUI/" title="dynUI" class="md-nav__link">
+      dynUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3" type="checkbox" id="nav-5-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-3">
+      adminUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-3">
+        adminUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-1" type="checkbox" id="nav-5-1-3-1">
+    
+    <label class="md-nav__link" for="nav-5-1-3-1">
+      documentationBuild
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-1">
+        documentationBuild
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docBuildMansur/" title="docBuildMansur" class="md-nav__link">
+      docBuildMansur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-2" type="checkbox" id="nav-5-1-3-2">
+    
+    <label class="md-nav__link" for="nav-5-1-3-2">
+      pluginRelease
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-2">
+        pluginRelease
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pluginRelease/" title="pluginRelease" class="md-nav__link">
+      pluginRelease
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4" type="checkbox" id="nav-5-1-4">
+    
+    <label class="md-nav__link" for="nav-5-1-4">
+      block
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-4">
+        block
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-1" type="checkbox" id="nav-5-1-4-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockUtility/" title="blockUtility" class="md-nav__link">
+      blockUtility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../buildModules/" title="buildModules" class="md-nav__link">
+      buildModules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../controlShapes/" title="controlShapes" class="md-nav__link">
+      controlShapes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2" type="checkbox" id="nav-5-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2">
+      modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-2">
+        modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1" type="checkbox" id="nav-5-1-4-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1">
+      dev
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-1-4-2-1">
+        dev
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-1" type="checkbox" id="nav-5-1-4-2-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-1">
+      FKChain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-1">
+        FKChain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_construction/" title="FKChain construction" class="md-nav__link">
+      FKChain construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_jntStruct/" title="FKChain jntStruct" class="md-nav__link">
+      FKChain jntStruct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-2" type="checkbox" id="nav-5-1-4-2-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-2">
+      foot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-2">
+        foot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_construction/" title="Foot construction" class="md-nav__link">
+      Foot construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_customGuides/" title="foot customGuides" class="md-nav__link">
+      foot customGuides
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-3" type="checkbox" id="nav-5-1-4-2-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-3">
+      freeControl
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-3">
+        freeControl
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../freeControl_construction/" title="freeControl construction" class="md-nav__link">
+      freeControl construction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockBuildUI/" title="blockBuildUI" class="md-nav__link">
+      blockBuildUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defenitions" class="md-nav__link">
+    Defenitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addattrtoobj" class="md-nav__link">
+    addAttrToObj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addblockclasidtoobj" class="md-nav__link">
+    addBlockClasIDToObj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkifobjexistsandset" class="md-nav__link">
+    checkIfObjExistsAndSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertalphatoint" class="md-nav__link">
+    convertAlphaToInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertinttoalpha" class="md-nav__link">
+    convertIntToAlpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertnodetonamestd" class="md-nav__link">
+    convertNodeToNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createaxislamberts" class="md-nav__link">
+    createAxisLamberts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createnodereturnnamestd" class="md-nav__link">
+    createNodeReturnNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deletefile" class="md-nav__link">
+    deleteFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixshapesname" class="md-nav__link">
+    fixShapesName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfirstlevelparentforobject" class="md-nav__link">
+    getFirstLevelParentForObject
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnumlinesfordir" class="md-nav__link">
+    getNumLinesForDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsidefromnode" class="md-nav__link">
+    getSideFromNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettopparentforobj" class="md-nav__link">
+    getTopParentForObj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettopparentforsel" class="md-nav__link">
+    getTopParentForSel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importmodulefrompath" class="md-nav__link">
+    importModuleFromPath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockandhidealltransforms" class="md-nav__link">
+    lockAndHideAllTransforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockandhidetransforms" class="md-nav__link">
+    lockAndHideTransforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objectarrayvalidexistscheckreturn" class="md-nav__link">
+    objectArrayValidExistsCheckReturn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readsetteingfromfile" class="md-nav__link">
+    readSetteingFromFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnindexfromsidedict" class="md-nav__link">
+    returnIndexFromSideDict
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnkeyfromelementtypedict" class="md-nav__link">
+    returnKeyFromElementTypeDict
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returnnamestdchangeelement" class="md-nav__link">
+    returnNameStdChangeElement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setctrlcoloridx" class="md-nav__link">
+    setCtrlColorIdx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setctrlcolorrgb" class="md-nav__link">
+    setCtrlColorRGB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortnamestdarraybyid" class="md-nav__link">
+    sortNameStdArrayByID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitdatetimestringtolist" class="md-nav__link">
+    splitDateTimeStringToList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitenumattrtochannelcontrollist" class="md-nav__link">
+    splitEnumAttrToChannelControlList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitenumattrtocolorschemefloattuplelist" class="md-nav__link">
+    splitEnumAttrToColorSchemeFloatTupleList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitenumtostringlist" class="md-nav__link">
+    splitEnumToStringList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitnamestringtonamestd" class="md-nav__link">
+    splitNameStringToNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatenamestd" class="md-nav__link">
+    validateNameStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zerotransforms" class="md-nav__link">
+    zeroTransforms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><body></p>
+<h1 id="utility">utility</h1>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur === <br>
+Global Core MNS utility module. <br>
+This module holds any 'global' function used within MNS. <br>
+A 'misc' style module. <br>
+</font>
+</i>
+<hr width = 100%></p>
+<h2 id="defenitions">Defenitions</h2>
+<hr width = 100%>
+
+<h3 id="addattrtoobj">addAttrToObj</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+A global conditioned wrapper for adding attributes to object/objects <br>
+ <br>
+Exceptions: <br>
+1. Object to add attr to was found non-existing or invalid. Abort. <br>
+2. The 'replace' flag wasn't set, and the attribute already exists. Abort. <br>
+3. Attr name wasn't passed in. Abort. <br>
+4. The attribute type passed doesn't match the attribute value passed. Abort. <br>
+5. min/max values were passed in, although the attr type is not an Int or a Float. Skip min/max values. <br>
+6. min/max values were passed, and the attr type is Int or Float, although the min/max values passed arn't matching the data type. Skip min/max. <br>
+7. The replace flag was set to True, but the attribute doesn't exist. Ignore replace flag. <br>
+ <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addAttrToObj(objects = [], <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (added attributes 'attr' objects list)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objects</b>(<i>list</i>) ; [default: []]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>name</b>(<i>str</i>) - Added attribute name</li>
+<li><b>replace</b>(<i>bool</i>) - If attr exists and this flag is set to True- delete the existing attribute then recreate according to parameters</li>
+<li><b>type</b>(<i>str</i>) ; [default: string] - Added attribute type</li>
+<li><b>value</b>(<i>str</i>) ; [default: None] - Added attribute value</li>
+<li><b>max</b>(<i>str</i>) ; [default: None] - Added attribute max (only if float or int)</li>
+<li><b>min</b>(<i>str</i>) ; [default: None] - Added attribute min (only if float or int)</li>
+<li><b>locked</b>(<i>bool</i>) - Added attribute lock state</li>
+<li><b>cb</b>(<i>bool</i>) ; [default: True] - Added attribute channelBox/Displayed state</li>
+<li><b>keyable</b>(<i>bool</i>) ; [default: True] - Added attribute keyable state</li>
+<li><b>enumDefault</b>(<i>int</i>) - If added attr is enum, set its default to this value</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="addblockclasidtoobj">addBlockClasIDToObj</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addBlockClasIDToObj(objectA, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objectA</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="checkifobjexistsandset">checkIfObjExistsAndSet</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+For the object passed in- <br>
+three main cases: <br>
+1. If it is a 'PyNode' object, set it as the object to check. <br>
+2. If it is an MnsNameStd object,set it's .node property as the object to check. <br>
+3. If it is a string, assign it into a 'PyNode' obhect and set it as the object to check. <br>
+Check whether the object exists in the current scene and valid. <br>
+If so, return it. Else return None. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkIfObjExistsAndSet(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode if valid, None if not. </td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b>(<i>str</i>) - object to act on and return</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="convertalphatoint">convertAlphaToInt</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Recursive. Convert an Alpha input into an Int ID. Infinite. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertAlphaToInt(alpha = "A")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>int</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>alpha</b>(<i>str</i>) ; [default: "A"]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="convertinttoalpha">convertIntToAlpha</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Recursive. Convert an Int input into an Alpha ID. Infinite. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertIntToAlpha(intA = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>intA</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="convertnodetonamestd">convertNodeToNameStd</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertNodeToNameStd(node)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>node</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="createaxislamberts">createAxisLamberts</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+An axes colored lambert shaders creation function. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createAxisLamberts(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict ('X': xAxisLambert, 'Y': yAixsLambert, 'Z': zAxisLambert)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>doX</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>doY</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>doZ</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>deleteAll</b>(<i>bool</i>) - If true, do not attempt to create any objects- instead look for any existing objects and delete them</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="createnodereturnnamestd">createNodeReturnNameStd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+A core major MNS function. <br>
+This function creates a new node, based on it's type passed in, and it's name parameters passed in, and returns it as a MnsNameStd object. <br>
+This function also contains the 'search for next valid name' functionallity: <br>
+In case the given parameter set returns an object name that already exists within the current scene a 'Handle' functionallity will be triggered: <br>
+- In case the 'IncrementAlpha' argument is Flase, recursivly increment the ID value until a new name slot is available within the scene. <br>
+- In case it's Flase, do the same while incrementing the Alpha value instead. <br>
+Unlike Maya's core behavior- This function tests whether an object name exists whithin the entire scene- not only whether it exists whithin the current hirarchy level. <br>
+In a sequence manner creation- the Alpha/ID should be incremented within the caller function loop- meaning while bulding an item sequence the 'search' functionallity should not be used. <br>
+Another funtionallity of this function is the 'Fix Shape Name' functionallity: <br>
+A simple shpe children name test of an object (after creation) and a renaming them. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createNodeReturnNameStd(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: pointsOnCurve] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>buildType</b>(<i>int</i>)</li>
+<li><b>createBlkClassID</b>(<i>bool</i>)</li>
+<li><b>createBlkCtrlTypeID</b>(<i>bool</i>)</li>
+<li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="deletefile">deleteFile</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+A delete file global function that includes a pre-defined log write. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteFile(file)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>file</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="fixshapesname">fixShapesName</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Simple shape name fix function based on parent's name. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>fixShapesName(objects = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objects</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getfirstlevelparentforobject">getFirstLevelParentForObject</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Get the top level parent for a given object. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getFirstLevelParentForObject(obj)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>pyNode (top level parent)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getnumlinesfordir">getNumLinesForDir</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getNumLinesForDir(directory = "D/mansurProject/mansur")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>directory</b>(<i>str</i>) ; [default: "D:/mansurProject/mansur"]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getsidefromnode">getSideFromNode</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSideFromNode(node)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>node</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="gettopparentforobj">getTopParentForObj</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getTopParentForObj(obj)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="gettopparentforsel">getTopParentForSel</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getTopParentForSel()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="importmodulefrompath">importModuleFromPath</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importModuleFromPath(path)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>path</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="lockandhidealltransforms">lockAndHideAllTransforms</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lockAndHideAllTransforms(node = None, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>node</b>(<i>str</i>) ; [default: None]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>lock</b>(<i>bool</i>)</li>
+<li><b>keyable</b>(<i>bool</i>)</li>
+<li><b>cb</b>(<i>bool</i>)</li>
+<li><b>t</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>r</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>s</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>t</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>r</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>s</b>(<i>bool</i>) ; [default: True]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="lockandhidetransforms">lockAndHideTransforms</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lockAndHideTransforms(node = None, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>node</b>(<i>str</i>) ; [default: None]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>lock</b>(<i>bool</i>)</li>
+<li><b>keyable</b>(<i>bool</i>)</li>
+<li><b>cb</b>(<i>bool</i>)</li>
+<li><b>tx</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>ty</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>tz</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>rx</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>ry</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>rz</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>sx</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>sy</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>sz</b>(<i>bool</i>) ; [default: True]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="objectarrayvalidexistscheckreturn">objectArrayValidExistsCheckReturn</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+MNS core object array validity check. <br>
+Two main Cases for the mode parameter: <br>
+1. trueOnlyIfAllValid - Run through the objects and only if ALL of them are found existing and valid, return the array back to the caller. If a single item failed- Return None. <br>
+2. trueIfSomeValid - Check all the objects and return any or all of them based on validity. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>objectArrayValidExistsCheckReturn(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>List (Valid object list), None (If found invalid)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>objectArray</b>(<i>list</i>) ; [default: [' ']] - Objects input list</li>
+<li><b>mode</b>(<i>int</i>) - Validity return mode</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="readsetteingfromfile">readSetteingFromFile</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>readSetteingFromFile(settingsPath)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>settingsPath</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="returnindexfromsidedict">returnIndexFromSideDict</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnIndexFromSideDict(dict, searchElement)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dict</b></li>
+<li><b>searchElement</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="returnkeyfromelementtypedict">returnKeyFromElementTypeDict</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnKeyFromElementTypeDict(dict, searchElement)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dict</b></li>
+<li><b>searchElement</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="returnnamestdchangeelement">returnNameStdChangeElement</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+global MnsNameStd utility- <br>
+Use this function to change any elemnt within a given MnsNameStd object based on keyword args given <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnNameStdChangeElement(nameStd = "", <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>nameStd</b>(<i>str</i>) ; [default: ""]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>autoRename</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>node</b>(<i>str</i>) ; [default: nameStd.node] - change node parameter</li>
+<li><b>side</b>(<i>str</i>) ; [default: nameStd.side] - change side parameter</li>
+<li><b>body</b>(<i>str</i>) ; [default: nameStd.body] - change body parameter</li>
+<li><b>type</b>(<i>str</i>) ; [default: nameStd.type] - change type parameter</li>
+<li><b>id</b>(<i>str</i>) ; [default: nameStd.id] - change id parameter</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: nameStd.alpha] - change alpha parameter</li>
+<li><b>suffix</b>(<i>str</i>) ; [default: nameStd.suffix] - change suffix</li>
+<li><b>comment</b>(<i>str</i>) ; [default: nameStd.comment] - change comment parameter</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setctrlcoloridx">setCtrlColorIdx</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Global utility function: <br>
+Change the shape color override to index type, and set to the input value index <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setCtrlColorIdx(objects = [], colorIdx = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objects</b>(<i>list</i>) ; [default: []]</li>
+<li><b>colorIdx</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setctrlcolorrgb">setCtrlColorRGB</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Global utility function: <br>
+Change the shape color override to RGB type, and set to the input value RGB <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setCtrlColorRGB(objects = [], color = (1,1,1))</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objects</b>(<i>list</i>) ; [default: []]</li>
+<li><b>color</b>(<i>str</i>) ; [default: (1]</li>
+<li><b>1</b></li>
+<li><b>1)</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="sortnamestdarraybyid">sortNameStdArrayByID</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sortNameStdArrayByID(nameStdArray)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>nameStdArray</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="splitdatetimestringtolist">splitDateTimeStringToList</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Split a 'dateTime' string to a major/minor/patch/timestemp list <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitDateTimeStringToList(dateTime = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dateTime</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="splitenumattrtochannelcontrollist">splitEnumAttrToChannelControlList</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumAttrToChannelControlList(enumAttrName, node)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>enumAttrName</b></li>
+<li><b>node</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="splitenumattrtocolorschemefloattuplelist">splitEnumAttrToColorSchemeFloatTupleList</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumAttrToColorSchemeFloatTupleList(enumAttrName, node)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>enumAttrName</b></li>
+<li><b>node</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="splitenumtostringlist">splitEnumToStringList</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumToStringList(enumAttrName, node)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>enumAttrName</b></li>
+<li><b>node</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="splitnamestringtonamestd">splitNameStringToNameStd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Split a given string object and return a MnsNameStd based on it's structure. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitNameStringToNameStd(nameString = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>nameString</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="validatenamestd">validateNameStd</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateNameStd(objectA)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objectA</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="zerotransforms">zeroTransforms</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Zero all available transforms for the given object passed in. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>zeroTransforms(transform = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transform</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../UIUtils/" title="UIUtils" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                UIUtils
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../defSearch/" title="defSearch" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                defSearch
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

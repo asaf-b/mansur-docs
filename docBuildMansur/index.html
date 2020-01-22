@@ -1,0 +1,1680 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the Mansur project, including the mansurPlugins library">
+      
+      
+      
+        <meta name="author" content="Assaf Ben Zur">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>docBuildMansur - Mansur</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#docbuildmansur" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Mansur" class="md-header-nav__button md-logo">
+          
+            <img src="../images/mansur_01.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Mansur
+            </span>
+            <span class="md-header-nav__topic">
+              
+                docBuildMansur
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Mansur" class="md-nav__button md-logo">
+      
+        <img src="../images/mansur_01.png" width="48" height="48">
+      
+    </a>
+    Mansur
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shelfs/" title="the Mansur Shelfs" class="md-nav__link">
+      the Mansur Shelfs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About Mansur" class="md-nav__link">
+      About Mansur
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Code Refrences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Code Refrences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1">
+      mansur
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        mansur
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-1" type="checkbox" id="nav-5-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arguments/" title="Arguments" class="md-nav__link">
+      Arguments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../globals/" title="Globals" class="md-nav__link">
+      Globals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../log/" title="Log" class="md-nav__link">
+      Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nodes/" title="Nodes" class="md-nav__link">
+      Nodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prefixSuffix/" title="prefixSuffix" class="md-nav__link">
+      prefixSuffix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settingsGlobals/" title="settingsGlobals" class="md-nav__link">
+      settingsGlobals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../string/" title="String" class="md-nav__link">
+      String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../UIUtils/" title="UIUtils" class="md-nav__link">
+      UIUtils
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../utility/" title="Utility" class="md-nav__link">
+      Utility
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2" type="checkbox" id="nav-5-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2">
+      globalUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-2">
+        globalUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-1" type="checkbox" id="nav-5-1-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-2-1">
+      defSearch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-1">
+        defSearch
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../defSearch/" title="defSearch" class="md-nav__link">
+      defSearch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-2" type="checkbox" id="nav-5-1-2-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2-2">
+      logViewer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-2">
+        logViewer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logviewer/" title="Logviewer" class="md-nav__link">
+      Logviewer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dynUI/" title="dynUI" class="md-nav__link">
+      dynUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3" type="checkbox" id="nav-5-1-3" checked>
+    
+    <label class="md-nav__link" for="nav-5-1-3">
+      adminUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-3">
+        adminUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-1" type="checkbox" id="nav-5-1-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1-3-1">
+      documentationBuild
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-1">
+        documentationBuild
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        docBuildMansur
+      </label>
+    
+    <a href="./" title="docBuildMansur" class="md-nav__link md-nav__link--active">
+      docBuildMansur
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defenitions" class="md-nav__link">
+    Defenitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#builddocitems" class="md-nav__link">
+    buildDocItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builddocsfordir" class="md-nav__link">
+    buildDocsForDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildfiledoc" class="md-nav__link">
+    buildFileDoc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildmansurdocs" class="md-nav__link">
+    buildMansurDocs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildsubitemsdir" class="md-nav__link">
+    buildSubItemsDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractclassmembersfrominitsrc" class="md-nav__link">
+    extractClassMembersFromInitSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractconstructorvaluesforclass" class="md-nav__link">
+    extractConstructorValuesForClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractdocsforclass" class="md-nav__link">
+    extractDocsForClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractdocsfordef" class="md-nav__link">
+    extractDocsForDef
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractheaderfromsrc" class="md-nav__link">
+    extractHeaderFromSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractmethodsfromclasssrc" class="md-nav__link">
+    extractMethodsfromClassSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractparametersfromdefsrc" class="md-nav__link">
+    extractParametersFromDefSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getparameterformnsarg" class="md-nav__link">
+    getParameterForMnsArg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpylibfordir" class="md-nav__link">
+    getPyLibForDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rebuildymlfile" class="md-nav__link">
+    rebuildYmlFile
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-2" type="checkbox" id="nav-5-1-3-2">
+    
+    <label class="md-nav__link" for="nav-5-1-3-2">
+      pluginRelease
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-2">
+        pluginRelease
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pluginRelease/" title="pluginRelease" class="md-nav__link">
+      pluginRelease
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4" type="checkbox" id="nav-5-1-4">
+    
+    <label class="md-nav__link" for="nav-5-1-4">
+      block
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-4">
+        block
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-1" type="checkbox" id="nav-5-1-4-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockUtility/" title="blockUtility" class="md-nav__link">
+      blockUtility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../buildModules/" title="buildModules" class="md-nav__link">
+      buildModules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../controlShapes/" title="controlShapes" class="md-nav__link">
+      controlShapes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2" type="checkbox" id="nav-5-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2">
+      modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-2">
+        modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1" type="checkbox" id="nav-5-1-4-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1">
+      dev
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-1-4-2-1">
+        dev
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-1" type="checkbox" id="nav-5-1-4-2-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-1">
+      FKChain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-1">
+        FKChain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_construction/" title="FKChain construction" class="md-nav__link">
+      FKChain construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_jntStruct/" title="FKChain jntStruct" class="md-nav__link">
+      FKChain jntStruct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-2" type="checkbox" id="nav-5-1-4-2-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-2">
+      foot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-2">
+        foot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_construction/" title="Foot construction" class="md-nav__link">
+      Foot construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_customGuides/" title="foot customGuides" class="md-nav__link">
+      foot customGuides
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-3" type="checkbox" id="nav-5-1-4-2-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-3">
+      freeControl
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-3">
+        freeControl
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../freeControl_construction/" title="freeControl construction" class="md-nav__link">
+      freeControl construction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockBuildUI/" title="blockBuildUI" class="md-nav__link">
+      blockBuildUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defenitions" class="md-nav__link">
+    Defenitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#builddocitems" class="md-nav__link">
+    buildDocItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builddocsfordir" class="md-nav__link">
+    buildDocsForDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildfiledoc" class="md-nav__link">
+    buildFileDoc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildmansurdocs" class="md-nav__link">
+    buildMansurDocs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildsubitemsdir" class="md-nav__link">
+    buildSubItemsDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractclassmembersfrominitsrc" class="md-nav__link">
+    extractClassMembersFromInitSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractconstructorvaluesforclass" class="md-nav__link">
+    extractConstructorValuesForClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractdocsforclass" class="md-nav__link">
+    extractDocsForClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractdocsfordef" class="md-nav__link">
+    extractDocsForDef
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractheaderfromsrc" class="md-nav__link">
+    extractHeaderFromSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractmethodsfromclasssrc" class="md-nav__link">
+    extractMethodsfromClassSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractparametersfromdefsrc" class="md-nav__link">
+    extractParametersFromDefSrc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getparameterformnsarg" class="md-nav__link">
+    getParameterForMnsArg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpylibfordir" class="md-nav__link">
+    getPyLibForDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rebuildymlfile" class="md-nav__link">
+    rebuildYmlFile
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><body></p>
+<h1 id="docbuildmansur">docBuildMansur</h1>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur === <br>
+Core procedural documentation build <br>
+Process flow: <br>
+Read a given directory <br>
+Build a structure based on the os directory given and the folders to filter <br>
+Filter only .py files <br>
+For each py file: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Header (such as this one) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Defenition <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract Def name and constructor <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract Arguments, and Optional Arguments <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract return <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Classes <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Header <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Name and constructor <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract inheritence <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Class members <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Extract Methods <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract Header <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract Name and constructor <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract Arguments and Optional Arguments <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract return <br>
+rebuild the yml file given <br>
+write the files within the 'docs' directory <br>
+ <br>
+This procedural approach for a code documentation build ensures an up-to-date documentation based on code commenting. <br>
+No additional actions are neccessery. <br>
+This will yeild a readable commented code with will math the documentation 1-to-1. <br>
+Also, this will yeild a very "easy to change" approach for the documentation generator of choice as well as a 100% cohirent documentation throuout. <br>
+</font>
+</i>
+<hr width = 100%></p>
+<h2 id="defenitions">Defenitions</h2>
+<hr width = 100%>
+
+<h3 id="builddocitems">buildDocItems</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dir build recursive function. <br>
+The function builds only directory items, which in turn will be searched for '.py' files, and will be added to the structure only if in contains a direct '.py' within,  <br>
+or if a directory within comatins one, recursively. <br>
+Depth independent. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildDocItems(dir, rootDir, level, ymlPath, fileLines)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (yml new file lines)   </td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dir</b></li>
+<li><b>rootDir</b></li>
+<li><b>level</b></li>
+<li><b>ymlPath</b></li>
+<li><b>fileLines</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="builddocsfordir">buildDocsForDir</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main build wrapper and the yml file writer wrapper function. <br>
+Calls 'buildDocItems' within which in turn build the actual html files within the 'docs' directory. <br>
+Finally re-writes the yml file using 'rebuildYmlFile' according to the file structure acquired <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildDocsForDir(mkDocksYmlPath, parentPageName, directory, folders, level = 0) </td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mkDocksYmlPath</b></li>
+<li><b>parentPageName</b></li>
+<li><b>directory</b></li>
+<li><b>folders</b></li>
+<li><b>level</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="buildfiledoc">buildFileDoc</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main file def. <br>
+This is a wrapped def as well as a function one. <br>
+Compiles all needed documentation from a given file path. <br>
+Will compile Classes, methods, defenitions (icluding all relevant information for each) <br>
+This is also the main WRITE defenition. After info assembly the info will be written as a new file, overriding existing ones, to create a new doc page. <br>
+Any file doc 'display' is contained within this def. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildFileDoc(path, ymlPath)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>path</b></li>
+<li><b>ymlPath</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="buildmansurdocs">buildMansurDocs</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main wrapper call for the MANSUR directory doc build.  <br>
+Contains the requested folders within, hard-coded for safety. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildMansurDocs() </td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="buildsubitemsdir">buildSubItemsDir</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Last level recursive function. <br>
+This function will call the documentation file build as well as build the last meanu item within the structure. <br>
+The final pythonLib item is passed in, as well as the root directory and the current level and the yml path in order to write the new yml lines correctly, depending on the file's level position. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildSubItemsDir(rootDir, pyLib, level, ymlPath, fileLines)  </td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootDir</b></li>
+<li><b>pyLib</b></li>
+<li><b>level</b></li>
+<li><b>ymlPath</b></li>
+<li><b>fileLines</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractclassmembersfrominitsrc">extractClassMembersFromInitSrc</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Extracts class members from a Class' init method source as list <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractClassMembersFromInitSrc(src = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (class members names)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>src</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractconstructorvaluesforclass">extractConstructorValuesForClass</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Extracts constructor related values from a class source as list. <br>
+Wrapper def. <br>
+Extracts both Arguments (flattened) and class members <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractConstructorValuesForClass(src = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (constructor), list (class members)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>src</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractdocsforclass">extractDocsForClass</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Wrapped def. <br>
+Extracts full documentation from a given class source. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractDocsForClass(classSrc = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (title), list (header), string (sontructor), string (inherit object), list (class members), string (return) </td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>classSrc</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractdocsfordef">extractDocsForDef</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Wrapper def for a full doc extraction for a given file souce as list. <br>
+extracts return statement, title, header, arguments and optionalArguments <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractDocsForDef(defSrc = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string(title), list(header), list(arguments), list(optionalArguments, string(return statement)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>defSrc</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractheaderfromsrc">extractHeaderFromSrc</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Extracts a header if exsits from a given elemnt src (Class/Def/Method) as list <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractHeaderFromSrc(src = [] )</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (header lines)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>src</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractmethodsfromclasssrc">extractMethodsfromClassSrc</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Splits a given class source to orginized dict containing it's methods sources <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractMethodsfromClassSrc(src = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (methodName: methodSource)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>src</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="extractparametersfromdefsrc">extractParametersFromDefSrc</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Extract parametrs from a given def source as list <br>
+   Extracts arguments and optional arguments <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractParametersFromDefSrc(src = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (arguments) , list(optionalArguments)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>src</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getparameterformnsarg">getParameterForMnsArg</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Extracts arguments from a given def source lines as list <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getParameterForMnsArg(arg)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (flattened combined arguments)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>arg</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getpylibfordir">getPyLibForDir</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This is a complex recursive function that will assemble a file structure from a given path directory. <br>
+The assembly will filter ONLY folders that contain at least one '.py' file, and ONLY '.py' files. <br>
+This function returns a dictionary containing the file and folder structure as keys "dirs" and "files" respectively. <br>
+As this is a recusrsive depth independent function, the return will be a complex compound dict, which contains instances of the same dict structure within. <br>
+This is dependent of depth obviously-  <br>
+if a directory contains another directory within- which contains a '.py' the first item "dirs" key will contain another dictionary containing a "dirs" key and a "files" key. <br>
+Ultimatly, the first dict "dirs" key should contain a single complex dict element. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPyLibForDir(root)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (complex library dict)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>root</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="rebuildymlfile">rebuildYmlFile</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+yml writer function. <br>
+Writes the given yml file passed, with the new 'lines' passed. <br>
+The yml 'parentPageName' is passed as an argument - the new 'lines' build is constructed underneeth. <br>
+Existing required info is preserved by calculating the parent item indentation level, keeping every item with lower or matching level. <br>
+Every item under the parent item passed in a higher level is removed or reconstructed. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>rebuildYmlFile(ymlPath, parentPageName, lines)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ymlPath</b></li>
+<li><b>parentPageName</b></li>
+<li><b>lines</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../dynUI/" title="dynUI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                dynUI
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pluginRelease/" title="pluginRelease" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                pluginRelease
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

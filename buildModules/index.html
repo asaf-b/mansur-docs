@@ -1,0 +1,1576 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the Mansur project, including the mansurPlugins library">
+      
+      
+      
+        <meta name="author" content="Assaf Ben Zur">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>buildModules - Mansur</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#buildmodules" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Mansur" class="md-header-nav__button md-logo">
+          
+            <img src="../images/mansur_01.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Mansur
+            </span>
+            <span class="md-header-nav__topic">
+              
+                buildModules
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Mansur" class="md-nav__button md-logo">
+      
+        <img src="../images/mansur_01.png" width="48" height="48">
+      
+    </a>
+    Mansur
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shelfs/" title="the Mansur Shelfs" class="md-nav__link">
+      the Mansur Shelfs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About Mansur" class="md-nav__link">
+      About Mansur
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Code Refrences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Code Refrences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1">
+      mansur
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        mansur
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-1" type="checkbox" id="nav-5-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arguments/" title="Arguments" class="md-nav__link">
+      Arguments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../globals/" title="Globals" class="md-nav__link">
+      Globals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../log/" title="Log" class="md-nav__link">
+      Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nodes/" title="Nodes" class="md-nav__link">
+      Nodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prefixSuffix/" title="prefixSuffix" class="md-nav__link">
+      prefixSuffix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settingsGlobals/" title="settingsGlobals" class="md-nav__link">
+      settingsGlobals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../string/" title="String" class="md-nav__link">
+      String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../UIUtils/" title="UIUtils" class="md-nav__link">
+      UIUtils
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../utility/" title="Utility" class="md-nav__link">
+      Utility
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2" type="checkbox" id="nav-5-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2">
+      globalUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-2">
+        globalUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-1" type="checkbox" id="nav-5-1-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-2-1">
+      defSearch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-1">
+        defSearch
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../defSearch/" title="defSearch" class="md-nav__link">
+      defSearch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-2" type="checkbox" id="nav-5-1-2-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2-2">
+      logViewer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-2">
+        logViewer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logviewer/" title="Logviewer" class="md-nav__link">
+      Logviewer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dynUI/" title="dynUI" class="md-nav__link">
+      dynUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3" type="checkbox" id="nav-5-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-3">
+      adminUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-3">
+        adminUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-1" type="checkbox" id="nav-5-1-3-1">
+    
+    <label class="md-nav__link" for="nav-5-1-3-1">
+      documentationBuild
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-1">
+        documentationBuild
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docBuildMansur/" title="docBuildMansur" class="md-nav__link">
+      docBuildMansur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-2" type="checkbox" id="nav-5-1-3-2">
+    
+    <label class="md-nav__link" for="nav-5-1-3-2">
+      pluginRelease
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-2">
+        pluginRelease
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pluginRelease/" title="pluginRelease" class="md-nav__link">
+      pluginRelease
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4" type="checkbox" id="nav-5-1-4" checked>
+    
+    <label class="md-nav__link" for="nav-5-1-4">
+      block
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-4">
+        block
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-1" type="checkbox" id="nav-5-1-4-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1-4-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockUtility/" title="blockUtility" class="md-nav__link">
+      blockUtility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        buildModules
+      </label>
+    
+    <a href="./" title="buildModules" class="md-nav__link md-nav__link--active">
+      buildModules
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mnsbuildmodule-class" class="md-nav__link">
+    MnsBuildModule [Class]
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mnsbuildmodule-methods" class="md-nav__link">
+    MnsBuildModule  methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnsbuildmodulebtn-class" class="md-nav__link">
+    MnsBuildModuleBtn [Class]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnsrig-class" class="md-nav__link">
+    MnsRig [Class]
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mnsrig-methods" class="md-nav__link">
+    MnsRig  methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../controlShapes/" title="controlShapes" class="md-nav__link">
+      controlShapes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2" type="checkbox" id="nav-5-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2">
+      modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-2">
+        modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1" type="checkbox" id="nav-5-1-4-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1">
+      dev
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-1-4-2-1">
+        dev
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-1" type="checkbox" id="nav-5-1-4-2-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-1">
+      FKChain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-1">
+        FKChain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_construction/" title="FKChain construction" class="md-nav__link">
+      FKChain construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_jntStruct/" title="FKChain jntStruct" class="md-nav__link">
+      FKChain jntStruct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-2" type="checkbox" id="nav-5-1-4-2-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-2">
+      foot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-2">
+        foot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_construction/" title="Foot construction" class="md-nav__link">
+      Foot construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_customGuides/" title="foot customGuides" class="md-nav__link">
+      foot customGuides
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-3" type="checkbox" id="nav-5-1-4-2-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-3">
+      freeControl
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-3">
+        freeControl
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../freeControl_construction/" title="freeControl construction" class="md-nav__link">
+      freeControl construction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockBuildUI/" title="blockBuildUI" class="md-nav__link">
+      blockBuildUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mnsbuildmodule-class" class="md-nav__link">
+    MnsBuildModule [Class]
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mnsbuildmodule-methods" class="md-nav__link">
+    MnsBuildModule  methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnsbuildmodulebtn-class" class="md-nav__link">
+    MnsBuildModuleBtn [Class]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnsrig-class" class="md-nav__link">
+    MnsRig [Class]
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mnsrig-methods" class="md-nav__link">
+    MnsRig  methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><body></p>
+<h1 id="buildmodules">buildModules</h1>
+<hr width = 100%>
+
+<h2 id="classes">Classes</h2>
+<p><hr width = 100%>
+<h5 id = "MnsBuildModule TARGET"></h5></p>
+<h3 id="mnsbuildmodule-class">MnsBuildModule [Class]</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>MnsBuildModule(<b>MnsBuildModuleButton</b>,<b>**kwargs</b>)</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>MnsRig</td></tr>
+<tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
+<td><ul>
+<ul>
+<li>MnsBuildModuleButton</li>
+<li>sidePlaceHolder</li>
+<li>builtGuides</li>
+<li>rigTop</li>
+<li>puppetTopCtrl</li>
+<li>rootGuide</li>
+<li>guideControls</li>
+<li>cGuideControls</li>
+<li>pureParent</li>
+<li>moduleTop</li>
+<li>extraSpaces</li>
+<li>buildReturnDict</li>
+</ul>
+</td></tr>
+<tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#constructTARGET">construct </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#constructSpacesTARGET">constructSpaces </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getRigTopTARGET">getRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#buildGuideObjectsTARGET">buildGuideObjects </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPuppetRootCtrlTARGET">createPuppetRootCtrl </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#gatherBuildModuleFromRootTARGET">gatherBuildModuleFromRoot </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createGuidesTARGET">createGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#buildGuidesTARGET">buildGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
+</ul>
+</td>
+</tr>
+</table></font></p>
+<h4 id="mnsbuildmodule-methods">MnsBuildModule  methods</h4>
+<p><hr width = 50%>
+<h5 id = "constructTARGET"></h5><font color = 464646 size = 3><b>construct <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>construct(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "constructSpacesTARGET"></h5><font color = 464646 size = 3><b>constructSpaces <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constructSpaces(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getRigTopTARGET"></h5><font color = 464646 size = 3><b>getRigTop <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRigTop(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "buildGuideObjectsTARGET"></h5><font color = 464646 size = 3><b>buildGuideObjects <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildGuideObjects(self, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPuppetRootCtrlTARGET"></h5><font color = 464646 size = 3><b>createPuppetRootCtrl <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPuppetRootCtrl(self, rigTop, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "gatherBuildModuleFromRootTARGET"></h5><font color = 464646 size = 3><b>gatherBuildModuleFromRoot <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherBuildModuleFromRoot(self, root = None, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>root</b>(<i>str</i>) ; [default: None]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createGuidesTARGET"></h5><font color = 464646 size = 3><b>createGuides <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createGuides(self, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+<td><ul>
+<li><b>blkSide</b>(<i>str</i>) ; [default: center]</li>
+<li><b>body</b>(<i>str</i>) ; [default: guideCtrl]</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A]</li>
+</ul></td>
+</tr>
+</table></font>
+<h5 id = "buildGuidesTARGET"></h5><font color = 464646 size = 3><b>buildGuides <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildGuides(self, MnsBuildModuleButton, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>MnsBuildModuleButton</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+<td><ul>
+<li><b>skipUI</b>(<i>bool</i>)</li>
+<li><b>settingsHolder</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+<h5 id = "MnsBuildModuleBtn TARGET"></h5></p>
+<h3 id="mnsbuildmodulebtn-class">MnsBuildModuleBtn [Class]</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>MnsBuildModuleBtn(<b>path</b>,<b>**kwargs</b>)</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>object</td></tr>
+<tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
+<td><ul>
+<ul>
+<li>layoutParent</li>
+<li>path</li>
+<li>moduleName</li>
+<li>groupType</li>
+<li>shortName</li>
+<li>mayaNative</li>
+<li>moduleUISettings</li>
+</ul>
+</td></tr>
+</tr>
+</table></font>
+<hr width = 100%>
+<h5 id = "MnsRig TARGET"></h5></p>
+<h3 id="mnsrig-class">MnsRig [Class]</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>MnsRig(<b>callerSubClass</b>(<i>str</i>) ; [default: None],<b>**kwargs</b>)</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>object</td></tr>
+<tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
+<td><ul>
+<ul>
+<li>callerSubClass</li>
+<li>loadSettingsWindow</li>
+</ul>
+</td></tr>
+<tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#createNewRigTopTARGET">createNewRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#loadSettingsWindowTARGET">loadSettingsWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createSubGrpsForRigTopTARGET">createSubGrpsForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPickerLayoutBaseTARGET">createPickerLayoutBase </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPickerProjectionCamTARGET">createPickerProjectionCam </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPickerCamTARGET">createPickerCam </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPickerGuideGrpTARGET">createPickerGuideGrp </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPickerTitleGrpTARGET">createPickerTitleGrp </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createRootGuideTARGET">createRootGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createVisEnumAndConnectTARGET">createVisEnumAndConnect </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createSubGroupForRigTopTARGET">createSubGroupForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+</ul>
+</td>
+</tr>
+</table></font></p>
+<h4 id="mnsrig-methods">MnsRig  methods</h4>
+<p><hr width = 50%>
+<h5 id = "createNewRigTopTARGET"></h5><font color = 464646 size = 3><b>createNewRigTop <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createNewRigTop(self, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "loadSettingsWindowTARGET"></h5><font color = 464646 size = 3><b>loadSettingsWindow <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadSettingsWindow(self, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createSubGrpsForRigTopTARGET"></h5><font color = 464646 size = 3><b>createSubGrpsForRigTop <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createSubGrpsForRigTop(self, rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPickerLayoutBaseTARGET"></h5><font color = 464646 size = 3><b>createPickerLayoutBase <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerLayoutBase(self, rigTop, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPickerProjectionCamTARGET"></h5><font color = 464646 size = 3><b>createPickerProjectionCam <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerProjectionCam(self, rigTop, pickerLayoutBase)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b>pickerLayoutBase</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPickerCamTARGET"></h5><font color = 464646 size = 3><b>createPickerCam <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerCam(self, rigTop, pickerLayoutBase, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b>pickerLayoutBase</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPickerGuideGrpTARGET"></h5><font color = 464646 size = 3><b>createPickerGuideGrp <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerGuideGrp(self, rigTop, pickerLayoutBase, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b>pickerLayoutBase</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPickerTitleGrpTARGET"></h5><font color = 464646 size = 3><b>createPickerTitleGrp <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerTitleGrp(self, rigTop, pickerLayoutBase,<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b>pickerLayoutBase</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createRootGuideTARGET"></h5><font color = 464646 size = 3><b>createRootGuide <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createRootGuide(self, rigTopNameStd, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTopNameStd</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createVisEnumAndConnectTARGET"></h5><font color = 464646 size = 3><b>createVisEnumAndConnect <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createVisEnumAndConnect(self, masterStd, slaveStd, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>masterStd</b></li>
+<li><b>slaveStd</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+<td><ul>
+<li><b>default</b>(<i>int</i>) ; [default: 1]</li>
+</ul></td>
+</tr>
+</table></font>
+<h5 id = "createSubGroupForRigTopTARGET"></h5><font color = 464646 size = 3><b>createSubGroupForRigTop <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createSubGroupForRigTop(self, rigTopNameStd, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTopNameStd</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+<td><ul>
+<li><b>subGrpType</b>(<i>str</i>)</li>
+<li><b>default</b>(<i>int</i>) ; [default: 1]</li>
+</ul></td>
+</tr>
+</table></font></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../blockUtility/" title="blockUtility" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                blockUtility
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../controlShapes/" title="controlShapes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                controlShapes
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
