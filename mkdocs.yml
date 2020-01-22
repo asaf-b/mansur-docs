@@ -51,14 +51,14 @@ nav:
           - modules:
             - dev:
               - FKChain:
-                - FKChain_construction.md
-                - FKChain_jntStruct.md
+                - FKChain.md
               - foot:
                 - foot_construction.md
                 - foot_customGuides.md
               - freeControl:
-                - freeControl_construction.md
+                - freeControl.md
+          - picker:
+            - picker.md
           - blockBuildUI.md
-          
 extra_css:
     - extra.css

@@ -253,7 +253,7 @@ Creates an mnsBuildTransformsCurveNode node based on specified parameters and ou
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
 <li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
-<li><b>body</b>(<i>str</i>) ; [default: pointsOnCurve] - Node's name body.</li>
+<li><b>body</b>(<i>str</i>) ; [default: buildTransformsCurveCurve] - Node's name body.</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>

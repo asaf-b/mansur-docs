@@ -74,8 +74,8 @@ main UI class <br>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
-<li><b><a href="#getVersionsTARGET">getVersions </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#updateToReleasedBasedOnSelectedComboItemTARGET">updateToReleasedBasedOnSelectedComboItem </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getLastestReleaseVerTARGET">getLastestReleaseVer </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getVersionsForBuildTARGET">getVersionsForBuild </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectDevDirTARGET">selectDevDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectRelDirTARGET">selectRelDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -83,8 +83,6 @@ main UI class <br>
 <li><b><a href="#initExistingDirsTARGET">initExistingDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#releasePluginVerTARGET">releasePluginVer </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#moveItemFromExistingToReleaseTARGET">moveItemFromExistingToRelease </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#moveItemFromToReleaseToExistingTARGET">moveItemFromToReleaseToExisting </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#sortListsTARGET">sortLists </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#dirChangedTARGET">dirChanged </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#splitVerStringToListTARGET">splitVerStringToList </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -94,10 +92,10 @@ main UI class <br>
 </table></font>
 ####MnsPluginRelease  methods
 <hr width = 50%>
-<h5 id = "getVersionsTARGET"></h5><font color = 464646 size = 3><b>getVersions <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<h5 id = "getLastestReleaseVerTARGET"></h5><font color = 464646 size = 3><b>getLastestReleaseVer <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getVersions(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getLastestReleaseVer(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -107,18 +105,15 @@ main UI class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "updateToReleasedBasedOnSelectedComboItemTARGET"></h5><font color = 464646 size = 3><b>updateToReleasedBasedOnSelectedComboItem <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>'Previous Version' combo box selection changed trigger action.</i><br>
-</font>
+<h5 id = "getVersionsForBuildTARGET"></h5><font color = 464646 size = 3><b>getVersionsForBuild <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateToReleasedBasedOnSelectedComboItem(self, qBtn = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getVersionsForBuild(self, buildDir)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-<li><b>qBtn</b>(<i>str</i>) ; [default: None]</li>
+<li><b>buildDir</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -237,40 +232,6 @@ main UI class <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "moveItemFromExistingToReleaseTARGET"></h5><font color = 464646 size = 3><b>moveItemFromExistingToRelease <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Move an item from 'Existing' column to 'toRelase' culomn trigger action</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>moveItemFromExistingToRelease(self, itemIdx)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>itemIdx</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "moveItemFromToReleaseToExistingTARGET"></h5><font color = 464646 size = 3><b>moveItemFromToReleaseToExisting <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Move an item from 'toRelase' column to 'Existing' culomn trigger action</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>moveItemFromToReleaseToExisting(self, itemIdx)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>itemIdx</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

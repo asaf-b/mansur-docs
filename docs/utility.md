@@ -99,6 +99,21 @@ If so, return it. Else return None. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###connectShapeColorRGB
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectShapeColorRGB(source = None, target = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>source</b>(<i>str</i>) ; [default: None]</li>
+<li><b>target</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###convertAlphaToInt
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -428,6 +443,20 @@ Two main Cases for the mode parameter: <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###readJson
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>readJson(fullPath)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>fullPath</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###readSetteingFromFile
 <font size = 3pt>
 <table>
@@ -482,11 +511,11 @@ Use this function to change any elemnt within a given MnsNameStd object based on
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnNameStdChangeElement(nameStd = "", **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnNameStdChangeElement(nameStd = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
-<li><b>nameStd</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>nameStd</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
@@ -502,6 +531,21 @@ Use this function to change any elemnt within a given MnsNameStd object based on
 <li><b>suffix</b>(<i>str</i>) ; [default: nameStd.suffix] - change suffix</li>
 <li><b>comment</b>(<i>str</i>) ; [default: nameStd.comment] - change comment parameter</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setAttr
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setAttr(attr, value)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>attr</b></li>
+<li><b>value</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -658,6 +702,23 @@ Split a given string object and return a MnsNameStd based on it's structure. <br
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###writeJson
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>writeJson(directory, fileName, data = {}, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>directory</b></li>
+<li><b>fileName</b></li>
+<li><b>data</b>(<i>dict</i>) ; [default: {}]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

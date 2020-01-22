@@ -13,6 +13,28 @@ In case a log doesn't exists it will be automatically created. <br>
 <hr width = 100%>
 ##Defenitions
 <hr width = 100%>
+###getCurrentFunctionName
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentFunctionName()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getPreviousFunctionName
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPreviousFunctionName()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###log
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -37,6 +59,35 @@ An output message is printed into the consule based on the severity. <br>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
 <li><b>svr</b>(<i>int</i>) - set the sevarity of the log message</li>
+<li><b>currentContextRequested</b>(<i>bool</i>) - in case a global context log was called</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###logCurrentFrame
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>logCurrentFrame()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###validateLogRootDirectory
+<font color = #5f5f5f size = 3pt>
+<i>
+Validate log directory existence within the current project folder. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateLogRootDirectory()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (log directory path)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>

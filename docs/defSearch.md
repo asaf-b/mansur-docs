@@ -62,13 +62,6 @@ Main UI Class <br>
 <li>pinnedFilePath</li>
 <li>dirsFilePath</li>
 <li>filesFilePath</li>
-<li>loadedWindows</li>
-<li>packages</li>
-<li>rawLib</li>
-<li>library</li>
-<li>funList</li>
-<li>pinnedFunList</li>
-<li>pinnedFunDict</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>

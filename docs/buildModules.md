@@ -16,23 +16,30 @@
 <li>sidePlaceHolder</li>
 <li>builtGuides</li>
 <li>rigTop</li>
-<li>puppetTopCtrl</li>
 <li>rootGuide</li>
+<li>rootCtrl</li>
 <li>guideControls</li>
 <li>cGuideControls</li>
 <li>pureParent</li>
 <li>moduleTop</li>
 <li>extraSpaces</li>
-<li>buildReturnDict</li>
+<li>pureTops</li>
+<li>spaceSwitchCtrls</li>
+<li>controls</li>
+<li>allControls</li>
+<li>puppetTopCtrl</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#constructTARGET">construct </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#constructSpacesTARGET">constructSpaces </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#deconstructTARGET">deconstruct </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#gatherAllDependeciesTARGET">gatherAllDependecies </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#gatherRelatedCtrlsTARGET">gatherRelatedCtrls </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#gatherRelatedGuidesTARGET">gatherRelatedGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getRigTopTARGET">getRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#reCollectControlsFromLocalsTARGET">reCollectControlsFromLocals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildGuideObjectsTARGET">buildGuideObjects </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#createPuppetRootCtrlTARGET">createPuppetRootCtrl </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#gatherBuildModuleFromRootTARGET">gatherBuildModuleFromRoot </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createGuidesTARGET">createGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildGuidesTARGET">buildGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
@@ -67,10 +74,75 @@
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "deconstructTARGET"></h5><font color = 464646 size = 3><b>deconstruct <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deconstruct(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "gatherAllDependeciesTARGET"></h5><font color = 464646 size = 3><b>gatherAllDependecies <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherAllDependecies(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "gatherRelatedCtrlsTARGET"></h5><font color = 464646 size = 3><b>gatherRelatedCtrls <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherRelatedCtrls(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "gatherRelatedGuidesTARGET"></h5><font color = 464646 size = 3><b>gatherRelatedGuides <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherRelatedGuides(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "getRigTopTARGET"></h5><font color = 464646 size = 3><b>getRigTop <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRigTop(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "reCollectControlsFromLocalsTARGET"></h5><font color = 464646 size = 3><b>reCollectControlsFromLocals <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>reCollectControlsFromLocals(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -88,36 +160,6 @@
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-<li><b>**kwargs</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "createPuppetRootCtrlTARGET"></h5><font color = 464646 size = 3><b>createPuppetRootCtrl <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPuppetRootCtrl(self, rigTop, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>rigTop</b></li>
-<li><b>**kwargs</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "gatherBuildModuleFromRootTARGET"></h5><font color = 464646 size = 3><b>gatherBuildModuleFromRoot <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherBuildModuleFromRoot(self, root = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>root</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
@@ -194,20 +236,32 @@
 <td><ul>
 <ul>
 <li>callerSubClass</li>
+<li>modules</li>
+<li>rigTop</li>
+<li>buildModulesBtns</li>
+<li>puppetBase</li>
+<li>baseGuide</li>
+<li>rootJnt</li>
 <li>loadSettingsWindow</li>
+<li>collectBuildModules</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#cunstructRigSpacesTARGET">cunstructRigSpaces </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setConstructionModeTARGET">setConstructionMode </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setVisChannelsBasedOnCunstructModeTARGET">setVisChannelsBasedOnCunstructMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createNewRigTopTARGET">createNewRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadSettingsWindowTARGET">loadSettingsWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createSubGrpsForRigTopTARGET">createSubGrpsForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createPickerLayoutBaseTARGET">createPickerLayoutBase </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPuppetRootCtrlTARGET">createPuppetRootCtrl </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createPickerProjectionCamTARGET">createPickerProjectionCam </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createPickerCamTARGET">createPickerCam </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createPickerGuideGrpTARGET">createPickerGuideGrp </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createPickerTitleGrpTARGET">createPickerTitleGrp </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createRootGuideTARGET">createRootGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createVisEnumAndConnectTARGET">createVisEnumAndConnect </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#collectBuildModulesTARGET">collectBuildModules </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createSubGroupForRigTopTARGET">createSubGroupForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
 </td>
@@ -215,6 +269,45 @@
 </table></font>
 ####MnsRig  methods
 <hr width = 50%>
+<h5 id = "cunstructRigSpacesTARGET"></h5><font color = 464646 size = 3><b>cunstructRigSpaces <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>cunstructRigSpaces(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setConstructionModeTARGET"></h5><font color = 464646 size = 3><b>setConstructionMode <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setConstructionMode(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setVisChannelsBasedOnCunstructModeTARGET"></h5><font color = 464646 size = 3><b>setVisChannelsBasedOnCunstructMode <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setVisChannelsBasedOnCunstructMode(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "createNewRigTopTARGET"></h5><font color = 464646 size = 3><b>createNewRigTop <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -261,6 +354,21 @@
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerLayoutBase(self, rigTop, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rigTop</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPuppetRootCtrlTARGET"></h5><font color = 464646 size = 3><b>createPuppetRootCtrl <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPuppetRootCtrl(self, rigTop, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -366,6 +474,27 @@
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 <td><ul>
 <li><b>default</b>(<i>int</i>) ; [default: 1]</li>
+</ul></td>
+</tr>
+</table></font>
+<h5 id = "collectBuildModulesTARGET"></h5><font color = 464646 size = 3><b>collectBuildModules <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectBuildModules(self, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+<td><ul>
+<li><b>fromSelection</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>mode</b>(<i>int</i>)</li>
+<li><b>rootObjects</b>(<i>list</i>) ; [default: [' ']]</li>
+<li><b>gatherGuides</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>gatherControls</b>(<i>bool</i>) ; [default: True]</li>
 </ul></td>
 </tr>
 </table></font>

@@ -1,0 +1,2384 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for the Mansur project, including the mansurPlugins library">
+      
+      
+      
+        <meta name="author" content="Assaf Ben Zur">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>UIUtils - Mansur</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#uiutils" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Mansur" class="md-header-nav__button md-logo">
+          
+            <img src="../images/mansur_01.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Mansur
+            </span>
+            <span class="md-header-nav__topic">
+              
+                UIUtils
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Mansur" class="md-nav__button md-logo">
+      
+        <img src="../images/mansur_01.png" width="48" height="48">
+      
+    </a>
+    Mansur
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shelfs/" title="the Mansur Shelfs" class="md-nav__link">
+      the Mansur Shelfs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About Mansur" class="md-nav__link">
+      About Mansur
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Code Refrences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Code Refrences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1">
+      mansur
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        mansur
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-1" type="checkbox" id="nav-5-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-1-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arguments/" title="Arguments" class="md-nav__link">
+      Arguments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../globals/" title="Globals" class="md-nav__link">
+      Globals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../log/" title="Log" class="md-nav__link">
+      Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nodes/" title="Nodes" class="md-nav__link">
+      Nodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prefixSuffix/" title="prefixSuffix" class="md-nav__link">
+      prefixSuffix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settingsGlobals/" title="settingsGlobals" class="md-nav__link">
+      settingsGlobals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../string/" title="String" class="md-nav__link">
+      String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        UIUtils
+      </label>
+    
+    <a href="./" title="UIUtils" class="md-nav__link md-nav__link--active">
+      UIUtils
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defenitions" class="md-nav__link">
+    Defenitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buildformbaseclassforui" class="md-nav__link">
+    buildFormBaseClassForUI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildtabformoduleparentdir" class="md-nav__link">
+    buildTabForModuleParentDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkchannelcommand" class="md-nav__link">
+    checkChannelCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coloverrideblockdeftriggercommand" class="md-nav__link">
+    colOverrideBlockDefTriggerCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coloverridestatechange" class="md-nav__link">
+    colOverrideStateChange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbooleanchk" class="md-nav__link">
+    drawBooleanChk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbuttonandfield" class="md-nav__link">
+    drawButtonAndField
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbuttonandfieldunknown" class="md-nav__link">
+    drawButtonAndFieldUnknown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawchannelcolumnandconnect" class="md-nav__link">
+    drawChannelColumnAndConnect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawchannelcontrol" class="md-nav__link">
+    drawChannelControl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorbox" class="md-nav__link">
+    drawColorBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorbtnandconnect" class="md-nav__link">
+    drawColorBtnAndConnect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorscheme" class="md-nav__link">
+    drawColorScheme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorschemeoverride" class="md-nav__link">
+    drawColorSchemeOverride
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawfloatscroll" class="md-nav__link">
+    drawFloatScroll
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawintspinner" class="md-nav__link">
+    drawIntSpinner
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawmodulebutton" class="md-nav__link">
+    drawModuleButton
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawoptionbox" class="md-nav__link">
+    drawOptionBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawspacesbox" class="md-nav__link">
+    drawSpacesBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolor" class="md-nav__link">
+    getColor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolorarrayfromcolorscheme" class="md-nav__link">
+    getColorArrayFromColorScheme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getobjectscreenspacebyfilmgate" class="md-nav__link">
+    getObjectScreenSpaceByFilmGate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_maya_window" class="md-nav__link">
+    get_maya_window
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listloadcmd" class="md-nav__link">
+    listLoadCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listremovecommand" class="md-nav__link">
+    listRemoveCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadcmd" class="md-nav__link">
+    loadCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_ui_type" class="md-nav__link">
+    load_ui_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbooleandefaultcmd" class="md-nav__link">
+    setBooleanDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setchennelcontroldefaultcmd" class="md-nav__link">
+    setChennelControlDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcolordefaultcmd" class="md-nav__link">
+    setColorDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcolorschemedefaultcmd" class="md-nav__link">
+    setColorSchemeDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfloatdefaultcmd" class="md-nav__link">
+    setFloatDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setintdefaultcmd" class="md-nav__link">
+    setIntDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setlistwidgetdefaultcommand" class="md-nav__link">
+    setListWidgetDefaultCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setotionboxdefaultcmd" class="md-nav__link">
+    setOtionBoxDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setstringdefaultcmd" class="md-nav__link">
+    setStringDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sidecbchangedtriggercommand" class="md-nav__link">
+    sideCBChangedTriggerCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tearoffwindow" class="md-nav__link">
+    tearOffWindow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../utility/" title="Utility" class="md-nav__link">
+      Utility
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2" type="checkbox" id="nav-5-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2">
+      globalUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-2">
+        globalUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-1" type="checkbox" id="nav-5-1-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-2-1">
+      defSearch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-1">
+        defSearch
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../defSearch/" title="defSearch" class="md-nav__link">
+      defSearch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2-2" type="checkbox" id="nav-5-1-2-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2-2">
+      logViewer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-2-2">
+        logViewer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logviewer/" title="Logviewer" class="md-nav__link">
+      Logviewer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dynUI/" title="dynUI" class="md-nav__link">
+      dynUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3" type="checkbox" id="nav-5-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-3">
+      adminUtils
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-3">
+        adminUtils
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-1" type="checkbox" id="nav-5-1-3-1">
+    
+    <label class="md-nav__link" for="nav-5-1-3-1">
+      documentationBuild
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-1">
+        documentationBuild
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docBuildMansur/" title="docBuildMansur" class="md-nav__link">
+      docBuildMansur
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-3-2" type="checkbox" id="nav-5-1-3-2">
+    
+    <label class="md-nav__link" for="nav-5-1-3-2">
+      pluginRelease
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-3-2">
+        pluginRelease
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pluginRelease/" title="pluginRelease" class="md-nav__link">
+      pluginRelease
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4" type="checkbox" id="nav-5-1-4">
+    
+    <label class="md-nav__link" for="nav-5-1-4">
+      block
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-4">
+        block
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-1" type="checkbox" id="nav-5-1-4-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-1">
+      core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-1">
+        core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockUtility/" title="blockUtility" class="md-nav__link">
+      blockUtility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../buildModules/" title="buildModules" class="md-nav__link">
+      buildModules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../controlShapes/" title="controlShapes" class="md-nav__link">
+      controlShapes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2" type="checkbox" id="nav-5-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2">
+      modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-2">
+        modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1" type="checkbox" id="nav-5-1-4-2-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1">
+      dev
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-1-4-2-1">
+        dev
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-1" type="checkbox" id="nav-5-1-4-2-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-1">
+      FKChain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-1">
+        FKChain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_construction/" title="FKChain construction" class="md-nav__link">
+      FKChain construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FKChain_jntStruct/" title="FKChain jntStruct" class="md-nav__link">
+      FKChain jntStruct
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-2" type="checkbox" id="nav-5-1-4-2-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-2">
+      foot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-2">
+        foot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_construction/" title="Foot construction" class="md-nav__link">
+      Foot construction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot_customGuides/" title="foot customGuides" class="md-nav__link">
+      foot customGuides
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-2-1-3" type="checkbox" id="nav-5-1-4-2-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-4-2-1-3">
+      freeControl
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-1-4-2-1-3">
+        freeControl
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../freeControl_construction/" title="freeControl construction" class="md-nav__link">
+      freeControl construction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blockBuildUI/" title="blockBuildUI" class="md-nav__link">
+      blockBuildUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defenitions" class="md-nav__link">
+    Defenitions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buildformbaseclassforui" class="md-nav__link">
+    buildFormBaseClassForUI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildtabformoduleparentdir" class="md-nav__link">
+    buildTabForModuleParentDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkchannelcommand" class="md-nav__link">
+    checkChannelCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coloverrideblockdeftriggercommand" class="md-nav__link">
+    colOverrideBlockDefTriggerCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coloverridestatechange" class="md-nav__link">
+    colOverrideStateChange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbooleanchk" class="md-nav__link">
+    drawBooleanChk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbuttonandfield" class="md-nav__link">
+    drawButtonAndField
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbuttonandfieldunknown" class="md-nav__link">
+    drawButtonAndFieldUnknown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawchannelcolumnandconnect" class="md-nav__link">
+    drawChannelColumnAndConnect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawchannelcontrol" class="md-nav__link">
+    drawChannelControl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorbox" class="md-nav__link">
+    drawColorBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorbtnandconnect" class="md-nav__link">
+    drawColorBtnAndConnect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorscheme" class="md-nav__link">
+    drawColorScheme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawcolorschemeoverride" class="md-nav__link">
+    drawColorSchemeOverride
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawfloatscroll" class="md-nav__link">
+    drawFloatScroll
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawintspinner" class="md-nav__link">
+    drawIntSpinner
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawmodulebutton" class="md-nav__link">
+    drawModuleButton
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawoptionbox" class="md-nav__link">
+    drawOptionBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawspacesbox" class="md-nav__link">
+    drawSpacesBox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolor" class="md-nav__link">
+    getColor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolorarrayfromcolorscheme" class="md-nav__link">
+    getColorArrayFromColorScheme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getobjectscreenspacebyfilmgate" class="md-nav__link">
+    getObjectScreenSpaceByFilmGate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_maya_window" class="md-nav__link">
+    get_maya_window
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listloadcmd" class="md-nav__link">
+    listLoadCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listremovecommand" class="md-nav__link">
+    listRemoveCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadcmd" class="md-nav__link">
+    loadCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_ui_type" class="md-nav__link">
+    load_ui_type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbooleandefaultcmd" class="md-nav__link">
+    setBooleanDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setchennelcontroldefaultcmd" class="md-nav__link">
+    setChennelControlDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcolordefaultcmd" class="md-nav__link">
+    setColorDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcolorschemedefaultcmd" class="md-nav__link">
+    setColorSchemeDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfloatdefaultcmd" class="md-nav__link">
+    setFloatDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setintdefaultcmd" class="md-nav__link">
+    setIntDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setlistwidgetdefaultcommand" class="md-nav__link">
+    setListWidgetDefaultCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setotionboxdefaultcmd" class="md-nav__link">
+    setOtionBoxDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setstringdefaultcmd" class="md-nav__link">
+    setStringDefaultCmd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sidecbchangedtriggercommand" class="md-nav__link">
+    sideCBChangedTriggerCommand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tearoffwindow" class="md-nav__link">
+    tearOffWindow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><body></p>
+<h1 id="uiutils">UIUtils</h1>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur === <br>
+UI Utility function assembly. <br>
+This module holds all UI utility functions as well s any QT dynamic draw functions. <br>
+All UI functions should be held in here for multi-usage of the same UI draw functions. <br>
+ <br>
+This module also holds the QT ui dynamic conversion to '.py' and the 'get_maya_window' function. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%></p>
+<h2 id="defenitions">Defenitions</h2>
+<hr width = 100%>
+
+<h3 id="buildformbaseclassforui">buildFormBaseClassForUI</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildFormBaseClassForUI(script_dir, rel_path)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>baseClass, formClass</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>script_dir</b></li>
+<li><b>rel_path</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="buildtabformoduleparentdir">buildTabForModuleParentDir</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main BLOCK dynamiuc tab builder. <br>
+Builds a tab for a given tab parent including all the neccesary layouts within, returning the main layout that can be inserted with new q items. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildTabForModuleParentDir(modDirName, insertIndex, tabWidget, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>modDirName</b></li>
+<li><b>insertIndex</b></li>
+<li><b>tabWidget</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>modSet</b>(<i>bool</i>)</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="checkchannelcommand">checkChannelCommand</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkChannelCommand(chanBtn,chanCbxs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>chanBtn</b></li>
+<li><b>chanCbxs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="coloverrideblockdeftriggercommand">colOverrideBlockDefTriggerCommand</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>colOverrideBlockDefTriggerCommand(colorOverrideCbx, sideCB, ovverideBtnList)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>colorOverrideCbx</b></li>
+<li><b>sideCB</b></li>
+<li><b>ovverideBtnList</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="coloverridestatechange">colOverrideStateChange</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>colOverrideStateChange(colorOverrideCbx, sideCB, ovverideBtnList)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>colorOverrideCbx</b></li>
+<li><b>sideCB</b></li>
+<li><b>ovverideBtnList</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawbooleanchk">drawBooleanChk</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic check-box UI draw. <br>
+Creates a simple boolean check-box (QCheckBox) as well as a connected 'default' button. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawBooleanChk(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QCheckBox</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawbuttonandfield">drawButtonAndField</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic 'button and field' draw.  <br>
+Draws a deault button, text field and an 'Insert items from scene' button into the given parent layout. <br>
+This function makes all relevant connections between the QItems created- <br>
+- 'Load command' from the QPushButton (insert) to the text field <br>
+- 'Clear' trigger for the text field. <br>
+- 'Set default' from the QPushButton 'default' to the text field. <br>
+These connections are made within in order the return the QLEdit only, with no need to worrie about the 'functionallity' buttons created, only the value within the text field. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawButtonAndField(MnsArgumentObj, layoutParent, alphaLimit = False)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QLEdit</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+<li><b>alphaLimit</b>(<i>bool</i>) ; [default: False]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawbuttonandfieldunknown">drawButtonAndFieldUnknown</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main 'unknown' button and field UI draw. <br>
+In case the MnsArgument.type in question is an unknown type, draw a button and field style item for it. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawButtonAndFieldUnknown(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QLEdit</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawchannelcolumnandconnect">drawChannelColumnAndConnect</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawChannelColumnAndConnect(MnsArgumentObj, channel)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>channel</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawchannelcontrol">drawChannelControl</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawChannelControl(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (all channel cbxs)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawcolorbox">drawColorBox</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic 'draw color box' creation function. <br>
+Will create a new QPushButton with its 'color picker' style display and inserts it into the given layoutParent. <br>
+An automatic connection to the 'getColor' function is made, as well as a 'default' button creation and connection is made. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorBox(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QPushButton</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawcolorbtnandconnect">drawColorBtnAndConnect</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorBtnAndConnect(default, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QPushButton</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>default</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>buttonSize</b>(<i>int</i>) ; [default: 25]</li>
+<li><b>colOverrideCbx</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawcolorscheme">drawColorScheme</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main block 'draw color scheme box' creation function. <br>
+Will create a new QPushButton series with 'color picker's style display and inserts it into the given layoutParent. <br>
+An automatic connection to the 'getColor' function is made, as well as a 'default' button creation and connection is made. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorScheme(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawcolorschemeoverride">drawColorSchemeOverride</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorSchemeOverride(MnsArgumentObj, layoutParent, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>sideCB</b>(<i>str</i>) ; [default: None]</li>
+<li><b>colOverride</b>(<i>bool</i>)</li>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawfloatscroll">drawFloatScroll</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic "Float spinner" UI draw <br>
+Creates a Float QDoubleSpinBox widget, and a default button connected to it. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawFloatScroll(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QDoubleSpinBox</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawintspinner">drawIntSpinner</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic 'int field' field and spinner UI draw. <br>
+Creates an int QSpinBox widget, and a default button connected to it. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawIntSpinner(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QSpinBox</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawmodulebutton">drawModuleButton</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main BLOCK dynamic build module buttom function draw. <br>
+Builds a new QPushButoon for a given module, return the QPushButton created after connecting it to the given 'connectFunction'. <br>
+The QPush buttom created will then to be inserted into a layout by the caller function. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawModuleButton(MnsBuildModuleObj, connectFunction)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> QPushButton</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsBuildModuleObj</b></li>
+<li><b>connectFunction</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawoptionbox">drawOptionBox</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic 'option box' draw. <br>
+Drawing a new ob based on parameters within the MnsArgument object passed in. <br>
+The QComboBox is inserted into the parent layout passed in. <br>
+A default button and connection is made. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawOptionBox(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QComboBox</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="drawspacesbox">drawSpacesBox</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main dynamic 'draw spaces box' creation function. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawSpacesBox(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QListWidget</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getcolor">getColor</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Simple 'get color for a color PButton'. <br>
+Creates a new QColorDialog asking the user for a color choice. <br>
+When color selected sets the caller QPushButton color to the selected color <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getColor(btn, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>btn</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>colOverrideCbx</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getcolorarrayfromcolorscheme">getColorArrayFromColorScheme</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getColorArrayFromColorScheme(side, colorScheme)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b></li>
+<li><b>colorScheme</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getobjectscreenspacebyfilmgate">getObjectScreenSpaceByFilmGate</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getObjectScreenSpaceByFilmGate(objectProj, cam)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>objectProj</b></li>
+<li><b>cam</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="get_maya_window">get_maya_window</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main maya window get for a global UI parent <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>get_maya_window()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>qtWindow (main maya window as a qt window)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="listloadcmd">listLoadCmd</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>listLoadCmd(QListWidget)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>QListWidget</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="listremovecommand">listRemoveCommand</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>listRemoveCommand(QListWidget)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>QListWidget</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="loadcmd">loadCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Main text field 'load from scene' trigger command. <br>
+This command will update the given QLEdit with members of the maya scene when triggered. <br>
+Three main cases: <br>
+1. Nothing is selected - if the field is empty- do nothing, else clear the field. <br>
+2. objects are selected, without any CB selection - load the object names in, seperated by commas. <br>
+3. Objects are selected and there is a CB selection as well - load all objects and chnnels in a 'object.channel' format, seperated by commas. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadCmd(LEdit)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>LEdit</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="load_ui_type">load_ui_type</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This function converts a '.ui' file into a '.py' file live. <br>
+This means that all UI's are derived from a QT designer ui files that are converted directly to form the UI. <br>
+This keeps a live connection between the '.ui' file and the actul UI in maya. Meaning that any edit or a change to the UI base needs to be done only from the QT designer, without any further action by the user. <br>
+It reruns a baseClass and a formClass to be used when creating any UI. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>load_ui_type(ui_file)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>baseClass, formClass</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ui_file</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setbooleandefaultcmd">setBooleanDefaultCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+'Set default' trigger for a QCheckBox item. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setBooleanDefaultCmd(cbx,default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>cbx</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setchennelcontroldefaultcmd">setChennelControlDefaultCmd</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setChennelControlDefaultCmd(cbxList, MnsArgumentObj)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>cbxList</b></li>
+<li><b>MnsArgumentObj</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setcolordefaultcmd">setColorDefaultCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+A 'set color back to default command. <br>
+A command to be triggered by an outside 'default' button, or when initializing to set the specified QPushButton color back to it's default value. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setColorDefaultCmd(btn, colorDef)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>btn</b></li>
+<li><b>colorDef</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setcolorschemedefaultcmd">setColorSchemeDefaultCmd</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setColorSchemeDefaultCmd(btnList, default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>btnList</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setfloatdefaultcmd">setFloatDefaultCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+'Set default' trigger for a QDoubleSpinBox item. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setFloatDefaultCmd(spinner,default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>spinner</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setintdefaultcmd">setIntDefaultCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+'Set deafult' command trigget for an int QSpinBox. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setIntDefaultCmd(spinner,default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>spinner</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setlistwidgetdefaultcommand">setListWidgetDefaultCommand</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setListWidgetDefaultCommand(QListWidget, default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>QListWidget</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setotionboxdefaultcmd">setOtionBoxDefaultCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+A 'set default' command to be triggered for a combo box item. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setOtionBoxDefaultCmd(cbox, default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>cbox</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setstringdefaultcmd">setStringDefaultCmd</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+'Set default' command trigger from a text field <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setStringDefaultCmd(LEdit,default)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>LEdit</b></li>
+<li><b>default</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="sidecbchangedtriggercommand">sideCBChangedTriggerCommand</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sideCBChangedTriggerCommand(colorOverrideCbx, sideCB, ovverideBtnList, rigTop, ignoreOvverideCheckbox = False)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>colorOverrideCbx</b></li>
+<li><b>sideCB</b></li>
+<li><b>ovverideBtnList</b></li>
+<li><b>rigTop</b></li>
+<li><b>ignoreOvverideCheckbox</b>(<i>bool</i>) ; [default: False]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="tearoffwindow">tearOffWindow</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>tearOffWindow(name, title, width, height, cameraToView)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>name</b></li>
+<li><b>title</b></li>
+<li><b>width</b></li>
+<li><b>height</b></li>
+<li><b>cameraToView</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../string/" title="String" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                String
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../utility/" title="Utility" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Utility
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
