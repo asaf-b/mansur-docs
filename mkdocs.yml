@@ -1,0 +1,64 @@
+site_name: Mansur
+site_description: 'Documentation for the Mansur project, including the mansurPlugins library'
+site_author: 'Assaf Ben Zur'
+
+
+markdown_extensions:
+      - fontawesome_markdown
+theme: 
+  name: material
+  logo: 'images/mansur_01.png'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+
+plugins:
+    - search
+nav:
+    - index.md
+    - Getting Started:
+      - installation.md
+    - shelfs.md
+    - about.md
+    - Code Refrences:
+      - mansur:
+        - core:
+          - arguments.md
+          - globals.md
+          - log.md
+          - nodes.md
+          - prefixSuffix.md
+          - settingsGlobals.md
+          - string.md
+          - UIUtils.md
+          - utility.md
+        - globalUtils:
+          - defSearch:
+            - defSearch.md
+          - logViewer:
+            - logviewer.md
+          - dynUI.md
+        - adminUtils:
+          - documentationBuild:
+            - docBuildMansur.md
+          - pluginRelease:
+            - pluginRelease.md
+        - block:
+          - core:
+            - blockUtility.md
+            - buildModules.md
+            - controlShapes.md
+          - modules:
+            - dev:
+              - FKChain:
+                - FKChain_construction.md
+                - FKChain_jntStruct.md
+              - foot:
+                - foot_construction.md
+                - foot_customGuides.md
+              - freeControl:
+                - freeControl_construction.md
+          - blockBuildUI.md
+          
+extra_css:
+    - extra.css
