@@ -378,8 +378,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getcurrentfunctionname" class="md-nav__link">
+    getCurrentFunctionName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpreviousfunctionname" class="md-nav__link">
+    getPreviousFunctionName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#log_1" class="md-nav__link">
     log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logcurrentframe" class="md-nav__link">
+    logCurrentFrame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatelogrootdirectory" class="md-nav__link">
+    validateLogRootDirectory
   </a>
   
 </li>
@@ -823,20 +851,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../FKChain_construction/" title="FKChain construction" class="md-nav__link">
-      FKChain construction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../FKChain_jntStruct/" title="FKChain jntStruct" class="md-nav__link">
-      FKChain jntStruct
+    <a href="../FKChain/" title="FKChain" class="md-nav__link">
+      FKChain
     </a>
   </li>
 
@@ -919,8 +935,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../freeControl_construction/" title="freeControl construction" class="md-nav__link">
-      freeControl construction
+    <a href="../freeControl/" title="freeControl" class="md-nav__link">
+      freeControl
     </a>
   </li>
 
@@ -932,6 +948,42 @@
         
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-4-3" type="checkbox" id="nav-5-1-4-3">
+    
+    <label class="md-nav__link" for="nav-5-1-4-3">
+      picker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-4-3">
+        picker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../picker/" title="Picker" class="md-nav__link">
+      Picker
+    </a>
   </li>
 
         
@@ -996,8 +1048,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getcurrentfunctionname" class="md-nav__link">
+    getCurrentFunctionName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpreviousfunctionname" class="md-nav__link">
+    getPreviousFunctionName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#log_1" class="md-nav__link">
     log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logcurrentframe" class="md-nav__link">
+    logCurrentFrame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatelogrootdirectory" class="md-nav__link">
+    validateLogRootDirectory
   </a>
   
 </li>
@@ -1040,6 +1120,28 @@ In case a log doesn't exists it will be automatically created. <br>
 <h2 id="defenitions">Defenitions</h2>
 <hr width = 100%>
 
+<h3 id="getcurrentfunctionname">getCurrentFunctionName</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentFunctionName()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getpreviousfunctionname">getPreviousFunctionName</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPreviousFunctionName()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="log_1">log</h3>
 <p><font color = #5f5f5f size = 3pt>
 <i>
@@ -1064,7 +1166,36 @@ An output message is printed into the consule based on the severity. <br>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
 <li><b>svr</b>(<i>int</i>) - set the sevarity of the log message</li>
+<li><b>currentContextRequested</b>(<i>bool</i>) - in case a global context log was called</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="logcurrentframe">logCurrentFrame</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>logCurrentFrame()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="validatelogrootdirectory">validateLogRootDirectory</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Validate log directory existence within the current project folder. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateLogRootDirectory()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (log directory path)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font></p>
                 
