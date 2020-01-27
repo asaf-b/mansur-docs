@@ -5,15 +5,19 @@ site_author: 'Assaf Ben Zur'
 
 markdown_extensions:
       - fontawesome_markdown
+      - admonition
 theme: 
   name: material
   logo: 'images/mansur_01.png'
+  icon: 'images/mansur_01.png'
   favicon: 'images/mansur_01.png'
   palette:
-    primary: 'blue-grey'
+    primary: 'indigo'
     accent: 'indigo'
   feature:
       tabs: true
+  text: 'Ubuntu'
+  code: 'Ubuntu Mono'
 plugins:
     - search
 extra:
@@ -31,14 +35,12 @@ extra:
     
 nav:
     - index.md
-    - Getting Started:
-      - installation.md
     - About:
       - about.md
+    - Getting Started:
+      - installation.md
     - Support-Us:
-      - supportUs.md
-    - Developers Guide:
-      - devGuide.md
+      - Support-Us.md
     - Documentation:
       - mansur:
         - core:
