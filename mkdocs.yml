@@ -8,19 +8,38 @@ markdown_extensions:
 theme: 
   name: material
   logo: 'images/mansur_01.png'
+  favicon: 'images/mansur_01.png'
   palette:
-    primary: 'indigo'
+    primary: 'blue-grey'
     accent: 'indigo'
-
+  feature:
+      tabs: true
 plugins:
     - search
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/asaf-b'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ'
+    - type: 'twitter'
+      link: 'https://twitter.com/mansurRig'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/asaf-ben-zur/'
+    - type: 'imdb'
+      link: 'https://www.imdb.com/name/nm8262040/?ref_=nv_sr_3'
+    
 nav:
     - index.md
     - Getting Started:
       - installation.md
-    - shelfs.md
-    - about.md
-    - Code Refrences:
+    - About:
+      - about.md
+    - Support-Us:
+      - supportUs.md
+    - Developers Guide:
+      - devGuide.md
+    - Documentation:
       - mansur:
         - core:
           - arguments.md
@@ -62,3 +81,4 @@ nav:
           - blockBuildUI.md
 extra_css:
     - extra.css
+
