@@ -8,12 +8,12 @@ markdown_extensions:
       - admonition
 theme: 
   name: material
-  logo: 'images/mansur_01.png'
-  icon: 'images/mansur_01.png'
-  favicon: 'images/mansur_01.png'
+  logo: 'images/mansur_logo_noText.png'
+  icon: 'images/mansur_logo_noText.png'
+  favicon: 'images/mansur_logo_noText.png'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'grey'
+    accent: 'grey'
   feature:
       tabs: true
   text: 'Ubuntu'

@@ -1,4 +1,4 @@
-![logo](images/mansur_wText_01_small.png) 
+![logo](images/textOnly_black.png) 
 
 <hr></hr>
 My name is Asaf Ben Zur and I'm a 3D Rigger & Developer for 3D Animation.

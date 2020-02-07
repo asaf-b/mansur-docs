@@ -1,5 +1,5 @@
 #
-<img src="images/textOnly_black.png" width="250"/>
+<img src="images/mansur_logo_blackText.png" width="350"/>
 <hr>
 <font color = #5f5f5f size = 5pt>
 Welcome to Mansur's documentaion page !
