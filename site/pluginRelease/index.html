@@ -1283,7 +1283,7 @@ Used to access information in a clean manner. <br>
 <h3 id="mnspluginrelease-class">MnsPluginRelease [Class]</h3>
 <p><font color = #5f5f5f size = 3pt>
 <i>
-main UI class <br>
+pluginRelease UI class <br>
 </i>
 <br>
 </font>
@@ -1300,12 +1300,12 @@ main UI class <br>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
-<li><b><a href="#getLastestReleaseVerTARGET">getLastestReleaseVer </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#getVersionsForBuildTARGET">getVersionsForBuild </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectDevDirTARGET">selectDevDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectRelDirTARGET">selectRelDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getNewVerStringTARGET">getNewVerString </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getVersionsForBuildTARGET">getVersionsForBuild </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getLastestReleaseVerTARGET">getLastestReleaseVer </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initExistingDirsTARGET">initExistingDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#releasePluginVerTARGET">releasePluginVer </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -1318,33 +1318,6 @@ main UI class <br>
 </table></font></p>
 <h4 id="mnspluginrelease-methods">MnsPluginRelease  methods</h4>
 <p><hr width = 50%>
-<h5 id = "getLastestReleaseVerTARGET"></h5><font color = 464646 size = 3><b>getLastestReleaseVer <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getLastestReleaseVer(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "getVersionsForBuildTARGET"></h5><font color = 464646 size = 3><b>getVersionsForBuild <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getVersionsForBuild(self, buildDir)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>buildDir</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
 <h5 id = "selectDevDirTARGET"></h5><font color = 464646 size = 3><b>selectDevDir <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Change dev directory trigger action.</i><br>
@@ -1405,6 +1378,39 @@ main UI class <br>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getNewVerString(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (new version id as string)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getVersionsForBuildTARGET"></h5><font color = 464646 size = 3><b>getVersionsForBuild <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Get all valid maya versions for the plugin build directory passed.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getVersionsForBuild(self, buildDir)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (compatibleVersions)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>buildDir</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getLastestReleaseVerTARGET"></h5><font color = 464646 size = 3><b>getLastestReleaseVer <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Get the latest version for the build directory</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getLastestReleaseVer(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
@@ -1503,7 +1509,7 @@ main UI class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitVerStringToList(self, versionString)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (versionString)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
