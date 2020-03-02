@@ -37,6 +37,8 @@ These class members will dectate any behavior derived from an actual function ob
 <li>comment</li>
 <li>ob</li>
 <li>side</li>
+<li>pathMode</li>
+<li>pathFileTypes</li>
 <li>blockCreationOnly</li>
 <li>jntStructMember</li>
 </ul>

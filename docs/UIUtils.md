@@ -144,6 +144,20 @@ This module also holds the QT ui dynamic conversion to '.py' and the 'get_maya_w
 <hr width = 100%>
 ##Defenitions
 <hr width = 100%>
+###acquireExternalWindow
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>acquireExternalWindow(UIName = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>UIName</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###buildFormBaseClassForUI
 <font size = 3pt>
 <table>
@@ -227,6 +241,27 @@ Builds a tab for a given tab parent including all the neccesary layouts within, 
 <li><b>colorOverrideCbx</b></li>
 <li><b>sideCB</b></li>
 <li><b>ovverideBtnList</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###deleteAllLayoutItems
+<font color = #5f5f5f size = 3pt>
+<i>
+A method to delete all widgets/object from a given layout <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteAllLayoutItems(layout, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>layout</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -512,6 +547,27 @@ A default button and connection is made. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###drawPathField
+<font color = #5f5f5f size = 3pt>
+<i>
+Main Path row draw <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawPathField(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QLEdit</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###drawPrimaryButton
 <font size = 3pt>
 <table>
@@ -600,6 +656,22 @@ When color selected sets the caller QPushButton color to the selected color <br>
 <td><ul>
 <li><b>objectProj</b></li>
 <li><b>cam</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getPathCommand
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPathCommand(LEdit, mode = 0, fileTypes = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>LEdit</b></li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>fileTypes</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

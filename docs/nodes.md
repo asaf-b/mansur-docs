@@ -121,6 +121,29 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###choiceNode
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>choiceNode(inputs = [], output = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputs</b>(<i>list</i>) ; [default: []]</li>
+<li><b>output</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: choice] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###conditionNode
 <font size = 3pt>
 <table>
@@ -179,6 +202,28 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###imagePlaneNode
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>imagePlaneNode(camera = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>camera</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: imagePlane] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###mdNode
 <font size = 3pt>
 <table>
@@ -199,6 +244,30 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>operation</b>(<i>int</i>) ; [default: 1]</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mdlNode
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mdlNode(input1 = None, input2 = None, output = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>input1</b>(<i>str</i>) ; [default: None]</li>
+<li><b>input2</b>(<i>str</i>) ; [default: None]</li>
+<li><b>output</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: multDoubleLinear] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
 </ul></td>
 </tr>
@@ -294,6 +363,45 @@ Creates an mnsBuildTransformsCurveNode node based on specified parameters and ou
 <li><b>camera</b>(<i>str</i>)</li>
 <li><b>widthInput</b>(<i>str</i>)</li>
 <li><b>heightInput</b>(<i>str</i>)</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mnsIKSolver
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsIKSolver(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: ikSolver] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>blend</b>(<i>float</i>)</li>
+<li><b>roll</b>(<i>float</i>)</li>
+<li><b>slide</b>(<i>float</i>)</li>
+<li><b>softness</b>(<i>float</i>)</li>
+<li><b>stretchLimit</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>aimAxis</b>(<i>int</i>) ; [default: 1] - Node's 'aimAxis' attribute</li>
+<li><b>upAxis</b>(<i>int</i>) ; [default: 2] - Node's 'upAxis' attribute</li>
+<li><b>boneLengthA</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>boneLengthB</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>rootPos</b>(<i>str</i>)</li>
+<li><b>midPos</b>(<i>str</i>)</li>
+<li><b>endPos</b>(<i>str</i>)</li>
+<li><b>limbRoot</b>(<i>str</i>)</li>
+<li><b>ikHandle</b>(<i>str</i>)</li>
+<li><b>poleVector</b>(<i>str</i>)</li>
+<li><b>outputRoot</b>(<i>str</i>)</li>
+<li><b>outputMid</b>(<i>str</i>)</li>
+<li><b>outputEnd</b>(<i>str</i>)</li>
 </ul></td>
 </tr>
 </table></font>
