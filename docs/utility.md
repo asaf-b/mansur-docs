@@ -230,6 +230,25 @@ A simple shpe children name test of an object (after creation) and a renaming th
 <li><b>createBlkClassID</b>(<i>bool</i>)</li>
 <li><b>createBlkCtrlTypeID</b>(<i>bool</i>)</li>
 <li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
+<li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createOffsetGroup
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetGroup(transformObject, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transformObject</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>type</b>(<i>str</i>) ; [default: offsetGrp]</li>
 </ul></td>
 </tr>
 </table></font>
@@ -248,6 +267,21 @@ A delete file global function that includes a pre-defined log write. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>file</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###distBetween
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>distBetween(transformA = None, transformB = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transformA</b>(<i>str</i>) ; [default: None]</li>
+<li><b>transformB</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -355,6 +389,27 @@ Get the top level parent for a given object. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>path</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###jointOrientToRotation
+<font color = #5f5f5f size = 3pt>
+<i>
+Transfer all jointOrient attributes for the jnt hirerchy to rotations. <br>
+Essentially bake the joint orient attributes for the joints. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>jointOrientToRotation(topNode = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>topNode</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -522,6 +577,7 @@ Use this function to change any elemnt within a given MnsNameStd object based on
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
 <li><b>autoRename</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>bodyPattern</b>(<i>str</i>) ; [default: None]</li>
 <li><b>node</b>(<i>str</i>) ; [default: nameStd.node] - change node parameter</li>
 <li><b>side</b>(<i>str</i>) ; [default: nameStd.side] - change side parameter</li>
 <li><b>body</b>(<i>str</i>) ; [default: nameStd.body] - change body parameter</li>
@@ -719,6 +775,26 @@ Split a given string object and return a MnsNameStd based on it's structure. <br
 <li><b>fileName</b></li>
 <li><b>data</b>(<i>dict</i>) ; [default: {}]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###zeroJointOrient
+<font color = #5f5f5f size = 3pt>
+<i>
+Zero all jointOrient attributes for the jnt hirerchy to rotations. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>zeroJointOrient(topNode = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>topNode</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
