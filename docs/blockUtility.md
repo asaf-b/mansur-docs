@@ -1582,7 +1582,6 @@ This method is used to delete all 'Authority' from the passsed in slave, if ther
 <i>
 This method will remove the corresponding "module vis" channel from the given puppet base control. <br>
    This method is used when a 'partial deconstruction' is initiated, keeping only relevant vis channels in place, removing the 'deconstructed' modules vis channels. <br>
-   12f <br>
 </i>
 <br>
 </font>
