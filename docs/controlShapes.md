@@ -132,6 +132,9 @@ The default color is white when used as standalone, and based on the rig's globa
 <li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
 <li><b>customParentTransform</b>(<i>str</i>)</li>
 <li><b>skipColor</b>(<i>bool</i>)</li>
+<li><b>createOffsetGrp</b>(<i>bool</i>)</li>
+<li><b>createSpaceSwitchGroup</b>(<i>bool</i>)</li>
+<li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
 <li><b>controlShape</b>(<i>str</i>) ; [default: circle] - Control's NURBS shape</li>
 <li><b>scale</b>(<i>float</i>) ; [default: 1.0] - Ctrl scale. Relative to global settings.</li>
 <li><b>color</b>(<i>tuple</i>) ; [default: (1.0, 1.0, 1.0)] - Shape's color</li>
