@@ -41,7 +41,7 @@ nav:
       - installation.md
     - Support-Us:
       - Support-Us.md
-    - Documentation:
+    - Code Documentation:
       - mansur:
         - core:
           - arguments.md
@@ -73,13 +73,13 @@ nav:
             - dev:
               - FKChain:
                 - FKChain.md
-              - foot:
-                - foot_construction.md
-                - foot_customGuides.md
               - freeControl:
                 - freeControl.md
+              - limb:
+                - limb.md
           - picker:
             - picker.md
+            - plgSettings.md
           - blockBuildUI.md
 extra_css:
     - extra.css
