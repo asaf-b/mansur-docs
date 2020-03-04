@@ -1,6 +1,21 @@
 <body>
 #buildModules
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur === <br>
+This is the core BLOCK Build-Modules class library. <br>
+This package contains the three main classes for BLOCK: <br>
+- MnsBuildModuleBtn <br>
+- MnsRig <br>
+- MnsBuildModule <br>
+ <br>
+Most core function are defined within the classes, although any external functionality is maintained in 'blockUtility' py module. <br>
+The objective of these classes are mainly effeciant data gathering, constructing and deconstructing modules within a rig group. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Classes
 <hr width = 100%>
 <h5 id = "MnsBuildModule TARGET"></h5>

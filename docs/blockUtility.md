@@ -1,6 +1,16 @@
 <body>
 #blockUtility
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur === <br>
+BLOCK Core Utility Library. <br>
+This library contains all utility methods used primarily by BLOCK. <br>
+The objective of this library is mainting most Block-Core abilities external and independent. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###addDefaultAttrsToPlg
