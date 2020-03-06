@@ -70,6 +70,21 @@ Exceptions: <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###checkFunctionRedundencyForPackage
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkFunctionRedundencyForPackage(package, printRedundentOnly = True)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>package</b></li>
+<li><b>printRedundentOnly</b>(<i>bool</i>) ; [default: True]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###checkIfObjExistsAndSet
 <font color = #5f5f5f size = 3pt>
 <i>

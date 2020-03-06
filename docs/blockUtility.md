@@ -105,6 +105,29 @@ This method will be called from a rig construction. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###collectCtrlRelatives
+<font color = #5f5f5f size = 3pt>
+<i>
+Collect ctrls based on given state: <br>
+0: All <br>
+1: Modules <br>
+2: Selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrlRelatives(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###collectCtrls
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -151,6 +174,26 @@ Based on the oprional arguments passed in, collect all matching related guides t
 <li><b>getCustomGuides</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>allAsSparse</b>(<i>bool</i>)</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###collectModuleControls
+<font color = #5f5f5f size = 3pt>
+<i>
+Collect all related controls for the given module. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleControls(moduleTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>moduleTop</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -380,6 +423,26 @@ Atempt to toggle between a selection "control" and "PLG" if possible. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###deleteDefaultsForCtrl
+<font color = #5f5f5f size = 3pt>
+<i>
+Delete all set custom attributes for the given ctrl. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteDefaultsForCtrl(ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###deletePoseForGuides
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -416,6 +479,29 @@ This method will filter and delete the rigTops' puppet curves title. <br>
 <td><ul>
 <li><b>rigTop</b></li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###deleteRigDefaults
+<font color = #5f5f5f size = 3pt>
+<i>
+Load controls predefined and custom defaults: <br>
+0: All <br>
+1: Modules <br>
+2: Selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteRigDefaults(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -541,6 +627,62 @@ Filter all pre-defined settings to their corresponding gathering methods, and re
 <td><ul>
 <li><b>fileSettings</b></li>
 <li><b>node</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###gatherAllControlsCustomDefaults
+<font color = #5f5f5f size = 3pt>
+<i>
+Gather custom defaults for all ctrls within the given rig. <br>
+This method is used on rig deconstruction, to store all set default values, in order to restore them on construction. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherAllControlsCustomDefaults(rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (All rig custom defaults)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###gatherCustomDefaultDictForCtrl
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherCustomDefaultDictForCtrl(ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (Custom Defaults Dict)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###gatherModuleCustomDefaults
+<font color = #5f5f5f size = 3pt>
+<i>
+Gather custom defaults for all ctrls within the given module. <br>
+This method is used on rig deconstruction, to store all set default values, in order to restore them on construction. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherModuleCustomDefaults(moduleTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (module custom defaults)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>moduleTop</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1307,6 +1449,26 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 </tr>
 </table></font>
 <hr width = 100%>
+###loadDefaultsForCtrl
+<font color = #5f5f5f size = 3pt>
+<i>
+Load all default attributes for the given control, taking mnsDefaults (custom) into acount <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadDefaultsForCtrl(ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###loadPerspCam
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1356,6 +1518,29 @@ Block's load pose wrapper. <br>
 <td><ul>
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
 <li><b>poseSet</b>(<i>str</i>) ; [default: "T"]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###loadRigDefaults
+<font color = #5f5f5f size = 3pt>
+<i>
+Load controls predefined and custom defaults: <br>
+0: All <br>
+1: Modules <br>
+2: Selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadRigDefaults(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1609,6 +1794,26 @@ This method will remove the corresponding "module vis" channel from the given pu
 </tr>
 </table></font>
 <hr width = 100%>
+###resetControls
+<font color = #5f5f5f size = 3pt>
+<i>
+reset all keyable attributes to default value. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetControls(controls=[])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>controls</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###saveLoadPose
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1696,6 +1901,49 @@ Attempt to collect the passed in node's color (based on its type), and set it if
 <li><b>ctrl</b></li>
 <li><b>rigTop</b></li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setCurrentStateAsDefaultForCtrl
+<font color = #5f5f5f size = 3pt>
+<i>
+Set custom defaults for keyable attributes for the given control, based on it's current state. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setCurrentStateAsDefaultForCtrl(ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setRigDefaults
+<font color = #5f5f5f size = 3pt>
+<i>
+Set controls custom defaults based on given state: <br>
+0: All <br>
+1: Modules <br>
+2: Selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRigDefaults(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

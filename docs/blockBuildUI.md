@@ -27,6 +27,7 @@
 <li><b><a href="#fixModulePathForRigTopTARGET">fixModulePathForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#gatherAdditionalModulePathsTARGET">gatherAdditionalModulePaths </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getConstructModeTARGET">getConstructMode </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getDefaultsModeTARGET">getDefaultsMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initViewTARGET">initView </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadRigSettingsTARGET">loadRigSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -148,6 +149,19 @@
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getConstructMode(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getDefaultsModeTARGET"></h5><font color = 464646 size = 3><b>getDefaultsMode <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getDefaultsMode(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
