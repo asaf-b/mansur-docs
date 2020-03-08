@@ -56,10 +56,16 @@ Exceptions: <br>
 </table></font>
 <hr width = 100%>
 ###addBlockClasIDToObj
+<font color = #5f5f5f size = 3pt>
+<i>
+Add a 'blkClassId' Attribute to the given input. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addBlockClasIDToObj(objectA, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyAttribute ('blkClassID')</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -71,6 +77,16 @@ Exceptions: <br>
 </table></font>
 <hr width = 100%>
 ###checkFunctionRedundencyForPackage
+<font color = #5f5f5f size = 3pt>
+<i>
+Check for any method redundency within the given python package. <br>
+Loop through the entire code libarary, and for every method, check whether it is being called anywhere. <br>
+In case the tested method isn't called once throught the entire code libarary, it is being flagged as redundent. <br>
+NO ACTION IS PERFORMED. This is a query only method. <br>
+This method doesn't return anything, it will only print the processed results in the command window. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkFunctionRedundencyForPackage(package, printRedundentOnly = True)</td></tr>
@@ -170,6 +186,12 @@ Recursive. Convert an Int input into an Alpha ID. Infinite. <br>
 </table></font>
 <hr width = 100%>
 ###convertNodeToNameStd
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to convert a given node into a MnsNameStd object. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertNodeToNameStd(node)</td></tr>
@@ -251,10 +273,16 @@ A simple shpe children name test of an object (after creation) and a renaming th
 </table></font>
 <hr width = 100%>
 ###createOffsetGroup
+<font color = #5f5f5f size = 3pt>
+<i>
+For the given transform, create a predefined offset group transform parent. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetGroup(transformObject, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (offsetGrp)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transformObject</b></li>
@@ -289,10 +317,16 @@ A delete file global function that includes a pre-defined log write. <br>
 </table></font>
 <hr width = 100%>
 ###distBetween
+<font color = #5f5f5f size = 3pt>
+<i>
+Measure the distance between to maya transforms. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>distBetween(transformA = None, transformB = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>float (distance)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transformA</b>(<i>str</i>) ; [default: None]</li>
@@ -358,10 +392,16 @@ Get the top level parent for a given object. <br>
 </table></font>
 <hr width = 100%>
 ###getSideFromNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to collect the given input's side. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSideFromNode(node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (side)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>node</b></li>
@@ -372,10 +412,16 @@ Get the top level parent for a given object. <br>
 </table></font>
 <hr width = 100%>
 ###getTopParentForObj
+<font color = #5f5f5f size = 3pt>
+<i>
+Recursively attempt to fet the top node of the maya heirarchy, from the given input upwards. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getTopParentForObj(obj)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Top Parent)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
@@ -386,10 +432,16 @@ Get the top level parent for a given object. <br>
 </table></font>
 <hr width = 100%>
 ###getTopParentForSel
+<font color = #5f5f5f size = 3pt>
+<i>
+get the top node of the current selected object's maya heirarchy. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getTopParentForSel()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Top Parent)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -397,10 +449,16 @@ Get the top level parent for a given object. <br>
 </table></font>
 <hr width = 100%>
 ###importModuleFromPath
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to import the given path as a python package into the global scope. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importModuleFromPath(path)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>pythonPkg</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>path</b></li>
@@ -432,6 +490,13 @@ Essentially bake the joint orient attributes for the joints. <br>
 </table></font>
 <hr width = 100%>
 ###lockAndHideAllTransforms
+<font color = #5f5f5f size = 3pt>
+<i>
+Lock and hide all of the given node's attributes. <br>
+Override flags can be inserted to skip requested channels. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lockAndHideAllTransforms(node = None, **kwargs)</td></tr>
@@ -458,6 +523,12 @@ Essentially bake the joint orient attributes for the joints. <br>
 </table></font>
 <hr width = 100%>
 ###lockAndHideTransforms
+<font color = #5f5f5f size = 3pt>
+<i>
+Based on the given flags, lock/unlock, hide/unhide attributes for the given node. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lockAndHideTransforms(node = None, **kwargs)</td></tr>
@@ -514,10 +585,16 @@ Two main Cases for the mode parameter: <br>
 </table></font>
 <hr width = 100%>
 ###readJson
+<font color = #5f5f5f size = 3pt>
+<i>
+Read the input json path into formatted python variables. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>readJson(fullPath)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>FormattedPythonJson</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>fullPath</b></li>
@@ -528,10 +605,16 @@ Two main Cases for the mode parameter: <br>
 </table></font>
 <hr width = 100%>
 ###readSetteingFromFile
+<font color = #5f5f5f size = 3pt>
+<i>
+Read mns setting from a given file and collect into a dict. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>readSetteingFromFile(settingsPath)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (arguments)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>settingsPath</b></li>
@@ -542,10 +625,16 @@ Two main Cases for the mode parameter: <br>
 </table></font>
 <hr width = 100%>
 ###returnIndexFromSideDict
+<font color = #5f5f5f size = 3pt>
+<i>
+Return the corresponding index from the pre-defined input dictionary, for the given input elenment. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnIndexFromSideDict(dict, searchElement)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>int (index)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>dict</b></li>
@@ -606,6 +695,16 @@ Use this function to change any elemnt within a given MnsNameStd object based on
 </table></font>
 <hr width = 100%>
 ###setAttr
+<font color = #5f5f5f size = 3pt>
+<i>
+mns set attr. <br>
+Simple method to set attributes.  <br>
+two cases: <br>
+1. attribute isn't locked - set the value <br>
+2. attribute is locked - unlock the attribute, set it's value, and re-lock the attribute. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setAttr(attr, value)</td></tr>
@@ -667,10 +766,16 @@ Change the shape color override to RGB type, and set to the input value RGB <br>
 </table></font>
 <hr width = 100%>
 ###sortNameStdArrayByID
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to sort the given array based on it's content ID's. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sortNameStdArrayByID(nameStdArray)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (sorted list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>nameStdArray</b></li>
@@ -701,10 +806,16 @@ Split a 'dateTime' string to a major/minor/patch/timestemp list <br>
 </table></font>
 <hr width = 100%>
 ###splitEnumAttrToChannelControlList
+<font color = #5f5f5f size = 3pt>
+<i>
+Split a pre-defined 'channel-control' enum attribute into a formatted python dict. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumAttrToChannelControlList(enumAttrName, node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (formatted dictionary)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>enumAttrName</b></li>
@@ -719,7 +830,7 @@ Split a 'dateTime' string to a major/minor/patch/timestemp list <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumAttrToColorSchemeFloatTupleList(enumAttrName, node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (formatted list of tuples)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>enumAttrName</b></li>
@@ -731,10 +842,16 @@ Split a 'dateTime' string to a major/minor/patch/timestemp list <br>
 </table></font>
 <hr width = 100%>
 ###splitEnumToStringList
+<font color = #5f5f5f size = 3pt>
+<i>
+Split the given enum attribute is a formated python list. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumToStringList(enumAttrName, node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (formated list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>enumAttrName</b></li>
@@ -766,10 +883,16 @@ Split a given string object and return a MnsNameStd based on it's structure. <br
 </table></font>
 <hr width = 100%>
 ###validateNameStd
+<font color = #5f5f5f size = 3pt>
+<i>
+For any input - string/PyNode/MnsNameStd - Validate it and attempt to convert it into a MnsNameStd Object. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateNameStd(objectA)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -780,6 +903,12 @@ Split a given string object and return a MnsNameStd based on it's structure. <br
 </table></font>
 <hr width = 100%>
 ###writeJson
+<font color = #5f5f5f size = 3pt>
+<i>
+Write the input data into the input json file path. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>writeJson(directory, fileName, data = {}, **kwargs)</td></tr>

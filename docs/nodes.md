@@ -12,10 +12,16 @@ All node creation functions are covered by this module <br>
 ##Defenitions
 <hr width = 100%>
 ###adlNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new addDoubleLinear node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>adlNode(input1 = None, input2 = None, output = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (addDoubleLinear node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>input1</b>(<i>str</i>) ; [default: None]</li>
@@ -78,7 +84,7 @@ Created an Axis-Vis geometry object from each object within the list passed in. 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildGeoAxisVisForParents(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict ('visGeoObjs': visGeoMnsNameStdArray, 'visGeoObjsNodes': visGeoNodeArray)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -122,10 +128,16 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###choiceNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new choice node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>choiceNode(inputs = [], output = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (choice node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>inputs</b>(<i>list</i>) ; [default: []]</li>
@@ -145,10 +157,16 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###conditionNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new condition node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>conditionNode(firstTerm = None, secondTerm = None, colorIfTrue = None, colorIfFalse = None, outColor = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (condition node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>firstTerm</b>(<i>str</i>) ; [default: None]</li>
@@ -172,10 +190,16 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###connectAttrAttempt
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to connect the sourceAttr given to the target attribute passed in. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectAttrAttempt(attrA, nodeAttr)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool (sucess status)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>attrA</b></li>
@@ -187,6 +211,13 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###connectSetAttempt
+<font color = #5f5f5f size = 3pt>
+<i>
+Attemp to connect the values passed in. <br>
+If a failue status was return, attempt a 'setAttr' next. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectSetAttempt(attrA, nodeAttr, valType)</td></tr>
@@ -203,10 +234,16 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###imagePlaneNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new imagePlane node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>imagePlaneNode(camera = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (imagePlane node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>camera</b>(<i>str</i>) ; [default: None]</li>
@@ -225,10 +262,16 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###mdNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new multiply devide node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mdNode(input1 = None, input2 = None, output = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (MultiplyDevide node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>input1</b>(<i>str</i>) ; [default: None]</li>
@@ -250,10 +293,16 @@ From a given MnsPointsOnCurve node, create output 'visCubes'. <br>
 </table></font>
 <hr width = 100%>
 ###mdlNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new multiplyDoubleLinear node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mdlNode(input1 = None, input2 = None, output = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (multiplyDoubleLinear node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>input1</b>(<i>str</i>) ; [default: None]</li>
@@ -344,10 +393,16 @@ Creates an mnsBuildTransformsCurveNode node based on specified parameters and ou
 </table></font>
 <hr width = 100%>
 ###mnsCameraGateRatioNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new mnsCameraGateRatio node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsCameraGateRatioNode(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (mnsCameraGateRatio node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -368,10 +423,16 @@ Creates an mnsBuildTransformsCurveNode node based on specified parameters and ou
 </table></font>
 <hr width = 100%>
 ###mnsIKSolver
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new mnsIkSolver node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsIKSolver(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (mnsIkSolver node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -440,10 +501,16 @@ Creates an mnsMatrixConstraintNode node based on specified parameters and output
 </table></font>
 <hr width = 100%>
 ###mnsNodeRelationshipNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new mnsNodeRelationship node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsNodeRelationshipNode(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (mnsNodeRelationship node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -511,10 +578,16 @@ A 'buildOutputs' parameter is defaulted to True to build output (of a choice of 
 </table></font>
 <hr width = 100%>
 ###reverseNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new reverse node using the given inputs. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>reverseNode(inputA = None, output = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (reverse node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>inputA</b>(<i>str</i>) ; [default: None]</li>
@@ -534,6 +607,12 @@ A 'buildOutputs' parameter is defaulted to True to build output (of a choice of 
 </table></font>
 <hr width = 100%>
 ###setAttrAttempt
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to set the passed in value into the attribute passed in. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setAttrAttempt(nodeAttr, value, valType)</td></tr>

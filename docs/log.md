@@ -65,6 +65,13 @@ An output message is printed into the consule based on the severity. <br>
 </table></font>
 <hr width = 100%>
 ###logCurrentFrame
+<font color = #5f5f5f size = 3pt>
+<i>
+Log the current requested frame. <br>
+The frame is collected procedurally from the dtack, without needing to pass any arguments into methed. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>logCurrentFrame()</td></tr>

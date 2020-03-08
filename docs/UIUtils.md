@@ -17,6 +17,15 @@ This module also holds the QT ui dynamic conversion to '.py' and the 'get_maya_w
 <hr width = 100%>
 <h5 id = "CollapsibleFrameWidget TARGET"></h5>
 ###CollapsibleFrameWidget [Class]
+<font color = #5f5f5f size = 3pt>
+<i>
+Collapsible frame Widget class. <br>
+This is a wrapper widget that allows for a collapisble frame to be built. <br>
+The QFrame object will allow for Layouts to be inserted into the Collapsible frame, inserting any widgets within it,  <br>
+collapsing and expanding it by a click trigger (from the user). <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>CollapsibleFrameWidget(<b>parent</b>(<i>str</i>) ; [default: None],<b>title</b>(<i>str</i>) ; [default: None])</td></tr>
@@ -145,10 +154,16 @@ This module also holds the QT ui dynamic conversion to '.py' and the 'get_maya_w
 ##Defenitions
 <hr width = 100%>
 ###acquireExternalWindow
+<font color = #5f5f5f size = 3pt>
+<i>
+A simple method to acquire an external QT window, into an actual PyQt MianWindow object. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>acquireExternalWindow(UIName = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QMainWindow (UI Class)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>UIName</b>(<i>str</i>) ; [default: None]</li>
@@ -201,6 +216,12 @@ Builds a tab for a given tab parent including all the neccesary layouts within, 
 </table></font>
 <hr width = 100%>
 ###checkChannelCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+DynUI 'channel control' checkBox changed command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkChannelCommand(chanBtn,chanCbxs)</td></tr>
@@ -216,6 +237,12 @@ Builds a tab for a given tab parent including all the neccesary layouts within, 
 </table></font>
 <hr width = 100%>
 ###colOverrideBlockDefTriggerCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+DynUI color-override default command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>colOverrideBlockDefTriggerCommand(colorOverrideCbx, sideCB, ovverideBtnList)</td></tr>
@@ -232,6 +259,12 @@ Builds a tab for a given tab parent including all the neccesary layouts within, 
 </table></font>
 <hr width = 100%>
 ###colOverrideStateChange
+<font color = #5f5f5f size = 3pt>
+<i>
+DynUI color-override changed command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>colOverrideStateChange(colorOverrideCbx, sideCB, ovverideBtnList)</td></tr>
@@ -341,10 +374,16 @@ In case the MnsArgument.type in question is an unknown type, draw a button and f
 </table></font>
 <hr width = 100%>
 ###drawChannelColumnAndConnect
+<font color = #5f5f5f size = 3pt>
+<i>
+Draw channel column (part of channel control) into a DynUI. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawChannelColumnAndConnect(MnsArgumentObj, channel)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QVBoxLayout (layout), list (drawen boxes)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -356,6 +395,12 @@ In case the MnsArgument.type in question is an unknown type, draw a button and f
 </table></font>
 <hr width = 100%>
 ###drawChannelControl
+<font color = #5f5f5f size = 3pt>
+<i>
+Draw the predefined channel-control slot into a DynUI. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawChannelControl(MnsArgumentObj, layoutParent)</td></tr>
@@ -436,6 +481,12 @@ An automatic connection to the 'getColor' function is made, as well as a 'defaul
 </table></font>
 <hr width = 100%>
 ###drawColorSchemeOverride
+<font color = #5f5f5f size = 3pt>
+<i>
+Draw the predefined 'color scheme' slot into a dynUI. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorSchemeOverride(MnsArgumentObj, layoutParent, **kwargs)</td></tr>
@@ -569,6 +620,12 @@ Main Path row draw <br>
 </table></font>
 <hr width = 100%>
 ###drawPrimaryButton
+<font color = #5f5f5f size = 3pt>
+<i>
+Picker method- draw a generic picker button. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawPrimaryButton(plg, tabWidget, pickerBase, picker)</td></tr>
@@ -618,7 +675,7 @@ When color selected sets the caller QPushButton color to the selected color <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getColor(btn, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>tuple[3] (color)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>btn</b></li>
@@ -633,10 +690,16 @@ When color selected sets the caller QPushButton color to the selected color <br>
 </table></font>
 <hr width = 100%>
 ###getColorArrayFromColorScheme
+<font color = #5f5f5f size = 3pt>
+<i>
+Collect a normalized array of colors from a 'colorSceheme' enum attribute. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getColorArrayFromColorScheme(side, colorScheme)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (color sceheme)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>side</b></li>
@@ -648,10 +711,17 @@ When color selected sets the caller QPushButton color to the selected color <br>
 </table></font>
 <hr width = 100%>
 ###getObjectScreenSpaceByFilmGate
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is used to 'project' a plg into the projection camera's film gate. <br>
+Get the relative position of the plg to the camera film-gate's top left corener. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getObjectScreenSpaceByFilmGate(objectProj, cam)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>float, float (posX, posY)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectProj</b></li>
@@ -663,6 +733,12 @@ When color selected sets the caller QPushButton color to the selected color <br>
 </table></font>
 <hr width = 100%>
 ###getPathCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+Dyn UI path slot 'get path' command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPathCommand(LEdit, mode = 0, fileTypes = [])</td></tr>
@@ -679,10 +755,17 @@ When color selected sets the caller QPushButton color to the selected color <br>
 </table></font>
 <hr width = 100%>
 ###getPlgPosition
+<font color = #5f5f5f size = 3pt>
+<i>
+Get the relative position of the requested plg, based on the 'Picker Layout Base' Guide top left corner. <br>
+Return the local bounding box size as well. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPlgPosition(plg, pickerBase)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>float,float,float,float (posX,PosY,Width,Height)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>plg</b></li>
@@ -711,6 +794,12 @@ Main maya window get for a global UI parent <br>
 </table></font>
 <hr width = 100%>
 ###listLoadCmd
+<font color = #5f5f5f size = 3pt>
+<i>
+Load to list command trigger (dynUI) <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>listLoadCmd(QListWidget)</td></tr>
@@ -725,6 +814,12 @@ Main maya window get for a global UI parent <br>
 </table></font>
 <hr width = 100%>
 ###listRemoveCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+Remove from list command trigger (dynUI) <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>listRemoveCommand(QListWidget)</td></tr>
@@ -808,6 +903,12 @@ It reruns a baseClass and a formClass to be used when creating any UI. <br>
 </table></font>
 <hr width = 100%>
 ###setChennelControlDefaultCmd
+<font color = #5f5f5f size = 3pt>
+<i>
+DynUI chennel control slot default command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setChennelControlDefaultCmd(cbxList, MnsArgumentObj)</td></tr>
@@ -845,6 +946,12 @@ A command to be triggered by an outside 'default' button, or when initializing t
 </table></font>
 <hr width = 100%>
 ###setColorSchemeDefaultCmd
+<font color = #5f5f5f size = 3pt>
+<i>
+DynUI color-scheme default command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setColorSchemeDefaultCmd(btnList, default)</td></tr>
@@ -902,6 +1009,12 @@ A command to be triggered by an outside 'default' button, or when initializing t
 </table></font>
 <hr width = 100%>
 ###setListWidgetDefaultCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+'Default' command trigger for a 'list' type synamic row (dynUI) <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setListWidgetDefaultCommand(QListWidget, default)</td></tr>
@@ -959,6 +1072,12 @@ A 'set default' command to be triggered for a combo box item. <br>
 </table></font>
 <hr width = 100%>
 ###sideCBChangedTriggerCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+DynUI side combo box changed command trigger. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sideCBChangedTriggerCommand(colorOverrideCbx, sideCB, ovverideBtnList, rigTop, ignoreOvverideCheckbox = False)</td></tr>
@@ -977,10 +1096,16 @@ A 'set default' command to be triggered for a combo box item. <br>
 </table></font>
 <hr width = 100%>
 ###tearOffWindow
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new maya 'tear-off' panel. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>tearOffWindow(name, title, width, height, cameraToView)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>pymel.core.window (tear-off window)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>name</b></li>

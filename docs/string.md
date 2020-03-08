@@ -12,10 +12,16 @@ This module covers all custom string operations used in MNS <br>
 ##Defenitions
 <hr width = 100%>
 ###camelCaseSplit
+<font color = #5f5f5f size = 3pt>
+<i>
+Split input string into array based on the 'camel-casing' rule. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>camelCaseSplit(ccString)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (splitted string)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ccString</b></li>
@@ -26,10 +32,16 @@ This module covers all custom string operations used in MNS <br>
 </table></font>
 <hr width = 100%>
 ###combineStringList
+<font color = #5f5f5f size = 3pt>
+<i>
+Combine the given string array, into a single string, using the 'separatorS' string input as a seperator. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>combineStringList(stringList = [], separatorS = " ")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (combined string)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>stringList</b>(<i>list</i>) ; [default: []]</li>

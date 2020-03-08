@@ -121,10 +121,16 @@ Returns two lists containing MnsArgument instances. <br>
 </table></font>
 <hr width = 100%>
 ###formatArgumetsAsDict
+<font color = #5f5f5f size = 3pt>
+<i>
+Format given list of arguments into a predefined dictionary structure. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>formatArgumetsAsDict(mnsArgsList = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (Formated arguments)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mnsArgsList</b>(<i>list</i>) ; [default: []]</li>
