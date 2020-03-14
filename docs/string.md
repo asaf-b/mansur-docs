@@ -152,6 +152,26 @@ Flatten a given list into a single string, seperated by spaces <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###splitStringToArray
+<font color = #5f5f5f size = 3pt>
+<i>
+Split the given string into a formatted array, using a "," split. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitStringToArray(stringSplit = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (splitted string)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>stringSplit</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###stringConvertToString
 <font color = #5f5f5f size = 3pt>
 <i>

@@ -1721,10 +1721,12 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 <li>puppetBase</li>
 <li>baseGuide</li>
 <li>rootJnt</li>
+<li>iconsDir</li>
 <li>loadSettingsWindow</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#failedConstructionCommandTARGET">failedConstructionCommand </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setVisChannelsBasedOnCunstructModeTARGET">setVisChannelsBasedOnCunstructMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#cunstructRigSpacesTARGET">cunstructRigSpaces </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#collectBuildModulesTARGET">collectBuildModules </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -1747,12 +1749,34 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 <li><b><a href="#storePuppetBaseDefaultsTARGET">storePuppetBaseDefaults </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#destroyPuppetRootCtrlTARGET">destroyPuppetRootCtrl </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createSubGrpsForRigTopTARGET">createSubGrpsForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#executeCustomScriptsTARGET">executeCustomScripts </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
 </td>
 </tr>
 </table></font></p>
 <h4 id="mnsrig-methods">MnsRig  methods</h4>
 <p><hr width = 50%>
+<h5 id = "failedConstructionCommandTARGET"></h5><font color = 464646 size = 3><b>failedConstructionCommand <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>A global method to display and return a message dialog whenever a build fails.</i><br>
+<i>This method displays 3 options and returns a paraller state:</i><br>
+<i>- 0: 'Continue'</i><br>
+<i>- 1: 'Abort'</i><br>
+<i>- 2: 'Revert-Construction'</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>failedConstructionCommand(self, fileName = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>int (state/button clicked)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>fileName</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "setVisChannelsBasedOnCunstructModeTARGET"></h5><font color = 464646 size = 3><b>setVisChannelsBasedOnCunstructMode <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>A simple method to set the vis mode of the current rig based on it's construction state.</i><br>
@@ -2202,6 +2226,23 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 <td><ul>
 <li><b>self</b></li>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "executeCustomScriptsTARGET"></h5><font color = 464646 size = 3><b>executeCustomScripts <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>for the given 'customScripts' attribute: compile the run files, and execute (if set).</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>executeCustomScripts(self, attrName = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (Execution success)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attrName</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
