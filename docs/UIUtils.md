@@ -280,6 +280,67 @@ DynUI color-override changed command trigger. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###customScriptsAddCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+Add button trigger command for "custom scripts" slot of synamic UI. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>customScriptsAddCommand(listWidget)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>listWidget</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###customScriptsDefaultCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+Default trigger command for 'custom scripts' slot in dynUI. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>customScriptsDefaultCommand(listWidget, MnsArgumentObj)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>listWidget</b></li>
+<li><b>MnsArgumentObj</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###customScriptsRemoveCommand
+<font color = #5f5f5f size = 3pt>
+<i>
+Remove button trigger command for "custom scripts" slot of synamic UI. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>customScriptsRemoveCommand(listWidget)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>listWidget</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###deleteAllLayoutItems
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -507,6 +568,27 @@ Draw the predefined 'color scheme' slot into a dynUI. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###drawCustomScriptsSlot
+<font color = #5f5f5f size = 3pt>
+<i>
+draw a "custom scripts" slot into dyn UI. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawCustomScriptsSlot(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QListWidget</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###drawFloatScroll
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -519,6 +601,27 @@ Creates a Float QDoubleSpinBox widget, and a default button connected to it. <br
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawFloatScroll(MnsArgumentObj, layoutParent)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QDoubleSpinBox</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsArgumentObj</b></li>
+<li><b>layoutParent</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###drawHorizontalDevider
+<font color = #5f5f5f size = 3pt>
+<i>
+Draw a simple Horizontal devider into the dynUI. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawHorizontalDevider(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QFrame (Horizontal line devider)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>

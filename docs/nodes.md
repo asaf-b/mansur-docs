@@ -460,6 +460,9 @@ Create a new mnsIkSolver node using the given inputs. <br>
 <li><b>limbRoot</b>(<i>str</i>)</li>
 <li><b>ikHandle</b>(<i>str</i>)</li>
 <li><b>poleVector</b>(<i>str</i>)</li>
+<li><b>fkRoot</b>(<i>str</i>)</li>
+<li><b>fkMid</b>(<i>str</i>)</li>
+<li><b>fkEnd</b>(<i>str</i>)</li>
 <li><b>outputRoot</b>(<i>str</i>)</li>
 <li><b>outputMid</b>(<i>str</i>)</li>
 <li><b>outputEnd</b>(<i>str</i>)</li>
