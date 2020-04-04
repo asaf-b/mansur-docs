@@ -76,6 +76,27 @@ Add a 'blkClassId' Attribute to the given input. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###applyChennelControlAttributesToTransform
+<font color = #5f5f5f size = 3pt>
+<i>
+This method applies a 'channelControl' dict attributes into the given transform. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>applyChennelControlAttributesToTransform(transform = None, ccDict = {})</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transform</b>(<i>str</i>) ; [default: None]</li>
+<li><b>ccDict</b>(<i>dict</i>) ; [default: {}]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###checkFunctionRedundencyForPackage
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -116,17 +137,41 @@ If so, return it. Else return None. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkIfObjExistsAndSet(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkIfObjExistsAndSet(objB = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode if valid, None if not. </td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
+<li><b>objB</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
-<li><b>obj</b>(<i>str</i>) - object to act on and return</li>
+<li><b>obj</b>(<i>str</i>) ; [default: objB] - object to act on and return</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###checkLocalAxisPairing
+<font color = #5f5f5f size = 3pt>
+<i>
+This method will check and return local axis pairing. <br>
+Main use is for pre-connection check for pocNode and curveVarNode tweakers (inputs), <br>
+in order to link local axes correctly, avoiding the need to check aim and up axes, as well as the offset axes. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkLocalAxisPairing(origin = None, target = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (pairingDict - {"x", "y","z"})</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>origin</b>(<i>str</i>) ; [default: None]</li>
+<li><b>target</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -228,6 +273,26 @@ An axes colored lambert shaders creation function. <br>
 <li><b>doZ</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>deleteAll</b>(<i>bool</i>) - If true, do not attempt to create any objects- instead look for any existing objects and delete them</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createFreeOffsetGroup
+<font color = #5f5f5f size = 3pt>
+<i>
+For the given transform, create a free offset group transform parent. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createFreeOffsetGroup(transformObject)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (offsetGrp)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transformObject</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -876,6 +941,29 @@ Split a given string object and return a MnsNameStd based on it's structure. <br
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>nameString</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###validateAttrAndGet
+<font color = #5f5f5f size = 3pt>
+<i>
+For the given transform (or nameStd)- check whether the given attr exists. <br>
+If the attr exist, get it and return it. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateAttrAndGet(transform = None, attrName = "", default = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (return status), unknownType (value)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transform</b>(<i>str</i>) ; [default: None]</li>
+<li><b>attrName</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>default</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

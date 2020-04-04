@@ -37,6 +37,7 @@ collapsing and expanding it by a click trigger (from the user). <br>
 <li>_title_frame</li>
 <li>_content</li>
 <li>_main_v_layout</li>
+<li>clickedSignal</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>

@@ -53,6 +53,20 @@ A main CtrlCreate function calls a veriaty of pre-defined shape creation, then h
 </tr>
 </table></font>
 <hr width = 100%>
+###bubblePinShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bubblePinShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###circleShapeCreate
 <font size = 3pt>
 <table>
@@ -134,6 +148,8 @@ The default color is white when used as standalone, and based on the rig's globa
 <li><b>skipColor</b>(<i>bool</i>)</li>
 <li><b>createOffsetGrp</b>(<i>bool</i>)</li>
 <li><b>createSpaceSwitchGroup</b>(<i>bool</i>)</li>
+<li><b>symmetryType</b>(<i>int</i>)</li>
+<li><b>doMirror</b>(<i>bool</i>)</li>
 <li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
 <li><b>controlShape</b>(<i>str</i>) ; [default: circle] - Control's NURBS shape</li>
 <li><b>scale</b>(<i>float</i>) ; [default: 1.0] - Ctrl scale. Relative to global settings.</li>
@@ -179,6 +195,48 @@ The default color is white when used as standalone, and based on the rig's globa
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>cylinderShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###dialRoundShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialRoundShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###dialShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###dialSquareShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialSquareShapeCreate(**kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -416,6 +474,20 @@ The default color is white when used as standalone, and based on the rig's globa
 </tr>
 </table></font>
 <hr width = 100%>
+###pinchedCircleShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pinchedCircleShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###plusShapeCreate
 <font size = 3pt>
 <table>
@@ -490,6 +562,20 @@ The default color is white when used as standalone, and based on the rig's globa
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###teardropShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>teardropShapeCreate(**kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
