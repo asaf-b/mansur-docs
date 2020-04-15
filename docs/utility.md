@@ -850,6 +850,26 @@ Attempt to sort the given array based on it's content ID's. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###sorted_alphanumeric
+<font color = #5f5f5f size = 3pt>
+<i>
+returns an alphanumeric ordered data from input given <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sorted_alphanumeric(data)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>data</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###splitDateTimeStringToList
 <font color = #5f5f5f size = 3pt>
 <i>

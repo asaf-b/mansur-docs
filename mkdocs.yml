@@ -71,12 +71,13 @@ nav:
             - controlShapes.md
           - modules:
             - dev:
-              - FKChain:
-                - FKChain.md
               - freeControl:
                 - freeControl.md
               - limb:
                 - limb.md
+            - global:
+              - FKChain:
+                - FKChain.md
           - picker:
             - picker.md
             - plgSettings.md

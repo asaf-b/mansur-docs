@@ -233,6 +233,37 @@ If a failue status was return, attempt a 'setAttr' next. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###decomposeMatrixNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new multiplyDoubleLinear node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>decomposeMatrixNode(inputMatrix = None, outputTranslate = None, outputRotate = None, outputScale = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (multiplyDoubleLinear node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>outputTranslate</b>(<i>str</i>) ; [default: None]</li>
+<li><b>outputRotate</b>(<i>str</i>) ; [default: None]</li>
+<li><b>outputScale</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: decomposeMatrix] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###imagePlaneNode
 <font color = #5f5f5f size = 3pt>
 <i>
