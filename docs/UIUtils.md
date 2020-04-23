@@ -189,7 +189,7 @@ A simple method to acquire an external QT window, into an actual PyQt MianWindow
 </tr>
 </table></font>
 <hr width = 100%>
-###buildTabForModuleParentDir
+###buildStackedTabForModuleParentDir
 <font color = #5f5f5f size = 3pt>
 <i>
 Main BLOCK dynamiuc tab builder. <br>
@@ -197,6 +197,23 @@ Builds a tab for a given tab parent including all the neccesary layouts within, 
 </i>
 <br>
 </font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildStackedTabForModuleParentDir(modDirName, insertIndex, tabWidget, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>modDirName</b></li>
+<li><b>insertIndex</b></li>
+<li><b>tabWidget</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###buildTabForModuleParentDir
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildTabForModuleParentDir(modDirName, insertIndex, tabWidget, **kwargs)</td></tr>

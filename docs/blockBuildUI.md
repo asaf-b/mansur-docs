@@ -39,9 +39,11 @@ BLOCK UI Class. <br>
 <li>tabIndex</li>
 <li>buildModulesBtns</li>
 <li>sidePlaceHolder</li>
+<li>bmLib</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#bmCategoryChangedTriggerTARGET">bmCategoryChangedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePathsChangeTARGET">applyModulePathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#moduleBuildGuideTARGET">moduleBuildGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#addModulePathTARGET">addModulePath </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -77,6 +79,19 @@ BLOCK UI Class. <br>
 </table></font>
 ####MnsBlockBuildUI  methods
 <hr width = 50%>
+<h5 id = "bmCategoryChangedTriggerTARGET"></h5><font color = 464646 size = 3><b>bmCategoryChangedTrigger <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bmCategoryChangedTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "applyModulePathsChangeTARGET"></h5><font color = 464646 size = 3><b>applyModulePathsChange <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>'Apply' (in build tab, module paths) trigger.</i><br>
@@ -101,12 +116,12 @@ BLOCK UI Class. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>moduleBuildGuide(self, MnsBuildModuleButton)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>moduleBuildGuide(self, listWidgetItemName)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-<li><b>MnsBuildModuleButton</b></li>
+<li><b>listWidgetItemName</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -186,13 +201,13 @@ BLOCK UI Class. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildModulesDefine(self, modParentPath, dirLayout)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildModulesDefine(self, modParentPath, listWidget)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
 <li><b>modParentPath</b></li>
-<li><b>dirLayout</b></li>
+<li><b>listWidget</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

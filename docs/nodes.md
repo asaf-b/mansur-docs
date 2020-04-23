@@ -410,7 +410,7 @@ Creates an mnsBuildTransformsCurveNode node based on specified parameters and ou
 <li><b>buildOffsetCurve</b>(<i>bool</i>) - Node's 'buildOffsetCurve' attribute</li>
 <li><b>offsetCurveSuffix</b>(<i>str</i>) ; [default: Up] - Up curve creation name body suffix</li>
 <li><b>buildMode</b>(<i>int</i>) - Node's buildMode attribute</li>
-<li><b>tangentDirection</b>(<i>int</i>) - Node's tangentDirection attribute</li>
+<li><b>tangentDirection</b>(<i>int</i>) ; [default: 1] - Node's tangentDirection attribute</li>
 <li><b>tangentLength</b>(<i>float</i>) ; [default: 1.0] - Node's tangentLength attribute</li>
 <li><b>hermiteSteps</b>(<i>int</i>) ; [default: 5] - Node's hermiteSteps attribute</li>
 <li><b>degree</b>(<i>int</i>) ; [default: 3] - Node's degree attribute</li>
