@@ -298,6 +298,22 @@ DynUI color-override changed command trigger. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###createTextSeparator
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createTextSeparator(label = "", QMenuItem = None, parent = get_maya_window())</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>label</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>QMenuItem</b>(<i>str</i>) ; [default: None]</li>
+<li><b>parent</b>(<i>str</i>) ; [default: get_maya_window()]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###customScriptsAddCommand
 <font color = #5f5f5f size = 3pt>
 <i>

@@ -542,3 +542,22 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<hr width = 100%>
+##Defenitions
+<hr width = 100%>
+###loadDefSearch
+<font color = #5f5f5f size = 3pt>
+<i>
+Load the Def Serach UI from globals, avoid UI duplication. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadDefSearch()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
