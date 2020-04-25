@@ -49,7 +49,6 @@ nav:
           - log.md
           - nodes.md
           - prefixSuffix.md
-          - settingsGlobals.md
           - string.md
           - UIUtils.md
           - utility.md

@@ -296,6 +296,29 @@ For the given transform, create a free offset group transform parent. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###createMnsDefaultPrefs
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is called whenever a pref read is being called. <br>
+In case this method fails to locate local prefs for the current user, it creates it from the defualt prefs file. <br>
+Also, this method contains the "restore" flag, which will create a new prefs local file from the default file regardless of any other choice. <br>
+This is used as a "restore factory defaults" option. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createMnsDefaultPrefs(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (prefs file path)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###createNodeReturnNameStd
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -442,6 +465,27 @@ Get the top level parent for a given object. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getMansurPrefs
+<font color = #5f5f5f size = 3pt>
+<i>
+This method retrives all of the current prefrences. <br>
+In case the 'returnFileDirectory' flag is set to true, this will return the path of the prefs file, instead of the preferences as a dict. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getMansurPrefs(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (prefrences)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getNumLinesForDir
 <font size = 3pt>
 <table>
@@ -549,6 +593,23 @@ Essentially bake the joint orient attributes for the joints. <br>
 <td><ul>
 <li><b>topNode</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###locatePreferencesDirectory
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is used across to locate the prefs directory for the current user. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>locatePreferencesDirectory()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (preferences directory path)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
@@ -871,7 +932,7 @@ returns an alphanumeric ordered data from input given <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sorted_alphanumeric(data)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (sorted data)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>data</b></li>
