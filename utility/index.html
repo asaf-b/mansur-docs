@@ -513,18 +513,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../settingsGlobals/" title="settingsGlobals" class="md-nav__link">
-      settingsGlobals
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../string/" title="String" class="md-nav__link">
       String
     </a>
@@ -668,6 +656,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#createmnsdefaultprefs" class="md-nav__link">
+    createMnsDefaultPrefs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#createnodereturnnamestd" class="md-nav__link">
     createNodeReturnNameStd
   </a>
@@ -710,6 +705,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getmansurprefs" class="md-nav__link">
+    getMansurPrefs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getnumlinesfordir" class="md-nav__link">
     getNumLinesForDir
   </a>
@@ -747,6 +749,13 @@
           <li class="md-nav__item">
   <a href="#jointorienttorotation" class="md-nav__link">
     jointOrientToRotation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locatepreferencesdirectory" class="md-nav__link">
+    locatePreferencesDirectory
   </a>
   
 </li>
@@ -1591,6 +1600,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#createmnsdefaultprefs" class="md-nav__link">
+    createMnsDefaultPrefs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#createnodereturnnamestd" class="md-nav__link">
     createNodeReturnNameStd
   </a>
@@ -1633,6 +1649,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getmansurprefs" class="md-nav__link">
+    getMansurPrefs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getnumlinesfordir" class="md-nav__link">
     getNumLinesForDir
   </a>
@@ -1670,6 +1693,13 @@
           <li class="md-nav__item">
   <a href="#jointorienttorotation" class="md-nav__link">
     jointOrientToRotation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locatepreferencesdirectory" class="md-nav__link">
+    locatePreferencesDirectory
   </a>
   
 </li>
@@ -2163,6 +2193,29 @@ For the given transform, create a free offset group transform parent. <br>
 </tr>
 </table></font>
 <hr width = 100%></p>
+<h3 id="createmnsdefaultprefs">createMnsDefaultPrefs</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method is called whenever a pref read is being called. <br>
+In case this method fails to locate local prefs for the current user, it creates it from the defualt prefs file. <br>
+Also, this method contains the "restore" flag, which will create a new prefs local file from the default file regardless of any other choice. <br>
+This is used as a "restore factory defaults" option. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createMnsDefaultPrefs(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (prefs file path)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="createnodereturnnamestd">createNodeReturnNameStd</h3>
 <p><font color = #5f5f5f size = 3pt>
 <i>
@@ -2309,6 +2362,27 @@ Get the top level parent for a given object. <br>
 </tr>
 </table></font>
 <hr width = 100%></p>
+<h3 id="getmansurprefs">getMansurPrefs</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method retrives all of the current prefrences. <br>
+In case the 'returnFileDirectory' flag is set to true, this will return the path of the prefs file, instead of the preferences as a dict. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getMansurPrefs(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (prefrences)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="getnumlinesfordir">getNumLinesForDir</h3>
 <p><font size = 3pt>
 <table>
@@ -2416,6 +2490,23 @@ Essentially bake the joint orient attributes for the joints. <br>
 <td><ul>
 <li><b>topNode</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="locatepreferencesdirectory">locatePreferencesDirectory</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method is used across to locate the prefs directory for the current user. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>locatePreferencesDirectory()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (preferences directory path)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
@@ -2738,7 +2829,7 @@ returns an alphanumeric ordered data from input given <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sorted_alphanumeric(data)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (sorted data)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>data</b></li>
