@@ -1322,53 +1322,35 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
 <td><ul>
 <ul>
-<li>selfDir</li>
 <li>pinnedFilePath</li>
-<li>dirsFilePath</li>
-<li>filesFilePath</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
-<li><b><a href="#addDirectoryWinTARGET">addDirectoryWin </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#initializePinnedDirTARGET">initializePinnedDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#clearResultsTARGET">clearResults </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#clearPinsTARGET">clearPins </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#addDirectoryTARGET">addDirectory </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#addFileTARGET">addFile </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#importModulesTARGET">importModules </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateResultsTARGET">updateResults </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createUITARGET">createUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadListTARGET">loadList </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#connectCaseBoxesTARGET">connectCaseBoxes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#addModuleToResultsTARGET">addModuleToResults </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#addPackageToResultsTARGET">addPackageToResults </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#pinTARGET">pin </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#pinnedOnlyViewTARGET">pinnedOnlyView </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#exportPrefsTARGET">exportPrefs </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#importPrefsTARGET">importPrefs </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#connectCaseBoxesBackTARGET">connectCaseBoxesBack </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#import_submodulesTARGET">import_submodules </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#refrehsPrefsListsTARGET">refrehsPrefsLists </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#removeDirectoryTARGET">removeDirectory </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#removeFileTARGET">removeFile </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#clearAllListsTARGET">clearAllLists </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#reloadResultsTARGET">reloadResults </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#importDirsTARGET">importDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#importFilesTARGET">importFiles </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
 </td>
 </tr>
 </table></font></p>
 <h4 id="mnsdefsearch-methods">MnsDefSearch  methods</h4>
 <p><hr width = 50%>
-<h5 id = "addDirectoryWinTARGET"></h5><font color = 464646 size = 3><b>addDirectoryWin <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Add directory window call trigger</i><br>
-</font>
+<h5 id = "initializePinnedDirTARGET"></h5><font color = 464646 size = 3><b>initializePinnedDir <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addDirectoryWin(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializePinnedDir(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -1417,41 +1399,6 @@ Main UI Class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectSignals(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "addDirectoryTARGET"></h5><font color = 464646 size = 3><b>addDirectory <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Custom directory add trigger method.</i><br>
-<i>Will prompt a directory selection dialog- allowing the user to add custom directories into the UI.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addDirectory(self, directory)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>directory</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "addFileTARGET"></h5><font color = 464646 size = 3><b>addFile <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Custom files add trigger method.</i><br>
-<i>Will prompt a file selection dialog- filtering only '.py' files, allowing the user to add custom files into the UI.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addFile(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -1543,22 +1490,6 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "connectCaseBoxesTARGET"></h5><font color = 464646 size = 3><b>connectCaseBoxes <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Main tab 'case-sensetive' check-box connection to the prefs tab 'case-sensative' check-box.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectCaseBoxes(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
 <h5 id = "addModuleToResultsTARGET"></h5><font color = 464646 size = 3><b>addModuleToResults <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Module add method trigger.</i><br>
@@ -1626,54 +1557,6 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "exportPrefsTARGET"></h5><font color = 464646 size = 3><b>exportPrefs <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Prefs export method.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>exportPrefs(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "importPrefsTARGET"></h5><font color = 464646 size = 3><b>importPrefs <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Prefs import method.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importPrefs(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "connectCaseBoxesBackTARGET"></h5><font color = 464646 size = 3><b>connectCaseBoxesBack <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Prefs tab 'case-sensetive' check-box connection to the main tab 'case-sensative' check-box.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectCaseBoxesBack(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
 <h5 id = "import_submodulesTARGET"></h5><font color = 464646 size = 3><b>import_submodules <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Recursive method to walk thorugh a given package and sub-packages to store all sub-directories within.</i><br>
@@ -1692,72 +1575,6 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "refrehsPrefsListsTARGET"></h5><font color = 464646 size = 3><b>refrehsPrefsLists <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Refresh custom files and directories method trigger.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>refrehsPrefsLists(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "removeDirectoryTARGET"></h5><font color = 464646 size = 3><b>removeDirectory <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Remove a custom directory from the list trigger method</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeDirectory(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "removeFileTARGET"></h5><font color = 464646 size = 3><b>removeFile <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Remove a custom file from the list trigger method</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeFile(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "clearAllListsTARGET"></h5><font color = 464646 size = 3><b>clearAllLists <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Restore Default prefs trigger method. </i><br>
-<i>This will clear all of the custom list items, which will restore initial state.</i><br>
-<i>Not undoable.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>clearAllLists(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
 <h5 id = "reloadResultsTARGET"></h5><font color = 464646 size = 3><b>reloadResults <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Wrapper re-load method.</i><br>
@@ -1765,38 +1582,6 @@ Main UI Class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>reloadResults(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "importDirsTARGET"></h5><font color = 464646 size = 3><b>importDirs <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>import directories wrapper</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importDirs(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "importFilesTARGET"></h5><font color = 464646 size = 3><b>importFiles <font size = 2pt> [<a href="#MnsDefSearch TARGET">MnsDefSearch </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>import files wrapper</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importFiles(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

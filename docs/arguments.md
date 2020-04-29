@@ -41,6 +41,7 @@ These class members will dectate any behavior derived from an actual function ob
 <li>pathFileTypes</li>
 <li>blockCreationOnly</li>
 <li>jntStructMember</li>
+<li>jntStructSoftMod</li>
 <li>lockOffAttributes</li>
 <li>simpleDivider</li>
 </ul>
