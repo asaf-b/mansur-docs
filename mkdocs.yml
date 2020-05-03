@@ -63,6 +63,8 @@ nav:
             - docBuildMansur.md
           - pluginRelease:
             - pluginRelease.md
+          - productRelease:
+            - productRelease.md
         - block:
           - core:
             - blockUtility.md

@@ -74,6 +74,8 @@ pluginRelease UI class <br>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#getCMakeBaseDirTARGET">getCMakeBaseDir </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#buildPluginTARGET">buildPlugin </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectDevDirTARGET">selectDevDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectRelDirTARGET">selectRelDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -82,6 +84,7 @@ pluginRelease UI class <br>
 <li><b><a href="#getLastestReleaseVerTARGET">getLastestReleaseVer </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initExistingDirsTARGET">initExistingDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#releasePluginVerTARGET">releasePluginVer </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#releasePluginVer_legacyTARGET">releasePluginVer_legacy </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#sortListsTARGET">sortLists </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#dirChangedTARGET">dirChanged </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -92,6 +95,37 @@ pluginRelease UI class <br>
 </table></font>
 ####MnsPluginRelease  methods
 <hr width = 50%>
+<h5 id = "getCMakeBaseDirTARGET"></h5><font color = 464646 size = 3><b>getCMakeBaseDir <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCMakeBaseDir(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "buildPluginTARGET"></h5><font color = 464646 size = 3><b>buildPlugin <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildPlugin(self, MnsPluginBuild = None, cMakeDir = None, newVersionRootDir = None, platform = "win", versionString = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>MnsPluginBuild</b>(<i>str</i>) ; [default: None]</li>
+<li><b>cMakeDir</b>(<i>str</i>) ; [default: None]</li>
+<li><b>newVersionRootDir</b>(<i>str</i>) ; [default: None]</li>
+<li><b>platform</b>(<i>str</i>) ; [default: "win"]</li>
+<li><b>versionString</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "selectDevDirTARGET"></h5><font color = 464646 size = 3><b>selectDevDir <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Change dev directory trigger action.</i><br>
@@ -218,6 +252,23 @@ pluginRelease UI class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>releasePluginVer(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "releasePluginVer_legacyTARGET"></h5><font color = 464646 size = 3><b>releasePluginVer_legacy <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Main version release button trigger.</i><br>
+<i>Compiles all needed information based on user UI slections, and triggers a new version build.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>releasePluginVer_legacy(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

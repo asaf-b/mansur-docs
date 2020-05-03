@@ -425,6 +425,29 @@ Measure the distance between to maya transforms. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###findAndReplaceInFile
+<font color = #5f5f5f size = 3pt>
+<i>
+This is a simple method to replace the pattern given with a substitute string within a file, <br>
+Then overriting the original file with new lines. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>findAndReplaceInFile(file_path, pattern, subst)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>file_path</b></li>
+<li><b>pattern</b></li>
+<li><b>subst</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###fixShapesName
 <font color = #5f5f5f size = 3pt>
 <i>
