@@ -38,6 +38,21 @@ Also, this will yeild a very "easy to change" approach for the documentation gen
 <hr width = 100%>
 ##Defenitions
 <hr width = 100%>
+###appendMayaPluginsToYml
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>appendMayaPluginsToYml(ymlPath, parentPageName)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ymlPath</b></li>
+<li><b>parentPageName</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###buildDocItems
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -171,6 +186,36 @@ The final pythonLib item is passed in, as well as the root directory and the cur
 <li><b>rootDrive</b>(<i>str</i>) ; [default: "d"]</li>
 <li><b>relativeDirectory</b>(<i>str</i>) ; [default: "mansurProject\\mansur-docs"]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createPluginDocFile
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPluginDocFile(rootBuildPath = "D/mansurProject/mayaPlugins", ymlPath = "D/mansurProject/mansur-docs/mkdocs.yml")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootBuildPath</b>(<i>str</i>) ; [default: "D:/mansurProject/mayaPlugins"]</li>
+<li><b>ymlPath</b>(<i>str</i>) ; [default: "D:/mansurProject/mansur-docs/mkdocs.yml"]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###extractAttributeDefenitionsFromCppFile
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractAttributeDefenitionsFromCppFile(cppFullPath = None, buildName = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>cppFullPath</b>(<i>str</i>) ; [default: None]</li>
+<li><b>buildName</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -316,6 +361,20 @@ Extract parametrs from a given def source as list <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###gatherPluginDocumentation
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherPluginDocumentation(rootBuildPath = "D/mansurProject/mayaPlugins")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootBuildPath</b>(<i>str</i>) ; [default: "D:/mansurProject/mayaPlugins"]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

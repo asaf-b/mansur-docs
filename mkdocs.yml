@@ -42,6 +42,7 @@ nav:
     - Support-Us:
       - Support-Us.md
     - Code Documentation:
+      - Maya-Plugins.md
       - mansur:
         - core:
           - arguments.md

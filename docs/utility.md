@@ -97,6 +97,22 @@ This method applies a 'channelControl' dict attributes into the given transform.
 </tr>
 </table></font>
 <hr width = 100%>
+###checkForInternetConnection
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkForInternetConnection(host="8.8.8.8", port=53, timeout=3)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>host</b>(<i>str</i>) ; [default: "8.8.8.8"]</li>
+<li><b>port</b>(<i>int</i>) ; [default: 53]</li>
+<li><b>timeout</b>(<i>int</i>) ; [default: 3]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###checkFunctionRedundencyForPackage
 <font color = #5f5f5f size = 3pt>
 <i>
