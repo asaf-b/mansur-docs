@@ -1414,6 +1414,26 @@
 <p><body></p>
 <h2 id="mnsannotate">mnsAnnotate</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This node is a utility node used to present value annotations in maya's viewport easily.
+<br>
+When needing to present any keyframed values in a playblast within maya, there isn't any maya native node to allow values display within the VP.
+<br>
+This node was created for this need.
+<br>
+All connected attributes will be displayed as a new line presenting attributes and their current values, updating in real time.
+<br>
+The display settings are controled within this node, where the position of the display is controlled via the custom locator created with it.
+<br>
+The amount of attribute display is unlimited, and multiple unlimited instances of this node can be created freely.
+<br>
+This is mainly used to display technicall setups.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1432,6 +1452,18 @@
 <body></p>
 <h2 id="mnsbuildtransformscurve">mnsBuildTransformsCurve</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This node builds a nurbsCurve shape, based on input transforms array.
+<br>
+The curve parameters are dictated by this node's attributes, and can be dynamiclly changed and even keyframed if needed.
+<br>
+This node also creates and offset curve shape result, to be used later as an Up-Vector for every single arbitrary point along the result main curve.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1462,6 +1494,14 @@
 <body></p>
 <h2 id="mnscameragateratio">mnsCameraGateRatio</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+A simple utility callback node to dynamiclly control and update the input camer'as display "Camera-Gate" parameters.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1473,6 +1513,25 @@
 <body></p>
 <h2 id="mnscompressiontensionblend">mnsCompressionTensionBlend</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Deformer.
+<br>
+A simple compression and tension based deformer.
+This deformer will detect, display and deform a mesh
+based on the difference between the current
+deformed state and an input base-state (base-mesh).</p>
+<p>The deformer contains 3 display modes:
+- Compression &amp; Tension (50% gray as base-state)
+- Compression Only (black as base-state)
+- Tension (black as base-state)</p>
+<p>The deformer also conatins separate multipliers for both tension and compression.
+This deformer can be used to drive corrective shapes, wrinkles, volume gain/loss and much more.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1488,6 +1547,26 @@
 <body></p>
 <h2 id="mnscurvevariable">mnsCurveVariable</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Curve based solve for a Variable-FK Setup.
+<br>
+This fast and efficient node allows the user to create a variable FK setup using input curves and local transformations, outputting a solved curve and up-curve- instead of the more common transforms output method.
+<br>
+The node will accept any amount of input transforms, outputting the complex offset parent solve for each input as well as the solved curves shapes.
+<br>
+This is to avoid the use of any extra nodes or multiple parent transforms- pinning the controls to the output curve at all times.
+<br>
+The initial solve, as well as all features are calculated within a single loop.
+<br>
+As opposed to the common Variable FK setup, the curve based approach eliminates the Rest-Pose constant- making the node's algorithm Rest-Pose dynamic. In fact, it doesn't exist.
+<br>
+This approach uses only the input array amount constant to calculate a uniform positioning along the output curve- allowing the input curve to be changeable (live / dynamic).
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1551,6 +1630,46 @@
 <body></p>
 <h2 id="mnscurvezip">mnsCurveZip</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Curve based node.
+<br>
+This is primarily used for eyelids and lips.
+<br>
+This fast solution was developed to replace complex and heavy graphs- containing many math nodes, curve deformers and constraints.
+<br>
+This setup provides a very clean deployment, processing the math algorithm internally.
+<br>
+Combining this node with mnsBuildTransformsCurve and mnsPointsOnCurve, will result in a very efficient, dynamic and flexible setup.
+<br>
+All calculations are processed within a single loop.
+<br>
+All curve operations are aware of one another, and are NOT addative- meaning that all operations are available at any position, and will NOT break one another, nor overlap.
+<br>
+All attributes are not minimum limited to 0 and can be adjusted to the negative direction- pulling the bind pose against each other instead of towards each other.
+<br>
+The node contains a centerMatrix input plug, which is a live world position that is used to scale the calculated vectors based on the bind position offset (per curve parameter).
+<br>
+The problem arising from this method is a mismatch at any meet position between curve A and B due to an offset variation between all points (except for a perfect circle scenario, which is never the case).
+<br>
+This problem is solved using a conform attribute within which will pull one of the curves (based on user choice) to the other below a selected distance threshold- Resulting in a watertight-seal.
+<br>
+Using mnsPointsOnCurve to sample the result curves allows for a simple skinCluster to deform the mesh.
+<br>
+mnsCurveZip will output a pair of offset curves as well as the result curves, calculated by world axis vectors or the centerMatrix as a base, which are used as an Up-Curve input for the mnsPointsOnCurve node to manage rotations correctly as well.
+<br>
+The node contatins some more important inputs: The tweakCurves inputs.
+<br>
+Aspiring to an inclusive and comprehensive setup, tweak curves (A, B and Mid) can be plugged in to expose another manual layer of animation using scene controls.
+<br>
+The input curves are 100% independent of the base curve inputs and DO-NOT need to share topology with each other, nor the source inputs - as they are being re-sampled internally based on the build mode.
+<br>
+This means that the tweak controls amount is limitless and is NOT a constant, nor predefined.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1603,6 +1722,28 @@
 <body></p>
 <h2 id="mnsiksolver">mnsIKSolver</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This IK-Solver node provides an alternative, faster and more reliable solution for a 2-joint IK set-up.
+<br>
+This enhanced IK-solution offers a much cleaner approach as well, computing the blend internally- making any basic IK-FK set-up efficient, stable, fast and clean.
+<br>
+To add on the internal FK-IK switch, this node contains a few more features that are already an industry
+<br>
+standard:
+<br>
+Softness - prevents a pop on ik limit approach.
+<br>
+Slide - Knee position sliding (for character animation).
+<br>
+Stretch - Providing a limb-stretch when the ik-solve is beyond its limit.
+<br>
+Axis Switching - Offering an easy switch to any joint orientation.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1654,6 +1795,18 @@
 <body></p>
 <h2 id="mnsmatrixconstraint">mnsMatrixConstraint</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Light weight alternative to Maya's native constraints - All within one node.
+<br>
+Live switchable/keyable maintainOffset channel.
+<br>
+Easily add spaces/masters to existing constraint using recalcOffset channel.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1678,6 +1831,44 @@
 <body></p>
 <h2 id="mnsmeshrivets">mnsMeshRivets</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+A multi "Point-On-Poly" constraint style compute node.
+<br>
+The node will accept any amount of input positions, as well as an input base-mesh and a target mesh.
+<br>
+The base mesh is used to calculate the source position and offset, the target mesh is used to calculate the result position based on the selected attributes within the node:
+<br>
+- Calculation Method: Closest UV, Vertex, Face
+<br>
+- Do Rotation: On, Off
+<br>
+- Do Scale: On, Off
+<br>
+- Rotation: Aim-Axis and up Axis choice (All 6)
+<br>
+- Up-Mode: World (X,Y,Z), Closest Tangent, Closest Binormal
+<br>
+The node will accept any amount on input tweaker matrices that can be used to adjust the riveted transforms globally and easily.
+<br>
+The tweakers adjustments are calculated in world spcae and the algorithm is fully independent, additive, and keyable.
+<br>
+The proximity calculation is matrix based to achieve non-spherical tweaks.
+<br>
+As tweaking the position of the rivets is not sensible as the transforms' position is based on the target mesh, the proximity tweakers are used to adjust rotation and scale only.
+<br>
+The node contains two adjustemt spaces:
+<br>
+- World- Will transform the outputs in world space, providing a more intuative behaviour, although less practical.
+<br>
+- Object - Will transform the outputs in their relative local spaces (preferable), which will provide a less intuative behaviour (dependent of the tweaker and output orientation), although very practical.
+<br>
+A falloff attribute is also implemented to allow control over the decay within the "collision" zone.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1723,6 +1914,14 @@
 <body></p>
 <h2 id="mnsmeshseparate">mnsMeshSeparate</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+A simple node to drive seprated shell objects using one combined mesh.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1739,6 +1938,14 @@
 <body></p>
 <h2 id="mnsnoderelationship">mnsNodeRelationship</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+BLOCK main relationship node.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1750,6 +1957,36 @@
 <body></p>
 <h2 id="mnspointsoncurve">mnsPointsOnCurve</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+A fast and efficient parameter based compute node to sample and control points along a given curve.
+<br>
+In combination with mnsBuildTransformsCurve will result in a very advanced and robust "spline IK" control.
+<br>
+- Creation modes
+<br>
+     + Parametric - curve parameterized position calculation
+<br>
+     + Uniform - Addaptive uniform sampling
+<br>
+     + Fixed length - Uniform sampling based on an input max length. Initialized to curve length on creation, Keyable.
+<br>
+- Position control
+<br>
+- Rotation control
+<br>
+     + Aim modes - curveTangent, object
+<br>
+     + Up modes - curveNormal, up-curve, worldX, worldY, worldZ, object
+<br>
+- Scale control
+<br>
+- Spring ability
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1861,6 +2098,16 @@
 <body></p>
 <h2 id="mnsresamplecurve">mnsResampleCurve</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+A simple light weight curve re-sampler.
+<br>
+Primaraly used to embed mnsThreePointArc into an IK setup.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1879,6 +2126,28 @@
 <body></p>
 <h2 id="mnsspherevectorpush">mnsSphereVectorPush</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Presenting mnsSphereVectorPush deformer.
+<br>
+This deformer was purpose built for the Eye-Meniscus deformation, but can be used for many more applications.
+<br>
+As opposed to the commonly used "matrixCollision", mnsSphereVectorPush will also collide back faces and push them at a higher radius based on a thickness threshold (keyable).
+<br>
+The node will accept unlimited collider matrix inputs and will combine the deformations with ease.
+<br>
+The input radiuses and thicknesses can be varied and keyed to choice.
+<br>
+Implementing the mnsSphereVectorPush deformer within the eyelid setup will result in a natural looking deformation of the cornea and the eyelids.
+<br>
+This is the case for a closed eye pose as well- which will naturally suggest the eye aim even when it isn't seen, corresponding to real life behavior.
+<br>
+The deformer can also be used to represent the eye volume- pushing the eyelid verticies towards the eye surface, for extreme poses of which are not handled correctly by the "aroundCenterMatrix" of mnsCurveZip due to a range which exceeds the normalization.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1893,6 +2162,18 @@
 <body></p>
 <h2 id="mnsspringcurve">mnsSpringCurve</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This node is used to achive simple secondary motion proceduraly.
+<br>
+Tihs node will accept an input curve and offset curves to act upon, and using the stiffness and damping graph attributes it will calculate a new curve with secondary motion embedded.
+<br>
+This is an evaluation node rather then a simulation. Time needs to be connected to the node in order to see it's effect.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
@@ -1917,6 +2198,20 @@
 <body></p>
 <h2 id="mnsthreepointarc">mnsThreePointArc</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This node was written to create a perfectly curved limb blend, instead of using common approaches like skinned curves, simulated tangents, scaled points, etc.
+<br>
+This method provides a very elegant way of enabling curvable limbs to animators, avoiding the use of Maya's 'makeThreePointCircularArc' which doesn't support a case where the 3 input points are collinear, nor any input curve or blending support.
+<br>
+Another major advantage of this node is the 'conformToMidPoint' attribute-
+This attribute signals the algorithm to take the mid-point into consideration when drawing the edit points of the calculated arc, 'pinning' the elbow/knee in place when blending to the curved shape, even when the ratio between the 2 bones is not even (most cases).
+The blend is triggered once with the attribute set to 'Off' - causing the knee to shift position completely- making it unusable in animation. Then, the blend is triggered when the attribute is 'On' and the knee is pinned in place, while the result curve edit points are being shifted based on the mid-point's position.
+<br>
+</i></font>
+<hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
 <font size = 3pt>
 <table>
