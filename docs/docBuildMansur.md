@@ -39,6 +39,12 @@ Also, this will yeild a very "easy to change" approach for the documentation gen
 ##Defenitions
 <hr width = 100%>
 ###appendMayaPluginsToYml
+<font color = #5f5f5f size = 3pt>
+<i>
+Append the Maya-Plugins documentation page into the existing yml struct. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>appendMayaPluginsToYml(ymlPath, parentPageName)</td></tr>
@@ -176,6 +182,26 @@ The final pythonLib item is passed in, as well as the root directory and the cur
 </tr>
 </table></font>
 <hr width = 100%>
+###collectHeaderFromCppFile
+<font color = #5f5f5f size = 3pt>
+<i>
+For the given cpp file, extract the header comment. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectHeaderFromCppFile(cppFullPath = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>cppFullPath</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###commitAndDeployDocumentation
 <font size = 3pt>
 <table>
@@ -193,6 +219,12 @@ The final pythonLib item is passed in, as well as the root directory and the cur
 </table></font>
 <hr width = 100%>
 ###createPluginDocFile
+<font color = #5f5f5f size = 3pt>
+<i>
+Create the Maya-Plugins attributes documentation page. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPluginDocFile(rootBuildPath = "D/mansurProject/mayaPlugins", ymlPath = "D/mansurProject/mansur-docs/mkdocs.yml")</td></tr>
@@ -208,10 +240,16 @@ The final pythonLib item is passed in, as well as the root directory and the cur
 </table></font>
 <hr width = 100%>
 ###extractAttributeDefenitionsFromCppFile
+<font color = #5f5f5f size = 3pt>
+<i>
+From the given cpp path given, extract all attribute information. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractAttributeDefenitionsFromCppFile(cppFullPath = None, buildName = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (inuput attributes), list (output attributes)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>cppFullPath</b>(<i>str</i>) ; [default: None]</li>
@@ -368,10 +406,17 @@ Extract parametrs from a given def source as list <br>
 </table></font>
 <hr width = 100%>
 ###gatherPluginDocumentation
+<font color = #5f5f5f size = 3pt>
+<i>
+From the build directory given, extract attributes data directly from the cpp files. <br>
+compile the data into input/uotput lists containing dict info for all attributes. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherPluginDocumentation(rootBuildPath = "D/mansurProject/mayaPlugins")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (build list containing extracted attributes data)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rootBuildPath</b>(<i>str</i>) ; [default: "D:/mansurProject/mayaPlugins"]</li>

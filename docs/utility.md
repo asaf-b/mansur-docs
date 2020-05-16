@@ -98,10 +98,16 @@ This method applies a 'channelControl' dict attributes into the given transform.
 </table></font>
 <hr width = 100%>
 ###checkForInternetConnection
+<font color = #5f5f5f size = 3pt>
+<i>
+check for a valid internet connection. <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkForInternetConnection(host="8.8.8.8", port=53, timeout=3)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>host</b>(<i>str</i>) ; [default: "8.8.8.8"]</li>
