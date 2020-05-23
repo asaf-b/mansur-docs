@@ -65,6 +65,8 @@ nav:
           - pluginRelease:
             - pluginRelease.md
           - productRelease:
+            - install:
+              - install.md
             - productRelease.md
         - block:
           - core:

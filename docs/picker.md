@@ -357,24 +357,3 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<hr width = 100%>
-##Defenitions
-<hr width = 100%>
-###loadPicker
-<font color = #5f5f5f size = 3pt>
-<i>
-A simple method to acquire any existing picker windows from global, and initiating a UI load based on the gathered data. <br>
-This method also dectates the name of the UI object, based on the rig's 'name', to avoid duplicated UI's, <br>
-As well as to allow for multiple pickers, connected to multiple rigs to be used at the same time. <br>
-</i>
-<br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadPicker()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>

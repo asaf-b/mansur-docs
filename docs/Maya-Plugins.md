@@ -107,7 +107,29 @@ A simple utility callback node to dynamiclly control and update the input camer'
 <br>
 Deformer.
 <br>
-A simple compression and tension based deformer.This deformer will detect, display and deform a meshbased on the difference between the currentdeformed state and an input base-state (base-mesh).The deformer contains 3 display modes:- Compression & Tension (50% gray as base-state)- Compression Only (black as base-state)- Tension (black as base-state)The deformer also conatins separate multipliers for both tension and compression.This deformer can be used to drive corrective shapes, wrinkles, volume gain/loss and much more.
+A simple compression and tension based deformer.
+<br>
+This deformer will detect, display and deform a mesh
+<br>
+based on the difference between the current
+<br>
+deformed state and an input base-state (base-mesh).
+<br>
+
+<br>
+The deformer contains 3 display modes:
+<br>
+- Compression & Tension (50% gray as base-state)
+<br>
+- Compression Only (black as base-state)
+<br>
+- Tension (black as base-state)
+<br>
+
+<br>
+The deformer also conatins separate multipliers for both tension and compression.
+<br>
+This deformer can be used to drive corrective shapes, wrinkles, volume gain/loss and much more.
 <br>
 </i></font>
 <hr width = 100%>
@@ -143,6 +165,8 @@ The initial solve, as well as all features are calculated within a single loop.
 As opposed to the common Variable FK setup, the curve based approach eliminates the Rest-Pose constant- making the node's algorithm Rest-Pose dynamic. In fact, it doesn't exist.
 <br>
 This approach uses only the input array amount constant to calculate a uniform positioning along the output curve- allowing the input curve to be changeable (live / dynamic).
+<br>
+Notice that the amount of input variable controls is completely independent of the main controls input.
 <br>
 </i></font>
 <hr width = 100%>
@@ -785,7 +809,11 @@ This node was written to create a perfectly curved limb blend, instead of using 
 <br>
 This method provides a very elegant way of enabling curvable limbs to animators, avoiding the use of Maya's 'makeThreePointCircularArc' which doesn't support a case where the 3 input points are collinear, nor any input curve or blending support.
 <br>
-Another major advantage of this node is the 'conformToMidPoint' attribute-This attribute signals the algorithm to take the mid-point into consideration when drawing the edit points of the calculated arc, 'pinning' the elbow/knee in place when blending to the curved shape, even when the ratio between the 2 bones is not even (most cases).The blend is triggered once with the attribute set to 'Off' - causing the knee to shift position completely- making it unusable in animation. Then, the blend is triggered when the attribute is 'On' and the knee is pinned in place, while the result curve edit points are being shifted based on the mid-point's position.
+Another major advantage of this node is the 'conformToMidPoint' attribute-
+<br>
+This attribute signals the algorithm to take the mid-point into consideration when drawing the edit points of the calculated arc, 'pinning' the elbow/knee in place when blending to the curved shape, even when the ratio between the 2 bones is not even (most cases).
+<br>
+The blend is triggered once with the attribute set to 'Off' - causing the knee to shift position completely- making it unusable in animation. Then, the blend is triggered when the attribute is 'On' and the knee is pinned in place, while the result curve edit points are being shifted based on the mid-point's position.
 <br>
 </i></font>
 <hr width = 100%>

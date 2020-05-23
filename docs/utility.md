@@ -490,6 +490,23 @@ Simple shape name fix function based on parent's name. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getCurrentVersion
+<font color = #5f5f5f size = 3pt>
+<i>
+Get the current mansur product version based on this file directory <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentVersion()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (version)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getFirstLevelParentForObject
 <font color = #5f5f5f size = 3pt>
 <i>
