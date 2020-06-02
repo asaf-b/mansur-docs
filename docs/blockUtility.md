@@ -1002,6 +1002,20 @@ Attempt to collect the root guide relative from the given node. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getModuleRootCtrl
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleRootCtrl(obj = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getModuleRootForSel
 <font color = #5f5f5f size = 3pt>
 <i>

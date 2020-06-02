@@ -74,14 +74,22 @@ nav:
             - buildModules.md
             - controlShapes.md
           - modules:
+            - character_body:
+              - FKChain:
+                - FKChain.md
+              - foot:
+                - freeControl.md
+              - freeControl:
+                - freeControl.md
+              - limb:
+                - freeControl.md
+              - meta:
+                - freeControl.md
+              - spineIK:
+                - freeControl.md
             - dev:
               - limb:
                 - limb.md
-            - global:
-              - FKChain:
-                - FKChain.md
-              - freeControl:
-                - freeControl.md
           - picker:
             - picker.md
             - plgSettings.md
