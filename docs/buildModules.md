@@ -58,6 +58,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li>extraSpaces</li>
 <li>pureTops</li>
 <li>spaceSwitchCtrls</li>
+<li>internalSpaces</li>
 <li>controls</li>
 <li>allControls</li>
 <li>puppetTopCtrl</li>
