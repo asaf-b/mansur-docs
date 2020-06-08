@@ -971,11 +971,12 @@ Collect all the given moduleRoot's 'interpolationJoints' relatives. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleInterpJoints(guideRoot)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleInterpJoints(guideRoot, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (matching interJoints)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guideRoot</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

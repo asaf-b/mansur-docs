@@ -45,7 +45,7 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#bmCategoryChangedTriggerTARGET">bmCategoryChangedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializePrefDirsTARGET">initializePrefDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#insertGuidesTARGET">insertGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#removeGuidesTARGET">removeGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePathsChangeTARGET">applyModulePathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#moduleBuildGuideTARGET">moduleBuildGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#addModulePathTARGET">addModulePath </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -72,6 +72,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getDefaultsModeTARGET">getDefaultsMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#symmetrizeModuleTARGET">symmetrizeModule </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#insertGuidesTARGET">insertGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#collectPartialModulesRootsTARGET">collectPartialModulesRoots </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#newRigTopTrigTARGET">newRigTopTrig </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#fixModulePathForRigTopTARGET">fixModulePathForRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -108,15 +109,14 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "insertGuidesTARGET"></h5><font color = 464646 size = 3><b>insertGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<h5 id = "removeGuidesTARGET"></h5><font color = 464646 size = 3><b>removeGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>insertGuides(self, mode = "above")</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeGuides(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-<li><b>mode</b>(<i>str</i>) ; [default: "above"]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -574,6 +574,24 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "insertGuidesTARGET"></h5><font color = 464646 size = 3><b>insertGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>This method is used primarily through Block UI, to insert guides above/below any guide selection.</i><br>
+<i>This will handle all exceptions, as well as re-analyze and re-orgenize each module based on the action performed.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>insertGuides(self, mode = "above")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>mode</b>(<i>str</i>) ; [default: "above"]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
