@@ -378,6 +378,7 @@ A simple shpe children name test of an object (after creation) and a renaming th
 <li><b>createBlkCtrlTypeID</b>(<i>bool</i>)</li>
 <li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
 <li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
+<li><b>segmentScaleCompensate</b>(<i>bool</i>)</li>
 </ul></td>
 </tr>
 </table></font>
