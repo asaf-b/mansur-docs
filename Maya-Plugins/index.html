@@ -468,6 +468,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnsdynamicpivot" class="md-nav__link">
+    mnsDynamicPivot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnsiksolver" class="md-nav__link">
     mnsIKSolver
   </a>
@@ -1126,10 +1133,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-1-2" type="checkbox" id="nav-5-2-4-2-1-2">
     
     <label class="md-nav__link" for="nav-5-2-4-2-1-2">
-      freeControl
+      foot
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
       <label class="md-nav__title" for="nav-5-2-4-2-1-2">
+        foot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../foot/" title="Foot" class="md-nav__link">
+      Foot
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-1-3" type="checkbox" id="nav-5-2-4-2-1-3">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-1-3">
+      freeControl
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-2-4-2-1-3">
         freeControl
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1152,11 +1195,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
           
           
           
@@ -1164,32 +1202,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2" type="checkbox" id="nav-5-2-4-2-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-1-4" type="checkbox" id="nav-5-2-4-2-1-4">
     
-    <label class="md-nav__link" for="nav-5-2-4-2-2">
-      dev
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-      <label class="md-nav__title" for="nav-5-2-4-2-2">
-        dev
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2-1" type="checkbox" id="nav-5-2-4-2-2-1">
-    
-    <label class="md-nav__link" for="nav-5-2-4-2-2-1">
+    <label class="md-nav__link" for="nav-5-2-4-2-1-4">
       limb
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
-      <label class="md-nav__title" for="nav-5-2-4-2-2-1">
+      <label class="md-nav__title" for="nav-5-2-4-2-1-4">
         limb
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1355,6 +1374,13 @@
         <li class="md-nav__item">
   <a href="#mnscurvezip" class="md-nav__link">
     mnsCurveZip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mnsdynamicpivot" class="md-nav__link">
+    mnsDynamicPivot
   </a>
   
 </li>
@@ -1767,6 +1793,46 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>outCurveB</td><td>outCurveB</td><td>nurbsCurve</td><td>Result curve B shape.</td></tr>
 <tr><td>outCurveAOffset</td><td>outCurveAOffset</td><td>nurbsCurve</td><td>Result curve A offset shape.</td></tr>
 <tr><td>outCurveBOffset</td><td>outCurveBOffset</td><td>nurbsCurve</td><td>Result curve B offset shape.</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnsdynamicpivot">mnsDynamicPivot</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This is a simple node to calculate a foot's dynamic pivot internally, acoiding the use of many transforms and node connections.
+<br>
+Given an input curve, world origin position (as matrix) and mapping info, this node will map the input rotation values into a new custom point adding the rotation into the translation.
+<br>
+This essentailly will push the new point rapidly away from it's origin into the mapping direction.
+<br>
+Now using the given input curve, the closest point on curve from the new point will be calcultaed and outputted into the rotatePivot plug.
+<br>
+This output plug can then be plugged into a custom pivot attribute of any transform- creating a dynamiclly calculated pivot along the given curve.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>inputCurve</td><td>inputCurve</td><td>nurbsCurve</td><td>Input curve.</td></tr>
+<tr><td>rotateX</td><td>rx</td><td>angle</td><td>Input local X rotation.</td></tr>
+<tr><td>rotateY</td><td>ry</td><td>angle</td><td>Input local Y rotation.</td></tr>
+<tr><td>rotateZ</td><td>rz</td><td>angle</td><td>Input local Z rotation.</td></tr>
+<tr><td>rotate</td><td>r</td><td>angle[3]</td><td>Input rotations.</td></tr>
+<tr><td>originWorldMatrix</td><td>owm</td><td>matrix</td><td>Input origin position to strat the calculation from.</td></tr>
+<tr><td>mapRotXTo</td><td>mapRotXTo</td><td>enum</td><td>Mapping info from input X rotation.</td></tr>
+<tr><td>mapRotYTo</td><td>mapRotYTo</td><td>enum</td><td>Mapping info from input Y rotation.</td></tr>
+<tr><td>mapRotZTo</td><td>mapRotZTo</td><td>enum</td><td>Mapping info from input Z rotation.</td></tr>
+<tr><td>distRateMultiplier</td><td>distRateMultiplier</td><td>double</td><td>The rotation rate of addition in the translation values.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>rotatePivot</td><td>rotatePivot</td><td>float[3]</td><td>Result circle center point.</td></tr>
 </table></font>
 <body></p>
 <h2 id="mnsiksolver">mnsIKSolver</h2>
