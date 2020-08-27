@@ -443,6 +443,21 @@ Delete all set custom attributes for the given ctrl. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###deleteFreeJntGrpForModule
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteFreeJntGrpForModule(guideRoot = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>guideRoot</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###deletePoseForGuides
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1467,13 +1482,14 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 ###handleInterpLocsStructureReturn
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>handleInterpLocsStructureReturn(rigTop = None, interpLocs = [], guides = [])</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>handleInterpLocsStructureReturn(rigTop = None, interpLocs = [], guides = [], **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
 <li><b>interpLocs</b>(<i>list</i>) ; [default: []]</li>
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

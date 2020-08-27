@@ -323,6 +323,46 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>outCurveBOffset</td><td>outCurveBOffset</td><td>nurbsCurve</td><td>Result curve B offset shape.</td></tr>
 </table></font>
 <body>
+##mnsDynamicPivot
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This is a simple node to calculate a foot's dynamic pivot internally, acoiding the use of many transforms and node connections.
+<br>
+Given an input curve, world origin position (as matrix) and mapping info, this node will map the input rotation values into a new custom point adding the rotation into the translation.
+<br>
+This essentailly will push the new point rapidly away from it's origin into the mapping direction.
+<br>
+Now using the given input curve, the closest point on curve from the new point will be calcultaed and outputted into the rotatePivot plug.
+<br>
+This output plug can then be plugged into a custom pivot attribute of any transform- creating a dynamiclly calculated pivot along the given curve.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>inputCurve</td><td>inputCurve</td><td>nurbsCurve</td><td>Input curve.</td></tr>
+<tr><td>rotateX</td><td>rx</td><td>angle</td><td>Input local X rotation.</td></tr>
+<tr><td>rotateY</td><td>ry</td><td>angle</td><td>Input local Y rotation.</td></tr>
+<tr><td>rotateZ</td><td>rz</td><td>angle</td><td>Input local Z rotation.</td></tr>
+<tr><td>rotate</td><td>r</td><td>angle[3]</td><td>Input rotations.</td></tr>
+<tr><td>originWorldMatrix</td><td>owm</td><td>matrix</td><td>Input origin position to strat the calculation from.</td></tr>
+<tr><td>mapRotXTo</td><td>mapRotXTo</td><td>enum</td><td>Mapping info from input X rotation.</td></tr>
+<tr><td>mapRotYTo</td><td>mapRotYTo</td><td>enum</td><td>Mapping info from input Y rotation.</td></tr>
+<tr><td>mapRotZTo</td><td>mapRotZTo</td><td>enum</td><td>Mapping info from input Z rotation.</td></tr>
+<tr><td>distRateMultiplier</td><td>distRateMultiplier</td><td>double</td><td>The rotation rate of addition in the translation values.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>rotatePivot</td><td>rotatePivot</td><td>float[3]</td><td>Result circle center point.</td></tr>
+</table></font>
+<body>
 ##mnsIKSolver
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>

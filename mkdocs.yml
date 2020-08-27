@@ -77,9 +77,10 @@ nav:
             - character_body:
               - FKChain:
                 - FKChain.md
+              - foot:
+                - foot.md
               - freeControl:
                 - freeControl.md
-            - dev:
               - limb:
                 - limb.md
           - picker:

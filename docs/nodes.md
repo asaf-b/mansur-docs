@@ -156,6 +156,37 @@ Create a new choice node using the given inputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###clampNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new clamp node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>clampNode(inputA = [], maxA = [], minA = [], output = [], **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (reverse node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputA</b>(<i>list</i>) ; [default: []]</li>
+<li><b>maxA</b>(<i>list</i>) ; [default: []]</li>
+<li><b>minA</b>(<i>list</i>) ; [default: []]</li>
+<li><b>output</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: reverse] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###conditionNode
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -221,7 +252,7 @@ If a failue status was return, attempt a 'setAttr' next. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectSetAttempt(attrA, nodeAttr, valType)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool (sucess status)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>attrA</b></li>
@@ -288,6 +319,66 @@ Create a new imagePlane node using the given inputs. <br>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###inverseMatrixNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new inverseMatrix node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>inverseMatrixNode(inputMatrix = None, outputMatrix = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (inverseMatrix node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>outputMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: choice] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mayaConatraint
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new constraint node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mayaConatraint(sources = [], target = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (constraint node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>sources</b>(<i>list</i>) ; [default: []]</li>
+<li><b>target</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>type</b>(<i>str</i>) ; [default: parent] - side flag</li>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: cnsType+Constraint] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>maintainOffset</b>(<i>bool</i>) - Node's maintainOffset attribute</li>
 </ul></td>
 </tr>
 </table></font>
@@ -763,6 +854,68 @@ Creates an mnsReampleCurve node based on specified parameters and outputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###multMatrixNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new inverseMatrix node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>multMatrixNode(inputMatricies = [], outputMatrix = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (multMatrix node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputMatricies</b>(<i>list</i>) ; [default: []]</li>
+<li><b>outputMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: choice] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###pmaNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new inverseMatrix node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pmaNode(input1Ds = [], input2Ds = [], input3Ds = [], output1D = None, output2D = [], output3D = [], **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (plusMinusAverage node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>input1Ds</b>(<i>list</i>) ; [default: []]</li>
+<li><b>input2Ds</b>(<i>list</i>) ; [default: []]</li>
+<li><b>input3Ds</b>(<i>list</i>) ; [default: []]</li>
+<li><b>output1D</b>(<i>str</i>) ; [default: None]</li>
+<li><b>output2D</b>(<i>list</i>) ; [default: []]</li>
+<li><b>output3D</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: choice] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###reverseNode
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -802,7 +955,7 @@ Attempt to set the passed in value into the attribute passed in. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setAttrAttempt(nodeAttr, value, valType)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool (sucess status)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>nodeAttr</b></li>
