@@ -351,6 +351,7 @@ This output plug can then be plugged into a custom pivot attribute of any transf
 <tr><td>rotateZ</td><td>rz</td><td>angle</td><td>Input local Z rotation.</td></tr>
 <tr><td>rotate</td><td>r</td><td>angle[3]</td><td>Input rotations.</td></tr>
 <tr><td>originWorldMatrix</td><td>owm</td><td>matrix</td><td>Input origin position to strat the calculation from.</td></tr>
+<tr><td>targetParentInverseMatrix</td><td>tpim</td><td>matrix</td><td> Target transform parent inverse matrix to localize the rotate pivot position result.</td></tr>
 <tr><td>mapRotXTo</td><td>mapRotXTo</td><td>enum</td><td>Mapping info from input X rotation.</td></tr>
 <tr><td>mapRotYTo</td><td>mapRotYTo</td><td>enum</td><td>Mapping info from input Y rotation.</td></tr>
 <tr><td>mapRotZTo</td><td>mapRotZTo</td><td>enum</td><td>Mapping info from input Z rotation.</td></tr>
@@ -360,7 +361,7 @@ This output plug can then be plugged into a custom pivot attribute of any transf
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
-<tr><td>rotatePivot</td><td>rotatePivot</td><td>float[3]</td><td>Result circle center point.</td></tr>
+<tr><td>rotatePivot</td><td>rotatePivot</td><td>float[3]</td><td>Result rotate pivot position.</td></tr>
 </table></font>
 <body>
 ##mnsIKSolver
