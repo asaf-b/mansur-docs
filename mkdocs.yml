@@ -50,6 +50,7 @@ nav:
           - log.md
           - nodes.md
           - prefixSuffix.md
+          - skinUtils.md
           - string.md
           - UIUtils.md
           - utility.md
@@ -83,6 +84,8 @@ nav:
                 - freeControl.md
               - limb:
                 - limb.md
+              - simpleSquash:
+                - simpleSquash.md
           - picker:
             - picker.md
             - plgSettings.md

@@ -524,6 +524,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnssimplesquash" class="md-nav__link">
+    mnsSimpleSquash
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnsspherevectorpush" class="md-nav__link">
     mnsSphereVectorPush
   </a>
@@ -649,6 +656,18 @@
   <li class="md-nav__item">
     <a href="../prefixSuffix/" title="prefixSuffix" class="md-nav__link">
       prefixSuffix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../skinUtils/" title="skinUtils" class="md-nav__link">
+      skinUtils
     </a>
   </li>
 
@@ -1231,6 +1250,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-1-5" type="checkbox" id="nav-5-2-4-2-1-5">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-1-5">
+      simpleSquash
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-2-4-2-1-5">
+        simpleSquash
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../simpleSquash/" title="simpleSquash" class="md-nav__link">
+      simpleSquash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1430,6 +1485,13 @@
         <li class="md-nav__item">
   <a href="#mnsresamplecurve" class="md-nav__link">
     mnsResampleCurve
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mnssimplesquash" class="md-nav__link">
+    mnsSimpleSquash
   </a>
   
 </li>
@@ -1879,6 +1941,7 @@ Axis Switching - Offering an easy switch to any joint orientation.
 <tr><td>stretchLimit</td><td>stretchLimit</td><td>float</td><td>IK stretch limit value. 1 is no stretch, 2 is double the length.</td></tr>
 <tr><td>aimAxis</td><td>aimAxis</td><td>enum</td><td>Aim axis choice.</td></tr>
 <tr><td>upAxis</td><td>upAxis</td><td>enum</td><td>Up axis choice.</td></tr>
+<tr><td>segmentScaleCompensate</td><td>segmentScaleCompensate</td><td>bool</td><td>calculate with segment scale compensate on or off.</td></tr>
 </table></font>
 <font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
 <font size = 3pt>
@@ -2238,6 +2301,52 @@ Primaraly used to embed mnsThreePointArc into an IK setup.
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>outCurve</td><td>outCurve</td><td>nurbsCurve</td><td>Result curve.</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnssimplesquash">mnsSimpleSquash</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This simple node is designed to output a scale value to squash and stretch a given single transform value.
+<br>
+Based on the creation distance between the target and source matricies, the scale values will be calculated using a squash/stretch algorithm using the dynamic distance (or current distance).
+<br>
+All input values will be taken into account calculating the result.
+<br>
+The static arc length is the creation length. This value can be set manually if needed, although the node will set this value in it's initialization stage- in case the source and handle matricies where connected.
+<br>
+This value will be set automatically only once, in case this value needs to be changed it will need to be set manually.
+<br>
+Aim axis attribute- stretch value will be set to the aim axis selection, squash value will be set to the remaining axes.
+<br>
+Global scale attribute - this attribute is set to scale the static arc length to avoid unwanted scaling issues when aiming for a uniform scale of the target transform.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>handleWorldMatrix</td><td>handleWorldMatrix</td><td>matrix</td><td>Input handle world matrix.</td></tr>
+<tr><td>squashRootWorldMatrix</td><td>squashRootWorldMatrix</td><td>matrix</td><td>Input squash root position world matrix.</td></tr>
+<tr><td>squashFactor</td><td>squashFactor</td><td>float</td><td>Input squash factor.</td></tr>
+<tr><td>stretchFactor</td><td>stretchFactor</td><td>float</td><td>Input stretch factor.</td></tr>
+<tr><td>stretchMin</td><td>stretchMin</td><td>float</td><td>Input minimum stretch value.</td></tr>
+<tr><td>stretchMax</td><td>stretchMax</td><td>float</td><td>Input maximum stretch value.</td></tr>
+<tr><td>squashMin</td><td>squashMin</td><td>float</td><td>Input maximum squash value.</td></tr>
+<tr><td>squashMax</td><td>squashMax</td><td>float</td><td>Input minimum squash value.</td></tr>
+<tr><td>staticArcLength</td><td>staticArcLength</td><td>float</td><td>Static arc length / creation length value.</td></tr>
+<tr><td>aimAxis</td><td>aimAxis</td><td>enum</td><td>Aim axis- stretch value will be set to the aim axis selection, squash value will be set to the remaining axes.</td></tr>
+<tr><td>globalScale</td><td>globalScale</td><td>float</td><td>Global scale multiplier value.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>scale</td><td>s</td><td>float[3]</td><td>Output scale result.</td></tr>
+<tr><td>arcLength</td><td>arcLength</td><td>float</td><td>Current arc length.</td></tr>
 </table></font>
 <body></p>
 <h2 id="mnsspherevectorpush">mnsSphereVectorPush</h2>

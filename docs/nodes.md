@@ -41,6 +41,38 @@ Create a new addDoubleLinear node using the given inputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###blendColorsNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new multiply devide node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>blendColorsNode(color1 = None, color2 = None, blender = None, output = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (MultiplyDevide node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>color1</b>(<i>str</i>) ; [default: None]</li>
+<li><b>color2</b>(<i>str</i>) ; [default: None]</li>
+<li><b>blender</b>(<i>str</i>) ; [default: None]</li>
+<li><b>output</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: multDev] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>operation</b>(<i>int</i>) ; [default: 1]</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###buildGeoAxisVis
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -379,6 +411,10 @@ Create a new constraint node using the given inputs. <br>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
 <li><b>maintainOffset</b>(<i>bool</i>) - Node's maintainOffset attribute</li>
+<li><b>aimVector</b>(<i>list</i>) ; [default: [' [0.0', '1.0', '0.0']]</li>
+<li><b>upVector</b>(<i>list</i>) ; [default: [' [1.0', '0.0', '0.0']]</li>
+<li><b>worldUpType</b>(<i>str</i>) ; [default: object]</li>
+<li><b>worldUpObject</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 </table></font>
@@ -807,6 +843,37 @@ Creates an mnsReampleCurve node based on specified parameters and outputs. <br>
 <li><b>degree</b>(<i>int</i>) ; [default: 3] - Output curve degree</li>
 <li><b>sections</b>(<i>int</i>) ; [default: 8] - Output curve number of sections</li>
 <li><b>inputCurve</b>(<i>str</i>) - name of the curve object to connect as input curve into the node. Setting as nothing or an invalid name will result in nothing connected</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mnsSimpleSquashNode
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsSimpleSquashNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (MnsDynamicPivot node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: springCurve] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>globalScale</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>squashFactor</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>squashMin</b>(<i>float</i>) ; [default: 0.001]</li>
+<li><b>squashMax</b>(<i>float</i>) ; [default: 10.0]</li>
+<li><b>stretchFactor</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>stretchMin</b>(<i>float</i>) ; [default: 0.001]</li>
+<li><b>stretchMax</b>(<i>float</i>) ; [default: 10.0]</li>
+<li><b>squashRootWorldMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>handleWorldMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>scale</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 </table></font>
