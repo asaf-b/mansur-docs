@@ -989,7 +989,7 @@ Create a new inverseMatrix node using the given inputs. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pmaNode(input1Ds = [], input2Ds = [], input3Ds = [], output1D = None, output2D = [], output3D = [], **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pmaNode(input1Ds = [], input2Ds = [], input3Ds = [], output1D = None, output2D = None, output3D = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (plusMinusAverage node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -997,8 +997,8 @@ Create a new inverseMatrix node using the given inputs. <br>
 <li><b>input2Ds</b>(<i>list</i>) ; [default: []]</li>
 <li><b>input3Ds</b>(<i>list</i>) ; [default: []]</li>
 <li><b>output1D</b>(<i>str</i>) ; [default: None]</li>
-<li><b>output2D</b>(<i>list</i>) ; [default: []]</li>
-<li><b>output3D</b>(<i>list</i>) ; [default: []]</li>
+<li><b>output2D</b>(<i>str</i>) ; [default: None]</li>
+<li><b>output3D</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>

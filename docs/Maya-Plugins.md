@@ -356,6 +356,7 @@ This output plug can then be plugged into a custom pivot attribute of any transf
 <tr><td>mapRotYTo</td><td>mapRotYTo</td><td>enum</td><td>Mapping info from input Y rotation.</td></tr>
 <tr><td>mapRotZTo</td><td>mapRotZTo</td><td>enum</td><td>Mapping info from input Z rotation.</td></tr>
 <tr><td>distRateMultiplier</td><td>distRateMultiplier</td><td>double</td><td>The rotation rate of addition in the translation values.</td></tr>
+<tr><td>inputMultipliers</td><td>inputMultipliers</td><td>bool</td><td>Pre-calc input multipliers.</td></tr>
 </table></font>
 <font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
 <font size = 3pt>
