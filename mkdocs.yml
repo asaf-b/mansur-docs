@@ -84,6 +84,8 @@ nav:
                 - freeControl.md
               - limb:
                 - limb.md
+              - lookAtControl:
+                - lookAtControl.md
               - meta:
                 - meta.md
               - simpleSquash:

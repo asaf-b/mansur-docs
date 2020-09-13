@@ -1778,6 +1778,26 @@ Recursively attempt to collect the 'Module Top Group' related to the ctrl passed
 </tr>
 </table></font>
 <hr width = 100%>
+###recGetParentJoint
+<font color = #5f5f5f size = 3pt>
+<i>
+Recursivly attempt to get a parent joint starting with a given root object, scaling up the heirarchy. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recGetParentJoint(rootObject = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>mnsNameStd</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootObject</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###recSearchForGuideRootInParents
 <font color = #5f5f5f size = 3pt>
 <i>

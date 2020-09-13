@@ -384,7 +384,7 @@ Create a new inverseMatrix node using the given inputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
-###mayaConatraint
+###mayaConstraint
 <font color = #5f5f5f size = 3pt>
 <i>
 Create a new constraint node using the given inputs. <br>
@@ -393,7 +393,7 @@ Create a new constraint node using the given inputs. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mayaConatraint(sources = [], target = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mayaConstraint(sources = [], target = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (constraint node)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
