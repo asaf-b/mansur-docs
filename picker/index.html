@@ -829,6 +829,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3-4" type="checkbox" id="nav-5-2-3-4">
+    
+    <label class="md-nav__link" for="nav-5-2-3-4">
+      userManagement
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-2-3-4">
+        userManagement
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../userManagement/" title="userManagement" class="md-nav__link">
+      userManagement
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1502,17 +1538,27 @@ Picker UI Class. <br>
 <ul>
 <li>iconsDir</li>
 <li>rigTop</li>
+<li>puppetRoot</li>
 <li>pickerBase</li>
 <li>btnDrawDict</li>
+<li>btnControlRelationship</li>
+<li>rubberBand</li>
+<li>origin</li>
+<li>mayaSelectCallBack</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#setModuleRootsVisBasedOnStateTARGET">setModuleRootsVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setModuleVisStateBasedOnStateTARGET">setModuleVisStateBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#refreshBtnStateTARGET">refreshBtnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#determaineSelectionTARGET">determaineSelection </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#btnClickedTriggerTARGET">btnClickedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#destroyUITARGET">destroyUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializeViewTARGET">initializeView </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getPlgPositionandSizeTARGET">getPlgPositionandSize </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#acquirePickerSettingsWinTARGET">acquirePickerSettingsWin </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#eventFilterTARGET">eventFilter </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setBGImageTARGET">setBGImage </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#openMenuTARGET">openMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -1525,6 +1571,60 @@ Picker UI Class. <br>
 </table></font></p>
 <h4 id="mnspicker-methods">MnsPicker  methods</h4>
 <p><hr width = 50%>
+<h5 id = "setModuleRootsVisBasedOnStateTARGET"></h5><font color = 464646 size = 3><b>setModuleRootsVisBasedOnState <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setModuleRootsVisBasedOnState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setModuleVisStateBasedOnStateTARGET"></h5><font color = 464646 size = 3><b>setModuleVisStateBasedOnState <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setModuleVisStateBasedOnState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "refreshBtnStateTARGET"></h5><font color = 464646 size = 3><b>refreshBtnState <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>refreshBtnState(self, dummy)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>dummy</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "determaineSelectionTARGET"></h5><font color = 464646 size = 3><b>determaineSelection <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>determaineSelection(self, rubberBand)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rubberBand</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "btnClickedTriggerTARGET"></h5><font color = 464646 size = 3><b>btnClickedTrigger <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>A simple trigger method for a button click.</i><br>
@@ -1628,6 +1728,24 @@ Picker UI Class. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "eventFilterTARGET"></h5><font color = 464646 size = 3><b>eventFilter <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Override event filter to catch the tear off to override it's event.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>eventFilter(self, source, event)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>source</b></li>
+<li><b>event</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
