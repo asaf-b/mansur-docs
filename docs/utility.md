@@ -97,6 +97,17 @@ This method applies a 'channelControl' dict attributes into the given transform.
 </tr>
 </table></font>
 <hr width = 100%>
+###autoLoadMnsPlugins
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>autoLoadMnsPlugins()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###checkForInternetConnection
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1187,6 +1198,27 @@ Write the input data into the input json file path. <br>
 <li><b>fileName</b></li>
 <li><b>data</b>(<i>dict</i>) ; [default: {}]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###writeJsonFullPath
+<font color = #5f5f5f size = 3pt>
+<i>
+Write the input data into the input json file path. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>writeJsonFullPath(fullPath, data)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>fullPath</b></li>
+<li><b>data</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

@@ -69,6 +69,8 @@ nav:
             - install:
               - install.md
             - productRelease.md
+          - userManagement:
+            - userManagement.md
         - block:
           - core:
             - blockUtility.md

@@ -760,6 +760,7 @@ Create a new mnsNodeRelationship node using the given inputs. <br>
 <li><b>body</b>(<i>str</i>) ; [default: nodeRelationship] - Node's name body.</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>connectDeleteSlavesOnly</b>(<i>bool</i>)</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
 <li><b>master</b>(<i>str</i>) ; [default: None]</li>
 <li><b>slaves</b>(<i>list</i>) ; [default: [' ']]</li>
