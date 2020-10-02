@@ -53,8 +53,12 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li>guideControls</li>
 <li>cGuideControls</li>
 <li>pureParent</li>
+<li>attrHostCtrl</li>
 <li>moduleTop</li>
-<li>moduleRootCtrl</li>
+<li>animGrp</li>
+<li>animStaticGrp</li>
+<li>rigComponentsGrp</li>
+<li>moduleSpaceAttrHost</li>
 <li>extraSpaces</li>
 <li>pureTops</li>
 <li>spaceSwitchCtrls</li>
@@ -65,6 +69,9 @@ The actual flow of the build is independent of the modules setup internals. <br>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#constructAttrHostCtrlTARGET">constructAttrHostCtrl </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createAttrHostCustomGuideTARGET">createAttrHostCustomGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#splitControlsBasedOnTypeTARGET">splitControlsBasedOnType </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#collecteModuleSettingsTARGET">collecteModuleSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildGuideObjectsTARGET">buildGuideObjects </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#gatherAllDependeciesTARGET">gatherAllDependecies </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -74,6 +81,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li><b><a href="#deconstructTARGET">deconstruct </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildGuidesTARGET">buildGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#constructSpacesTARGET">constructSpaces </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createModuleTopNodeTARGET">createModuleTopNode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#storeCustomDefaultsTARGET">storeCustomDefaults </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateCreationArgsToSymmetryModeTARGET">updateCreationArgsToSymmetryMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#restoreCustomDefaultsTARGET">restoreCustomDefaults </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -87,6 +95,45 @@ The actual flow of the build is independent of the modules setup internals. <br>
 </table></font>
 ####MnsBuildModule  methods
 <hr width = 50%>
+<h5 id = "constructAttrHostCtrlTARGET"></h5><font color = 464646 size = 3><b>constructAttrHostCtrl <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constructAttrHostCtrl(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createAttrHostCustomGuideTARGET"></h5><font color = 464646 size = 3><b>createAttrHostCustomGuide <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createAttrHostCustomGuide(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "splitControlsBasedOnTypeTARGET"></h5><font color = 464646 size = 3><b>splitControlsBasedOnType <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitControlsBasedOnType(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "collecteModuleSettingsTARGET"></h5><font color = 464646 size = 3><b>collecteModuleSettings <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -263,6 +310,22 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constructSpaces(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createModuleTopNodeTARGET"></h5><font color = 464646 size = 3><b>createModuleTopNode <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>This method is used to create the genric 'module top group' on module construction.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createModuleTopNode(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

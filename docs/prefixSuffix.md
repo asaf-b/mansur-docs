@@ -38,6 +38,7 @@ Any name related methods are held by this class. <br>
 <li>alpha</li>
 <li>suffix</li>
 <li>name</li>
+<li>namespace</li>
 <li>comment</li>
 </ul>
 </td></tr>

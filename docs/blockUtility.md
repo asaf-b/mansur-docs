@@ -309,27 +309,6 @@ The channels are split (predefined) as follows: <br>
 </tr>
 </table></font>
 <hr width = 100%>
-###createModuleTopNode
-<font color = #5f5f5f size = 3pt>
-<i>
-This method is used to create the genric 'module top group' on module construction. <br>
-</i>
-<br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createModuleTopNode(MnsBuildModuleA = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Module Top Group)</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>MnsBuildModuleA</b>(<i>str</i>) ; [default: None]</li>
-<li><b>**kwargs</b></li>
-</ul></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>
-<hr width = 100%>
 ###createPickerLayoutGuide
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -704,6 +683,26 @@ This method is used on rig deconstruction, to store all set default values, in o
 </tr>
 </table></font>
 <hr width = 100%>
+###getAllCtrlsFromRigTop
+<font color = #5f5f5f size = 3pt>
+<i>
+Get all controls for the given rig top. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getAllCtrlsFromRigTop(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getAllGuideRootsForRigTop
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -907,6 +906,31 @@ Collect a ctrl type object's 'Guide Authority', or related guide object. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getKeyboardModifiersState
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getKeyboardModifiersState()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getModuleAnimGrp
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleAnimGrp(obj = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getModuleDecendentsWildcard
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1044,6 +1068,20 @@ Attempt to collect a 'root guide' relative from the current selection <br>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleRootForSel()</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode (moduleRoot)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getModuleScale
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleScale(MnsBuildModule)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsBuildModule</b></li>
+</ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
@@ -1861,6 +1899,20 @@ This method will remove the corresponding "module vis" channel from the given pu
 </tr>
 </table></font>
 <hr width = 100%>
+###resetAllControlForRigTop
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetAllControlForRigTop(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###resetControls
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1946,6 +1998,41 @@ Search for a 'guide authority' or 'rootGuide' in the given node's decendents <br
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###selectAllCtrls
+<font color = #5f5f5f size = 3pt>
+<i>
+Select all controls for the given rig top. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>selectAllCtrls(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###selectRelatedControls
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>selectRelatedControls(controlsToSelect, mode = "replace")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>controlsToSelect</b></li>
+<li><b>mode</b>(<i>str</i>) ; [default: "replace"]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

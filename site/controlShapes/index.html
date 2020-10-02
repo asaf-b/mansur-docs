@@ -2120,14 +2120,15 @@ The default color is white when used as standalone, and based on the rig's globa
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
-<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
-<li><b>body</b>(<i>str</i>) ; [default: control] - Node's name body</li>
-<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
-<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's id</li>
+<li><b>side</b>(<i>str</i>) ; [default: side] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: body] - Node's name body</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: alpha] - Node's Alpha id</li>
+<li><b>id</b>(<i>str</i>) ; [default: id] - Node's id</li>
+<li><b>bodySuffix</b>(<i>str</i>)</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - In case of a 'free' creation, if True will name the node to the first possible name- searching for new Alpha instead of the ID</li>
 <li><b>ctrlType</b>(<i>str</i>) ; [default: ctrl]</li>
-<li><b>createBlkClassID</b>(<i>bool</i>)</li>
-<li><b>createBlkCtrlTypeID</b>(<i>bool</i>)</li>
+<li><b>createBlkClassID</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>createBlkCtrlTypeID</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
 <li><b>customParentTransform</b>(<i>str</i>)</li>
 <li><b>skipColor</b>(<i>bool</i>)</li>
@@ -2136,6 +2137,7 @@ The default color is white when used as standalone, and based on the rig's globa
 <li><b>symmetryType</b>(<i>int</i>)</li>
 <li><b>doMirror</b>(<i>bool</i>)</li>
 <li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
+<li><b>chennelControl</b>(<i>str</i>) ; [default: None]</li>
 <li><b>controlShape</b>(<i>str</i>) ; [default: circle] - Control's NURBS shape</li>
 <li><b>scale</b>(<i>float</i>) ; [default: 1.0] - Ctrl scale. Relative to global settings.</li>
 <li><b>color</b>(<i>tuple</i>) ; [default: (1.0, 1.0, 1.0)] - Shape's color</li>

@@ -38,12 +38,16 @@ Picker UI Class. <br>
 <li>pickerBase</li>
 <li>btnDrawDict</li>
 <li>btnControlRelationship</li>
+<li>deselectList</li>
+<li>namespace</li>
 <li>rubberBand</li>
 <li>origin</li>
 <li>mayaSelectCallBack</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#displayHowToUseGuideTARGET">displayHowToUseGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#goToModuleRootTARGET">goToModuleRoot </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setModuleRootsVisBasedOnStateTARGET">setModuleRootsVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setModuleVisStateBasedOnStateTARGET">setModuleVisStateBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshBtnStateTARGET">refreshBtnState </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -58,6 +62,7 @@ Picker UI Class. <br>
 <li><b><a href="#setBGImageTARGET">setBGImage </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#openMenuTARGET">openMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#btnDoubleClickedTriggerTARGET">btnDoubleClickedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#drawPlgButtonTARGET">drawPlgButton </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setButtonHiddenStateBasedOnTypeTARGET">setButtonHiddenStateBasedOnType </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#editBtnTriggerTARGET">editBtnTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -67,6 +72,32 @@ Picker UI Class. <br>
 </table></font>
 ####MnsPicker  methods
 <hr width = 50%>
+<h5 id = "displayHowToUseGuideTARGET"></h5><font color = 464646 size = 3><b>displayHowToUseGuide <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>displayHowToUseGuide(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "goToModuleRootTARGET"></h5><font color = 464646 size = 3><b>goToModuleRoot <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>goToModuleRoot(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "setModuleRootsVisBasedOnStateTARGET"></h5><font color = 464646 size = 3><b>setModuleRootsVisBasedOnState <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -96,12 +127,12 @@ Picker UI Class. <br>
 <h5 id = "refreshBtnStateTARGET"></h5><font color = 464646 size = 3><b>refreshBtnState <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>refreshBtnState(self, dummy)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>refreshBtnState(self, dummy = None)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-<li><b>dummy</b></li>
+<li><b>dummy</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -299,6 +330,24 @@ Picker UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "btnDoubleClickedTriggerTARGET"></h5><font color = 464646 size = 3><b>btnDoubleClickedTrigger <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>The global action trigger for any picker UI button double click trigger.</i><br>
+<i>   This method will trigger the "hierarchy selection" and the "action script" for the passed in QPushButton passed in.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>btnDoubleClickedTrigger(self, btn)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>btn</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "drawPlgButtonTARGET"></h5><font color = 464646 size = 3><b>drawPlgButton <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>This is the main dynamic button draw method.</i><br>
@@ -384,9 +433,12 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 <ul>
 <li>plgNode</li>
 <li>clickOffset</li>
+<li>clickedSignal</li>
+<li>last</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#mouseDoubleClickEventTARGET">mouseDoubleClickEvent </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#mouseMoveEventTARGET">mouseMoveEvent </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#mouseReleaseEventTARGET">mouseReleaseEvent </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
@@ -395,6 +447,20 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 </table></font>
 ####pickerQPushButton  methods
 <hr width = 50%>
+<h5 id = "mouseDoubleClickEventTARGET"></h5><font color = 464646 size = 3><b>mouseDoubleClickEvent <font size = 2pt> [<a href="#pickerQPushButton TARGET">pickerQPushButton </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mouseDoubleClickEvent(self, QMouseEvent)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>QMouseEvent</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "mouseMoveEventTARGET"></h5><font color = 464646 size = 3><b>mouseMoveEvent <font size = 2pt> [<a href="#pickerQPushButton TARGET">pickerQPushButton </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Re implementation of the QMouseMove event trigger.</i><br>
