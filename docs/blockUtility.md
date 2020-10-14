@@ -117,11 +117,12 @@ Collect ctrls based on given state: <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrlRelatives(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrlRelatives(mode = 0, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -191,6 +192,28 @@ Collect all related controls for the given module. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>moduleTop</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###collectModuleRootsBasedOnMode
+<font color = #5f5f5f size = 3pt>
+<i>
+0: All <br>
+1: Branch <br>
+2: Module <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleRootsBasedOnMode(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (root guides (modules) to build)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -804,6 +827,20 @@ Attempt to collect the 'Control Shapes Group' from the passed in rigTop. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getCtrlAuthFromRootGuides
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlAuthFromRootGuides(rGuides = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rGuides</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getCtrlCol
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -813,12 +850,13 @@ Get the passed in node's color based on it's type, heirarchy and attributes. <br
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlCol(ctrl, rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlCol(ctrl, rigTop, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>tuple[3] (color)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
 <li><b>rigTop</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -880,6 +918,27 @@ Wrapper mwthod to collect 'spaces' constraints for multiple controls. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>controls</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getGlobalScaleAttrFromTransform
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is used to retreive any output decompose matrix node to be used as global scale input connection. <br>
+If this method fails to retreive such attribute, it creates one and returns it. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getGlobalScaleAttrFromTransform(transform = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> Attribute</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transform</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1957,7 +2016,6 @@ This is the main wrapper for all pose 'save & load' triggers of BLOCK. <br>
 <li><b>saveLoad</b>(<i>int</i>)</li>
 <li><b>msgPrompt</b>(<i>bool</i>)</li>
 <li><b>pose</b>(<i>str</i>) ; [default: T]</li>
-<li><b>delete</b>(<i>bool</i>)</li>
 </ul></td>
 </tr>
 </table></font>
@@ -2087,7 +2145,7 @@ Set custom defaults for keyable attributes for the given control, based on it's 
 Set controls custom defaults based on given state: <br>
 0: All <br>
 1: Modules <br>
-2: Selected <br>
+2: Branches <br>
 </i>
 <br>
 </font>

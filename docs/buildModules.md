@@ -60,6 +60,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li>rigComponentsGrp</li>
 <li>moduleSpaceAttrHost</li>
 <li>extraSpaces</li>
+<li>defaultSpace</li>
 <li>pureTops</li>
 <li>spaceSwitchCtrls</li>
 <li>internalSpaces</li>

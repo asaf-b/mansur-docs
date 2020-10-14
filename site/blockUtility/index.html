@@ -487,6 +487,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../meshUtility/" title="meshUtility" class="md-nav__link">
+      meshUtility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../nodes/" title="Nodes" class="md-nav__link">
       Nodes
     </a>
@@ -511,8 +523,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../skinUtils/" title="skinUtils" class="md-nav__link">
-      skinUtils
+    <a href="../skinUtility/" title="skinUtility" class="md-nav__link">
+      skinUtility
     </a>
   </li>
 
@@ -1009,6 +1021,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#collectmodulerootsbasedonmode" class="md-nav__link">
+    collectModuleRootsBasedOnMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#collectplguidestoalign" class="md-nav__link">
     collectPLGuidesToAlign
   </a>
@@ -1212,6 +1231,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getctrlauthfromrootguides" class="md-nav__link">
+    getCtrlAuthFromRootGuides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getctrlcol" class="md-nav__link">
     getCtrlCol
   </a>
@@ -1235,6 +1261,13 @@
           <li class="md-nav__item">
   <a href="#getexistingspaceconstraintforcontrols" class="md-nav__link">
     getExistingSpaceConstraintForControls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getglobalscaleattrfromtransform" class="md-nav__link">
+    getGlobalScaleAttrFromTransform
   </a>
   
 </li>
@@ -2055,6 +2088,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2" type="checkbox" id="nav-5-2-4-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-2">
+      character_face
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-2-4-2-2">
+        character_face
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2-1" type="checkbox" id="nav-5-2-4-2-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-2-1">
+      curveZip
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-2-4-2-2-1">
+        curveZip
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../curveZip/" title="curveZip" class="md-nav__link">
+      curveZip
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2215,6 +2308,13 @@
           <li class="md-nav__item">
   <a href="#collectmodulecontrols" class="md-nav__link">
     collectModuleControls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collectmodulerootsbasedonmode" class="md-nav__link">
+    collectModuleRootsBasedOnMode
   </a>
   
 </li>
@@ -2423,6 +2523,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getctrlauthfromrootguides" class="md-nav__link">
+    getCtrlAuthFromRootGuides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getctrlcol" class="md-nav__link">
     getCtrlCol
   </a>
@@ -2446,6 +2553,13 @@
           <li class="md-nav__item">
   <a href="#getexistingspaceconstraintforcontrols" class="md-nav__link">
     getExistingSpaceConstraintForControls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getglobalscaleattrfromtransform" class="md-nav__link">
+    getGlobalScaleAttrFromTransform
   </a>
   
 </li>
@@ -3068,11 +3182,12 @@ Collect ctrls based on given state: <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrlRelatives(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrlRelatives(mode = 0, <strong>kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b></strong>kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -3142,6 +3257,28 @@ Collect all related controls for the given module. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>moduleTop</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="collectmodulerootsbasedonmode">collectModuleRootsBasedOnMode</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+0: All <br>
+1: Branch <br>
+2: Module <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleRootsBasedOnMode(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (root guides (modules) to build)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -3755,6 +3892,20 @@ Attempt to collect the 'Control Shapes Group' from the passed in rigTop. <br>
 </tr>
 </table></font>
 <hr width = 100%></p>
+<h3 id="getctrlauthfromrootguides">getCtrlAuthFromRootGuides</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlAuthFromRootGuides(rGuides = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rGuides</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="getctrlcol">getCtrlCol</h3>
 <p><font color = #5f5f5f size = 3pt>
 <i>
@@ -3764,12 +3915,13 @@ Get the passed in node's color based on it's type, heirarchy and attributes. <br
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlCol(ctrl, rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlCol(ctrl, rigTop, <strong>kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>tuple[3] (color)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
 <li><b>rigTop</b></li>
+<li><b></strong>kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -3831,6 +3983,27 @@ Wrapper mwthod to collect 'spaces' constraints for multiple controls. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>controls</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="getglobalscaleattrfromtransform">getGlobalScaleAttrFromTransform</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method is used to retreive any output decompose matrix node to be used as global scale input connection. <br>
+If this method fails to retreive such attribute, it creates one and returns it. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getGlobalScaleAttrFromTransform(transform = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> Attribute</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>transform</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -4908,7 +5081,6 @@ This is the main wrapper for all pose 'save &amp; load' triggers of BLOCK. <br>
 <li><b>saveLoad</b>(<i>int</i>)</li>
 <li><b>msgPrompt</b>(<i>bool</i>)</li>
 <li><b>pose</b>(<i>str</i>) ; [default: T]</li>
-<li><b>delete</b>(<i>bool</i>)</li>
 </ul></td>
 </tr>
 </table></font>
@@ -5038,7 +5210,7 @@ Set custom defaults for keyable attributes for the given control, based on it's 
 Set controls custom defaults based on given state: <br>
 0: All <br>
 1: Modules <br>
-2: Selected <br>
+2: Branches <br>
 </i>
 <br>
 </font>

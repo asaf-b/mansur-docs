@@ -44,6 +44,7 @@ These class members will dectate any behavior derived from an actual function ob
 <li>jntStructSoftMod</li>
 <li>lockOffAttributes</li>
 <li>simpleDivider</li>
+<li>meshComponents</li>
 </ul>
 </td></tr>
 </tr>

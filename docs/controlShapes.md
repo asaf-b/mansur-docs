@@ -98,6 +98,34 @@ A main CtrlCreate function calls a veriaty of pre-defined shape creation, then h
 </tr>
 </table></font>
 <hr width = 100%>
+###createRemoteControlStyleCtrl
+<font color = #5f5f5f size = 3pt>
+<i>
+creates a frames ui remote-control style ctrl based on the input params. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createRemoteControlStyleCtrl(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (ctrl), MnsNameStd (uiOffsetGrp)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>horizontalMin</b>(<i>float</i>) ; [default: -1.0]</li>
+<li><b>horizontalMax</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>verticalMin</b>(<i>float</i>) ; [default: -1.0]</li>
+<li><b>verticalMax</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>bodySuffix</b>(<i>str</i>)</li>
+<li><b>uiScale</b>(<i>float</i>) ; [default: 1.0]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###crossShapeCreate
 <font size = 3pt>
 <table>
@@ -564,6 +592,20 @@ The default color is white when used as standalone, and based on the rig's globa
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareShapeCreate(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###squareWithMidDividersShapeCreate
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareWithMidDividersShapeCreate(**kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

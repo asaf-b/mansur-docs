@@ -730,9 +730,9 @@ Override flags can be inserted to skip requested channels. <br>
 <li><b>t</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>r</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>s</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>t</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>r</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>s</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>x</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>y</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>z</b>(<i>bool</i>) ; [default: True]</li>
 </ul></td>
 </tr>
 </table></font>
@@ -857,6 +857,20 @@ Read mns setting from a given file and collect into a dict. <br>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>reloadLib()</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###removeNamespaceFromString
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeNamespaceFromString(value)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>value</b></li>
+</ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>

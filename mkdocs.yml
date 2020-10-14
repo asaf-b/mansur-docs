@@ -48,9 +48,10 @@ nav:
           - arguments.md
           - globals.md
           - log.md
+          - meshUtility.md
           - nodes.md
           - prefixSuffix.md
-          - skinUtils.md
+          - skinUtility.md
           - string.md
           - UIUtils.md
           - utility.md
@@ -92,6 +93,9 @@ nav:
                 - meta.md
               - simpleSquash:
                 - simpleSquash.md
+            - character_face:
+              - curveZip:
+                - curveZip.md
           - picker:
             - picker.md
             - plgSettings.md

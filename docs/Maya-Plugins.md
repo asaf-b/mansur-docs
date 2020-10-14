@@ -56,6 +56,7 @@ This node also creates and offset curve shape result, to be used later as an Up-
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>globalScale</td><td>globalScale</td><td>float</td><td>Global scale multiplier.</td></tr>
 <tr><td>tweakCurve</td><td>tweakCurve</td><td>nurbsCurve</td><td>Input tweak curve shape.</td></tr>
 <tr><td>tweakCurveBase</td><td>tweakCurveBase</td><td>nurbsCurve</td><td>Input tweak curve base shape.</td></tr>
 <tr><td>buildMode</td><td>buildMode</td><td>enum</td><td>Build mode- EPs, CVs, Hermite, TangentedCVs, bezier.</td></tr>
@@ -288,6 +289,8 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>tweakCurveABase</td><td>tweakCurveABase</td><td>nurbsCurve</td><td>Input curve A tweak base-curve shape.</td></tr>
 <tr><td>tweakCurveBBase</td><td>tweakCurveBBase</td><td>nurbsCurve</td><td>Input curve B tweak base-curve shape.</td></tr>
 <tr><td>midCurve</td><td>midCrv</td><td>nurbsCurve</td><td>Input target mid curve.</td></tr>
+<tr><td>midCurveBase</td><td>midCrvBase</td><td>nurbsCurve</td><td>Input mid tweak curve base.</td></tr>
+<tr><td>midCurveTweak</td><td>midCrvTweak</td><td>nurbsCurve</td><td>Input mid tweak curve.</td></tr>
 <tr><td>centerMatrix</td><td>centerMatrix</td><td>matrix</td><td>Input center transformation matrix.</td></tr>
 <tr><td>midPointMatrix</td><td>midPointMatrix</td><td>matrix</td><td>Input mid point traget matrix.</td></tr>
 <tr><td>sampleMode</td><td>m</td><td>enum</td><td>Curve sample mode- parametric, uniform.</td></tr>
