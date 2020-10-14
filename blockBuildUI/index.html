@@ -487,6 +487,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../meshUtility/" title="meshUtility" class="md-nav__link">
+      meshUtility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../nodes/" title="Nodes" class="md-nav__link">
       Nodes
     </a>
@@ -511,8 +523,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../skinUtils/" title="skinUtils" class="md-nav__link">
-      skinUtils
+    <a href="../skinUtility/" title="skinUtility" class="md-nav__link">
+      skinUtility
     </a>
   </li>
 
@@ -1246,6 +1258,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2" type="checkbox" id="nav-5-2-4-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-2">
+      character_face
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-2-4-2-2">
+        character_face
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2-1" type="checkbox" id="nav-5-2-4-2-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-2-1">
+      curveZip
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-2-4-2-2-1">
+        curveZip
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../curveZip/" title="curveZip" class="md-nav__link">
+      curveZip
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1502,14 +1574,26 @@ BLOCK UI Class. <br>
 <li>buildModulesBtns</li>
 <li>sidePlaceHolder</li>
 <li>bmLib</li>
+<li>mayaSelectCallBack</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#bmCategoryChangedTriggerTARGET">bmCategoryChangedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getListWidgetFromSenderTARGET">getListWidgetFromSender </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getPoseModeTARGET">getPoseMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializePrefDirsTARGET">initializePrefDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeGuidesTARGET">removeGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#resizeWindowBasedOnLogTARGET">resizeWindowBasedOnLog </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#sceneSelectFromWidgetsTARGET">sceneSelectFromWidgets </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#sortMeshListsTARGET">sortMeshLists </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateGuidesTARGET">updateGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#updateMeshWidgetsDictTARGET">updateMeshWidgetsDict </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#loadMeshesTARGET">loadMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#refreshSelectionStateTARGET">refreshSelectionState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#addMeshesTARGET">addMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#removeMeshesTARGET">removeMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getCurrentMeshesTARGET">getCurrentMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#meshListWidgetMenuTARGET">meshListWidgetMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#recRenameLowerIndexTARGET">recRenameLowerIndex </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePathsChangeTARGET">applyModulePathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#moduleBuildGuideTARGET">moduleBuildGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -1521,6 +1605,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#defineBuildParentModulesTARGET">defineBuildParentModules </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#extractControlShapesTARGET">extractControlShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getCorrespondingModuleButtonForModuleTARGET">getCorrespondingModuleButtonForModule </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#symmetrizeControlShapesTARGET">symmetrizeControlShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#gatherAdditionalModulePathsTARGET">gatherAdditionalModulePaths </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getConstructModeTARGET">getConstructMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getModuleSettingsTARGET">getModuleSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -1530,8 +1615,9 @@ BLOCK UI Class. <br>
 <li><b><a href="#loadRigSettingsTARGET">loadRigSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#duplicateModuleTARGET">duplicateModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#pureDuplicateTARGET">pureDuplicate </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#eventFilterTARGET">eventFilter </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeModelPathTARGET">removeModelPath </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#removeAllCustomShapesTARGET">removeAllCustomShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#removeCustomShapesTARGET">removeCustomShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateRigStructureTARGET">updateRigStructure </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#poseSaveLoadTriggerTARGET">poseSaveLoadTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -1552,6 +1638,32 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bmCategoryChangedTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getListWidgetFromSenderTARGET"></h5><font color = 464646 size = 3><b>getListWidgetFromSender <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getListWidgetFromSender(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getPoseModeTARGET"></h5><font color = 464646 size = 3><b>getPoseMode <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPoseMode(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -1600,6 +1712,32 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "sceneSelectFromWidgetsTARGET"></h5><font color = 464646 size = 3><b>sceneSelectFromWidgets <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sceneSelectFromWidgets(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "sortMeshListsTARGET"></h5><font color = 464646 size = 3><b>sortMeshLists <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sortMeshLists(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "updateGuidesTARGET"></h5><font color = 464646 size = 3><b>updateGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -1608,6 +1746,103 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "updateMeshWidgetsDictTARGET"></h5><font color = 464646 size = 3><b>updateMeshWidgetsDict <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateMeshWidgetsDict(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "loadMeshesTARGET"></h5><font color = 464646 size = 3><b>loadMeshes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadMeshes(self, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "refreshSelectionStateTARGET"></h5><font color = 464646 size = 3><b>refreshSelectionState <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>refreshSelectionState(self, dummy = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>dummy</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "addMeshesTARGET"></h5><font color = 464646 size = 3><b>addMeshes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addMeshes(self, listWidget)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>listWidget</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "removeMeshesTARGET"></h5><font color = 464646 size = 3><b>removeMeshes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeMeshes(self, listWidget)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>listWidget</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getCurrentMeshesTARGET"></h5><font color = 464646 size = 3><b>getCurrentMeshes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentMeshes(self, listWidget = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>listWidget</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "meshListWidgetMenuTARGET"></h5><font color = 464646 size = 3><b>meshListWidgetMenu <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>meshListWidgetMenu(self, position)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>position</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -1803,6 +2038,25 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "symmetrizeControlShapesTARGET"></h5><font color = 464646 size = 3><b>symmetrizeControlShapes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>For the selected state, symmetrize all found control shapes.</i><br>
+<i>sym Mode:</i><br>
+<i>0: Left to Right</i><br>
+<i>1: Right to Left</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>symmetrizeControlShapes(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "gatherAdditionalModulePathsTARGET"></h5><font color = 464646 size = 3><b>gatherAdditionalModulePaths <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Gather all existing additional custom patns from the UI.</i><br>
@@ -1936,11 +2190,12 @@ BLOCK UI Class. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>duplicateModule(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>duplicateModule(self, <strong>kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+<li><b></strong>kwargs</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -1966,6 +2221,24 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "eventFilterTARGET"></h5><font color = 464646 size = 3><b>eventFilter <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Override event filter to catch the tear off to override it's event.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>eventFilter(self, source, event)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>source</b></li>
+<li><b>event</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "removeModelPathTARGET"></h5><font color = 464646 size = 3><b>removeModelPath <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Remove a module path line from the 'module paths' tree trigger.</i><br>
@@ -1982,13 +2255,13 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "removeAllCustomShapesTARGET"></h5><font color = 464646 size = 3><b>removeAllCustomShapes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<h5 id = "removeCustomShapesTARGET"></h5><font color = 464646 size = 3><b>removeCustomShapes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Remove all custom control shapes from the current rig.</i><br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeAllCustomShapes(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeCustomShapes(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -2025,12 +2298,12 @@ BLOCK UI Class. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>poseSaveLoadTrigger(self, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>poseSaveLoadTrigger(self, saveLoadMode = 0)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-<li><b></strong>kwargs</b></li>
+<li><b>saveLoadMode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
