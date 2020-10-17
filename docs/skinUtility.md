@@ -10,10 +10,10 @@
 <hr width = 100%>
 ##Defenitions
 <hr width = 100%>
-###copySkinWeights
+###copySkin
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copySkinWeights(sourceMeshes = [], targetMeshes = [], **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copySkin(sourceMeshes = [], targetMeshes = [], **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -57,12 +57,13 @@
 ###filterValidMeshesFromList
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterValidMeshesFromList(meshTransforms = [], skinnedOnly = False)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterValidMeshesFromList(meshTransforms = [], skinnedOnly = False, notSkinnedOnly = False)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>meshTransforms</b>(<i>list</i>) ; [default: []]</li>
 <li><b>skinnedOnly</b>(<i>bool</i>) ; [default: False]</li>
+<li><b>notSkinnedOnly</b>(<i>bool</i>) ; [default: False]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -201,6 +202,20 @@
 </tr>
 </table></font>
 <hr width = 100%>
+###getMeshesFromData
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getMeshesFromData(skinsData = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>skinsData</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getShapeFromTransform
 <font size = 3pt>
 <table>
@@ -247,11 +262,103 @@
 ###importSkin
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importSkin(filePath = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importSkin(filePath = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>filePath</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###injectSkinClusterNodeToMfn
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>injectSkinClusterNodeToMfn(skinClusterNode = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>skinClusterNode</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###rebind
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>rebind(sourceMeshes = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>sourceMeshes</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setBlendWeights
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setBlendWeights(dagPath, components, scFn, skinData)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dagPath</b></li>
+<li><b>components</b></li>
+<li><b>scFn</b></li>
+<li><b>skinData</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setInfluenceWeights
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setInfluenceWeights(dagPath, components, scFn, skinData)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dagPath</b></li>
+<li><b>components</b></li>
+<li><b>scFn</b></li>
+<li><b>skinData</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setSkinData
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setSkinData(skinClusterNode = None, skinData = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>skinClusterNode</b>(<i>str</i>) ; [default: None]</li>
+<li><b>skinData</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###unbind
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>unbind(sourceMeshes = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>sourceMeshes</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

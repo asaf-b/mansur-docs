@@ -45,6 +45,7 @@ BLOCK UI Class. <br>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#bmCategoryChangedTriggerTARGET">bmCategoryChangedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#copySkinTARGET">copySkin </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getListWidgetFromSenderTARGET">getListWidgetFromSender </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getPoseModeTARGET">getPoseMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializePrefDirsTARGET">initializePrefDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -104,6 +105,19 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bmCategoryChangedTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "copySkinTARGET"></h5><font color = 464646 size = 3><b>copySkin <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copySkin(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -289,12 +303,13 @@ BLOCK UI Class. <br>
 <h5 id = "getCurrentMeshesTARGET"></h5><font color = 464646 size = 3><b>getCurrentMeshes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentMeshes(self, listWidget = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentMeshes(self, listWidget = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
 <li><b>listWidget</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
