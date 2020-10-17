@@ -560,8 +560,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#copyskinweights" class="md-nav__link">
-    copySkinWeights
+  <a href="#copyskin" class="md-nav__link">
+    copySkin
   </a>
   
 </li>
@@ -651,6 +651,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getmeshesfromdata" class="md-nav__link">
+    getMeshesFromData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getshapefromtransform" class="md-nav__link">
     getShapeFromTransform
   </a>
@@ -674,6 +681,48 @@
           <li class="md-nav__item">
   <a href="#importskin" class="md-nav__link">
     importSkin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#injectskinclusternodetomfn" class="md-nav__link">
+    injectSkinClusterNodeToMfn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rebind" class="md-nav__link">
+    rebind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setblendweights" class="md-nav__link">
+    setBlendWeights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinfluenceweights" class="md-nav__link">
+    setInfluenceWeights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setskindata" class="md-nav__link">
+    setSkinData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unbind" class="md-nav__link">
+    unbind
   </a>
   
 </li>
@@ -1590,8 +1639,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#copyskinweights" class="md-nav__link">
-    copySkinWeights
+  <a href="#copyskin" class="md-nav__link">
+    copySkin
   </a>
   
 </li>
@@ -1681,6 +1730,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getmeshesfromdata" class="md-nav__link">
+    getMeshesFromData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getshapefromtransform" class="md-nav__link">
     getShapeFromTransform
   </a>
@@ -1704,6 +1760,48 @@
           <li class="md-nav__item">
   <a href="#importskin" class="md-nav__link">
     importSkin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#injectskinclusternodetomfn" class="md-nav__link">
+    injectSkinClusterNodeToMfn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rebind" class="md-nav__link">
+    rebind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setblendweights" class="md-nav__link">
+    setBlendWeights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinfluenceweights" class="md-nav__link">
+    setInfluenceWeights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setskindata" class="md-nav__link">
+    setSkinData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unbind" class="md-nav__link">
+    unbind
   </a>
   
 </li>
@@ -1743,10 +1841,10 @@
 <h2 id="defenitions">Defenitions</h2>
 <hr width = 100%>
 
-<h3 id="copyskinweights">copySkinWeights</h3>
+<h3 id="copyskin">copySkin</h3>
 <p><font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copySkinWeights(sourceMeshes = [], targetMeshes = [], <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copySkin(sourceMeshes = [], targetMeshes = [], <strong>kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -1790,12 +1888,13 @@
 <h3 id="filtervalidmeshesfromlist">filterValidMeshesFromList</h3>
 <p><font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterValidMeshesFromList(meshTransforms = [], skinnedOnly = False)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterValidMeshesFromList(meshTransforms = [], skinnedOnly = False, notSkinnedOnly = False)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>meshTransforms</b>(<i>list</i>) ; [default: []]</li>
 <li><b>skinnedOnly</b>(<i>bool</i>) ; [default: False]</li>
+<li><b>notSkinnedOnly</b>(<i>bool</i>) ; [default: False]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1934,6 +2033,20 @@
 </tr>
 </table></font>
 <hr width = 100%></p>
+<h3 id="getmeshesfromdata">getMeshesFromData</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getMeshesFromData(skinsData = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>skinsData</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="getshapefromtransform">getShapeFromTransform</h3>
 <p><font size = 3pt>
 <table>
@@ -1980,11 +2093,103 @@
 <h3 id="importskin">importSkin</h3>
 <p><font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importSkin(filePath = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importSkin(filePath = None, <strong>kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>filePath</b>(<i>str</i>) ; [default: None]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="injectskinclusternodetomfn">injectSkinClusterNodeToMfn</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>injectSkinClusterNodeToMfn(skinClusterNode = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>skinClusterNode</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="rebind">rebind</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>rebind(sourceMeshes = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>sourceMeshes</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setblendweights">setBlendWeights</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setBlendWeights(dagPath, components, scFn, skinData)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dagPath</b></li>
+<li><b>components</b></li>
+<li><b>scFn</b></li>
+<li><b>skinData</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setinfluenceweights">setInfluenceWeights</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setInfluenceWeights(dagPath, components, scFn, skinData)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>dagPath</b></li>
+<li><b>components</b></li>
+<li><b>scFn</b></li>
+<li><b>skinData</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="setskindata">setSkinData</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setSkinData(skinClusterNode = None, skinData = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>skinClusterNode</b>(<i>str</i>) ; [default: None]</li>
+<li><b>skinData</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="unbind">unbind</h3>
+<p><font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>unbind(sourceMeshes = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>sourceMeshes</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
