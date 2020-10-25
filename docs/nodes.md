@@ -580,6 +580,36 @@ Create a new mnsCameraGateRatio node using the given inputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###mnsClosestPointsOnMeshNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsClosestPointsOnMesh node based on specified parameters and outputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsClosestPointsOnMeshNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict ('node': Created node MnsNameStd)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: closestPointsOnMesh] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>inputMesh</b>(<i>str</i>) ; [default: None]</li>
+<li><b>inputTransforms</b>(<i>list</i>) ; [default: [' ']]</li>
+<li><b>outputTransforms</b>(<i>list</i>) ; [default: [' ']]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###mnsCurveVariableNode
 <font color = #5f5f5f size = 3pt>
 <i>

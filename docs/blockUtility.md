@@ -303,6 +303,37 @@ This method will be successfull only if the master already has a related 'mnsNod
 </tr>
 </table></font>
 <hr width = 100%>
+###constrainObjectsToSurface
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constrainObjectsToSurface(MnsBuildModule = None, ctrlMasters = [], jointsToAttach = [], surface = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (new ctrls)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsBuildModule</b>(<i>str</i>) ; [default: None]</li>
+<li><b>ctrlMasters</b>(<i>list</i>) ; [default: []]</li>
+<li><b>jointsToAttach</b>(<i>list</i>) ; [default: []]</li>
+<li><b>surface</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###convertModuleAuthorityToSurface
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertModuleAuthorityToSurface(MnsBuildModule)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (new ctrls)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>MnsBuildModule</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###createAndConnectModuleVisChannelsToPuppetRootCtrl
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -878,6 +909,20 @@ Collect the delete master from a slave's related 'mnsNodeRelationship' node, if 
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>slave</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getExistingCpomNodeFromSurface
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getExistingCpomNodeFromSurface(surface)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>surface</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

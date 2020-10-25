@@ -71,6 +71,7 @@ pluginRelease UI class <br>
 <li>pluginBuilds</li>
 <li>existingPluginNames</li>
 <li>existingVersionsFoundNames</li>
+<li>latestVersionPath</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
