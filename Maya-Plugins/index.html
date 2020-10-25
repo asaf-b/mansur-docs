@@ -447,6 +447,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnsclosestpointsonmesh" class="md-nav__link">
+    mnsClosestPointsOnMesh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnscompressiontensionblend" class="md-nav__link">
     mnsCompressionTensionBlend
   </a>
@@ -463,6 +470,13 @@
         <li class="md-nav__item">
   <a href="#mnscurvezip" class="md-nav__link">
     mnsCurveZip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mnscurvezipb" class="md-nav__link">
+    mnsCurveZipB
   </a>
   
 </li>
@@ -1593,6 +1607,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnsclosestpointsonmesh" class="md-nav__link">
+    mnsClosestPointsOnMesh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnscompressiontensionblend" class="md-nav__link">
     mnsCompressionTensionBlend
   </a>
@@ -1609,6 +1630,13 @@
         <li class="md-nav__item">
   <a href="#mnscurvezip" class="md-nav__link">
     mnsCurveZip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mnscurvezipb" class="md-nav__link">
+    mnsCurveZipB
   </a>
   
 </li>
@@ -1818,6 +1846,24 @@ A simple utility callback node to dynamiclly control and update the input camer'
 <tr><td>cameraIn</td><td>cameraIn</td><td>message</td><td>Affected camera node.</td></tr>
 <tr><td>gateWidth</td><td>gateWidth</td><td>float</td><td>Cemera gate width.</td></tr>
 <tr><td>gateHeight</td><td>gateHeight</td><td>float</td><td>Cemera gate height.</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnsclosestpointsonmesh">mnsClosestPointsOnMesh</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>inMesh</td><td>inMesh</td><td>mesh</td><td>Input mesh to find closest point to.</td></tr>
+<tr><td>inPosition</td><td>inPosition</td><td>compound(Array)</td><td>Input position to calculate a result for. Array Attr.</td></tr>
+<tr><td>matrix</td><td>matrix</td><td>matrix</td><td>Input matrix to calculate a result for. Array Attr.</td></tr>
+<tr><td>targetParentMatrix</td><td>targetParentMatrix</td><td>matrix</td><td>Target parent matrix to multiply by before setting the result.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>outPosition</td><td>op</td><td>vector</td><td>Output position result.</td></tr>
 </table></font>
 <body></p>
 <h2 id="mnscompressiontensionblend">mnsCompressionTensionBlend</h2>
@@ -2042,6 +2088,101 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>outCurveB</td><td>outCurveB</td><td>nurbsCurve</td><td>Result curve B shape.</td></tr>
 <tr><td>outCurveAOffset</td><td>outCurveAOffset</td><td>nurbsCurve</td><td>Result curve A offset shape.</td></tr>
 <tr><td>outCurveBOffset</td><td>outCurveBOffset</td><td>nurbsCurve</td><td>Result curve B offset shape.</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnscurvezipb">mnsCurveZipB</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Curve based node.
+<br>
+This is primarily used for eyelids and lips.
+<br>
+This fast solution was developed to replace complex and heavy graphs- containing many math nodes, curve deformers and constraints.
+<br>
+This setup provides a very clean deployment, processing the math algorithm internally.
+<br>
+Combining this node with mnsBuildTransformsCurve and mnsPointsOnCurve, will result in a very efficient, dynamic and flexible setup.
+<br>
+All calculations are processed within a single loop.
+<br>
+All curve operations are aware of one another, and are NOT addative- meaning that all operations are available at any position, and will NOT break one another, nor overlap.
+<br>
+All attributes are not minimum limited to 0 and can be adjusted to the negative direction- pulling the bind pose against each other instead of towards each other.
+<br>
+The node contains a centerMatrix input plug, which is a live world position that is used to scale the calculated vectors based on the bind position offset (per curve parameter).
+<br>
+The problem arising from this method is a mismatch at any meet position between curve A and B due to an offset variation between all points (except for a perfect circle scenario, which is never the case).
+<br>
+This problem is solved using a conform attribute within which will pull one of the curves (based on user choice) to the other below a selected distance threshold- Resulting in a watertight-seal.
+<br>
+Using mnsPointsOnCurve to sample the result curves allows for a simple skinCluster to deform the mesh.
+<br>
+mnsCurveZip will output a pair of offset curves as well as the result curves, calculated by world axis vectors or the centerMatrix as a base, which are used as an Up-Curve input for the mnsPointsOnCurve node to manage rotations correctly as well.
+<br>
+The node contatins some more important inputs: The tweakCurves inputs.
+<br>
+Aspiring to an inclusive and comprehensive setup, tweak curves (A, B and Mid) can be plugged in to expose another manual layer of animation using scene controls.
+<br>
+The input curves are 100% independent of the base curve inputs and DO-NOT need to share topology with each other, nor the source inputs - as they are being re-sampled internally based on the build mode.
+<br>
+This means that the tweak controls amount is limitless and is NOT a constant, nor predefined.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>bindCurveA</td><td>bindCurveA</td><td>nurbsCurve</td><td>Input curve A base-curve shape.</td></tr>
+<tr><td>tweakCurveA</td><td>tweakCurveA</td><td>nurbsCurve</td><td>Input curve A curve shape.</td></tr>
+<tr><td>bindCurveB</td><td>bindCurveB</td><td>nurbsCurve</td><td>Input curve B base-curve shape.</td></tr>
+<tr><td>tweakCurveB</td><td>tweakCurveB</td><td>nurbsCurve</td><td>Input curve B curve shape.</td></tr>
+<tr><td>tweakCurveABase</td><td>tweakCurveABase</td><td>nurbsCurve</td><td>Input curve A tweak base-curve shape.</td></tr>
+<tr><td>tweakCurveBBase</td><td>tweakCurveBBase</td><td>nurbsCurve</td><td>Input curve B tweak base-curve shape.</td></tr>
+<tr><td>centerMatrix</td><td>centerMatrix</td><td>matrix</td><td>Input center transformation matrix.</td></tr>
+<tr><td>numTweakPerSection</td><td>numTweakPerSection</td><td>int</td><td>Number of output tweakers to calculate position for</td></tr>
+<tr><td>sampleMode</td><td>m</td><td>enum</td><td>Curve sample mode- parametric, uniform.</td></tr>
+<tr><td>matchInputCurve</td><td>matchInputCurve</td><td>enum</td><td>Result curve matched parameters to- none, curveA, curveB.</td></tr>
+<tr><td>substeps</td><td>substeps</td><td>int</td><td>Result curve resampling sub-step value.</td></tr>
+<tr><td>degree</td><td>degree</td><td>int</td><td>Result curve degree value.</td></tr>
+<tr><td>buildMode</td><td>buildMode</td><td>enum</td><td>Curve build mode- EPs, CVs.</td></tr>
+<tr><td>midBias</td><td>midBias</td><td>float</td><td>Generated curve bias.</td></tr>
+<tr><td>aroundCenter</td><td>aroundCenter</td><td>bool</td><td>Calculate results considering the input center matrix.</td></tr>
+<tr><td>conformToMeetPoint</td><td>conformToMeetPoint</td><td>bool</td><td>Conform the selected curve result to meet the oter curve based on set parameters.</td></tr>
+<tr><td>curveToConform</td><td>curveToConform</td><td>enum</td><td>Which curve to conform - curveA, curveB.</td></tr>
+<tr><td>conformDistancethreshold</td><td>conformDistancethreshold</td><td>enum</td><td>Which curve to conform - curveA, curveB.</td></tr>
+<tr><td>AToMid</td><td>AToMid</td><td>float</td><td>Blend curve A to mid-curve.</td></tr>
+<tr><td>BToMid</td><td>BToMid</td><td>float</td><td>Blend curve B to mid-curve.</td></tr>
+<tr><td>AToBindB</td><td>AToBindB</td><td>float</td><td>Blend curve A to curve B.</td></tr>
+<tr><td>BToBindA</td><td>BToBindA</td><td>float</td><td>Blend curve B to curve A.</td></tr>
+<tr><td>AToB</td><td>AToB</td><td>float</td><td>Blend curve A to curve B.</td></tr>
+<tr><td>BToA</td><td>BToA</td><td>float</td><td>Blend curve B to curve A.</td></tr>
+<tr><td>sCurveA</td><td>sCurveA</td><td>float</td><td>Blend curve A into a procedural S shape.</td></tr>
+<tr><td>sCurveB</td><td>sCurveB</td><td>float</td><td>Blend curve B into a procedural S shape.</td></tr>
+<tr><td>allToMidPoint</td><td>allToMidPoint</td><td>float</td><td>Blend both curves to mid-curve.</td></tr>
+<tr><td>pushOut</td><td>pushOut</td><td>float</td><td>Curves push-out added value.</td></tr>
+<tr><td>zipStart</td><td>zipStart</td><td>float</td><td>Zip start value.</td></tr>
+<tr><td>zipStartFalloff</td><td>zipStartFalloff</td><td>float</td><td>Zip start falloff value.</td></tr>
+<tr><td>zipEnd</td><td>zipEnd</td><td>float</td><td>Zip end value.</td></tr>
+<tr><td>zipEndFalloff</td><td>zipEndFalloff</td><td>float</td><td>Zip end falloff value.</td></tr>
+<tr><td>glue</td><td>glue</td><td>bool</td><td>Do glue.</td></tr>
+<tr><td>glueTherhold</td><td>glueTherhold</td><td>float</td><td>Glue threshold value.</td></tr>
+<tr><td>offsetBase</td><td>offsetBase</td><td>enum</td><td>Offset curve build mode. centerMatrix, worldX, worldY, worldZ.</td></tr>
+<tr><td>offset</td><td>offset</td><td>float</td><td>Offset curve build parameter.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>outCurveA</td><td>outCurveA</td><td>nurbsCurve</td><td>Result curve A shape.</td></tr>
+<tr><td>outCurveB</td><td>outCurveB</td><td>nurbsCurve</td><td>Result curve B shape.</td></tr>
+<tr><td>outCurveAOffset</td><td>outCurveAOffset</td><td>nurbsCurve</td><td>Result curve A offset shape.</td></tr>
+<tr><td>outCurveBOffset</td><td>outCurveBOffset</td><td>nurbsCurve</td><td>Result curve B offset shape.</td></tr>
+<tr><td>outATweakPosition</td><td>outATweakPosition</td><td>vector(Array)</td><td>Output A tweakers position along the result curve</td></tr>
+<tr><td>outBTweakPosition</td><td>outBTweakPosition</td><td>vector(Array)</td><td>Output B tweakers position along the result curve</td></tr>
 </table></font>
 <body></p>
 <h2 id="mnsdynamicpivot">mnsDynamicPivot</h2>
