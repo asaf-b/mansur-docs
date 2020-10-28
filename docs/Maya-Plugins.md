@@ -395,13 +395,8 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>bindCurveA</td><td>bindCurveA</td><td>nurbsCurve</td><td>Input curve A base-curve shape.</td></tr>
-<tr><td>tweakCurveA</td><td>tweakCurveA</td><td>nurbsCurve</td><td>Input curve A curve shape.</td></tr>
 <tr><td>bindCurveB</td><td>bindCurveB</td><td>nurbsCurve</td><td>Input curve B base-curve shape.</td></tr>
-<tr><td>tweakCurveB</td><td>tweakCurveB</td><td>nurbsCurve</td><td>Input curve B curve shape.</td></tr>
-<tr><td>tweakCurveABase</td><td>tweakCurveABase</td><td>nurbsCurve</td><td>Input curve A tweak base-curve shape.</td></tr>
-<tr><td>tweakCurveBBase</td><td>tweakCurveBBase</td><td>nurbsCurve</td><td>Input curve B tweak base-curve shape.</td></tr>
 <tr><td>centerMatrix</td><td>centerMatrix</td><td>matrix</td><td>Input center transformation matrix.</td></tr>
-<tr><td>numTweakPerSection</td><td>numTweakPerSection</td><td>int</td><td>Number of output tweakers to calculate position for</td></tr>
 <tr><td>sampleMode</td><td>m</td><td>enum</td><td>Curve sample mode- parametric, uniform.</td></tr>
 <tr><td>matchInputCurve</td><td>matchInputCurve</td><td>enum</td><td>Result curve matched parameters to- none, curveA, curveB.</td></tr>
 <tr><td>substeps</td><td>substeps</td><td>int</td><td>Result curve resampling sub-step value.</td></tr>
@@ -426,8 +421,6 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>zipStartFalloff</td><td>zipStartFalloff</td><td>float</td><td>Zip start falloff value.</td></tr>
 <tr><td>zipEnd</td><td>zipEnd</td><td>float</td><td>Zip end value.</td></tr>
 <tr><td>zipEndFalloff</td><td>zipEndFalloff</td><td>float</td><td>Zip end falloff value.</td></tr>
-<tr><td>glue</td><td>glue</td><td>bool</td><td>Do glue.</td></tr>
-<tr><td>glueTherhold</td><td>glueTherhold</td><td>float</td><td>Glue threshold value.</td></tr>
 <tr><td>offsetBase</td><td>offsetBase</td><td>enum</td><td>Offset curve build mode. centerMatrix, worldX, worldY, worldZ.</td></tr>
 <tr><td>offset</td><td>offset</td><td>float</td><td>Offset curve build parameter.</td></tr>
 </table></font>
