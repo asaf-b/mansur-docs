@@ -676,6 +676,7 @@ A 'buildOutputs' parameter is defaulted to True to build output (of a choice of 
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
+<li><b>type</b>(<i>str</i>) ; [default: mnsCurveZip]</li>
 <li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
 <li><b>body</b>(<i>str</i>) ; [default: pointsOnCurve] - Node's name body.</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>

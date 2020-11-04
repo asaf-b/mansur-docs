@@ -394,6 +394,11 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>globalScale</td><td>globalScale</td><td>double</td><td>Global scale value.</td></tr>
+<tr><td>inTweakAPosition</td><td>inTweakAPosition</td><td>matrix (array)</td><td>Input tweaker local matrix.</td></tr>
+<tr><td>inTweakBPosition</td><td>inTweakBPosition</td><td>matrix (array)</td><td>Input tweaker local matrix.</td></tr>
+<tr><td>tweakMode</td><td>tweakMode</td><td>enum</td><td>Tweak curve build mode.</td></tr>
+<tr><td>tweakMirrorMatrix</td><td>tweakMirrorMatrix</td><td>matrix</td><td>Mirror matrix to add to the local tweaker transfomation build.</td></tr>
 <tr><td>bindCurveA</td><td>bindCurveA</td><td>nurbsCurve</td><td>Input curve A base-curve shape.</td></tr>
 <tr><td>bindCurveB</td><td>bindCurveB</td><td>nurbsCurve</td><td>Input curve B base-curve shape.</td></tr>
 <tr><td>centerMatrix</td><td>centerMatrix</td><td>matrix</td><td>Input center transformation matrix.</td></tr>
@@ -432,8 +437,12 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>outCurveB</td><td>outCurveB</td><td>nurbsCurve</td><td>Result curve B shape.</td></tr>
 <tr><td>outCurveAOffset</td><td>outCurveAOffset</td><td>nurbsCurve</td><td>Result curve A offset shape.</td></tr>
 <tr><td>outCurveBOffset</td><td>outCurveBOffset</td><td>nurbsCurve</td><td>Result curve B offset shape.</td></tr>
-<tr><td>outATweakPosition</td><td>outATweakPosition</td><td>vector(Array)</td><td>Output A tweakers position along the result curve</td></tr>
-<tr><td>outBTweakPosition</td><td>outBTweakPosition</td><td>vector(Array)</td><td>Output B tweakers position along the result curve</td></tr>
+<tr><td>outTweakA</td><td>outTweakA</td><td>compound (array)</td><td>Parent attribute that holds output values for tweaker offset position.</td></tr>
+<tr><td>outTweakATranslate</td><td>outTweakATranslate</td><td>vector</td><td>Output offset position for a given tweaker.</td></tr>
+<tr><td>outTweakARotate</td><td>outTweakARotate</td><td>vector</td><td>Output offset rotation for a given tweaker.</td></tr>
+<tr><td>outTweakB</td><td>outTweakB</td><td>compound (array)</td><td>Parent attribute that holds output values for tweaker offset position.</td></tr>
+<tr><td>outTweakBTranslate</td><td>outTweakBTranslate</td><td>vector</td><td>Output offset position for a given tweaker.</td></tr>
+<tr><td>outTweakBRotate</td><td>outTweakBRotate</td><td>vector</td><td>Output offset rotation for a given tweaker.</td></tr>
 </table></font>
 <body>
 ##mnsDynamicPivot

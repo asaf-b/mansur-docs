@@ -96,6 +96,8 @@ nav:
             - character_face:
               - curveZip:
                 - curveZip.md
+              - curveZipB:
+                - curveZipB.md
           - picker:
             - picker.md
             - plgSettings.md
