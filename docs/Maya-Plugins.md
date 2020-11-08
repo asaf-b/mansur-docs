@@ -909,18 +909,7 @@ Primaraly used to embed mnsThreePointArc into an IK setup.
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>mesh</td><td>mesh</td><td>mesh</td><td>Input mesh to rivet to.</td></tr>
 <tr><td>targetWorldMatrix</td><td>targetWorldMatrix</td><td>matrix</td><td>Input mesh world matrix.</td></tr>
-<tr><td>parentInverseMatrix</td><td>parentInverseMatrix</td><td>matrix</td><td>Input rivet transforms inverse parent matrix. Child of rivet.</td></tr>
 <tr><td>liveMode</td><td>liveMode</td><td>bool</td><td>Live mode. Calculate everything in every evaluation.</td></tr>
-<tr><td>calculationMethod</td><td>calculationMethod</td><td>enum</td><td>Calculation basis- UV, closestVertex, closestFace.</td></tr>
-<tr><td>uvTolerance</td><td>uvTolerance</td><td>float</td><td>UV search tolerance threshold value.</td></tr>
-<tr><td>doRotation</td><td>doRotation</td><td>bool</td><td>Calculate rotations.</td></tr>
-<tr><td>doRivetRotation</td><td>doRivetRotation</td><td>bool</td><td>Calculate rivet local rotations.</td></tr>
-<tr><td>rotateOrder</td><td>ro</td><td>enum</td><td>Calculation rotate-order.</td></tr>
-<tr><td>upMode</td><td>upMode</td><td>enum</td><td>Rotation calculation up mode- worldX, worldY, worldZ, closestVertexBinormal, closestVertexTangent.</td></tr>
-<tr><td>aimAxis</td><td>aimAxis</td><td>enum</td><td>Aim Axis choice.</td></tr>
-<tr><td>upAxis</td><td>upAxis</td><td>enum</td><td>Up Axis choice.</td></tr>
-<tr><td>doRivetScale</td><td>doRivetScale</td><td>bool</td><td>Calculate scale.</td></tr>
-<tr><td>doScale</td><td>doScale</td><td>bool</td><td>Scale the rivets with the target mesh scale. When off the mesh's scale doesn't affect the rivets.</td></tr>
 <tr><td>maintainOffset</td><td>maintainOffset</td><td>bool</td><td>Maintain offset between rivet position and target mesh.</td></tr>
 </table></font>
 <font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
