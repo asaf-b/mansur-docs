@@ -1621,6 +1621,20 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 </tr>
 </table></font>
 <hr width = 100%>
+###getSimpleRivetsNodeForMesh
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSimpleRivetsNodeForMesh(mesh = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> PyNode</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mesh</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###handleInterpLocsStructureReturn
 <font size = 3pt>
 <table>
@@ -1752,6 +1766,21 @@ Action trigger for an invalid module path fix attempt <br>
 <li><b>rigTop</b></li>
 <li><b>missingModuleName</b></li>
 <li><b>existingBtns</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###muteLocalTransformations
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>muteLocalTransformations(ctrl = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

@@ -901,6 +901,20 @@ Primaraly used to embed mnsThreePointArc into an IK setup.
 <i>
 === Author: Assaf Ben Zur ===
 <br>
+This is a simple mesh rivet node.
+<br>
+This node will take any amount of input start position as matrix and will compile a transformation matrix for the closest face center position on the given input mesh.
+<br>
+This node will output the result in world space, unless an inpur targetParentInverseMatrix is plugged into the relevant element.
+<br>
+The deafult output will be the closest face center transformation matrix unless maintainOffset is set to ON- then the offset will be calculated and stored resulting in the same transformation matrix as the startPosition at bind.
+<br>
+Live mode should only be used for debugging purposes as this will initiate the nodes initialization process on every evaluation- impacting the nodes performance significantly.
+<br>
+The initialization process will be performed from from the given input mesh, unless a base mesh is plugged in to baseMesh plug.
+<br>
+It is recommended to avoid keeping baseMesh and startPosition plugs live.
+<br>
 </i></font>
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
@@ -909,6 +923,9 @@ Primaraly used to embed mnsThreePointArc into an IK setup.
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>mesh</td><td>mesh</td><td>mesh</td><td>Input mesh to rivet to.</td></tr>
 <tr><td>targetWorldMatrix</td><td>targetWorldMatrix</td><td>matrix</td><td>Input mesh world matrix.</td></tr>
+<tr><td>rivet</td><td>rivet</td><td>compound (Array)</td><td>Input rivets compound array.</td></tr>
+<tr><td>rivetStartPosition</td><td>rivetStartPosition</td><td>matrix</td><td>Input start position. Rivet position will be calculated from this origin matrix.</td></tr>
+<tr><td>targetParentInverseMatrix</td><td>targetParentInverseMatrix</td><td>matrix</td><td>Target transform parent inverse matrix. Use when output result is needed in local space (connect the target transform parentInverseMatrix plug)</td></tr>
 <tr><td>liveMode</td><td>liveMode</td><td>bool</td><td>Live mode. Calculate everything in every evaluation.</td></tr>
 <tr><td>maintainOffset</td><td>maintainOffset</td><td>bool</td><td>Maintain offset between rivet position and target mesh.</td></tr>
 </table></font>
