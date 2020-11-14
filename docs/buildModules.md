@@ -296,6 +296,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 <td><ul>
 <li><b>skipUI</b>(<i>bool</i>)</li>
+<li><b>skipGuidesCreation</b>(<i>bool</i>)</li>
 <li><b>settingsHolder</b>(<i>str</i>) ; [default: None]</li>
 <li><b>symmetrize</b>(<i>bool</i>)</li>
 </ul></td>

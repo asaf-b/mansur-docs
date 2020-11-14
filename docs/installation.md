@@ -1,8 +1,3 @@
-# MANSUR-RIG - Installation
-
-Mansur-Rig is a robust and modern rigging plugin-library and a complete python modular builder.
-
-## Installation
 * Go to Mansur-Rig.com and create an accout (if you havn't already).
 * Log in to your acount.
 * Download the latest version of Mansur-Rig.

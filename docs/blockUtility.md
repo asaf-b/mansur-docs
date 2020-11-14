@@ -1750,6 +1750,37 @@ Load controls predefined and custom defaults: <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###matchKeyableAttributes
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>matchKeyableAttributes(source = None, target = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>source</b>(<i>str</i>) ; [default: None]</li>
+<li><b>target</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mirrorCtrls
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mirrorCtrls(ctrls = [], direction = 0, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
+<li><b>direction</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###missingModuleActionTrigger
 <font color = #5f5f5f size = 3pt>
 <i>

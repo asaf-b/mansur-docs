@@ -37,10 +37,11 @@ nav:
     - index.md
     - About:
       - about.md
-    - Getting Started:
-      - installation.md
     - Support-Us:
       - Support-Us.md
+    - User-Guides:
+      - installation.md
+      - Asset-Scaling.md
     - Code Documentation:
       - Maya-Plugins.md
       - mansur:
