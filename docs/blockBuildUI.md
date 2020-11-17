@@ -63,6 +63,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#addMeshesTARGET">addMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeMeshesTARGET">removeMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getCurrentMeshesTARGET">getCurrentMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#echoLogTARGET">echoLog </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#meshListWidgetMenuTARGET">meshListWidgetMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#recRenameLowerIndexTARGET">recRenameLowerIndex </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePathsChangeTARGET">applyModulePathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -352,6 +353,21 @@ BLOCK UI Class. <br>
 <li><b>self</b></li>
 <li><b>listWidget</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "echoLogTARGET"></h5><font color = 464646 size = 3><b>echoLog <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>echoLog(self, msg, svr)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>msg</b></li>
+<li><b>svr</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

@@ -774,6 +774,44 @@ Create a new mnsIkSolver node using the given inputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###mnsLipZipNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsLipZip node based on specified parameters and outputs. <br>
+A 'buildOutputs' parameter is defaulted to True to build output (of a choice of any mnsType). <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsLipZipNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: pointsOnCurve] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>substeps</b>(<i>int</i>) ; [default: 30]</li>
+<li><b>sampleMode</b>(<i>int</i>)</li>
+<li><b>buildMode</b>(<i>int</i>)</li>
+<li><b>degree</b>(<i>int</i>) ; [default: 3]</li>
+<li><b>upCurveOffset</b>(<i>float</i>) ; [default: 1.0] - Node's offsetX attribute</li>
+<li><b>aroundCenter</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>conformToMeetPoint</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>curveToConform</b>(<i>int</i>)</li>
+<li><b>conformDistancethreshold</b>(<i>float</i>) ; [default: 0.2]</li>
+<li><b>midGenerateFrom</b>(<i>int</i>)</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###mnsMatrixConstraintNode
 <font color = #5f5f5f size = 3pt>
 <i>

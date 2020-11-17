@@ -99,6 +99,8 @@ nav:
                 - curveZip.md
               - curveZipB:
                 - curveZipB.md
+              - lips:
+                - lips.md
           - picker:
             - picker.md
             - plgSettings.md

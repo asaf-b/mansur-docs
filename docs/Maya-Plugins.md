@@ -561,6 +561,68 @@ Axis Switching - Offering an easy switch to any joint orientation.
 <tr><td>fkVis</td><td>fkVis</td><td>bool</td><td>FK mode visibility.</td></tr>
 </table></font>
 <body>
+##mnsLipZip
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+Curve based node.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>globalScale</td><td>globalScale</td><td>double</td><td>Global scale value.</td></tr>
+<tr><td>inTweakAPosition</td><td>inTweakAPosition</td><td>matrix (array)</td><td>Input tweaker local matrix.</td></tr>
+<tr><td>inTweakBPosition</td><td>inTweakBPosition</td><td>matrix (array)</td><td>Input tweaker local matrix.</td></tr>
+<tr><td>tweakMode</td><td>tweakMode</td><td>enum</td><td>Tweak curve build mode.</td></tr>
+<tr><td>tweakMirrorMatrix</td><td>tweakMirrorMatrix</td><td>matrix</td><td>Mirror matrix to add to the local tweaker transfomation build.</td></tr>
+<tr><td>centerMatrix</td><td>centerMatrix</td><td>matrix</td><td>Input center transformation matrix.</td></tr>
+<tr><td>sampleMode</td><td>m</td><td>enum</td><td>Curve sample mode- parametric, uniform.</td></tr>
+<tr><td>substeps</td><td>substeps</td><td>int</td><td>Result curve resampling sub-step value.</td></tr>
+<tr><td>degree</td><td>degree</td><td>int</td><td>Result curve degree value.</td></tr>
+<tr><td>buildMode</td><td>buildMode</td><td>enum</td><td>Curve build mode- EPs, CVs.</td></tr>
+<tr><td>midBias</td><td>midBias</td><td>float</td><td>Generated curve bias.</td></tr>
+<tr><td>aroundCenter</td><td>aroundCenter</td><td>bool</td><td>Calculate results considering the input center matrix.</td></tr>
+<tr><td>conformToMeetPoint</td><td>conformToMeetPoint</td><td>bool</td><td>Conform the selected curve result to meet the oter curve based on set parameters.</td></tr>
+<tr><td>curveToConform</td><td>curveToConform</td><td>enum</td><td>Which curve to conform - curveA, curveB.</td></tr>
+<tr><td>conformDistancethreshold</td><td>conformDistancethreshold</td><td>enum</td><td>Which curve to conform - curveA, curveB.</td></tr>
+<tr><td>AToMid</td><td>AToMid</td><td>float</td><td>Blend curve A to mid-curve.</td></tr>
+<tr><td>BToMid</td><td>BToMid</td><td>float</td><td>Blend curve B to mid-curve.</td></tr>
+<tr><td>AToBindB</td><td>AToBindB</td><td>float</td><td>Blend curve A to curve B.</td></tr>
+<tr><td>BToBindA</td><td>BToBindA</td><td>float</td><td>Blend curve B to curve A.</td></tr>
+<tr><td>AToB</td><td>AToB</td><td>float</td><td>Blend curve A to curve B.</td></tr>
+<tr><td>BToA</td><td>BToA</td><td>float</td><td>Blend curve B to curve A.</td></tr>
+<tr><td>sCurveA</td><td>sCurveA</td><td>float</td><td>Blend curve A into a procedural S shape.</td></tr>
+<tr><td>sCurveB</td><td>sCurveB</td><td>float</td><td>Blend curve B into a procedural S shape.</td></tr>
+<tr><td>allToMidPoint</td><td>allToMidPoint</td><td>float</td><td>Blend both curves to mid-curve.</td></tr>
+<tr><td>pushOut</td><td>pushOut</td><td>float</td><td>Curves push-out added value.</td></tr>
+<tr><td>zipStart</td><td>zipStart</td><td>float</td><td>Zip start value.</td></tr>
+<tr><td>zipStartFalloff</td><td>zipStartFalloff</td><td>float</td><td>Zip start falloff value.</td></tr>
+<tr><td>zipEnd</td><td>zipEnd</td><td>float</td><td>Zip end value.</td></tr>
+<tr><td>zipEndFalloff</td><td>zipEndFalloff</td><td>float</td><td>Zip end falloff value.</td></tr>
+<tr><td>offsetBase</td><td>offsetBase</td><td>enum</td><td>Offset curve build mode. centerMatrix, worldX, worldY, worldZ.</td></tr>
+<tr><td>offset</td><td>offset</td><td>float</td><td>Offset curve build parameter.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>outCurveA</td><td>outCurveA</td><td>nurbsCurve</td><td>Result curve A shape.</td></tr>
+<tr><td>outCurveB</td><td>outCurveB</td><td>nurbsCurve</td><td>Result curve B shape.</td></tr>
+<tr><td>outCurveAOffset</td><td>outCurveAOffset</td><td>nurbsCurve</td><td>Result curve A offset shape.</td></tr>
+<tr><td>outCurveBOffset</td><td>outCurveBOffset</td><td>nurbsCurve</td><td>Result curve B offset shape.</td></tr>
+<tr><td>outTweakA</td><td>outTweakA</td><td>compound (array)</td><td>Parent attribute that holds output values for tweaker offset position.</td></tr>
+<tr><td>outTweakATranslate</td><td>outTweakATranslate</td><td>vector</td><td>Output offset position for a given tweaker.</td></tr>
+<tr><td>outTweakARotate</td><td>outTweakARotate</td><td>vector</td><td>Output offset rotation for a given tweaker.</td></tr>
+<tr><td>outTweakB</td><td>outTweakB</td><td>compound (array)</td><td>Parent attribute that holds output values for tweaker offset position.</td></tr>
+<tr><td>outTweakBTranslate</td><td>outTweakBTranslate</td><td>vector</td><td>Output offset position for a given tweaker.</td></tr>
+<tr><td>outTweakBRotate</td><td>outTweakBRotate</td><td>vector</td><td>Output offset rotation for a given tweaker.</td></tr>
+</table></font>
+<body>
 ##mnsMatrixConstraint
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
