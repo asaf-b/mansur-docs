@@ -716,6 +716,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mnslipzipnode" class="md-nav__link">
+    mnsLipZipNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mnsmatrixconstraintnode" class="md-nav__link">
     mnsMatrixConstraintNode
   </a>
@@ -1671,6 +1678,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-2-2-3" type="checkbox" id="nav-5-2-4-2-2-3">
+    
+    <label class="md-nav__link" for="nav-5-2-4-2-2-3">
+      lips
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-2-4-2-2-3">
+        lips
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lips/" title="Lips" class="md-nav__link">
+      Lips
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1948,6 +1991,13 @@
           <li class="md-nav__item">
   <a href="#mnsiksolver" class="md-nav__link">
     mnsIKSolver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnslipzipnode" class="md-nav__link">
+    mnsLipZipNode
   </a>
   
 </li>
@@ -2845,6 +2895,44 @@ Create a new mnsIkSolver node using the given inputs. <br>
 <li><b>outputRoot</b>(<i>str</i>)</li>
 <li><b>outputMid</b>(<i>str</i>)</li>
 <li><b>outputEnd</b>(<i>str</i>)</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="mnslipzipnode">mnsLipZipNode</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsLipZip node based on specified parameters and outputs. <br>
+A 'buildOutputs' parameter is defaulted to True to build output (of a choice of any mnsType). <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsLipZipNode(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: pointsOnCurve] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>substeps</b>(<i>int</i>) ; [default: 30]</li>
+<li><b>sampleMode</b>(<i>int</i>)</li>
+<li><b>buildMode</b>(<i>int</i>)</li>
+<li><b>degree</b>(<i>int</i>) ; [default: 3]</li>
+<li><b>upCurveOffset</b>(<i>float</i>) ; [default: 1.0] - Node's offsetX attribute</li>
+<li><b>aroundCenter</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>conformToMeetPoint</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>curveToConform</b>(<i>int</i>)</li>
+<li><b>conformDistancethreshold</b>(<i>float</i>) ; [default: 0.2]</li>
+<li><b>midGenerateFrom</b>(<i>int</i>)</li>
 </ul></td>
 </tr>
 </table></font>
