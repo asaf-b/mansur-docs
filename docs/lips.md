@@ -3,22 +3,6 @@
 <hr width = 100%>
 ##Defenitions
 <hr width = 100%>
-###connectCustomGuidesToPoc
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectCustomGuidesToPoc(mansur, guides, cGuides)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>mansur</b></li>
-<li><b>guides</b></li>
-<li><b>cGuides</b></li>
-</ul></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>
-<hr width = 100%>
 ###construct
 <font size = 3pt>
 <table>
@@ -66,21 +50,6 @@
 <li><b>nameID</b></li>
 <li><b>doCornerTangents</b></li>
 <li><b>mainCtrl</b></li>
-</ul></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>
-<hr width = 100%>
-###customGuides
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>customGuides(mansur, builtGuides)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>mansur</b></li>
-<li><b>builtGuides</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
