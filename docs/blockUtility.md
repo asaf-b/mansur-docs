@@ -858,6 +858,20 @@ Attempt to collect the 'Control Shapes Group' from the passed in rigTop. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getCtrlAuthFromRootGuide
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlAuthFromRootGuide(rootGuide = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootGuide</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getCtrlAuthFromRootGuides
 <font size = 3pt>
 <table>

@@ -928,6 +928,9 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td>cusRotate</td><td>cusR</td><td>angle[3]</td><td>Custom tweakers offset rotation values. Child of customPositionOut.</td></tr>
 </table></font>
 <body>
+##mnsRemapFloatArray
+<hr width = 100%>
+<body>
 ##mnsResampleCurve
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
