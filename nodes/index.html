@@ -625,6 +625,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#distbetweennode" class="md-nav__link">
+    distBetweenNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#imageplanenode" class="md-nav__link">
     imagePlaneNode
   </a>
@@ -739,6 +746,13 @@
           <li class="md-nav__item">
   <a href="#mnspointsoncurvenode" class="md-nav__link">
     mnsPointsOnCurveNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnsremapfloatarraynode" class="md-nav__link">
+    mnsRemapFloatArrayNode
   </a>
   
 </li>
@@ -1905,6 +1919,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#distbetweennode" class="md-nav__link">
+    distBetweenNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#imageplanenode" class="md-nav__link">
     imagePlaneNode
   </a>
@@ -2019,6 +2040,13 @@
           <li class="md-nav__item">
   <a href="#mnspointsoncurvenode" class="md-nav__link">
     mnsPointsOnCurveNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnsremapfloatarraynode" class="md-nav__link">
+    mnsRemapFloatArrayNode
   </a>
   
 </li>
@@ -2447,6 +2475,37 @@ Create a new multiplyDoubleLinear node using the given inputs. <br>
 <li><b>body</b>(<i>str</i>) ; [default: decomposeMatrix] - Node's name body.</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="distbetweennode">distBetweenNode</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Create a new distanceBetween node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>distBetweenNode(inMatrix1 = None, inMatrix2 = None, distance = None, <strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (distance between node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inMatrix1</b>(<i>str</i>) ; [default: None]</li>
+<li><b>inMatrix2</b>(<i>str</i>) ; [default: None]</li>
+<li><b>distance</b>(<i>str</i>) ; [default: None]</li>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: distBetween] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>operation</b>(<i>int</i>)</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
 </ul></td>
 </tr>
@@ -3048,6 +3107,43 @@ A 'buildOutputs' parameter is defaulted to True to build output (of a choice of 
 <li><b>isolatePolesTranlation</b>(<i>bool</i>)</li>
 <li><b>isolatePolesRotation</b>(<i>bool</i>)</li>
 <li><b>isolatePolesScale</b>(<i>bool</i>)</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="mnsremapfloatarraynode">mnsRemapFloatArrayNode</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Create a new mnsRemapFlatArray node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsRemapFloatArrayNode(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (mnsRemapFloatArray node)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: remapFloatArray] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>operation</b>(<i>int</i>)</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>value</b>(<i>str</i>)</li>
+<li><b>outputCount</b>(<i>int</i>) ; [default: 1]</li>
+<li><b>angleOutputAsDegrees</b>(<i>bool</i>)</li>
+<li><b>remapToRnage</b>(<i>bool</i>)</li>
+<li><b>min</b>(<i>float</i>)</li>
+<li><b>max</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>oldMin</b>(<i>float</i>)</li>
+<li><b>oldMax</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>outValues</b>(<i>list</i>) ; [default: [' ']]</li>
 </ul></td>
 </tr>
 </table></font>
