@@ -34,28 +34,6 @@
 </tr>
 </table></font>
 <hr width = 100%>
-###createTangentsForCtrl
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createTangentsForCtrl(mansur, MnsBuildModule, ctrl, btcNode, cornerACtrl, cornerBCtrl, nameID, doCornerTangents, mainCtrl)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>mansur</b></li>
-<li><b>MnsBuildModule</b></li>
-<li><b>ctrl</b></li>
-<li><b>btcNode</b></li>
-<li><b>cornerACtrl</b></li>
-<li><b>cornerBCtrl</b></li>
-<li><b>nameID</b></li>
-<li><b>doCornerTangents</b></li>
-<li><b>mainCtrl</b></li>
-</ul></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>
-<hr width = 100%>
 ###deconstruct
 <font size = 3pt>
 <table>
