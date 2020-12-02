@@ -101,6 +101,8 @@ nav:
                 - curveZipB.md
               - lips:
                 - lips.md
+          - moduleVisUI:
+            - moduleVisUI.md
           - picker:
             - picker.md
             - plgSettings.md

@@ -1612,10 +1612,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-3" type="checkbox" id="nav-5-2-4-3">
     
     <label class="md-nav__link" for="nav-5-2-4-3">
-      picker
+      moduleVisUI
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
       <label class="md-nav__title" for="nav-5-2-4-3">
+        moduleVisUI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../moduleVisUI/" title="moduleVisUI" class="md-nav__link">
+      moduleVisUI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-4" type="checkbox" id="nav-5-2-4-4">
+    
+    <label class="md-nav__link" for="nav-5-2-4-4">
+      picker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-2-4-4">
         picker
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2843,6 +2879,40 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <body></p>
 <h2 id="mnsremapfloatarray">mnsRemapFloatArray</h2>
 <p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This simple node will take the input value (as float or angle) and split and remap the values across the requested output count, based on the given values map graph attribute.
+<br>
+The value can also be re-ranged between two values, using the remapToRnage attributes given.
+<br>
+The input value plug will accept floats, doubles and angles (genericAttr).
+<br>
+The output plug will be set according to the input type given.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>valuesMap</td><td>valuesMap</td><td>float(array)</td><td>Output values remap graph.</td></tr>
+<tr><td>value</td><td>value</td><td>float</td><td>Input value to remap. Can be float, double and angle.</td></tr>
+<tr><td>angleOutputAsDegrees</td><td>angleOutputAsDegrees</td><td>bool</td><td>In case the input is set to angle, if this is set to true, the output values will be in degrees instead of the original radians input.</td></tr>
+<tr><td>remapToRange</td><td>remapToRange</td><td>bool</td><td>A choice to remap the outputs to a new range, using the relevant attributes.</td></tr>
+<tr><td>outputCount</td><td>outputCount</td><td>int</td><td>The amount of outputs to remap the input value to.</td></tr>
+<tr><td>min</td><td>min</td><td>float</td><td>RemapToRnage new minimum value.</td></tr>
+<tr><td>max</td><td>max</td><td>float</td><td>RemapToRnage new maximum value.</td></tr>
+<tr><td>oldMin</td><td>oldMin</td><td>float</td><td>RemapToRnage old minimum value.</td></tr>
+<tr><td>oldMax</td><td>oldMax</td><td>float</td><td>RemapToRnage old maximum value.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>outValue</td><td>outValue</td><td>float</td><td>Output values array.</td></tr>
+</table></font>
 <body></p>
 <h2 id="mnsresamplecurve">mnsResampleCurve</h2>
 <p><hr width = 100%>
