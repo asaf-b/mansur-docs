@@ -25,21 +25,38 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
 <td><ul>
 <ul>
-<li>rigTop</li>
+<li>bodyLOHolder</li>
+<li>facialLOHolder</li>
+<li>layoutHolders</li>
 <li>puppetRoot</li>
+<li>rigTop</li>
+<li>rigTops</li>
+<li>moduleAttrs</li>
+<li>btnDict</li>
+<li>allBtnDict</li>
+<li>layoutByAttrs</li>
 <li>origin</li>
 <li>rubberBand</li>
-<li>moduleAttrs</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
-<li><b><a href="#drawTitleRowTARGET">drawTitleRow </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#clearLocalVarsTARGET">clearLocalVars </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#destroyUITARGET">destroyUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#drawUITARGET">drawUI </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#filterModuleAttrsTARGET">filterModuleAttrs </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#initializeUIStateTARGET">initializeUIState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#filterRowsTARGET">filterRows </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getAttrsFromPuppetRootTARGET">getAttrsFromPuppetRoot </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getUITabStateTARGET">getUITabState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#initializeUITARGET">initializeUI </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setGlobAllTriggerTARGET">setGlobAllTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setGlobPrimariesTriggerTARGET">setGlobPrimariesTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setGlobSecondariesTriggerTARGET">setGlobSecondariesTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setGlobTertiariesTriggerTARGET">setGlobTertiariesTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setRowsVisBasedOnStateTARGET">setRowsVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#detarmineAttrTypeTARGET">detarmineAttrType </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#toggleAllStateForRowTARGET">toggleAllStateForRow </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#changeModuleVisStateTARGET">changeModuleVisState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#drawModuleRowTARGET">drawModuleRow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setRowVisBasedOnStateTARGET">setRowVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#sortModuleAttrsTARGET">sortModuleAttrs </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#dawModuleRowTARGET">dawModuleRow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#eventFilterTARGET">eventFilter </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -49,10 +66,23 @@ Main UI Class <br>
 </table></font>
 ####MnsModuleVisUI  methods
 <hr width = 50%>
-<h5 id = "drawTitleRowTARGET"></h5><font color = 464646 size = 3><b>drawTitleRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<h5 id = "clearLocalVarsTARGET"></h5><font color = 464646 size = 3><b>clearLocalVars <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawTitleRow(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>clearLocalVars(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "destroyUITARGET"></h5><font color = 464646 size = 3><b>destroyUI <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>destroyUI(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -75,10 +105,10 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "filterModuleAttrsTARGET"></h5><font color = 464646 size = 3><b>filterModuleAttrs <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<h5 id = "filterRowsTARGET"></h5><font color = 464646 size = 3><b>filterRows <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterModuleAttrs(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterRows(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -88,14 +118,163 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "initializeUIStateTARGET"></h5><font color = 464646 size = 3><b>initializeUIState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<h5 id = "getAttrsFromPuppetRootTARGET"></h5><font color = 464646 size = 3><b>getAttrsFromPuppetRoot <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeUIState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getAttrsFromPuppetRoot(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getUITabStateTARGET"></h5><font color = 464646 size = 3><b>getUITabState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getUITabState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "initializeUITARGET"></h5><font color = 464646 size = 3><b>initializeUI <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeUI(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setGlobAllTriggerTARGET"></h5><font color = 464646 size = 3><b>setGlobAllTrigger <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setGlobAllTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setGlobPrimariesTriggerTARGET"></h5><font color = 464646 size = 3><b>setGlobPrimariesTrigger <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setGlobPrimariesTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setGlobSecondariesTriggerTARGET"></h5><font color = 464646 size = 3><b>setGlobSecondariesTrigger <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setGlobSecondariesTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setGlobTertiariesTriggerTARGET"></h5><font color = 464646 size = 3><b>setGlobTertiariesTrigger <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setGlobTertiariesTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setRowsVisBasedOnStateTARGET"></h5><font color = 464646 size = 3><b>setRowsVisBasedOnState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRowsVisBasedOnState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "detarmineAttrTypeTARGET"></h5><font color = 464646 size = 3><b>detarmineAttrType <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>detarmineAttrType(self, attr)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attr</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "toggleAllStateForRowTARGET"></h5><font color = 464646 size = 3><b>toggleAllStateForRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>toggleAllStateForRow(self, attr)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attr</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "changeModuleVisStateTARGET"></h5><font color = 464646 size = 3><b>changeModuleVisState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>changeModuleVisState(self, attr, dummy)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attr</b></li>
+<li><b>dummy</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "drawModuleRowTARGET"></h5><font color = 464646 size = 3><b>drawModuleRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawModuleRow(self, attr = None, layoutParent = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attr</b>(<i>str</i>) ; [default: None]</li>
+<li><b>layoutParent</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -104,38 +283,12 @@ Main UI Class <br>
 <h5 id = "setRowVisBasedOnStateTARGET"></h5><font color = 464646 size = 3><b>setRowVisBasedOnState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRowVisBasedOnState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRowVisBasedOnState(self, attrKey)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "sortModuleAttrsTARGET"></h5><font color = 464646 size = 3><b>sortModuleAttrs <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sortModuleAttrs(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "dawModuleRowTARGET"></h5><font color = 464646 size = 3><b>dawModuleRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dawModuleRow(self, attr = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>attr</b>(<i>str</i>) ; [default: None]</li>
+<li><b>attrKey</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
