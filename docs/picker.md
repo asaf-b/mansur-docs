@@ -33,6 +33,7 @@ Picker UI Class. <br>
 <td><ul>
 <ul>
 <li>iconsDir</li>
+<li>rigTops</li>
 <li>rigTop</li>
 <li>puppetRoot</li>
 <li>pickerBase</li>
@@ -48,7 +49,9 @@ Picker UI Class. <br>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#displayHowToUseGuideTARGET">displayHowToUseGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#goToModuleRootTARGET">goToModuleRoot </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#initializeUITARGET">initializeUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setModuleVisStateBasedOnStateTARGET">setModuleVisStateBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setRigTopTARGET">setRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshBtnStateTARGET">refreshBtnState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#determaineSelectionTARGET">determaineSelection </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#btnClickedTriggerTARGET">btnClickedTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -97,10 +100,36 @@ Picker UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "initializeUITARGET"></h5><font color = 464646 size = 3><b>initializeUI <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeUI(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "setModuleVisStateBasedOnStateTARGET"></h5><font color = 464646 size = 3><b>setModuleVisStateBasedOnState <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setModuleVisStateBasedOnState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setRigTopTARGET"></h5><font color = 464646 size = 3><b>setRigTop <font size = 2pt> [<a href="#MnsPicker TARGET">MnsPicker </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRigTop(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

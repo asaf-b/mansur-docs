@@ -2360,6 +2360,17 @@ A simple wrapper method to symmetrize multiple PLG's (based on scene selection).
 </tr>
 </table></font>
 <hr width = 100%>
+###togglePickerCtrlBodyFacial
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>togglePickerCtrlBodyFacial()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###transferAuthorityToCtrl
 <font color = #5f5f5f size = 3pt>
 <i>
