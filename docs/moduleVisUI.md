@@ -27,6 +27,7 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
 <td><ul>
 <ul>
+<li>iconDir</li>
 <li>bodyLOHolder</li>
 <li>facialLOHolder</li>
 <li>layoutHolders</li>
@@ -46,6 +47,7 @@ Main UI Class <br>
 <li><b><a href="#filterRowsTARGET">filterRows </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getAttrsFromPuppetRootTARGET">getAttrsFromPuppetRoot </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getUITabStateTARGET">getUITabState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#initializeRigTopTabTARGET">initializeRigTopTab </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializeUITARGET">initializeUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshTARGET">refresh </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setGlobAllTriggerTARGET">setGlobAllTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -54,10 +56,14 @@ Main UI Class <br>
 <li><b><a href="#setGlobTertiariesTriggerTARGET">setGlobTertiariesTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setRowsVisBasedOnStateTARGET">setRowsVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#detarmineAttrTypeTARGET">detarmineAttrType </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#drawRigTopBoolRowTARGET">drawRigTopBoolRow </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#drawRigTopEnumRowTARGET">drawRigTopEnumRow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#toggleAllStateForRowTARGET">toggleAllStateForRow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#changeModuleVisStateTARGET">changeModuleVisState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#drawModuleRowTARGET">drawModuleRow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setRowVisBasedOnStateTARGET">setRowVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setRigTopBoolAttrStateTARGET">setRigTopBoolAttrState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#setRigTopBtnStateTARGET">setRigTopBtnState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
@@ -135,6 +141,19 @@ Main UI Class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getUITabState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "initializeRigTopTabTARGET"></h5><font color = 464646 size = 3><b>initializeRigTopTab <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeRigTopTab(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -249,6 +268,34 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "drawRigTopBoolRowTARGET"></h5><font color = 464646 size = 3><b>drawRigTopBoolRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawRigTopBoolRow(self, attr)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attr</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "drawRigTopEnumRowTARGET"></h5><font color = 464646 size = 3><b>drawRigTopEnumRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawRigTopEnumRow(self, attr)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>attr</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "toggleAllStateForRowTARGET"></h5><font color = 464646 size = 3><b>toggleAllStateForRow <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -302,6 +349,40 @@ Main UI Class <br>
 <td><ul>
 <li><b>self</b></li>
 <li><b>attrKey</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setRigTopBoolAttrStateTARGET"></h5><font color = 464646 size = 3><b>setRigTopBoolAttrState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRigTopBoolAttrState(self, btn, attr, setCurrentState = False)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>btn</b></li>
+<li><b>attr</b></li>
+<li><b>setCurrentState</b>(<i>bool</i>) ; [default: False]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "setRigTopBtnStateTARGET"></h5><font color = 464646 size = 3><b>setRigTopBtnState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRigTopBtnState(self, visBtn, typeBtn, attr, btnType = 0, setCurrentState = False)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>visBtn</b></li>
+<li><b>typeBtn</b></li>
+<li><b>attr</b></li>
+<li><b>btnType</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>setCurrentState</b>(<i>bool</i>) ; [default: False]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
