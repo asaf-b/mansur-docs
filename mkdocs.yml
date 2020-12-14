@@ -43,6 +43,7 @@ nav:
       - installation.md
       - Asset-Scaling.md
     - Release-Notes:
+      - releaseNotes/v1.0.8.md
       - releaseNotes/v1.0.7.md
       - releaseNotes/v1.0.6.md
       - releaseNotes/v1.0.5.md

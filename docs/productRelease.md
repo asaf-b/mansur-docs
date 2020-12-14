@@ -37,6 +37,7 @@ Main UI class <br>
 <li><b><a href="#gatherExistingProductVersionsTARGET">gatherExistingProductVersions </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getNextReleaseVersionTARGET">getNextReleaseVersion </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#releaseVersionTARGET">releaseVersion </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createCopyrightHeaderInPythonFileTARGET">createCopyrightHeaderInPythonFile </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
@@ -92,6 +93,20 @@ Main UI class <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createCopyrightHeaderInPythonFileTARGET"></h5><font color = 464646 size = 3><b>createCopyrightHeaderInPythonFile <font size = 2pt> [<a href="#MnsProductRelease TARGET">MnsProductRelease </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createCopyrightHeaderInPythonFile(self, filePath = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>filePath</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
