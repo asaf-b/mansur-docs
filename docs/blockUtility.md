@@ -923,6 +923,20 @@ Get the passed in node's color based on it's type, heirarchy and attributes. <br
 </tr>
 </table></font>
 <hr width = 100%>
+###getCtrlsFromModuleRoot
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlsFromModuleRoot(guideRoot)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>guideRoot</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getDeleteMasterFromSlave
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1549,6 +1563,17 @@ Attempt to get a rigTop node from the passed in node to check. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getRigTopAssemblies
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRigTopAssemblies()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getRigTopForSel
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1600,6 +1625,20 @@ Attempt to collect the rig's root guide from the passed in rigTop node <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getRootJointsFromModuleRoot
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRootJointsFromModuleRoot(guideRoot)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>guideRoot</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1675,6 +1714,28 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 <li><b>interpLocs</b>(<i>list</i>) ; [default: []]</li>
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###limbMatchFkIK
+<font color = #5f5f5f size = 3pt>
+<i>
+mode 0 - Match FK to IK <br>
+mode 1 - Match IK to FK <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>limbMatchFkIK(limbCtrl, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>limbCtrl</b></li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
