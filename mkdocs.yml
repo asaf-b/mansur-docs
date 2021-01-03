@@ -10,6 +10,10 @@ theme:
   logo: 'images/mansur_logo_noText.png'
   icon: 'images/mansur_logo_noText.png'
   favicon: 'images/mansur_logo_noText.png'
+  palette:
+    scheme: default
+    primary: grey
+    accent: grey
 
   features:
     - navigation.tabs
@@ -19,10 +23,6 @@ theme:
   code: 'Ubuntu Mono'
 plugins:
     - search
-
-extra_css:
-    - extra.css
-
 extra:
   social:
     - icon: 'fontawesome/brands/github'
@@ -123,3 +123,6 @@ nav:
             - picker.md
             - plgSettings.md
           - blockBuildUI.md
+extra_css:
+    - extra.css
+
