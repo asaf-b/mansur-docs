@@ -3,3 +3,9 @@ p
 	margin: 0;
 	padding: 0;
 }
+
+:root {
+  --md-primary-fg-color:        #2c2d31;
+  --md-primary-bg-color:        #94cfda;
+  --md-footer-fg-color:         #26272a;
+}

@@ -2,7 +2,6 @@ site_name: 'Mansur-Rig Docs'
 site_description: 'Documentation for the Mansur project, including the mansurPlugins library'
 site_author: 'Assaf Ben Zur'
 
-
 markdown_extensions:
       - fontawesome_markdown
       - admonition
@@ -11,26 +10,30 @@ theme:
   logo: 'images/mansur_logo_noText.png'
   icon: 'images/mansur_logo_noText.png'
   favicon: 'images/mansur_logo_noText.png'
-  palette:
-    primary: 'grey'
-    accent: 'grey'
-  feature:
-      tabs: true
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+
   text: 'Ubuntu'
   code: 'Ubuntu Mono'
 plugins:
     - search
+
+extra_css:
+    - extra.css
+
 extra:
   social:
-    - type: 'github'
+    - icon: 'fontawesome/brands/github'
       link: 'https://github.com/asaf-b'
-    - type: 'youtube'
+    - icon: 'fontawesome/brands/youtube'
       link: 'https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/mansurRig'
-    - type: 'linkedin'
+    - icon: 'fontawesome/brands/linkedin'
       link: 'https://www.linkedin.com/in/asaf-ben-zur/'
-    - type: 'imdb'
+    - icon: 'fontawesome/brands/imdb'
       link: 'https://www.imdb.com/name/nm8262040/?ref_=nv_sr_3'
     
 nav:
@@ -42,6 +45,8 @@ nav:
     - User-Guides:
       - installation.md
       - Asset-Scaling.md
+    - Help-Desk:
+      - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
       - releaseNotes/v1.0.9.md
       - releaseNotes/v1.0.8.md
@@ -118,6 +123,3 @@ nav:
             - picker.md
             - plgSettings.md
           - blockBuildUI.md
-extra_css:
-    - extra.css
-

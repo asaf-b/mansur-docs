@@ -1,10 +1,10 @@
 #
 <img src="images/mansur_logo_blackText.png" width="350"/>
 <hr>
-<font color = #5f5f5f size = 5pt>
+<font size = 5pt>
 Welcome to Mansur's documentaion page !
 </font>
-<font color = #494949 size = 3pt>
+<font csize = 3pt>
 <br>
 Here you can find detailed code documentation, as well as some helful guides to get started as a user, or as a developer.
 <br>Here are some Quick-Links to get started:
@@ -13,6 +13,7 @@ Here you can find detailed code documentation, as well as some helful guides to 
   <li><a href="installation/" title="Installation" class="md-nav__link"> Getting Started </a></li>
   <li><a href="supportUs/" title="Support-Us" class="md-nav__link"> Support-Us </a> </li>
   <li><a href="arguments/" title="documentation" class="md-nav__link"> Documentation </a> </li>
+  <li><a href="https://mansurrig.freshdesk.com/support/home" title="help" class="md-nav__link" target="_blank"> Help-Desk </a> </li>
 </ul></b>
 </font>
 <font size = 20pt color>
