@@ -1334,7 +1334,7 @@ Collect the offsetGroup related to the passed in control, if it exists. <br>
 <font color = #5f5f5f size = 3pt>
 <i>
 Attempt to collect the opposite related mns object if it exists. <br>
-   Only non 'ceneter components' will be tested of course. <br>
+Only non 'ceneter components' will be tested of course. <br>
 </i>
 <br>
 </font>
@@ -1845,6 +1845,21 @@ Load controls predefined and custom defaults: <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###locateCnsForCtrl
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>locateCnsForCtrl(ctrl = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

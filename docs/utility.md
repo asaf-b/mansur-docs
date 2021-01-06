@@ -1164,13 +1164,14 @@ If the attr exist, get it and return it. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateAttrAndGet(transform = None, attrName = "", default = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateAttrAndGet(transform = None, attrName = "", default = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (return status), unknownType (value)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transform</b>(<i>str</i>) ; [default: None]</li>
 <li><b>attrName</b>(<i>str</i>) ; [default: ""]</li>
 <li><b>default</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

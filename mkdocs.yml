@@ -91,6 +91,8 @@ nav:
           - userManagement:
             - userManagement.md
         - block:
+          - cnsTool:
+            - cnsTool.md
           - core:
             - blockUtility.md
             - buildModules.md
