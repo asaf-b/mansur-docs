@@ -49,6 +49,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li>builtGuides</li>
 <li>rigTop</li>
 <li>rootGuide</li>
+<li>isFacial</li>
 <li>rootCtrl</li>
 <li>guideControls</li>
 <li>cGuideControls</li>
@@ -250,6 +251,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li><b>alpha</b>(<i>str</i>) ; [default: A]</li>
 <li><b>alongAxis</b>(<i>int</i>) ; [default: 1]</li>
 <li><b>moduleScale</b>(<i>int</i>) ; [default: 1]</li>
+<li><b>isFacial</b>(<i>bool</i>)</li>
 </ul></td>
 </tr>
 </table></font>

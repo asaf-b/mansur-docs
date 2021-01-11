@@ -108,7 +108,7 @@ creates a frames ui remote-control style ctrl based on the input params. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createRemoteControlStyleCtrl(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (ctrl), MnsNameStd (uiOffsetGrp)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (ctrl), MnsNameStd (uiOffsetGrp), MnsNameStd (Frame)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -167,6 +167,7 @@ The default color is white when used as standalone, and based on the rig's globa
 <li><b>body</b>(<i>str</i>) ; [default: body] - Node's name body</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: alpha] - Node's Alpha id</li>
 <li><b>id</b>(<i>str</i>) ; [default: id] - Node's id</li>
+<li><b>isFacial</b>(<i>bool</i>)</li>
 <li><b>bodySuffix</b>(<i>str</i>)</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - In case of a 'free' creation, if True will name the node to the first possible name- searching for new Alpha instead of the ID</li>
 <li><b>ctrlType</b>(<i>str</i>) ; [default: ctrl]</li>

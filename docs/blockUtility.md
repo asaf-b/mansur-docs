@@ -969,6 +969,20 @@ Collect the delete master from a slave's related 'mnsNodeRelationship' node, if 
 </tr>
 </table></font>
 <hr width = 100%>
+###getExisingCnsCtrlsForRigTop
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getExisingCnsCtrlsForRigTop(rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getExistingCpomNodeFromSurface
 <font size = 3pt>
 <table>
@@ -2182,11 +2196,12 @@ This method will remove the corresponding "module vis" channel from the given pu
 ###resetAllControlForRigTop
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetAllControlForRigTop(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetAllControlForRigTop(rigTop = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2292,11 +2307,12 @@ Select all controls for the given rig top. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>selectAllCtrls(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>selectAllCtrls(rigTop = None, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

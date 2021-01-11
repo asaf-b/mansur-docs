@@ -885,6 +885,8 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td>customPointsUpMode</td><td>cusPointsUpMode</td><td>enum</td><td>Custom tweakers rotation up mode.</td></tr>
 <tr><td>excludePolesTranslation</td><td>excludePolesTranslation</td><td>bool</td><td>exclude translation set for base and tip.</td></tr>
 <tr><td>excludePolesRotation</td><td>excludePolesRotation</td><td>bool</td><td>exclude rotation set for base and tip.</td></tr>
+<tr><td>excludeBaseRotation</td><td>excludeBaseRotation</td><td>bool</td><td>exclude rotation set for base. Only if excludePolesRotation is set to True.</td></tr>
+<tr><td>excludeTipRotation</td><td>excludeTipRotation</td><td>bool</td><td>exclude rotation set for tip. Only if excludePolesRotation is set to True.</td></tr>
 <tr><td>excludePolesScale</td><td>excludePolesScale</td><td>bool</td><td>exclude scale set for base and tip.</td></tr>
 <tr><td>twistAimStart</td><td>twistAimStart</td><td>float</td><td>Self explanatory.</td></tr>
 <tr><td>twistAimMid</td><td>twistAimMid</td><td>float</td><td>Self explanatory.</td></tr>
