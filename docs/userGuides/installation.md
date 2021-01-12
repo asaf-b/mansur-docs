@@ -12,7 +12,12 @@
 * Follow the prompt instructions
 * Restart Maya
 
-Please make sure to update as appropriate.
+!!!Updates
+	Please make sure to update as appropriate. <a href="../Version-Updates/" class="md-nav__link"><b> Version Updates Guide </b></a>
 
-## License
-Please visit Mansur-Rig.com/EULA for full license details.
+##Uninstallation
+* Locate any installation directory of Mansur-Rig in your file system
+* Go into the main version (any version) directory
+* Drag and Drop the "mansurRig_DragAndDrop_UNINSTALL.mel" into any supported Maya version
+* Follow the prompt instructions
+* Restart Maya

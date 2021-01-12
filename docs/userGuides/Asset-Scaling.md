@@ -8,8 +8,8 @@ There are three values that dictate Asset scaling:
 	<li>Preferences - “Root Guide Scale” - This will dictate the multiplier for the “Root Guide” only.</li>
 </ul>
 
-![drawing](images/guides/scaling/scalingB.png) 
-![drawing](images/guides/scaling/scalingC.png) 
+![drawing](../images/scaling/scalingB.png) 
+![drawing](../images/scaling/scalingC.png) 
 
 Variables used internally :
 <ul>
