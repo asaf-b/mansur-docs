@@ -43,11 +43,13 @@ nav:
     - Support-Us:
       - Support-Us.md
     - User-Guides:
-      - userGuides/installation.md
       - userGuides/System-Requirements.md
+      - userGuides/installation.md
+      - userGuides/Log-In.md
       - userGuides/Version-Updates.md
       - userGuides/Naming-Convention.md
       - userGuides/Asset-Scaling.md
+      - userGuides/Your-First-Rig.md
       - userGuides/license.md
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home

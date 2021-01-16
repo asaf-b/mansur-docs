@@ -1,7 +1,7 @@
-* Go to Mansur-Rig.com and create an accout (if you havn't already).
-* Log in to your acount.
+* Go to Mansur-Rig.com and create an account (if you haven't already).
+* Log in to your account.
 * Download the latest version of Mansur-Rig.
-* Extract the .zip libarary to your prefered location.
+* Extract the .zip library to your preferred location.
    * If you have another version already installed, preferably extract to the same location (version root folder should be placed in the same root folder of the previous version) 
    * .../ANY_DIRECTORY
       * .../ANY_DIRECTORY/mansurRig_1.0.1

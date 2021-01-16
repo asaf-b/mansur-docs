@@ -1,4 +1,4 @@
-For your ease of use, Mansur-Rig is equiped with a <b>Version-Manager</b> tool
+For your ease of use, Mansur-Rig is equipped with a <b>Version-Manager</b> tool
 <br>
 <hr>
 ![drawing](../images/versionManager/versionManager.png) 
@@ -10,9 +10,9 @@ For your ease of use, Mansur-Rig is equiped with a <b>Version-Manager</b> tool
 <ol type="1">
 	<li>Via <i>Mansur</i> main menu, click the <i><b>Version-Manager</b> item to open the tool. </li>
 	<li>Current Mansur-Rig version will be visibly marked with a green <b>V</b> icon.</li>
-	<li>To upgrade/downgrade to a version, you will need to make sure the version is <i><b>Install Availble</b>. In case it isn't, you can easily download it using the <i><b>download</b></i> button.</li>
-	<li>Once a version is <i><b>Install Availble</b>, simply select the version you wish to upgrade/downgrade to, and click <i><b>Install</b></i>.</li>
-	<li>Once the installation is complete, a meesage will be displayed stating the [rpcess finished.</li>
+	<li>To upgrade/downgrade to a version, you will need to make sure the version is <i><b>Install Available</b>. In case it isn't, you can easily download it using the <i><b>download</b></i> button.</li>
+	<li>Once a version is <i><b>Install Available</b>, simply select the version you wish to upgrade/downgrade to, and click <i><b>Install</b></i>.</li>
+	<li>Once the installation is complete, a message will be displayed stating the process  finished.</li>
 	<li>Restart Maya</li>
 	<li>Version-Update is complete.</li>
 </ol>
