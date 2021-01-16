@@ -10,8 +10,8 @@ Here you can find detailed code documentation, as well as some helful guides to 
 <br>Here are some Quick-Links to get started:
 <b><ul>
   <li><a href="About/" title="About Mansur" class="md-nav__link"> about </a> </li>
-  <li><a href="installation/" title="Installation" class="md-nav__link"> Getting Started </a></li>
-  <li><a href="supportUs/" title="Support-Us" class="md-nav__link"> Support-Us </a> </li>
+  <li><a href="userGuides/installation/" title="Installation" class="md-nav__link"> Getting Started </a></li>
+  <li><a href="Support-Us/" title="Support-Us" class="md-nav__link"> Support-Us </a> </li>
   <li><a href="arguments/" title="documentation" class="md-nav__link"> Documentation </a> </li>
   <li><a href="https://mansurrig.freshdesk.com/support/home" title="help" class="md-nav__link" target="_blank"> Help-Desk </a> </li>
 </ul></b>
