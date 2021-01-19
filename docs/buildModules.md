@@ -529,6 +529,7 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 <td><ul>
 <ul>
 <li>rigTop</li>
+<li>rootGuide</li>
 <li>callerSubClass</li>
 <li>modules</li>
 <li>buildModulesBtns</li>

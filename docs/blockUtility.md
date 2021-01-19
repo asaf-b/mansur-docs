@@ -261,6 +261,21 @@ Collect all slaves related to the passed in 'mnsNodeRelationship' node. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###connectIfNotConnected
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectIfNotConnected(attrA, attrB)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>attrA</b></li>
+<li><b>attrB</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###connectPlgToVisChannel
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -371,7 +386,6 @@ The main creation method for PLG creation. <br>
    1. get picker layout base. <br>
    2. collect projection position if requested. <br>
    3. create and set all attributes <br>
-   4. create the related title (mnsAnnotate node) <br>
 </i>
 <br>
 </font>
