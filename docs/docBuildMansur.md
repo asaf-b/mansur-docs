@@ -156,6 +156,21 @@ Contains the requested folders within, hard-coded for safety. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###buildModSettingsFileDoc
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildModSettingsFileDoc(path, ymlPath)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>path</b></li>
+<li><b>ymlPath</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###buildReleaseNotesPage
 <font size = 3pt>
 <table>
@@ -367,11 +382,12 @@ Extracts a header if exsits from a given elemnt src (Class/Def/Method) as list <
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractHeaderFromSrc(src = [] )</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractHeaderFromSrc(src = [], **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (header lines)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

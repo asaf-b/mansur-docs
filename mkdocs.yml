@@ -107,31 +107,42 @@ nav:
           - cnsTool:
             - cnsTool.md
           - core:
+            - allModSettings_settings.md
             - blockUtility.md
             - buildModules.md
             - controlShapes.md
           - modules:
             - character_body:
               - FKChain:
+                - FKChain_settings.md
                 - FKChain.md
               - foot:
+                - foot_settings.md
                 - foot.md
               - freeControl:
+                - freeControl_settings.md
                 - freeControl.md
               - limb:
+                - limb_settings.md
                 - limb.md
               - lookAtControl:
+                - lookAtControl_settings.md
                 - lookAtControl.md
               - meta:
+                - meta_settings.md
                 - meta.md
               - simpleSquash:
+                - simpleSquash_settings.md
                 - simpleSquash.md
             - character_face:
               - curveZip:
+                - curveZip_settings.md
                 - curveZip.md
               - curveZipB:
+                - curveZipB_settings.md
                 - curveZipB.md
               - lips:
+                - lips_settings.md
                 - lips.md
           - moduleVisUI:
             - moduleVisUI.md
