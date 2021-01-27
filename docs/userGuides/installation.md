@@ -1,5 +1,8 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CpijYYl6a58" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 * Go to Mansur-Rig.com and create an account (if you haven't already).
 * Log in to your account.
+* Subscribe to any plan that fits you best
 * Download the latest version of Mansur-Rig.
 * Extract the .zip library to your preferred location.
    * If you have another version already installed, preferably extract to the same location (version root folder should be placed in the same root folder of the previous version) 
