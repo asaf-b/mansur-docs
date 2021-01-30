@@ -1,6 +1,15 @@
 <body>
 #curveZip
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Eyelids <br>
+This module is depreciated. Please use CurveZipB. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###connectCustomGuidesToPoc

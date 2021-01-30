@@ -1,6 +1,18 @@
 <body>
 #meta Settings
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Metacarpal (Fingers), Metatarsal (Toes) <br>
+This module will create a control for every root guide position, as well as a few global splay controls for the collection of controls based on settings. <br>
+The play controls will behave as a global tweaker for the control collection, allowing easier animation. <br>
+In order to implement "splayB" feature, simply parent a FK chain modules under each of the main meta guides. <br>
+This module construction will try to detect a FK module under each guide, and if any exist, will create the second layer splay control for these FK chains. <br>
+</i>
+<br>
+</font>
+<hr width = 100%>
 ##Attributes
 </table></font>
 ###GlobalSettings

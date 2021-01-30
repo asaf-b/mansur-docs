@@ -1,6 +1,15 @@
 <body>
 #curveZip Settings
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for:  <br>
+This module is depreciated. Please use CurveZipB. <br>
+</i>
+<br>
+</font>
+<hr width = 100%>
 ##Attributes
 </table></font>
 ###GlobalSettings

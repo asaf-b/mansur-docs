@@ -1,6 +1,18 @@
 <body>
 #lips
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Lips <br>
+This module was designed around lips behaviour. <br>
+This module has a few layers that will allow general as well as extremely fiddle control (based on parameters) over the lips deformation. <br>
+Some of the main features in this module include: Macro corner controls, Along Surface feature, Around Center Feature, Jaw connections, Global "Full-Lips" control, Zip Controls, Curve meet controls, Tweak controls, Cheek Raise connection,  and much more. <br>
+The joint structure of this module will be dictated by input vertices on a given mesh. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###construct

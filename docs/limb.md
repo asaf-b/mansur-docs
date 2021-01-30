@@ -1,6 +1,18 @@
 <body>
 #limb
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Arms, Legs <br>
+This module was designed to create a generic 3 joint limb control. <br>
+This module will create both the FK and IK controls, and the standard blend control. <br>
+On top of the standard behaviour, based on parameters, this module can also include bendy limb controls (as many as you want), Arc layer and Sleeve layer. <br>
+Note: When used as a leg, try using the foot module as a direct child of this module to automatically achive a connected behaviour. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###construct

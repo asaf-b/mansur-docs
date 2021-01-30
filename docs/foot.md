@@ -1,6 +1,17 @@
 <body>
 #foot
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Foot <br>
+This Module was created for a foot setup mainly. <br>
+Some of it's main features are FK controls, BK (backward kinematics) controls, Roll control, Bank Controls, Heel and Tip controls, Dynamic pivot control. <br>
+The best application for this module is placing it under a limb module, which will result in a connected (standard) behaviour. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###construct

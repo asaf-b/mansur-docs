@@ -1,6 +1,20 @@
 <body>
 #freeControl
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Free objects, General Control, Mesh Tweaker, Mesh Local Tweaker <br>
+This Module is a general single control at it's base state. <br>
+It also contains a Mesh-Tweaker feature that will allow you to create a "Double Directional" tweaker- meaning that the control will follow the input Mesh's position (Rivet) and will also be able to affect it. <br>
+This effect is also commonly knowen as the "Dorito-Effect". <br>
+This feature also includes a "local" mode, to tunnel deformations from the control to a local skinCluster, then a blend-shape to the main Mesh, creating multi-layered skinned mesh. <br>
+All of these features will use the main joint as the effector. <br>
+Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that will also be used as the rivet input- make sure "sameMeshAffector" is set to ON. <br>
+ <br>
+</font>
+</i>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###construct

@@ -1,6 +1,17 @@
 <body>
 #simpleSquash Settings
 <hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+Author: Asaf Ben-Zur <br>
+Best used for: Head Squash, Nose, any general squash behaviour <br>
+This module will create a squash behaviour to it's slave joint. <br>
+Any child modules under this module will inherit the squash behaviour. <br>
+The squash behaviour can be set by the module's settings, and can also be adjusted and keyed post construction.  <br>
+</i>
+<br>
+</font>
+<hr width = 100%>
 ##Attributes
 </table></font>
 ###GlobalSettings
