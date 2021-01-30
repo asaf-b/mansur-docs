@@ -1,5 +1,5 @@
 <body>
-#allModSettings Settings
+#Core Module Settings
 <hr width = 100%>
 ##Attributes
 </table></font>

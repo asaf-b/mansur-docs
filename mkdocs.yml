@@ -108,7 +108,7 @@ nav:
           - cnsTool:
             - cnsTool.md
           - core:
-            - allModSettings_settings.md
+            - Core_Module_Settings.md
             - blockUtility.md
             - buildModules.md
             - controlShapes.md
