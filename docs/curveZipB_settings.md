@@ -75,6 +75,15 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <tr><td>tweakCurvesInterpolation</td>
 <td>1</td>
 <td>Tweak controls interpolation type</td></tr>
+<tr><td>flipRightX</td>
+<td>False</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>flipRightY</td>
+<td>False</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>flipRightZ</td>
+<td>False</td>
+<td>Comment wasn't inserted</td></tr>
 </table></font>
 ###FollowRotation
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

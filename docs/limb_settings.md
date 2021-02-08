@@ -17,6 +17,9 @@ Note: When used as a leg, try using the foot module as a direct child of this mo
 </table></font>
 ###GlobalSettings
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<tr><td>interpolationJoints</td>
+<td>3</td>
+<td>Comment wasn't inserted</td></tr>
 <tr><td>offsetX</td>
 <td>20.0</td>
 <td>Up curve X value offset for the interpolation joints</td></tr>

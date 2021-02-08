@@ -38,6 +38,23 @@ This is mainly used to display technicall setups.
 <tr><td>nameOnlyMode</td><td>nameOnlyMode</td><td>int</td><td>MObject	mnsAnnotate::aNameMode</td></tr>
 </table></font>
 <body>
+##mnsAutoWheelDrive
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>startFrame</td><td>startFrame</td><td>int</td><td>Evaluation start frame.</td></tr>
+<tr><td>startFrameFromRange</td><td>startFrameFromRange</td><td>bool</td><td>If true, take the start frame from current maya range instead of the input value given.</td></tr>
+<tr><td>time</td><td>time</td><td>time</td><td>Time input.</td></tr>
+</table></font>
+<body>
 ##mnsBuildTransformsCurve
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
@@ -1241,4 +1258,32 @@ The blend is triggered once with the attribute set to 'Off' - causing the knee t
 <tr><td>outOffsetCurve</td><td>outOffsetCurve</td><td>nurbsCurve</td><td>Result offset Curve.</td></tr>
 <tr><td>center</td><td>center</td><td>float[3]</td><td>Result circle center point.</td></tr>
 <tr><td>radius</td><td>radius</td><td>float</td><td>Result circle radius.</td></tr>
+</table></font>
+<body>
+##mnsTransformSpring
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>inputWorldMatrix</td><td>inputWorldMatrix</td><td>float</td><td>MObject  MnsTransformSpring::aInputWorldMatrix</td></tr>
+<tr><td>targetParentInverseMatrix</td><td>targetParentInverseMatrix</td><td>float</td><td>MObject  MnsTransformSpring::aTargetParentInverseMatrix</td></tr>
+<tr><td>strength</td><td>strength</td><td>float</td><td>Global strength. 0 is do nothing.</td></tr>
+<tr><td>startFrame</td><td>startFrame</td><td>int</td><td>Evaluation start frame.</td></tr>
+<tr><td>startFrameFromRange</td><td>startFrameFromRange</td><td>bool</td><td>If true, take the start frame from current maya range instead of the input value given.</td></tr>
+<tr><td>time</td><td>time</td><td>time</td><td>Time input.</td></tr>
+<tr><td>stiffness</td><td>stiffness</td><td>graph</td><td>Stiffness graph control.</td></tr>
+<tr><td>damping</td><td>damping</td><td>graph</td><td>Damping graph control.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>translate</td><td>t</td><td>float</td><td>MObject  MnsTransformSpring::aOutTranslate</td></tr>
 </table></font>

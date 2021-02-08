@@ -22,6 +22,9 @@ The slave control will be the control authority for the joint, as the look-at co
 <tr><td>targetControlShape</td>
 <td>circle</td>
 <td>Main control shape</td></tr>
+<tr><td>upLocalDirection</td>
+<td>0</td>
+<td>Main control shape</td></tr>
 <tr><td>channelControl</td>
 <td>
 <font size = 2pt>
@@ -49,6 +52,18 @@ The slave control will be the control authority for the joint, as the look-at co
 </font>
 </td>
 <td>Main control channel-box settings</td></tr>
+</table></font>
+###spring
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<tr><td>doLookAtSpring</td>
+<td>False</td>
+<td>This feature will create a spring node blowe the look-at master. This will result in a rotation-based spring, mostly used for vehicle center suspension to achive secondary motion.</td></tr>
+<tr><td>defaultStiffness</td>
+<td>0.5</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>defaultDamping</td>
+<td>0.5</td>
+<td>Comment wasn't inserted</td></tr>
 </table></font>
 ###asEyeLook
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

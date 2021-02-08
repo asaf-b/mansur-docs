@@ -19,6 +19,9 @@ The squash behaviour can be set by the module's settings, and can also be adjust
 <tr><td>controlShape</td>
 <td>arrow</td>
 <td>Main control shape</td></tr>
+<tr><td>upLocalDirection</td>
+<td>0</td>
+<td>Comment wasn't inserted</td></tr>
 </table></font>
 ###Squash
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

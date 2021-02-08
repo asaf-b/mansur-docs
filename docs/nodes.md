@@ -541,6 +541,37 @@ Input as a node.channel list. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###mnsAutoWheelDriveNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsAutoWheelDrive node based on specified parameters and outputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsAutoWheelDriveNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: autoWheelDrive] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>wheelDiameter</b>(<i>float</i>) ; [default: 10.0]</li>
+<li><b>speedMultiplier</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>outRotation</b>(<i>str</i>) ; [default: None]</li>
+<li><b>connectTime</b>(<i>bool</i>) ; [default: True]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###mnsBuildTransformsCurveNode
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1182,6 +1213,38 @@ Creates an mnsReampleCurve node based on specified parameters and outputs. <br>
 <li><b>blend</b>(<i>float</i>)</li>
 <li><b>inputCurve</b>(<i>str</i>) - name of the curve object to connect as input curve into the node. Setting as nothing or an invalid name will result in nothing connected</li>
 <li><b>inputUpCurve</b>(<i>str</i>) - name of the curve object to connect as input offset curve into the node. Setting as nothing or an invalid name will result in nothing connected</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mnsTransformSpringNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsAutoWheelDrive node based on specified parameters and outputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsTransformSpringNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: transformSpring] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>strength</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>damping</b>(<i>float</i>) ; [default: 0.5]</li>
+<li><b>stiffness</b>(<i>float</i>) ; [default: 0.5]</li>
+<li><b>outTranslate</b>(<i>str</i>) ; [default: None]</li>
+<li><b>connectTime</b>(<i>bool</i>) ; [default: True]</li>
 </ul></td>
 </tr>
 </table></font>

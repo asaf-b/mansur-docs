@@ -234,7 +234,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../releaseNotes/v1.1.3/" class="md-tabs__link">
+      <a href="../releaseNotes/v1.1.4/" class="md-tabs__link">
         Release-Notes
       </a>
     </li>
@@ -594,6 +594,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../releaseNotes/v1.1.4/" class="md-nav__link">
+      V1.1.4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../releaseNotes/v1.1.3/" class="md-nav__link">
       V1.1.3
     </a>
@@ -910,6 +923,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnsautowheeldrive" class="md-nav__link">
+    mnsAutoWheelDrive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnsbuildtransformscurve" class="md-nav__link">
     mnsBuildTransformsCurve
   </a>
@@ -1066,6 +1086,13 @@
         <li class="md-nav__item">
   <a href="#mnsthreepointarc" class="md-nav__link">
     mnsThreePointArc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mnstransformspring" class="md-nav__link">
+    mnsTransformSpring
   </a>
   
 </li>
@@ -2568,6 +2595,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnsautowheeldrive" class="md-nav__link">
+    mnsAutoWheelDrive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnsbuildtransformscurve" class="md-nav__link">
     mnsBuildTransformsCurve
   </a>
@@ -2728,6 +2762,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mnstransformspring" class="md-nav__link">
+    mnsTransformSpring
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2779,6 +2820,23 @@ This is mainly used to display technicall setups.
 <tr><td>positionX</td><td>positionX</td><td>double</td><td>Display top-left corener X position, if drawFlat attribute is True.</td></tr>
 <tr><td>positionY</td><td>positionY</td><td>double</td><td>Display top-left corener y position, if drawFlat attribute is True.</td></tr>
 <tr><td>nameOnlyMode</td><td>nameOnlyMode</td><td>int</td><td>MObject   mnsAnnotate::aNameMode</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnsautowheeldrive">mnsAutoWheelDrive</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>startFrame</td><td>startFrame</td><td>int</td><td>Evaluation start frame.</td></tr>
+<tr><td>startFrameFromRange</td><td>startFrameFromRange</td><td>bool</td><td>If true, take the start frame from current maya range instead of the input value given.</td></tr>
+<tr><td>time</td><td>time</td><td>time</td><td>Time input.</td></tr>
 </table></font>
 <body></p>
 <h2 id="mnsbuildtransformscurve">mnsBuildTransformsCurve</h2>
@@ -3982,6 +4040,34 @@ The blend is triggered once with the attribute set to 'Off' - causing the knee t
 <tr><td>outOffsetCurve</td><td>outOffsetCurve</td><td>nurbsCurve</td><td>Result offset Curve.</td></tr>
 <tr><td>center</td><td>center</td><td>float[3]</td><td>Result circle center point.</td></tr>
 <tr><td>radius</td><td>radius</td><td>float</td><td>Result circle radius.</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnstransformspring">mnsTransformSpring</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>inputWorldMatrix</td><td>inputWorldMatrix</td><td>float</td><td>MObject  MnsTransformSpring::aInputWorldMatrix</td></tr>
+<tr><td>targetParentInverseMatrix</td><td>targetParentInverseMatrix</td><td>float</td><td>MObject  MnsTransformSpring::aTargetParentInverseMatrix</td></tr>
+<tr><td>strength</td><td>strength</td><td>float</td><td>Global strength. 0 is do nothing.</td></tr>
+<tr><td>startFrame</td><td>startFrame</td><td>int</td><td>Evaluation start frame.</td></tr>
+<tr><td>startFrameFromRange</td><td>startFrameFromRange</td><td>bool</td><td>If true, take the start frame from current maya range instead of the input value given.</td></tr>
+<tr><td>time</td><td>time</td><td>time</td><td>Time input.</td></tr>
+<tr><td>stiffness</td><td>stiffness</td><td>graph</td><td>Stiffness graph control.</td></tr>
+<tr><td>damping</td><td>damping</td><td>graph</td><td>Damping graph control.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>translate</td><td>t</td><td>float</td><td>MObject  MnsTransformSpring::aOutTranslate</td></tr>
 </table></font></p>
                 
               
