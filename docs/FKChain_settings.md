@@ -192,7 +192,7 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doVariableFK</td>
 <td>False</td>
-<td>This will create a veriable FK setup on this chain</td></tr>
+<td>This will create a veriable FK setup on this chain. NOTE: Setting this attribute to True when the curve mode is set to PARAMETRIC, will force the joint structure curve mode to UNIFORM.</td></tr>
 <tr><td>numVarFKControls</td>
 <td>2</td>
 <td>Number of variable FK controls</td></tr>
