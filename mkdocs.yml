@@ -43,14 +43,24 @@ nav:
     - Support-Us:
       - Support-Us.md
     - User-Guides:
-      - userGuides/System-Requirements.md
-      - userGuides/installation.md
-      - userGuides/Log-In.md
-      - userGuides/Version-Updates.md
-      - userGuides/Naming-Convention.md
-      - userGuides/Asset-Scaling.md
-      - userGuides/Your-First-Rig.md
-      - userGuides/license.md
+      - Getting-Started:
+        - userGuides/System-Requirements.md
+        - userGuides/installation.md
+        - userGuides/Log-In.md
+        - userGuides/Version-Updates.md
+        - userGuides/Naming-Convention.md
+        - userGuides/Asset-Scaling.md
+        - userGuides/license.md
+      - Tutorials:
+        - Mansur-Rig 101:
+          - userGuides/tutorials/mansurRig101/Introduction.md
+          - userGuides/tutorials/mansurRig101/The-Basics.md
+          - userGuides/tutorials/mansurRig101/Getting-Started.md
+          - userGuides/tutorials/mansurRig101/Building-The-Leg-And-Foot.md
+          - userGuides/tutorials/mansurRig101/Building-The-Arm-And-Fingers.md
+          - userGuides/tutorials/mansurRig101/Completing-The-Guide-Template.md
+          - userGuides/tutorials/mansurRig101/Puppet-Finish.md
+          - userGuides/tutorials/mansurRig101/Conclusion.md
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
