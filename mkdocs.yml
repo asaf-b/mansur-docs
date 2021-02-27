@@ -25,6 +25,8 @@ plugins:
     - search
 extra:
   social:
+    - icon: 'fontawesome/brands/facebook'
+      link: 'https://www.facebook.com/MansurRig'
     - icon: 'fontawesome/brands/github'
       link: 'https://github.com/asaf-b'
     - icon: 'fontawesome/brands/youtube'
@@ -35,7 +37,10 @@ extra:
       link: 'https://www.linkedin.com/in/asaf-ben-zur/'
     - icon: 'fontawesome/brands/imdb'
       link: 'https://www.imdb.com/name/nm8262040/?ref_=nv_sr_3'
-    
+    - icon: 'fontawesome/brands/instagram'
+      link: 'https://www.instagram.com/mansurrig/'
+    - icon: 'fontawesome/brands/artstation'
+      link: 'https://www.artstation.com/mansur-rig'
 nav:
     - index.md
     - About:

@@ -1,3 +1,7 @@
+<!-- CSS Icon via fontawesome 5 -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/v4-shims.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
 #
 <img src="images/mansur_logo_blackText.png" width="350"/>
 <hr>
@@ -16,10 +20,14 @@ Here you can find detailed code documentation, as well as some helful guides to 
   <li><a href="https://mansurrig.freshdesk.com/support/home" title="help" class="md-nav__link" target="_blank"> Help-Desk </a> </li>
 </ul></b>
 </font>
+
 <font size = 20pt color>
+<a href="https://www.facebook.com/MansurRig" class="fa fa-facebook" target="_blank"></a>
 <a href="https://github.com/asaf-b" class="fa fa-github" target="_blank"></a>
 <a href="https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ" class="fa fa-youtube" target="_blank"></a>
 <a href="https://twitter.com/mansurRig" class="fa fa-twitter" target="_blank"></a>
 <a href="https://www.linkedin.com/in/asaf-ben-zur/" class="fa fa-linkedin" target="_blank"></a>
 <a href="https://www.imdb.com/name/nm8262040/?ref_=nv_sr_3" class="fa fa-imdb" target="_blank"></a>
+<a href="https://www.artstation.com/mansur-rig" class="fa fa-artstation" target="_blank"></a>
+<a href="https://www.instagram.com/mansurrig/" class="fa fa-instagram" target="_blank"></a>
 </font>

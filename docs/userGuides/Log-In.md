@@ -6,7 +6,7 @@ Once you have an account and an active subscription, you will be able to success
 <br>
 To do so, please open <b>My-Account</b> dialog via Mansur-Rig's main menu:
 <hr>
-![drawing](../images/login/login.png) 
+![drawing](userGuidesImages/login/login.png) 
 
 <hr>
 ### How to use My-Account
@@ -20,7 +20,7 @@ To do so, please open <b>My-Account</b> dialog via Mansur-Rig's main menu:
 	<li>If the credentials are valid, a clear indication will be showen and the dialog will switch to an <b>Active</b> state.</li>
 	<li>Once the account is active, the entire toolset will be active. Enjoy!
 </ol>
-![drawing](../images/login/activeMyAccount.png) 
+![drawing](userGuidesImages/login/activeMyAccount.png) 
 </font>
 
 !!!Auto-Log-In
@@ -38,7 +38,7 @@ In case you have a multi-seat subscription, a few more features will be of your 
 	<li>The ammount of seats that are available within your subscription will be listed under your profile within the website.</li>
 	<li>You can also see some of your license details via <b>My-Account</b> dialog, under <b>License-Details</b> dropdown menu
 	<br>
-	![drawing](../images/login/licDetails.png) 
+	![drawing](userGuidesImages/login/licDetails.png) 
 </ul>
 </font>
 
@@ -59,7 +59,7 @@ This field can be edited via Mansur-Rig's website, in <b>My-Profile</b> section.
 Now, the user you want to give access to your account can log-in as a <b>User</b>, which will give him "read-only" access to your account.
 <br>
 You, as an <b>Admin</b> are able to control access to your account, and even force log-out any user using the <b>Manage-Users</b> section in <b>My-Account</b> dialog:
-![drawing](../images/login/manageUsers.png) 
+![drawing](userGuidesImages/login/manageUsers.png) 
 
 <hr>
 

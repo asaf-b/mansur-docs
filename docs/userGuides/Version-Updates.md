@@ -1,7 +1,7 @@
 For your ease of use, Mansur-Rig is equipped with a <b>Version-Manager</b> tool
 <br>
 <hr>
-![drawing](../images/versionManager/versionManager.png) 
+![drawing](userGuidesImages/versionManager/versionManager.png) 
 
 <hr>
 ### How to use the Version-Manager
