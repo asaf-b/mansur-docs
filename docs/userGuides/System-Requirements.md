@@ -1,6 +1,6 @@
 ### Compatible Platforms
 - Windows
-- Linux (Tested on CentoOS 7.9)
+- Linux (Tested on CentOS 7.9)
 
 ### Compatible Maya version
 - 2017 (including all updates)
