@@ -26,7 +26,9 @@ Main UI class <br>
 <td><ul>
 <ul>
 <li>iconsDir</li>
+<li>pluginReleaseDir</li>
 <li>existingPluginVerLib</li>
+<li>releaseRootDir</li>
 <li>existingProductVerLib</li>
 <li>latestVerList</li>
 <li>releaseExclustions</li>

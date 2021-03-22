@@ -1,13 +1,14 @@
+### Compatible Platforms
+- Windows
+- Linux (Tested on CentoOS 7.9)
+
 ### Compatible Maya version
 - 2017 (including all updates)
 - 2018 (including all updates)
 - 2019 (including all updates)
 - 2020 (including all updates)
 
-### Compatible Platforms
-- Windows
-
-### System requirements
+### Windows - System requirements
 - <a href = "https://support.microsoft.com/en-ca/help/2977003/the-latest-supported-visual-c-downloads", target = "_blank">Microsoft Visual C++ Redistributable for Visual Studio 2015-2019</a>
 
 !!! Important Note

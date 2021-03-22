@@ -24,3 +24,9 @@
 * Drag and Drop the "mansurRig_DragAndDrop_UNINSTALL.mel" into any supported Maya version
 * Follow the prompt instructions
 * Restart Maya
+
+
+## Linux Notes
+* As opposed to the Windows installer, the Linux version will install Mansur-Rig on the choosen maya version only. 
+* The Linux installer is using the local Maya.env file to append the new envioronment variable instead of installing a system-wide persistant variable, as the installer can not assume system write permissions.
+* In case you want to install Mansur-Rig on multiple versions of Maya, please repeat the installation (drag-drop) on every required Maya version.
