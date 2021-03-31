@@ -131,16 +131,6 @@ check for a valid internet connection. <br>
 </table></font>
 <hr width = 100%>
 ###checkFunctionRedundencyForPackage
-<font color = #5f5f5f size = 3pt>
-<i>
-Check for any method redundency within the given python package. <br>
-Loop through the entire code libarary, and for every method, check whether it is being called anywhere. <br>
-In case the tested method isn't called once throught the entire code libarary, it is being flagged as redundent. <br>
-NO ACTION IS PERFORMED. This is a query only method. <br>
-This method doesn't return anything, it will only print the processed results in the command window. <br>
-</i>
-<br>
-</font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkFunctionRedundencyForPackage(package, printRedundentOnly = True)</td></tr>

@@ -1013,6 +1013,8 @@ A 'buildOutputs' parameter is defaulted to True to build output (of a choice of 
 <li><b>isolatePolesTranlation</b>(<i>bool</i>)</li>
 <li><b>isolatePolesRotation</b>(<i>bool</i>)</li>
 <li><b>isolatePolesScale</b>(<i>bool</i>)</li>
+<li><b>baseAlternateWorldMatrix</b>(<i>str</i>) ; [default: None]</li>
+<li><b>tipAlternateWorldMatrix</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 </table></font>

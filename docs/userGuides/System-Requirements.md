@@ -2,11 +2,49 @@
 - Windows
 - Linux (Tested on CentOS 7.9)
 
-### Compatible Maya version
-- 2017 (including all updates)
-- 2018 (including all updates)
-- 2019 (including all updates)
-- 2020 (including all updates)
+### Compatible Maya versions
+<table cellpadding= 0 cellspacing = 0>
+	<tr>
+		<td></td>
+		<td colspan=2>Maya 2017</td>
+		<td colspan=2>Maya 2018</td>
+		<td colspan=2>Maya 2019</td>
+		<td colspan=2>Maya 2020</td>
+		<td colspan=2>Maya 2022</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Win</td><td>Linux</td>
+		<td>Win</td><td>Linux</td>
+		<td>Win</td><td>Linux</td>
+		<td>Win</td><td>Linux</td>
+		<td>Win</td><td>Linux</td>
+	</tr>
+	<tr>
+		<td>1.2.0+</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+	</tr>
+	<tr>
+		<td>1.1.9</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<td>1.1.7-</td>
+		<td>&#x2726;</td><td></td>
+		<td>&#x2726;</td><td></td>
+		<td>&#x2726;</td><td></td>
+		<td>&#x2726;</td><td></td>
+		<td></td><td></td>
+	</tr>
+</table>
 
 ### Windows - System requirements
 - <a href = "https://support.microsoft.com/en-ca/help/2977003/the-latest-supported-visual-c-downloads", target = "_blank">Microsoft Visual C++ Redistributable for Visual Studio 2015-2019</a>
