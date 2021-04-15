@@ -138,10 +138,10 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doSecondaryIKCtrls</td>
 <td>False</td>
-<td>This feature will create a secondary IK controls layer below the primary FK chain controls</td></tr>
+<td>This feature will create a secondary IK controls layer below the primary FK chain controls. The number of IK Secondaries MUST be equel or grater then the number of guides/Primary FK controls for this layer to execute.</td></tr>
 <tr><td>numIKControls</td>
 <td>2</td>
-<td>Amount of secondary layer controls</td></tr>
+<td>Amount of secondary layer controls, this value MUST be equel or grater then the number of guides/Primary FK controls.</td></tr>
 <tr><td>isolateSecPolesRotation</td>
 <td>False</td>
 <td>If this is set to True, the first and last controls orientation will be isolated. T</td></tr>

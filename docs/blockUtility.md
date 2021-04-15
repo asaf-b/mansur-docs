@@ -1610,7 +1610,7 @@ Attempt to get a rigTop node from the passed in node to check. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRigTop(objectA)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameNameStd (rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (rigTop)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -2176,6 +2176,21 @@ Recusrsivly look for a 'rootGuide' from the given node's parent relatives. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###removeAlienMatchesFromList
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeAlienMatchesFromList(guideRoot, currentMatches = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>guideRoot</b></li>
+<li><b>currentMatches</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
