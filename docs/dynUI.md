@@ -45,6 +45,7 @@ Main UI class <br>
 <li>dividerLayout</li>
 <li>allCollapsible</li>
 <li>mainVLayout</li>
+<li>rootGuide</li>
 <li>customRunCommand</li>
 <li>fullList</li>
 </ul>

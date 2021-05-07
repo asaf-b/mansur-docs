@@ -59,6 +59,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#toggleProjPerpCamTARGET">toggleProjPerpCam </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateGuidesTARGET">updateGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateMeshWidgetsDictTARGET">updateMeshWidgetsDict </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#updateRigTopStructTARGET">updateRigTopStruct </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadMeshesTARGET">loadMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getToolTipForModuleTARGET">getToolTipForModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshSelectionStateTARGET">refreshSelectionState </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -280,6 +281,19 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateMeshWidgetsDict(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "updateRigTopStructTARGET"></h5><font color = 464646 size = 3><b>updateRigTopStruct <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRigTopStruct(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

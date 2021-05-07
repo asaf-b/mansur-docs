@@ -35,6 +35,9 @@ Note: When used as a leg, try using the foot module as a direct child of this mo
 <tr><td>squashMode</td>
 <td>0</td>
 <td>Default squash mode. Please refer to the documentation of mnsPointsOnCurve node to learn more about each mode</td></tr>
+<tr><td>ikFkBlendDefault</td>
+<td>0.0</td>
+<td>Default value for the main IK-FK blend channel. 0 is IK, 1 is FK.</td></tr>
 </table></font>
 ###IK
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

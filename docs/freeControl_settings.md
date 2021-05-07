@@ -16,6 +16,9 @@ Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that w
 </font>
 <hr width = 100%>
 ##Attributes
+<tr><td>symmetryType</td>
+<td>0</td>
+<td>Choose the mirror type for right side controls</td></tr>
 </table></font>
 ###GlobalSettings
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
