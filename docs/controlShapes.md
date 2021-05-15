@@ -53,6 +53,35 @@ A main CtrlCreate function calls a veriaty of pre-defined shape creation, then h
 </tr>
 </table></font>
 <hr width = 100%>
+###batchCreateAllControlShapes
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>batchCreateAllControlShapes(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (MnsNameStd, created shapes)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: c]</li>
+<li><b>color</b>(<i>tuple</i>) ; [default: (0.0, 1.0, 0.0)]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###batchCreateAllControlShapesIcons
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>batchCreateAllControlShapesIcons()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###bubblePinShapeCreate
 <font size = 3pt>
 <table>

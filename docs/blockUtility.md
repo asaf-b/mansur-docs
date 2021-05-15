@@ -276,6 +276,20 @@ Collect all slaves related to the passed in 'mnsNodeRelationship' node. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###compileCnsCtrlsAttrString
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>compileCnsCtrlsAttrString(exsitingCnsCtrlsDict = {})</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>exsitingCnsCtrlsDict</b>(<i>dict</i>) ; [default: {}]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###connectIfNotConnected
 <font size = 3pt>
 <table>
@@ -387,6 +401,29 @@ The channels are split (predefined) as follows: <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>moduleTopNode</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createCnsForCtrls
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is used to create CNS controls/sub-controls for existing puppet controls. <br>
+In case you need to add extra offset controls in order to constraint them to other components, you can use this method. <br>
+Pass in a list of controls you want to add sub-controls to, and run. <br>
+This method is also the one used by the CNS Tool. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createCnsForCtrls(ctrls = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (success state)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2212,6 +2249,29 @@ This method is used to delete all 'Authority' from the passsed in slave, if ther
 <td><ul>
 <li><b>slave</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###removeCnsFromCtrls
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is used to remove existing CNS controls/sub-controls for existing puppet controls. <br>
+If you have CNS controls you want to remove, use this method. <br>
+Pass in a list of controls you want to remove sub-controls from, and run. <br>
+This method is also the one used by the CNS Tool. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeCnsFromCtrls(ctrls = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (success state)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

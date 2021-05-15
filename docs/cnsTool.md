@@ -34,7 +34,6 @@ Main UI Class <br>
 <li><b><a href="#initializeUITARGET">initializeUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeCnsFromSelectionTARGET">removeCnsFromSelection </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectCnsFromTreeTARGET">selectCnsFromTree </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#compileCnsCtrlsAttrStringTARGET">compileCnsCtrlsAttrString </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
@@ -90,20 +89,6 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "compileCnsCtrlsAttrStringTARGET"></h5><font color = 464646 size = 3><b>compileCnsCtrlsAttrString <font size = 2pt> [<a href="#MnsCnsTool TARGET">MnsCnsTool </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>compileCnsCtrlsAttrString(self, exsitingCnsCtrlsDict = {})</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>exsitingCnsCtrlsDict</b>(<i>dict</i>) ; [default: {}]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

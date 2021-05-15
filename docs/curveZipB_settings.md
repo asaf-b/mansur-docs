@@ -36,6 +36,12 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <tr><td>curveResolution</td>
 <td>24</td>
 <td>Resample curve amount</td></tr>
+<tr><td>midCurveMode</td>
+<td>1</td>
+<td>Mid curve generation mode</td></tr>
+<tr><td>midCurveResolution</td>
+<td>5</td>
+<td>Mid curve generation sampling amount</td></tr>
 <tr><td>blinkHeight</td>
 <td>0.5</td>
 <td>Default value for the Blink height. This dictates the height of the Mid-Meet point between the upper and lower sections</td></tr>

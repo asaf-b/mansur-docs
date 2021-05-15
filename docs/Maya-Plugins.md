@@ -147,7 +147,8 @@ This node also creates and offset curve shape result, to be used later as an Up-
 <tr><td>tweakCurveBase</td><td>tweakCurveBase</td><td>nurbsCurve</td><td>Input tweak curve base shape.</td></tr>
 <tr><td>buildMode</td><td>buildMode</td><td>enum</td><td>Build mode- EPs, CVs, Hermite, TangentedCVs, bezier.</td></tr>
 <tr><td>transforms</td><td>transforms</td><td>compound</td><td>Transforms array to build the curve from.</td></tr>
-<tr><td>matrix</td><td>matrix</td><td>matrix</td><td>Input matrix transform, child of transforms.</td></tr>
+<tr><td>matrix</td><td>matrix</td><td>matrix</td><td>Input matrix transform, child of transforms. If this plug is connected, offsetX value will be taken as an the offset amount.</td></tr>
+<tr><td>offsetBaseMatrix</td><td>offsetBaseMatrix</td><td>matrix</td><td>Matrix to build offset vectors from</td></tr>
 <tr><td>degree</td><td>degree</td><td>int</td><td>Output curve degree, 1-5.</td></tr>
 <tr><td>offsetX</td><td>offsetX</td><td>float</td><td>Output offset curve X parameter.</td></tr>
 <tr><td>offsetY</td><td>offsetY</td><td>float</td><td>Output offset curve Y parameter.</td></tr>
@@ -520,6 +521,8 @@ This means that the tweak controls amount is limitless and is NOT a constant, no
 <tr><td>bindCurveB</td><td>bindCurveB</td><td>nurbsCurve</td><td>Input curve B base-curve shape.</td></tr>
 <tr><td>centerMatrix</td><td>centerMatrix</td><td>matrix</td><td>Input center transformation matrix.</td></tr>
 <tr><td>sampleMode</td><td>m</td><td>enum</td><td>Curve sample mode- parametric, uniform.</td></tr>
+<tr><td>midCurveMode</td><td>midCurveMode</td><td>enum</td><td>Mid curve generation mode. One To one - calculate mid point for every upper and lower pair. Regenerate- create a new mid curve, resample based on midCurveSubsteps attribute value.</td></tr>
+<tr><td>midCurveSubsteps</td><td>midCurveSubsteps</td><td>int</td><td>Mid curve generation sampling amount</td></tr>
 <tr><td>matchInputCurve</td><td>matchInputCurve</td><td>enum</td><td>Result curve matched parameters to- none, curveA, curveB.</td></tr>
 <tr><td>substeps</td><td>substeps</td><td>int</td><td>Result curve resampling sub-step value.</td></tr>
 <tr><td>degree</td><td>degree</td><td>int</td><td>Result curve degree value.</td></tr>

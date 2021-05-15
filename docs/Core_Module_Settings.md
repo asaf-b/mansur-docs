@@ -52,7 +52,7 @@
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>spaces</td>
 <td>[' ']</td>
-<td>Depending on the module, all relevant space-switch controls will contain these spaces. Valid object types are Guides, Joints, and iterpJoints</td></tr>
+<td>Drag and drop items to reorder. Depending on the module, all relevant space-switch controls will contain these spaces. Valid object types are Guides, Joints, and iterpJoints</td></tr>
 <tr><td>splitOrientSpace</td>
 <td>False</td>
 <td>If this is set to True, all space switch attributes for this module will split into two spaces- Translate and Orient, for the animator to be able to set different space for tranlation and orientation.</td></tr>

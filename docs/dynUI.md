@@ -30,6 +30,7 @@ Main UI class <br>
 <td><ul>
 <ul>
 <li>funObjectCreation</li>
+<li>readOnly</li>
 <li>defenition</li>
 <li>arguments</li>
 <li>optArguments</li>

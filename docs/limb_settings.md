@@ -47,6 +47,9 @@ Note: When used as a leg, try using the foot module as a direct child of this mo
 <tr><td>softness</td>
 <td>0.0</td>
 <td>IK handle softness default value</td></tr>
+<tr><td>iKHandleMatchOrient</td>
+<td></td>
+<td>Select a guide to match the IK-Handle's orientation. This will override the native orientation as well as all symmetry options.</td></tr>
 </table></font>
 ###Main-Ctrl-Shapes
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
