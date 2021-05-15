@@ -838,18 +838,12 @@
     Transition Log
   </a>
   
-    <nav class="md-nav" aria-label="Transition Log">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#mnsmayaplugins-v-107" class="md-nav__link">
     mnsMayaPlugins v 1.0.7
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2516,18 +2510,12 @@
     Transition Log
   </a>
   
-    <nav class="md-nav" aria-label="Transition Log">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#mnsmayaplugins-v-107" class="md-nav__link">
     mnsMayaPlugins v 1.0.7
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2558,15 +2546,47 @@
 <li>New  centralized "Update Rig" utility in Block's utility tab. This method now consists of all previous update-related methods. This method will now execute all of the following processes:<ol>
 <li>Update the rig-top structure in case it was changed.</li>
 <li>Fix module paths for all existing modules within the rig.</li>
-<li>Update all module attributes based on the currrent version settings.</li>
+<li>Update all module attributes based on the currrent version settings.
+<figure>
+  <img src="../../images/releaseNotes/130_updateRig.png"/>
+  <figcaption>Update-Rig Utility</figcaption>
+</figure></li>
 </ol>
 </li>
 <li>Module name changes will now automatically update all module space lists that consist of the given module. i.e. all space attributes will be updated with the module's new name automatically.</li>
 <li>Read-Only mode was intoduced into dynUI. Now, instead of blocking a module-settings-load in puppet state, the settings window will now load, but it read-only mode. You can now view your settings in puppet state instead of needing to deconstruct, although editting the settings remains locked.</li>
-<li>Control-Shape Icons - All control shape related attributes now icludes icons!</li>
-<li>CNS/Sub-Controls creation and deletion methods were detached from the CNS-Tool's class in order to allow creating CNS/Sub-Controls using custom-scripts. Please use this example to use as a custom script: </li>
-<li>limb module - Added a "IK-Handle Orientation Match" feature by request. Using this feature you can now choose to override the native orientation of the IK-Handle control. You can now input a guide into this attribute to the orientation to, and this orientation will override any other orientation related attribute. This was requested in order to fully align all IK handles orientations.</li>
-<li>freeControl - Spring layer! You can now easily create a simple spring action for your free-controls. Create a procedural secondary motion in seconds!</li>
+<li>Control-Shape Icons - All control shape related attributes now icludes icons!
+<figure>
+  <img src="../../images/releaseNotes/130_csIcons.png"/>
+  <figcaption>Control-Shapes Icons</figcaption>
+</figure></li>
+<li>CNS/Sub-Controls creation and deletion methods were detached from the CNS-Tool's class in order to allow creating CNS/Sub-Controls using custom-scripts. Please use this example to use as a post-construction custom script: </li>
+</ul>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Python</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1">#import Mansur-Rig&#39;s Block-Utility python module, to access the method    </span>
+<span class="kn">from</span> <span class="nn">mansur.block.core</span> <span class="kn">import</span> <span class="n">blockUtility</span> <span class="k">as</span> <span class="n">blkUtils</span>
+
+<span class="c1">#Using implicit control-names list</span>
+<span class="n">blkUtils</span><span class="o">.</span><span class="n">createCnsForCtrls</span><span class="p">([</span><span class="s2">&quot;c_cog_A001_ctrl&quot;</span><span class="p">,</span> <span class="s2">&quot;c_head_A001_ctrl&quot;</span><span class="p">])</span>
+
+<span class="c1">#Using a simple right/left loop for efficiency and ease of use</span>
+<span class="k">for</span> <span class="n">side</span> <span class="ow">in</span> <span class="s2">&quot;rl&quot;</span><span class="p">:</span> 
+    <span class="n">blkUtils</span><span class="o">.</span><span class="n">createCnsForCtrls</span><span class="p">(</span><span class="n">side</span> <span class="o">+</span> <span class="s2">&quot;_armIkTarget_A001_ctrl&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+</div>
+<ul>
+<li>limb module - Added a "IK-Handle Orientation Match" feature by request. Using this feature you can now choose to override the native orientation of the IK-Handle control. You can now input a guide into this attribute to the orientation to, and this orientation will override any other orientation related attribute. This was requested in order to fully align all IK handles orientations.
+<figure>
+  <img src="../../images/releaseNotes/130_ikHandleMatchOrient.png"/>
+  <figcaption>IK-Handle Match Orient Attribute</figcaption>
+</figure></li>
+<li>freeControl - Spring layer! You can now easily create a simple spring action for your free-controls. Create a procedural secondary motion in seconds!
+<figure>
+  <img src="../../images/releaseNotes/130_freeControlSpring.png"/>
+  <figcaption>freeControl spring layer</figcaption>
+</figure></li>
 <li>Space attribute re-ordering guide was inserted into the attribute's description. Please use drag-drop within the list to change spaces order.</li>
 <li>Deformation tab was updated with icons.</li>
 <li>curveZipB - New mid-curve generation feature was intoduced into the module. Please see mnsCurveZipB notes below.</li>
@@ -2581,7 +2601,7 @@
 <ul>
 <li>Please use the new centralized "Update Rig" utility button in Block's utility tab to update rigs built with previous versions of Mansur-Rig</li>
 </ul>
-<h4 id="mnsmayaplugins-v-107">mnsMayaPlugins v 1.0.7</h4>
+<h3 id="mnsmayaplugins-v-107">mnsMayaPlugins v 1.0.7</h3>
 <ul>
 <li>mnsBuildTransformsCurve- Upgraded. Added "centerMatrix" attribute and offset curve build based on it. This was done in order to stablize the attachment curves feature in curveZipB module. Now the attachments offset curves will be built using the module's root guide as a center matrix which will result in a much stabler behaviour.</li>
 <li>mnsCurveZipB - Upgraded. Added a new Mid-Curve-Generation support, in order to smooth the meet mid curve for all related "mid" attrbiutes. The new addition is the "midCurveGenerationMode" and "midCurveResolution" attributes. In case "regenerate" mode is choosen for the mid curve generation, a new mid-curve will be constructed given the resulotion instead of using the input curves' resolution. This will result in a much nicer and smoother mid-curve.</li>
