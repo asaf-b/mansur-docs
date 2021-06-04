@@ -66,3 +66,9 @@
 <td>[(0.0, 1.0, 0.0), (0.15, 1.0, 0.15), (0.3, 1.0, 0.3), (0.45, 1.0, 0.45), (0.6, 1.0, 0.6)]</td>
 <td>Override with these colors</td></tr>
 </table></font>
+###Extra-Channels
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<tr><td>extraChannels</td>
+<td></td>
+<td>Use this UI to create custom attributes within your modules and automatically connect to an attribute.</td></tr>
+</table></font>

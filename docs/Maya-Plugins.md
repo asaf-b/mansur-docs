@@ -707,6 +707,7 @@ Curve based node.
 <tr><td>buildMode</td><td>buildMode</td><td>enum</td><td>Curve build mode- EPs, CVs.</td></tr>
 <tr><td>midBias</td><td>midBias</td><td>float</td><td>Generated curve bias.</td></tr>
 <tr><td>aroundCenter</td><td>aroundCenter</td><td>bool</td><td>Calculate results considering the input center matrix.</td></tr>
+<tr><td>alongSurface</td><td>alongSurface</td><td>bool</td><td>Calculate results considering the input surface.</td></tr>
 <tr><td>conformToMeetPoint</td><td>conformToMeetPoint</td><td>bool</td><td>Conform the selected curve result to meet the oter curve based on set parameters.</td></tr>
 <tr><td>curveToConform</td><td>curveToConform</td><td>enum</td><td>Which curve to conform - curveA, curveB.</td></tr>
 <tr><td>conformDistancethreshold</td><td>conformDistancethreshold</td><td>enum</td><td>Which curve to conform - curveA, curveB.</td></tr>
@@ -717,6 +718,10 @@ Curve based node.
 <tr><td>sCurveA</td><td>sCurveA</td><td>float</td><td>Blend curve A into a procedural S shape.</td></tr>
 <tr><td>sCurveB</td><td>sCurveB</td><td>float</td><td>Blend curve B into a procedural S shape.</td></tr>
 <tr><td>allToMidPoint</td><td>allToMidPoint</td><td>float</td><td>Blend both curves to mid-curve.</td></tr>
+<tr><td>upperCurlBaseMatrix</td><td>upperCurlBaseMatrix</td><td>matrix</td><td>Base upper matrix to calculate offsets before calculating the curl.</td></tr>
+<tr><td>upperCurlMatrix</td><td>upperCurlMatrix</td><td>matrix</td><td> Upper matrix for calculating the curl.</td></tr>
+<tr><td>lowerCurlBaseMatrix</td><td>lowerCurlBaseMatrix</td><td>matrix</td><td>Base lower matrix to calculate offsets before calculating the curl.</td></tr>
+<tr><td>lowerCurlMatrix</td><td>lowerCurlMatrix</td><td>matrix</td><td> Lower matrix for calculating the curl.</td></tr>
 <tr><td>pushOutA</td><td>pushOutA</td><td>float</td><td>Curves push-out added value.</td></tr>
 <tr><td>pushOutB</td><td>pushOutB</td><td>float</td><td>Curves push-out added value.</td></tr>
 <tr><td>zipStart</td><td>zipStart</td><td>float</td><td>Zip start value.</td></tr>

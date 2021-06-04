@@ -764,15 +764,18 @@ Based on the given flags, lock/unlock, hide/unhide attributes for the given node
 <li><b>keyable</b>(<i>bool</i>)</li>
 <li><b>cb</b>(<i>bool</i>)</li>
 <li><b>negateOperation</b>(<i>bool</i>)</li>
-<li><b>tx</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>ty</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>tz</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>rx</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>ry</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>rz</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>sx</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>sy</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>sz</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>t</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>tx</b>(<i>str</i>) ; [default: t]</li>
+<li><b>ty</b>(<i>str</i>) ; [default: t]</li>
+<li><b>tz</b>(<i>str</i>) ; [default: t]</li>
+<li><b>r</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>rx</b>(<i>str</i>) ; [default: r]</li>
+<li><b>ry</b>(<i>str</i>) ; [default: r]</li>
+<li><b>rz</b>(<i>str</i>) ; [default: r]</li>
+<li><b>s</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>sx</b>(<i>str</i>) ; [default: s]</li>
+<li><b>sy</b>(<i>str</i>) ; [default: s]</li>
+<li><b>sz</b>(<i>str</i>) ; [default: s]</li>
 </ul></td>
 </tr>
 </table></font>

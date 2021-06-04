@@ -122,8 +122,11 @@ The best application for this module is placing it under a limb module, which wi
 <td>cylinder</td>
 <td>Roll control channel-box settings</td></tr>
 <tr><td>rollDefaultMaxAngle</td>
-<td>30.0</td>
+<td>60.0</td>
 <td>Default Roll maximum limit angle. The roll control is used to roll the entire foot chain, and using an angle value to limit the roll of each section, before rolling the next section. This value will be used as default</td></tr>
+<tr><td>straightenDefaultAngle</td>
+<td>130.0</td>
+<td>Default straighten angle. The foot toes will straighten between the max angle above and this angle. As the angle passes the above angle, along the range up to this angle, the rool angle will decrease- strightening the foot on the up position.</td></tr>
 </table></font>
 ###DynamicPivotControl
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

@@ -174,3 +174,54 @@ Mansur - About dialog <br>
 </td></tr>
 </tr>
 </table></font>
+<hr width = 100%>
+<h5 id = "extraChannelsDelegate TARGET"></h5>
+###extraChannelsDelegate [Class]
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extraChannelsDelegate(<b>parent</b>(<i>str</i>) ; [default: None],<b>*args</b>)</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>QtWidgets.QItemDelegate</td></tr>
+<tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
+<td><ul>
+</td></tr>
+<tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#setModelDataTARGET">setModelData </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createEditorTARGET">createEditor </b></a> <font size = 2pt><i>[method]</i></font></li>
+</ul>
+</td>
+</tr>
+</table></font>
+####extraChannelsDelegate  methods
+<hr width = 50%>
+<h5 id = "setModelDataTARGET"></h5><font color = 464646 size = 3><b>setModelData <font size = 2pt> [<a href="#extraChannelsDelegate TARGET">extraChannelsDelegate </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setModelData(self, editor, model, index)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>pymel.core.window (tear-off window)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>editor</b></li>
+<li><b>model</b></li>
+<li><b>index</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createEditorTARGET"></h5><font color = 464646 size = 3><b>createEditor <font size = 2pt> [<a href="#extraChannelsDelegate TARGET">extraChannelsDelegate </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createEditor(self, parent, option, index)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>parent</b></li>
+<li><b>option</b></li>
+<li><b>index</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>

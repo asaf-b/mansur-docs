@@ -37,6 +37,9 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <tr><td>squashMode</td>
 <td>0</td>
 <td>Default squash mode. Please refer to the documentation of mnsPointsOnCurve node to learn more about each mode</td></tr>
+<tr><td>doPrimariesSpaceSwitch</td>
+<td>False</td>
+<td>If this is set to True, primary controls will receive a space switcher</td></tr>
 <tr><td>doIntepJntsSpring</td>
 <td>False</td>
 <td>If this is set to True, a mnsSpringCurve node will be created on top of the primary curve controling the interpolation joints</td></tr>
@@ -144,7 +147,7 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <td>Amount of secondary layer controls, this value MUST be equel or greater then the number of guides/Primary FK controls.</td></tr>
 <tr><td>isolateSecPolesRotation</td>
 <td>False</td>
-<td>If this is set to True, the first and last controls orientation will be isolated. T</td></tr>
+<td>If this is set to True, the first and last controls orientation will be isolated.</td></tr>
 <tr><td>IKControlShape</td>
 <td>dial</td>
 <td>Secondary IK layer control shape</td></tr>

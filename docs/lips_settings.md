@@ -14,6 +14,9 @@ The joint structure of this module will be dictated by input vertices on a given
 </font>
 <hr width = 100%>
 ##Attributes
+<tr><td>alongSurface</td>
+<td></td>
+<td>Comment wasn't inserted</td></tr>
 </table></font>
 ###GlobalSettings
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
@@ -65,11 +68,17 @@ The joint structure of this module will be dictated by input vertices on a given
 <tr><td>raiseValue</td>
 <td>0.5</td>
 <td>Raise default value</td></tr>
+<tr><td>connectRaiseToAxis</td>
+<td>y</td>
+<td>Raise channel connection axis</td></tr>
 <tr><td>pushValue</td>
 <td>0.5</td>
 <td>Push-Out default value</td></tr>
+<tr><td>connectPushToAxis</td>
+<td>z</td>
+<td>Raise channel connection axis</td></tr>
 </table></font>
-###TweakCcontrols
+###TweakControls
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doTweakControls</td>
 <td>True</td>
@@ -78,7 +87,7 @@ The joint structure of this module will be dictated by input vertices on a given
 <td>5</td>
 <td>Number of tweak controls per section</td></tr>
 <tr><td>cornersControlShape</td>
-<td>triangle</td>
+<td>diamond</td>
 <td>Tweak coreners control shape</td></tr>
 <tr><td>tweakersControlShape</td>
 <td>lightSphere</td>
@@ -90,7 +99,7 @@ The joint structure of this module will be dictated by input vertices on a given
 ###LayerBCtrls
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doLayerBCtrls</td>
-<td>True</td>
+<td>False</td>
 <td>Second layer tweakers</td></tr>
 <tr><td>numLayerBCtrlsPerSection</td>
 <td>9</td>
