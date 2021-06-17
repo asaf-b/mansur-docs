@@ -58,6 +58,7 @@ nav:
         - userGuides/Version-Updates.md
         - userGuides/Naming-Convention.md
         - userGuides/Asset-Scaling.md
+        - userGuides/IK-FK-Match.md
         - userGuides/license.md
       - Tutorials:
         - Mansur-Rig 101:
