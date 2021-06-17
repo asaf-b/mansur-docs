@@ -31,7 +31,7 @@ The way to do so is simply to insert the above snippets as a "custom script" int
 
 1. Open Block Builder, and move to "Picker" tab.
 <figure>
-  <img src="../userGuidesImages/ikfk/pickerTab.png">
+  <img src="../userGuidesImages/ikfk/pickerTab1.png">
   <figcaption>Picker Tab</figcaption>
 </figure>
 2. While any control is selected, click "Edit Picker Layout" to open the picker layout editor.
@@ -41,7 +41,7 @@ The way to do so is simply to insert the above snippets as a "custom script" int
 6. Optionally add a text in the "button text" line edit to indicate it's behaviour- for example: "To FK" or "To IK".
 7. Optionally add the Module's UI control into the controls select list.
 <figure>
-  <img src="../userGuidesImages/ikfk/ikFKPLGSettings.png">
+  <img src="../userGuidesImages/ikfk/ikFKPLGSettings1.png">
   <figcaption>PLG Settings</figcaption>
 </figure>
 8. Repeat the process for the reverse operation.
