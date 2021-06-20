@@ -637,6 +637,7 @@ Axis Switching - Offering an easy switch to any joint orientation.
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>boneLengthA</td><td>bla</td><td>float</td><td>Base length A.</td></tr>
 <tr><td>boneLengthB</td><td>blb</td><td>float</td><td>Base length B.</td></tr>
+<tr><td>restHandleLength</td><td>restHandleLength</td><td>float</td><td>Base length between the root position and the handle.</td></tr>
 <tr><td>blend</td><td>blend</td><td>float</td><td>IK-FK blend value.</td></tr>
 <tr><td>rootFK</td><td>rootFK</td><td>matrix</td><td>Input FK root matrix.</td></tr>
 <tr><td>midFK</td><td>midFK</td><td>matrix</td><td>Input FK mid matrix.</td></tr>

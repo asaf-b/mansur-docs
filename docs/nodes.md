@@ -848,6 +848,7 @@ Create a new mnsIkSolver node using the given inputs. <br>
 <li><b>upAxis</b>(<i>int</i>) ; [default: 2] - Node's 'upAxis' attribute</li>
 <li><b>boneLengthA</b>(<i>float</i>) ; [default: 1.0]</li>
 <li><b>boneLengthB</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>restHandleLength</b>(<i>float</i>) ; [default: 1.0]</li>
 <li><b>rootPos</b>(<i>str</i>)</li>
 <li><b>midPos</b>(<i>str</i>)</li>
 <li><b>endPos</b>(<i>str</i>)</li>
