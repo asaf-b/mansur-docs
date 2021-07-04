@@ -41,6 +41,36 @@ Create a new addDoubleLinear node using the given inputs. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###angleBetweenNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Creates an angleBetween node based on specified parameters and outputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>angleBetweenNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: angleBetween] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>vector1</b>(<i>str</i>) ; [default: None]</li>
+<li><b>vector2</b>(<i>str</i>) ; [default: None]</li>
+<li><b>angle</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###blendColorsNode
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1340,10 +1370,11 @@ Create a new inverseMatrix node using the given inputs. <br>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 <td><ul>
 <li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
-<li><b>body</b>(<i>str</i>) ; [default: choice] - Node's name body.</li>
+<li><b>body</b>(<i>str</i>) ; [default: pma] - Node's name body.</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>operation</b>(<i>int</i>)</li>
 </ul></td>
 </tr>
 </table></font>

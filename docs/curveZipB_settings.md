@@ -30,6 +30,9 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <tr><td>reverseCorners</td>
 <td>False</td>
 <td>In case you build this module and the zip controls aren't matching their corner (possibly due to a wrong order of vertex selection), set this attribute to True, which should correct the mismatch</td></tr>
+<tr><td>reverseRightBindCurves</td>
+<td>False</td>
+<td>In some symmetry cases, the right side curves are reversed. You will know if that is the case when rotating the upper or lower main eyelid controls, which will result in a reversed bahviour. If that is the case, check this attribute on.</td></tr>
 <tr><td>aroundCenter</td>
 <td>True</td>
 <td>Around center will normalize the result vectors around a given center matrix (module root in this case). This will provide a better range of motion, tranlating the joints around a sphere (assumed from the center matrix). Place your roog guide at the center of the eye (for example) for this to behave as expected</td></tr>

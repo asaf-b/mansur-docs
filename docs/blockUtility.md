@@ -202,11 +202,12 @@ Collect all related controls for the given module. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleControls(moduleTop)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleControls(moduleTop, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>moduleTop</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -358,6 +359,20 @@ This method will be successfull only if the master already has a related 'mnsNod
 <li><b>ctrlMasters</b>(<i>list</i>) ; [default: []]</li>
 <li><b>jointsToAttach</b>(<i>list</i>) ; [default: []]</li>
 <li><b>surface</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###convertInputObjToSpace
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertInputObjToSpace(obj = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> PyNode (Space object if found)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1845,11 +1860,12 @@ Load all default attributes for the given control, taking mnsDefaults (custom) i
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadDefaultsForCtrl(ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadDefaultsForCtrl(ctrl, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2472,11 +2488,12 @@ Set custom defaults for keyable attributes for the given control, based on it's 
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setCurrentStateAsDefaultForCtrl(ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setCurrentStateAsDefaultForCtrl(ctrl, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

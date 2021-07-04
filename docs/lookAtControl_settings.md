@@ -53,6 +53,39 @@ The slave control will be the control authority for the joint, as the look-at co
 </td>
 <td>Main control channel-box settings</td></tr>
 </table></font>
+###InterpolatedOrientation
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<tr><td>doInterpOrient</td>
+<td>False</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>spaceA</td>
+<td></td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>spaceB</td>
+<td></td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>spaceAWeight</td>
+<td>0.5</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>spaceAWeight</td>
+<td>0.5</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>doAngleBasedScale</td>
+<td>False</td>
+<td>create an angle based scale driver, to scale the target slave joint when the angle changes between the two sources. Originally designed for double-chin setup</td></tr>
+<tr><td>scaleWhenAngle</td>
+<td>0</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>maxScale</td>
+<td>2.0</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>angleMaxRange</td>
+<td>180.0</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>connectToTargetAxis</td>
+<td>1</td>
+<td>Comment wasn't inserted</td></tr>
+</table></font>
 ###spring
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doLookAtSpring</td>
