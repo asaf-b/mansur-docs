@@ -1374,7 +1374,7 @@ Create a new inverseMatrix node using the given inputs. <br>
 <li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
 <li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
 <li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
-<li><b>operation</b>(<i>int</i>)</li>
+<li><b>operation</b>(<i>int</i>) ; [default: 1]</li>
 </ul></td>
 </tr>
 </table></font>
