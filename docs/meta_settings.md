@@ -93,3 +93,9 @@ This module construction will try to detect a FK module under each guide, and if
 </td>
 <td>Splay control channel-box settings</td></tr>
 </table></font>
+###CurlSettings
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<tr><td>doCurls</td>
+<td>True</td>
+<td>Choose if you want to create curl channels</td></tr>
+</table></font>
