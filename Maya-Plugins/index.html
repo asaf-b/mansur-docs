@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../releaseNotes/v1.3.4/" class="md-tabs__link">
+      <a href="../releaseNotes/v1.3.5/" class="md-tabs__link">
         Release-Notes
       </a>
     </li>
@@ -796,6 +796,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../releaseNotes/v1.3.5/" class="md-nav__link">
+      V1.3.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../releaseNotes/v1.3.4/" class="md-nav__link">
       V1.3.4
     </a>
@@ -1235,6 +1248,13 @@
         <li class="md-nav__item">
   <a href="#mnssimplesquash" class="md-nav__link">
     mnsSimpleSquash
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mnssphereroll" class="md-nav__link">
+    mnsSphereRoll
   </a>
   
 </li>
@@ -2851,6 +2871,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mnssphereroll" class="md-nav__link">
+    mnsSphereRoll
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mnsspherevectorpush" class="md-nav__link">
     mnsSphereVectorPush
   </a>
@@ -4100,6 +4127,44 @@ Global scale attribute - this attribute is set to scale the static arc length to
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>scale</td><td>s</td><td>float[3]</td><td>Output scale result.</td></tr>
 <tr><td>arcLength</td><td>arcLength</td><td>float</td><td>Current arc length.</td></tr>
+</table></font>
+<body></p>
+<h2 id="mnssphereroll">mnsSphereRoll</h2>
+<p><hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+This node was created to deal with a ball/sphere rolling.
+<br>
+As oposed to common solutions, this node will evaluate the rotation of the target based on it's previous state, resulting in a non-gimble solution.
+<br>
+This node will solve the rotation for the current time.
+<br>
+Since ball rolling is a non-deterministic solution, this node will consider the previous state of the target transform to solve for the best posssible rotation given the input values.
+<br>
+Best used for a simple ball rolling on the ground, or a BB-8 style character, where the charcter's movements are rotation (roll) based.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>globalScale</td><td>globalScale</td><td>double</td><td>MObject  MnsSphereRoll::aGlobalScale</td></tr>
+<tr><td>speedMultiplier</td><td>speedMultiplier</td><td>double</td><td> a global keyable multiplier to offset the solve. 1 is even, less then 1 will result in a backspin, greater then one will result in a topspin.</td></tr>
+<tr><td>sphereRadius</td><td>sphereRadius</td><td>double</td><td> The radius of the traget sphere to rotate.</td></tr>
+<tr><td>driverWorldMatrix</td><td>driverWorldMatrix</td><td>matrix</td><td> This matrix will be sampled in order to evaluate the transition to the next calculation. This should be the target transform for the output rotation.</td></tr>
+<tr><td>upVectorWorldMatrix</td><td>upVectorWorldMatrix</td><td>matrix</td><td> This up vector direction will be calculated in relation to the input driver world matrix.</td></tr>
+<tr><td>startFrame</td><td>startFrame</td><td>int</td><td>Evaluation start frame.</td></tr>
+<tr><td>startFrameFromRange</td><td>startFrameFromRange</td><td>bool</td><td>If true, take the start frame from current maya range instead of the input value given.</td></tr>
+<tr><td>time</td><td>time</td><td>time</td><td>Time input.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>outRotation</td><td>outRotation</td><td>vector</td><td>MObject  MnsSphereRoll::aOutRotation</td></tr>
 </table></font>
 <body></p>
 <h2 id="mnsspherevectorpush">mnsSphereVectorPush</h2>

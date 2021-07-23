@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../releaseNotes/v1.3.4/" class="md-tabs__link">
+      <a href="../releaseNotes/v1.3.5/" class="md-tabs__link">
         Release-Notes
       </a>
     </li>
@@ -788,6 +788,19 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../releaseNotes/v1.3.5/" class="md-nav__link">
+      V1.3.5
+    </a>
+  </li>
+
         
           
           
@@ -1453,6 +1466,13 @@
           <li class="md-nav__item">
   <a href="#mnssimplesquashnode" class="md-nav__link">
     mnsSimpleSquashNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mnssphererollnode" class="md-nav__link">
+    mnsSphereRollNode
   </a>
   
 </li>
@@ -3100,6 +3120,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mnssphererollnode" class="md-nav__link">
+    mnsSphereRollNode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mnsspherevectorpushnode" class="md-nav__link">
     mnsSphereVectorPushNode
   </a>
@@ -4363,6 +4390,37 @@ Creates an mnsClosestPointsOnMesh node based on specified parameters and outputs
 <li><b>squashRootWorldMatrix</b>(<i>str</i>) ; [default: None]</li>
 <li><b>handleWorldMatrix</b>(<i>str</i>) ; [default: None]</li>
 <li><b>scale</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="mnssphererollnode">mnsSphereRollNode</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsSphereRoll node based on specified parameters and outputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsSphereRollNode(<strong>kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: sphereRoll] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>sphereRadius</b>(<i>float</i>) ; [default: 10.0]</li>
+<li><b>speedMultiplier</b>(<i>float</i>) ; [default: 1.0]</li>
+<li><b>outRotation</b>(<i>str</i>) ; [default: None]</li>
+<li><b>connectTime</b>(<i>bool</i>) ; [default: True]</li>
 </ul></td>
 </tr>
 </table></font>
