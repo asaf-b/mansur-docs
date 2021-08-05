@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../releaseNotes/v1.3.5/" class="md-tabs__link">
+      <a href="../releaseNotes/v1.3.6/" class="md-tabs__link">
         Release-Notes
       </a>
     </li>
@@ -788,6 +788,19 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../releaseNotes/v1.3.6/" class="md-nav__link">
+      V1.3.6
+    </a>
+  </li>
+
         
           
           
@@ -2687,6 +2700,9 @@ The joint structure of this module will be dictated by input vertices on a given
 <tr><td>inputSurface</td>
 <td></td>
 <td>Input surface (Nurbs) to follow</td></tr>
+<tr><td>baseSurfaceJointFollow</td>
+<td></td>
+<td>It is recommended to use this attribute in conjunction with the alongSurface module. The alongSurface feature is stabler when a baseSurface is present. In order to create that base surface automatically, Block needs a joint to flood a skin to, in order to follow the world space position of the character. For example, if your input surface is skinned to the head joint and the jaw joint, the recommended input in this attribute will be the head joint. When this attribute is empty or invalid a base surface will not be created.</td></tr>
 </table></font></p>
 <h3 id="cheekraise">CheekRaise</h3>
 <p><table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
