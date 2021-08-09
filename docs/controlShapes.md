@@ -127,6 +127,24 @@ A main CtrlCreate function calls a veriaty of pre-defined shape creation, then h
 </tr>
 </table></font>
 <hr width = 100%>
+###createOffsetRigMasterAttrForTransform
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetRigMasterAttrForTransform(ctrl = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>offsetRigMaster</b>(<i>str</i>) ; [default: None] - If passed in, an attribute connecting the master joint to the control will be created.</li>
+</ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###createRemoteControlStyleCtrl
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -220,6 +238,7 @@ The default color is white when used as standalone, and based on the rig's globa
 <li><b>matchPosition</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's position.</li>
 <li><b>matchOrientation</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's Orientation.</li>
 <li><b>sections</b>(<i>int</i>) ; [default: 1] - Aplicable only for circle creation</li>
+<li><b>offsetRigMaster</b>(<i>str</i>) ; [default: None] - If passed in, an attribute connecting the master joint to the control will be created.</li>
 </ul></td>
 </tr>
 </table></font>

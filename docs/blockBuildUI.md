@@ -50,6 +50,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#createAllModulesSectionTARGET">createAllModulesSection </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getListWidgetFromSenderTARGET">getListWidgetFromSender </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getPoseModeTARGET">getPoseMode </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#initializeGuidePresetCbTARGET">initializeGuidePresetCb </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializePrefDirsTARGET">initializePrefDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#promoteModuleTARGET">promoteModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeGuidesTARGET">removeGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -161,6 +162,19 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPoseMode(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "initializeGuidePresetCbTARGET"></h5><font color = 464646 size = 3><b>initializeGuidePresetCb <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeGuidePresetCb(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

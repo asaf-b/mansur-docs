@@ -122,6 +122,8 @@ nav:
           - userManagement:
             - userManagement.md
         - block:
+          - characterDefenition:
+            - characterDefenitionUI.md
           - cnsTool:
             - cnsTool.md
           - core:

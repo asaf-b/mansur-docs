@@ -429,20 +429,6 @@ A delete file global function that includes a pre-defined log write. <br>
 </tr>
 </table></font>
 <hr width = 100%>
-###deleteUnusedShapeNodes
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteUnusedShapeNodes(obj = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>obj</b>(<i>str</i>) ; [default: None]</li>
-</ul></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>
-<hr width = 100%>
 ###distBetween
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -695,6 +681,27 @@ Essentially bake the joint orient attributes for the joints. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>jointOrientToRotation(topNode = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>topNode</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###jointRotationToOrient
+<font color = #5f5f5f size = 3pt>
+<i>
+Transfer all jointOrient attributes for the jnt hirerchy to rotations. <br>
+Essentially bake the joint orient attributes for the joints. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>jointRotationToOrient(topNode = None)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -1257,6 +1264,27 @@ Write the input data into the input json file path. <br>
 <td><ul>
 <li><b>fullPath</b></li>
 <li><b>data</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###writeJsonPath
+<font color = #5f5f5f size = 3pt>
+<i>
+Write the input data into the input json file path. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>writeJsonPath(path = None, data = {})</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>path</b>(<i>str</i>) ; [default: None]</li>
+<li><b>data</b>(<i>dict</i>) ; [default: {}]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

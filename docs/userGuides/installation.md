@@ -18,6 +18,13 @@
 !!!Updates
 	Please make sure to update as appropriate. <a href="../Version-Updates/" class="md-nav__link"><b> Version Updates Guide </b></a>
 
+##Manual Installation
+* Download and extract Mansur-Rig as described above. 
+* For the target Maya version, locate "Maya.env" file. For example (On Windows): "C:\Users\xxx\Documents\maya\2022\Maya.env"
+* Open the file for editting using any text editor software (e.g. Notepad)
+* Insert the following variable, changing the directory to your Mansur-Rig extracted version location:
+MAYA_MODULE_PATH = D:\mansurRig\mansurRig_1.3.6
+
 ##Uninstallation
 * Locate any installation directory of Mansur-Rig in your file system
 * Go into the main version (any version) directory

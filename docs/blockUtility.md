@@ -120,6 +120,21 @@ This method will be called from a rig construction. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###characterizeHumanIK
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>characterizeHumanIK(charDefData = {}, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>charDefData</b>(<i>dict</i>) ; [default: {}]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###collectCtrlRelatives
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -348,6 +363,22 @@ This method will be successfull only if the master already has a related 'mnsNod
 </tr>
 </table></font>
 <hr width = 100%>
+###connectTargetSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectTargetSkeleton(defenitionDict = {}, blockNameSpace = "", targetNameSpace = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>defenitionDict</b>(<i>dict</i>) ; [default: {}]</li>
+<li><b>blockNameSpace</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>targetNameSpace</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###constrainObjectsToSurface
 <font size = 3pt>
 <table>
@@ -439,6 +470,20 @@ This method is also the one used by the CNS Tool. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createOffsetSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetSkeleton(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -575,6 +620,20 @@ Delete all set custom attributes for the given ctrl. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###deleteOffsetSekeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteOffsetSekeleton(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###deletePoseForGuides
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -654,6 +713,22 @@ Disconnect the slave passed in from it's master, if there is one. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>slave</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###disconnectTargetSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>disconnectTargetSkeleton(defenitionDict = {}, blockNameSpace = "", targetNameSpace = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>defenitionDict</b>(<i>dict</i>) ; [default: {}]</li>
+<li><b>blockNameSpace</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>targetNameSpace</b>(<i>str</i>) ; [default: ""]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1162,6 +1237,26 @@ Collect a ctrl type object's 'Guide Authority', or related guide object. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getJointStructGrpFromRigTop
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getJointStructGrpFromRigTop(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Offset Skeleton Grp)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getKeyboardModifiersState
 <font size = 3pt>
 <table>
@@ -1425,6 +1520,26 @@ Collect the offsetGroup related to the passed in control, if it exists. <br>
 <td><ul>
 <li><b>type</b>(<i>str</i>) ; [default: offsetGrp]</li>
 </ul></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getOffsetSkeletonGrpFromRigTop
+<font color = #5f5f5f size = 3pt>
+<i>
+Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getOffsetSkeletonGrpFromRigTop(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Offset Skeleton Grp)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -1829,6 +1944,20 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 </tr>
 </table></font>
 <hr width = 100%>
+###importGuidePreset
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importGuidePreset(presetName = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>presetName</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###limbMatchFkIK
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1927,6 +2056,20 @@ Block's load pose wrapper. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###loadResetValuesForOffsetJoint
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadResetValuesForOffsetJoint(offsetJnt = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>offsetJnt</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###loadRigDefaults
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1959,6 +2102,22 @@ Load controls predefined and custom defaults: <br>
 <td><ul>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###matchGuidesToTargetSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>matchGuidesToTargetSkeleton(defenitionDict = {}, blockNameSpace = "", targetNameSpace = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>defenitionDict</b>(<i>dict</i>) ; [default: {}]</li>
+<li><b>blockNameSpace</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>targetNameSpace</b>(<i>str</i>) ; [default: ""]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2351,6 +2510,20 @@ reset all keyable attributes to default value. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###resetOffsetSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetOffsetSkeleton(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###saveLoadPose
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -2494,6 +2667,20 @@ Set custom defaults for keyable attributes for the given control, based on it's 
 <td><ul>
 <li><b>ctrl</b></li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###setResetValuesForOffsetJoint
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setResetValuesForOffsetJoint(offsetJnt = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>offsetJnt</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2699,6 +2886,34 @@ See also parallel: 'transferAuthorityToCtrl' Method. <br>
 <td><ul>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###transferAuthorityToOffsetSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>transferAuthorityToOffsetSkeleton(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###transferAuthorityToPuppet
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>transferAuthorityToPuppet(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
