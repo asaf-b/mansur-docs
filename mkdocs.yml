@@ -60,16 +60,29 @@ nav:
         - userGuides/Asset-Scaling.md
         - userGuides/IK-FK-Match.md
         - userGuides/license.md
+        - userGuides/Mocap-And-Game-Tools.md
       - Tutorials:
         - Mansur-Rig 101:
-          - userGuides/tutorials/mansurRig101/Introduction.md
-          - userGuides/tutorials/mansurRig101/The-Basics.md
-          - userGuides/tutorials/mansurRig101/Getting-Started.md
-          - userGuides/tutorials/mansurRig101/Building-The-Leg-And-Foot.md
-          - userGuides/tutorials/mansurRig101/Building-The-Arm-And-Fingers.md
-          - userGuides/tutorials/mansurRig101/Completing-The-Guide-Template.md
-          - userGuides/tutorials/mansurRig101/Puppet-Finish.md
-          - userGuides/tutorials/mansurRig101/Conclusion.md
+          - userGuides/tutorials/mansurRig101/01_Introduction.md
+          - userGuides/tutorials/mansurRig101/02_The-Basics.md
+          - userGuides/tutorials/mansurRig101/03_Getting-Started.md
+          - userGuides/tutorials/mansurRig101/04_Building-The-Leg-And-Foot.md
+          - userGuides/tutorials/mansurRig101/05_Building-The-Arm-And-Fingers.md
+          - userGuides/tutorials/mansurRig101/06_Completing-The-Guides.md
+          - userGuides/tutorials/mansurRig101/07_Puppet-Finish.md
+          - userGuides/tutorials/mansurRig101/08_Conclusion.md
+        - Mansur-Rig - Facial Rigging:
+          - userGuides/tutorials/mansurRig_FacialRigging/01_Intro.md
+          - userGuides/tutorials/mansurRig_FacialRigging/02_Rigging-The-Eyes.md
+          - userGuides/tutorials/mansurRig_FacialRigging/03_Rigging-The-Eyelids.md
+          - userGuides/tutorials/mansurRig_FacialRigging/04_Rigging-The-Eyelashes.md
+          - userGuides/tutorials/mansurRig_FacialRigging/05_Finalizing-The-Eye.md
+          - userGuides/tutorials/mansurRig_FacialRigging/06_Rigging-The-Eyebrows.md
+          - userGuides/tutorials/mansurRig_FacialRigging/07_Nose-And-Cheek-Rig.md
+          - userGuides/tutorials/mansurRig_FacialRigging/08_Rigging-The_Mouth.md
+          - userGuides/tutorials/mansurRig_FacialRigging/09_Tweakers-And-Symmetry.md
+          - userGuides/tutorials/mansurRig_FacialRigging/10_Finalizing-The-Rig.md
+        - userGuides/tutorials/Variable-FK-Tail.md
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
