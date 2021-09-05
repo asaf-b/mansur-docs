@@ -2,12 +2,12 @@
 
 ####Example
 <figure>
-  <img src="../userGuidesImages/picker/pickerBodyExample.png"/>
+  <img src="../userGuidesImages/picker/pickerBodyExampleA.png"/>
   <figcaption>Picker - Body Tab Example</figcaption>
 </figure>
 
 <figure>
-  <img src="../userGuidesImages/picker/pickerFaceExample.png"/>
+  <img src="../userGuidesImages/picker/pickerFaceExampleA.png"/>
   <figcaption>Picker - Face Tab Example</figcaption>
 </figure>
 
