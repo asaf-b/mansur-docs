@@ -59,8 +59,9 @@ nav:
         - userGuides/Naming-Convention.md
         - userGuides/Asset-Scaling.md
         - userGuides/IK-FK-Match.md
-        - userGuides/license.md
+        - userGuides/The-Picker.md
         - userGuides/Mocap-And-Game-Tools.md
+        - userGuides/license.md
       - Tutorials:
         - Mansur-Rig 101:
           - userGuides/tutorials/mansurRig101/01_Introduction.md
