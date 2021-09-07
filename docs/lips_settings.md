@@ -53,6 +53,9 @@ The joint structure of this module will be dictated by input vertices on a given
 <tr><td>inputSurface</td>
 <td></td>
 <td>Input surface (Nurbs) to follow</td></tr>
+<tr><td>baseSurfaceJointFollow</td>
+<td></td>
+<td>It is recommended to use this attribute in conjunction with the alongSurface module. The alongSurface feature is stabler when a baseSurface is present. In order to create that base surface automatically, Block needs a joint to flood a skin to, in order to follow the world space position of the character. For example, if your input surface is skinned to the head joint and the jaw joint, the recommended input in this attribute will be the head joint. When this attribute is empty or invalid a base surface will not be created.</td></tr>
 </table></font>
 ###CheekRaise
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

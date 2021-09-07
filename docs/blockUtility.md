@@ -93,6 +93,20 @@ If a module path was found invalid, attempt to re-find it in the existing module
 </tr>
 </table></font>
 <hr width = 100%>
+###bakeSlaveControls
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bakeSlaveControls(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###buildShapes
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -123,12 +137,13 @@ This method will be called from a rig construction. <br>
 ###characterizeHumanIK
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>characterizeHumanIK(charDefData = {}, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>characterizeHumanIK(charDefData = {}, mode = 0, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>charDefData</b>(<i>dict</i>) ; [default: {}]</li>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -643,12 +658,13 @@ Block's delete pose wrapper. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deletePoseForGuides(guides = [], poseSet = "T")</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deletePoseForGuides(guides = [], poseSet = "T", **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
 <li><b>poseSet</b>(<i>str</i>) ; [default: "T"]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -688,11 +704,12 @@ Load controls predefined and custom defaults: <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteRigDefaults(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deleteRigDefaults(mode = 0, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -773,6 +790,20 @@ A simple wrapper mwthod to handle multiple PLG duplication (Based on scene selec
 </tr>
 </table></font>
 <hr width = 100%>
+###executeActionScript
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>executeActionScript(plgNode)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>plgNode</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###extractControlShapes
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -791,6 +822,23 @@ Trigger method for BLOCK - 'extract control shapes' method. <br>
 <td><ul>
 <li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###extractSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractSkeleton(rigTop = None, mode = 0, bakeAnim = False, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>bakeAnim</b>(<i>bool</i>) ; [default: False]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
@@ -1958,6 +2006,20 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 </tr>
 </table></font>
 <hr width = 100%>
+###jointRotateToOrientTrigger
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>jointRotateToOrientTrigger(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###limbMatchFkIK
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -2044,12 +2106,13 @@ Block's load pose wrapper. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadPoseForGuides(guides = [], poseSet = "T")</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadPoseForGuides(guides = [], poseSet = "T", **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
 <li><b>poseSet</b>(<i>str</i>) ; [default: "T"]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2082,11 +2145,12 @@ Load controls predefined and custom defaults: <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadRigDefaults(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadRigDefaults(mode = 0, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2103,6 +2167,17 @@ Load controls predefined and custom defaults: <br>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###matchExtractedSkeletonToBaseSkeleton
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>matchExtractedSkeletonToBaseSkeleton()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
@@ -2499,11 +2574,12 @@ reset all keyable attributes to default value. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetControls(controls=[])</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetControls(controls=[], **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>controls</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2518,6 +2594,32 @@ reset all keyable attributes to default value. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###saveLoadDagPose
+<font color = #5f5f5f size = 3pt>
+<i>
+mode 0 = Save <br>
+mode 1 = Load <br>
+mode 2 = Delete <br>
+ <br>
+poses: Bind, T, A <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>saveLoadDagPose(rootJoint = None, mode = 1, poseName = "Bind")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootJoint</b>(<i>str</i>) ; [default: None]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 1]</li>
+<li><b>poseName</b>(<i>str</i>) ; [default: "Bind"]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2561,13 +2663,14 @@ Block's save pose wrapper. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>savePoseForGuides(guides = [], poseSet = "T", msgPrompt = False)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>savePoseForGuides(guides = [], poseSet = "T", msgPrompt = False, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
 <li><b>poseSet</b>(<i>str</i>) ; [default: "T"]</li>
 <li><b>msgPrompt</b>(<i>bool</i>) ; [default: False]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2624,6 +2727,21 @@ Select all controls for the given rig top. <br>
 <td><ul>
 <li><b>controlsToSelect</b></li>
 <li><b>mode</b>(<i>str</i>) ; [default: "replace"]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###selectSlaveControls
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>selectSlaveControls(rigTop = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2699,11 +2817,12 @@ Set controls custom defaults based on given state: <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRigDefaults(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setRigDefaults(mode = 0, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

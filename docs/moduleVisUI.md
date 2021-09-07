@@ -31,6 +31,8 @@ Main UI Class <br>
 <li>bodyLOHolder</li>
 <li>facialLOHolder</li>
 <li>layoutHolders</li>
+<li>puppetRootVisChaneCallbackID</li>
+<li>rigTopSubGrpVisCallbackID</li>
 <li>puppetRoot</li>
 <li>rigTop</li>
 <li>rigTops</li>
@@ -42,6 +44,7 @@ Main UI Class <br>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#clearLocalVarsTARGET">clearLocalVars </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#destroyRigTopTabTARGET">destroyRigTopTab </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#destroyUITARGET">destroyUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#drawUITARGET">drawUI </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#filterRowsTARGET">filterRows </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -55,6 +58,7 @@ Main UI Class <br>
 <li><b><a href="#setGlobSecondariesTriggerTARGET">setGlobSecondariesTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setGlobTertiariesTriggerTARGET">setGlobTertiariesTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setRowsVisBasedOnStateTARGET">setRowsVisBasedOnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#updateRigTopUIStateTARGET">updateRigTopUIState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#detarmineAttrTypeTARGET">detarmineAttrType </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#drawRigTopBoolRowTARGET">drawRigTopBoolRow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#drawRigTopEnumRowTARGET">drawRigTopEnumRow </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -66,6 +70,7 @@ Main UI Class <br>
 <li><b><a href="#setRigTopBtnStateTARGET">setRigTopBtnState </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#eventFilterTARGET">eventFilter </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
 </td>
 </tr>
@@ -76,6 +81,19 @@ Main UI Class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>clearLocalVars(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "destroyRigTopTabTARGET"></h5><font color = 464646 size = 3><b>destroyRigTopTab <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>destroyRigTopTab(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -254,6 +272,19 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "updateRigTopUIStateTARGET"></h5><font color = 464646 size = 3><b>updateRigTopUIState <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRigTopUIState(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "detarmineAttrTypeTARGET"></h5><font color = 464646 size = 3><b>detarmineAttrType <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -415,6 +446,24 @@ Main UI Class <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "eventFilterTARGET"></h5><font color = 464646 size = 3><b>eventFilter <font size = 2pt> [<a href="#MnsModuleVisUI TARGET">MnsModuleVisUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Override event filter to catch the close trigger to delete the callback</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>eventFilter(self, source, event)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>source</b></li>
+<li><b>event</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
