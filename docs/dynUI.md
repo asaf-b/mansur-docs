@@ -42,6 +42,8 @@ Main UI class <br>
 <li>colOverride</li>
 <li>rigTop</li>
 <li>split</li>
+<li>multiTypeEdit</li>
+<li>batchEdit</li>
 <li>splitLayout</li>
 <li>dividerLayout</li>
 <li>allCollapsible</li>
@@ -52,6 +54,8 @@ Main UI class <br>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#destroyUITARGET">destroyUI </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#resetToFactoryTARGET">resetToFactory </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setCollapsibleWidgetsBehaviourTARGET">setCollapsibleWidgetsBehaviour </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#closeEventTARGET">closeEvent </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#keyPressEventTARGET">keyPressEvent </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -67,6 +71,32 @@ Main UI class <br>
 </table></font>
 ####MnsDynamicDefUI  methods
 <hr width = 50%>
+<h5 id = "destroyUITARGET"></h5><font color = 464646 size = 3><b>destroyUI <font size = 2pt> [<a href="#MnsDynamicDefUI TARGET">MnsDynamicDefUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>destroyUI(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "resetToFactoryTARGET"></h5><font color = 464646 size = 3><b>resetToFactory <font size = 2pt> [<a href="#MnsDynamicDefUI TARGET">MnsDynamicDefUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>resetToFactory(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "setCollapsibleWidgetsBehaviourTARGET"></h5><font color = 464646 size = 3><b>setCollapsibleWidgetsBehaviour <font size = 2pt> [<a href="#MnsDynamicDefUI TARGET">MnsDynamicDefUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>

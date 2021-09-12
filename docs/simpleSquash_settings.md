@@ -77,3 +77,36 @@ The squash behaviour can be set by the module's settings, and can also be adjust
 </td>
 <td>Squash control channel-box settings</td></tr>
 </table></font>
+###SlaveControl
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<tr><td>slaveControlShape</td>
+<td>lightSphere</td>
+<td>Slave control shape</td></tr>
+<tr><td>slaveChannelControl</td>
+<td>
+<font size = 2pt>
+<table><tr><td style="padding:6px"></td>
+<td style="padding:6px"><b>T</b></td>
+<td style="padding:6px"><b>R</b></td>
+<td style="padding:6px"><b>S</b></td>
+</tr>
+<tr><td style="padding:6px"><b>X</b></td>
+<td style="padding:6px">v</td>
+<td style="padding:6px">v</td>
+<td style="padding:6px">v</td>
+</tr>
+<tr><td style="padding:6px"><b>Y</b></td>
+<td style="padding:6px">v</td>
+<td style="padding:6px">v</td>
+<td style="padding:6px">v</td>
+</tr>
+<tr><td style="padding:6px"><b>Z</b></td>
+<td style="padding:6px">v</td>
+<td style="padding:6px">v</td>
+<td style="padding:6px">v</td>
+</tr>
+</table>
+</font>
+</td>
+<td>Squash slave control channel-box settings</td></tr>
+</table></font>

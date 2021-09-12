@@ -14,6 +14,12 @@ The joint structure of this module will be dictated by input vertices on a given
 </font>
 <hr width = 100%>
 ##Attributes
+<tr><td>isFacial</td>
+<td>True</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>postSymmetryJntStruct</td>
+<td>True</td>
+<td>Comment wasn't inserted</td></tr>
 <tr><td>alongSurface</td>
 <td></td>
 <td>Comment wasn't inserted</td></tr>

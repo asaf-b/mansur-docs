@@ -15,6 +15,9 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 </font>
 <hr width = 100%>
 ##Attributes
+<tr><td>isFacial</td>
+<td>True</td>
+<td>Comment wasn't inserted</td></tr>
 </table></font>
 ###GlobalSettings
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
