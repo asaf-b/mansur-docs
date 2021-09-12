@@ -61,6 +61,7 @@ nav:
         - userGuides/IK-FK-Match.md
         - userGuides/The-Picker.md
         - userGuides/Mocap-And-Game-Tools.md
+        - userGuides/Scripted-Builds.md
         - userGuides/license.md
       - Tutorials:
         - Mansur-Rig 101:
