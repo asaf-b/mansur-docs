@@ -569,6 +569,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../userGuides/Scripted-Builds/" class="md-nav__link">
+      Scripted Builds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../userGuides/license/" class="md-nav__link">
       License
     </a>
@@ -2087,6 +2100,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#collectpartialmodules" class="md-nav__link">
+    collectPartialModules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collectpartialmodulesroots" class="md-nav__link">
+    collectPartialModulesRoots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#collectslavesfromndr" class="md-nav__link">
     collectSlavesFromNdr
   </a>
@@ -2131,6 +2158,13 @@
           <li class="md-nav__item">
   <a href="#constrainobjectstosurface" class="md-nav__link">
     constrainObjectsToSurface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructrig" class="md-nav__link">
+    constructRig
   </a>
   
 </li>
@@ -2194,6 +2228,13 @@
           <li class="md-nav__item">
   <a href="#ctrlpickerguidetoggle" class="md-nav__link">
     ctrlPickerGuideToggle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconstructrig" class="md-nav__link">
+    deconstructRig
   </a>
   
 </li>
@@ -2320,6 +2361,13 @@
           <li class="md-nav__item">
   <a href="#gathercustomdefaultdictforctrl" class="md-nav__link">
     gatherCustomDefaultDictForCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathermnsrigobject" class="md-nav__link">
+    gatherMnsRigObject
   </a>
   
 </li>
@@ -4011,6 +4059,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#collectpartialmodules" class="md-nav__link">
+    collectPartialModules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collectpartialmodulesroots" class="md-nav__link">
+    collectPartialModulesRoots
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#collectslavesfromndr" class="md-nav__link">
     collectSlavesFromNdr
   </a>
@@ -4055,6 +4117,13 @@
           <li class="md-nav__item">
   <a href="#constrainobjectstosurface" class="md-nav__link">
     constrainObjectsToSurface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructrig" class="md-nav__link">
+    constructRig
   </a>
   
 </li>
@@ -4118,6 +4187,13 @@
           <li class="md-nav__item">
   <a href="#ctrlpickerguidetoggle" class="md-nav__link">
     ctrlPickerGuideToggle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconstructrig" class="md-nav__link">
+    deconstructRig
   </a>
   
 </li>
@@ -4244,6 +4320,13 @@
           <li class="md-nav__item">
   <a href="#gathercustomdefaultdictforctrl" class="md-nav__link">
     gatherCustomDefaultDictForCtrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gathermnsrigobject" class="md-nav__link">
+    gatherMnsRigObject
   </a>
   
 </li>
@@ -5340,6 +5423,50 @@ This is the main collect wrapper for all 'align plg' tools in BLOCK. <br>
 </tr>
 </table></font>
 <hr width = 100%></p>
+<h3 id="collectpartialmodules">collectPartialModules</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method will collect module root objects based on the input data. <br>
+If you need to run MnsRig class internal methods, which can operate on partial modules as well as the entire rig, use this method to collect the partial data to be passed into MnsRig class methods. <br>
+In case fromNodes argument is Null, this method will return data based on the current scene selection. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPartialModules(fromNodes = [], mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>fromNodes</b>(<i>list</i>) ; [default: []]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="collectpartialmodulesroots">collectPartialModulesRoots</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method will be called in case a partial build was requested. <br>
+Using methods within 'blockUtility', this method will collect the requested modules to build based on the UI state. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPartialModulesRoots(mode)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (root guides (modules) to build)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="collectslavesfromndr">collectSlavesFromNdr</h3>
 <p><font color = #5f5f5f size = 3pt>
 <i>
@@ -5458,6 +5585,37 @@ This method will be successfull only if the master already has a related 'mnsNod
 <li><b>ctrlMasters</b>(<i>list</i>) ; [default: []]</li>
 <li><b>jointsToAttach</b>(<i>list</i>) ; [default: []]</li>
 <li><b>surface</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="constructrig">constructRig</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+API style scripted construction method.  <br>
+If you wish to construct a rig from an external command instead of Bloxk's UI, use this method. <br>
+You can pass in a fromNodes argument to specify the rig you wish to construct. <br>
+In case the fromNodes argument isn't valid, the construction will be selection based. <br>
+Also, use the mode argument to specify which mode you wish to construct in: <br>
+mode 0 = ALL <br>
+mode 1 = Branch <br>
+mode 2 = Module <br>
+fromNodes is a list argument.  <br>
+In case any input is passed, this method will attempt to aquire the modules to construct based on the mode selected. <br>
+You can pass in any Block-Node names into this method. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constructRig(fromNodes = [], mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>fromNodes</b>(<i>list</i>) ; [default: []]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -5647,6 +5805,37 @@ Atempt to toggle between a selection "control" and "PLG" if possible. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b></strong>kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="deconstructrig">deconstructRig</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+API style scripted deconstruction method.  <br>
+If you wish to construct a rig from an external command instead of Bloxk's UI, use this method. <br>
+You can pass in a fromNodes argument to specify the rig you wish to construct. <br>
+In case the fromNodes argument isn't valid, the deconstruction will be selection based. <br>
+Also, use the mode argument to specify which mode you wish to construct in: <br>
+mode 0 = ALL <br>
+mode 1 = Branch <br>
+mode 2 = Module <br>
+fromNodes is a list argument.  <br>
+In case any input is passed, this method will attempt to aquire the modules to construct based on the mode selected. <br>
+You can pass in any Block-Node names into this method. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>deconstructRig(fromNodes = [], mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>fromNodes</b>(<i>list</i>) ; [default: []]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -5983,6 +6172,24 @@ This method is used on rig deconstruction, to store all set default values, in o
 <td><ul>
 <li><b>ctrl</b></li>
 </ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
+<h3 id="gathermnsrigobject">gatherMnsRigObject</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+This method will gather an MnsRig class object based on the passed in input, in order to use all of it's methods. <br>
+If you need to run any method from MnsRig class, use this method to gather the class object, the run any internal method within. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherMnsRigObject()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
