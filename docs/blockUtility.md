@@ -331,6 +331,55 @@ Using methods within 'blockUtility', this method will collect the requested modu
 </tr>
 </table></font>
 <hr width = 100%>
+###collectPickerDataForRigTop
+<font color = #5f5f5f size = 3pt>
+<i>
+mode 0 = All <br>
+mode 1 = Brnach <br>
+mode 2 = module <br>
+mode 3 = selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPickerDataForRigTop(rigTop = None, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (plgs data)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###collectPlgsBasedOnMode
+<font color = #5f5f5f size = 3pt>
+<i>
+mode 0 = All <br>
+mode 1 = Brnach <br>
+mode 2 = module <br>
+mode 3 = selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPlgsBasedOnMode(rigTop = None, mode = 0, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###collectSlavesFromNdr
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -459,7 +508,7 @@ This method will be successfull only if the master already has a related 'mnsNod
 <font color = #5f5f5f size = 3pt>
 <i>
 API style scripted construction method.  <br>
-If you wish to construct a rig from an external command instead of Bloxk's UI, use this method. <br>
+If you wish to construct a rig from an external command instead of Block's UI, use this method. <br>
 You can pass in a fromNodes argument to specify the rig you wish to construct. <br>
 In case the fromNodes argument isn't valid, the construction will be selection based. <br>
 Also, use the mode argument to specify which mode you wish to construct in: <br>
@@ -624,6 +673,20 @@ Warpper method that handles multiple PLGs creation. <br>
 <li><b>rigTop</b></li>
 <li><b>msgPrompt</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createPlgBaseVisChannels
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPlgBaseVisChannels(baseLayoutGuide = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>baseLayoutGuide</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -904,6 +967,30 @@ A simple wrapper mwthod to handle multiple PLG duplication (Based on scene selec
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>plgNode</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###exportPickerData
+<font color = #5f5f5f size = 3pt>
+<i>
+mode 0 = All <br>
+mode 1 = Brnach <br>
+mode 2 = module <br>
+mode 3 = selected <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>exportPickerData(rigTop = None, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2130,6 +2217,35 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 </tr>
 </table></font>
 <hr width = 100%>
+###importPickerData
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importPickerData(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###injectPlgPropertiesFromData
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>injectPlgPropertiesFromData(plg = None, data = {})</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>plg</b>(<i>str</i>) ; [default: None]</li>
+<li><b>data</b>(<i>dict</i>) ; [default: {}]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###jointRotateToOrientTrigger
 <font size = 3pt>
 <table>
@@ -2290,6 +2406,20 @@ Load controls predefined and custom defaults: <br>
 <td><ul>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###locatePLGBaseVisMdNodes
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>locatePLGBaseVisMdNodes(baseLayoutGuide = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (bodyMdNode), MnsNameStd (facialMDNode)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>baseLayoutGuide</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2484,6 +2614,30 @@ A simple method to check for argument duplicates within an argument dict <br>
 <td><ul>
 <li><b>arguments</b></li>
 <li><b>suffix</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###projectPickerLayout
+<font color = #5f5f5f size = 3pt>
+<i>
+A wrapper method that handles plg projection from scene objects based on mode. <br>
+mode 0 = selected <br>
+mode 1 = module <br>
+mode 2 = branch <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>projectPickerLayout(mode = 0, msgPrompt = True)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>msgPrompt</b>(<i>bool</i>) ; [default: True]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

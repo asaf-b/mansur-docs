@@ -28,12 +28,16 @@ plugins:
     - search
 extra:
   social:
-    - icon: 'fontawesome/brands/facebook'
-      link: 'https://www.facebook.com/MansurRig'
-    - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/asaf-b'
+    - icon: 'fontawesome/brands/discord'
+      link: 'https://discord.gg/nXfy3Rh5y6'
     - icon: 'fontawesome/brands/youtube'
       link: 'https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ'
+    - icon: 'fontawesome/brands/facebook'
+      link: 'https://www.facebook.com/MansurRig'
+    - icon: 'fontawesome/brands/artstation'
+      link: 'https://www.artstation.com/mansur-rig'
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/asaf-b'
     - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/mansurRig'
     - icon: 'fontawesome/brands/linkedin'
@@ -42,8 +46,6 @@ extra:
       link: 'https://www.imdb.com/name/nm8262040/?ref_=nv_sr_3'
     - icon: 'fontawesome/brands/instagram'
       link: 'https://www.instagram.com/mansurrig/'
-    - icon: 'fontawesome/brands/artstation'
-      link: 'https://www.artstation.com/mansur-rig'
 nav:
     - index.md
     - About:

@@ -822,11 +822,12 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>btnDoubleClickedTrigger(self)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>btnDoubleClickedTrigger(self, clickMode = "select")</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
+<li><b>clickMode</b>(<i>str</i>) ; [default: "select"]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

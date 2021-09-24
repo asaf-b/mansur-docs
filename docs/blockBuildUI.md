@@ -49,9 +49,11 @@ BLOCK UI Class. <br>
 <li><b><a href="#copySkinTARGET">copySkin </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createAllModulesSectionTARGET">createAllModulesSection </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getListWidgetFromSenderTARGET">getListWidgetFromSender </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getPickerProjectionModeTARGET">getPickerProjectionMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getPoseModeTARGET">getPoseMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializeGuidePresetCbTARGET">initializeGuidePresetCb </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializePrefDirsTARGET">initializePrefDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#plgMatchTARGET">plgMatch </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#promoteModuleTARGET">promoteModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeGuidesTARGET">removeGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#resizeWindowBasedOnLogTARGET">resizeWindowBasedOnLog </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -59,6 +61,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#sortMeshListsTARGET">sortMeshLists </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#toggleProjPerpCamTARGET">toggleProjPerpCam </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateMeshWidgetsDictTARGET">updateMeshWidgetsDict </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getPickerExportModeTARGET">getPickerExportMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadMeshesTARGET">loadMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getToolTipForModuleTARGET">getToolTipForModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshSelectionStateTARGET">refreshSelectionState </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -157,6 +160,19 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "getPickerProjectionModeTARGET"></h5><font color = 464646 size = 3><b>getPickerProjectionMode <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerProjectionMode(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "getPoseModeTARGET"></h5><font color = 464646 size = 3><b>getPoseMode <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -187,6 +203,19 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializePrefDirs(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "plgMatchTARGET"></h5><font color = 464646 size = 3><b>plgMatch <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>plgMatch(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -279,6 +308,19 @@ BLOCK UI Class. <br>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateMeshWidgetsDict(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getPickerExportModeTARGET"></h5><font color = 464646 size = 3><b>getPickerExportMode <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerExportMode(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> int</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
