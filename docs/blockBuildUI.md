@@ -101,6 +101,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#symmetrizeModuleTARGET">symmetrizeModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#insertGuidesTARGET">insertGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#newRigTopTrigTARGET">newRigTopTrig </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#orientGuidesTARGET">orientGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateSettingsTARGET">updateSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
 </td>
@@ -980,6 +981,26 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>newRigTopTrig(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "orientGuidesTARGET"></h5><font color = 464646 size = 3><b>orientGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>orient guides trigger</i><br>
+<i>mode 0 = All</i><br>
+<i>mode 1 = Branch</i><br>
+<i>mode 2 = Module</i><br>
+<i>mode 3 = Selection</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>orientGuides(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
