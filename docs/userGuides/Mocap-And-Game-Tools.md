@@ -227,8 +227,6 @@ In case you have a skeleton you wish to animate (Metahuman for example), and you
   </li>
 </ol>
 
-####Match Section
-
 <hr>
 ####Human-IK section
 <ol start = "14">

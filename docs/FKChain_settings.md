@@ -100,6 +100,12 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <tr><td>defaultVisibilityMode</td>
 <td>1</td>
 <td>Default visibility settings. FK and IK main controls can be used in combination, or indevidually- hence a manuall visibility switch</td></tr>
+<tr><td>embIKMode</td>
+<td>1</td>
+<td>Setup mode. btcTranslation is legacy, please use btcRotation</td></tr>
+<tr><td>ikCurveInterpolation</td>
+<td>0</td>
+<td>IK curve interpolation mode</td></tr>
 <tr><td>embIKCurveDegree</td>
 <td>3</td>
 <td>Embedded IK curve degree. Please refer to the documentation of mnsBuildTransformsCurve node to learn more about curve generation degree</td></tr>
