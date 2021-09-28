@@ -63,10 +63,6 @@ severities(svr): <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>svr</b>(<i>int</i>) - set the sevarity of the log message</li>
-<li><b>currentContextRequested</b>(<i>bool</i>) - in case a global context log was called</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -98,7 +94,7 @@ Validate log directory existence within the current project folder. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateLogRootDirectory()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (log directory path)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

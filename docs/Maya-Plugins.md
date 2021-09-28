@@ -1148,6 +1148,7 @@ It is recommended to avoid keeping baseMesh and startPosition plugs live.
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>mesh</td><td>mesh</td><td>mesh</td><td>Input mesh to rivet to.</td></tr>
+<tr><td>positionMode</td><td>positionMode</td><td>enum</td><td> position mode. 0 is closest face center, 1 is closest vertex</td></tr>
 <tr><td>targetWorldMatrix</td><td>targetWorldMatrix</td><td>matrix</td><td>Input mesh world matrix.</td></tr>
 <tr><td>rivet</td><td>rivet</td><td>compound (Array)</td><td>Input rivets compound array.</td></tr>
 <tr><td>rivetStartPosition</td><td>rivetStartPosition</td><td>matrix</td><td>Input start position. Rivet position will be calculated from this origin matrix.</td></tr>

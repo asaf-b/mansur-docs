@@ -3553,7 +3553,7 @@ A main CtrlCreate function calls a veriaty of pre-defined shape creation, then h
 <p><font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>batchCreateAllControlShapes(<strong>kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (MnsNameStd, created shapes)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b></strong>kwargs</b></li>
@@ -3651,21 +3651,13 @@ creates a frames ui remote-control style ctrl based on the input params. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createRemoteControlStyleCtrl(<strong>kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (ctrl), MnsNameStd (uiOffsetGrp), MnsNameStd (Frame)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b></strong>kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>horizontalMin</b>(<i>float</i>) ; [default: -1.0]</li>
-<li><b>horizontalMax</b>(<i>float</i>) ; [default: 1.0]</li>
-<li><b>verticalMin</b>(<i>float</i>) ; [default: -1.0]</li>
-<li><b>verticalMax</b>(<i>float</i>) ; [default: 1.0]</li>
-<li><b>bodySuffix</b>(<i>str</i>)</li>
-<li><b>uiScale</b>(<i>float</i>) ; [default: 1.0]</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%></p>
@@ -3698,44 +3690,13 @@ The default color is white when used as standalone, and based on the rig's globa
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>ctrlCreate(<strong>kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (MnsNameStd class instance containing all info for the new node created)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b></strong>kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>side</b>(<i>str</i>) ; [default: side] - side flag</li>
-<li><b>body</b>(<i>str</i>) ; [default: body] - Node's name body</li>
-<li><b>alpha</b>(<i>str</i>) ; [default: alpha] - Node's Alpha id</li>
-<li><b>id</b>(<i>str</i>) ; [default: id] - Node's id</li>
-<li><b>isFacial</b>(<i>bool</i>)</li>
-<li><b>bodySuffix</b>(<i>str</i>)</li>
-<li><b>incrementAlpha</b>(<i>bool</i>) - In case of a 'free' creation, if True will name the node to the first possible name- searching for new Alpha instead of the ID</li>
-<li><b>ctrlType</b>(<i>str</i>) ; [default: ctrl]</li>
-<li><b>createBlkClassID</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>createBlkCtrlTypeID</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
-<li><b>customParentTransform</b>(<i>str</i>)</li>
-<li><b>skipColor</b>(<i>bool</i>)</li>
-<li><b>createOffsetGrp</b>(<i>bool</i>)</li>
-<li><b>createSpaceSwitchGroup</b>(<i>bool</i>)</li>
-<li><b>symmetryType</b>(<i>int</i>)</li>
-<li><b>doMirror</b>(<i>bool</i>)</li>
-<li><b>forceMirrorGrp</b>(<i>bool</i>)</li>
-<li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
-<li><b>chennelControl</b>(<i>str</i>) ; [default: None]</li>
-<li><b>controlShape</b>(<i>str</i>) ; [default: circle] - Control's NURBS shape</li>
-<li><b>scale</b>(<i>float</i>) ; [default: 1.0] - Ctrl scale. Relative to global settings.</li>
-<li><b>color</b>(<i>tuple</i>) ; [default: (1.0, 1.0, 1.0)] - Shape's color</li>
-<li><b>alongAxis</b>(<i>int</i>) ; [default: 1] - Along which axis to create the shape</li>
-<li><b>matchTransform</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's transforms.</li>
-<li><b>matchPosition</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's position.</li>
-<li><b>matchOrientation</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's Orientation.</li>
-<li><b>sections</b>(<i>int</i>) ; [default: 1] - Aplicable only for circle creation</li>
-<li><b>offsetRigMaster</b>(<i>str</i>) ; [default: None] - If passed in, an attribute connecting the master joint to the control will be created.</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%></p>

@@ -19,7 +19,7 @@ Note: When used as a leg, try using the foot module as a direct child of this mo
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>construct(mansur, MnsBuildModule, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (controls), dict (internalSpaces), MnsNameStd (moduleSpaceAttrHost)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mansur</b></li>

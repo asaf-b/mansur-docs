@@ -128,9 +128,6 @@ This method will be called from a rig construction. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>mode</b>(<i>int</i>)</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -163,7 +160,7 @@ Collect ctrls based on given state: <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrlRelatives(mode = 0, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
@@ -184,7 +181,7 @@ Collect ALL related controls for th given rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectCtrls(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -204,7 +201,7 @@ Based on the oprional arguments passed in, collect all matching related guides t
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectGuides(roots = pm.ls(sl = 1), **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (Related guides), list (sparseGuides, guide without any relations)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>roots</b>(<i>str</i>) ; [default: selection]</li>
@@ -212,14 +209,6 @@ Based on the oprional arguments passed in, collect all matching related guides t
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
-<li><b>includeDecendents</b>(<i>bool</i>)</li>
-<li><b>includeDecendentBranch</b>(<i>bool</i>)</li>
-<li><b>getGuides</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>getCustomGuides</b>(<i>bool</i>) ; [default: True]</li>
-<li><b>allAsSparse</b>(<i>bool</i>)</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -233,7 +222,7 @@ Collect all related controls for the given module. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleControls(moduleTop, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>moduleTop</b></li>
@@ -256,7 +245,7 @@ Collect all related controls for the given module. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectModuleRootsBasedOnMode(mode = 0)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (root guides (modules) to build)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
@@ -277,7 +266,7 @@ This is the main collect wrapper for all 'align plg' tools in BLOCK. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPLGuidesToAlign(mode = 0)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (PLGs to align)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
@@ -321,7 +310,7 @@ Using methods within 'blockUtility', this method will collect the requested modu
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPartialModulesRoots(mode)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (root guides (modules) to build)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b></li>
@@ -344,7 +333,7 @@ mode 3 = selected <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectPickerDataForRigTop(rigTop = None, mode = 0)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (plgs data)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -390,7 +379,7 @@ Collect all slaves related to the passed in 'mnsNodeRelationship' node. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>collectSlavesFromNdr(ndrNode)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (slave nodes)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ndrNode</b></li>
@@ -491,7 +480,7 @@ This method will be successfull only if the master already has a related 'mnsNod
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constrainObjectsToSurface(MnsBuildModule = None, ctrlMasters = [], jointsToAttach = [], surface = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (new ctrls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsBuildModule</b>(<i>str</i>) ; [default: None]</li>
@@ -515,9 +504,6 @@ Also, use the mode argument to specify which mode you wish to construct in: <br>
 mode 0 = ALL <br>
 mode 1 = Branch <br>
 mode 2 = Module <br>
-fromNodes is a list argument.  <br>
-In case any input is passed, this method will attempt to aquire the modules to construct based on the mode selected. <br>
-You can pass in any Block-Node names into this method. <br>
 </i>
 <br>
 </font>
@@ -539,7 +525,7 @@ You can pass in any Block-Node names into this method. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertInputObjToSpace(obj = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> PyNode (Space object if found)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b>(<i>str</i>) ; [default: None]</li>
@@ -553,7 +539,7 @@ You can pass in any Block-Node names into this method. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertModuleAuthorityToSurface(MnsBuildModule)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (new ctrls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsBuildModule</b></li>
@@ -569,13 +555,6 @@ You can pass in any Block-Node names into this method. <br>
 This method will create and connect the pedefined visibility graph to a given 'Module Top Group'. <br>
 The driver attribute will be created within the puppet's 'world control', and the connection graph (using animCurvesUU node) will input into the group's visibility channels. <br>
 The channels are split (predefined) as follows: <br>
-0. None <br>
-1. primaries <br>
-2. Secondaries <br>
-3. Tertiaries <br>
-4. Secondaries Only <br>
-5. Tertiaries Only <br>
-6. No Primaries <br>
 </i>
 <br>
 </font>
@@ -605,7 +584,7 @@ This method is also the one used by the CNS Tool. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createCnsForCtrls(ctrls = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (success state)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
@@ -643,7 +622,7 @@ The main creation method for PLG creation. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPickerLayoutGuide(ctrl, override, rigTop = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (plg)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
@@ -749,9 +728,6 @@ Also, use the mode argument to specify which mode you wish to construct in: <br>
 mode 0 = ALL <br>
 mode 1 = Branch <br>
 mode 2 = Module <br>
-fromNodes is a list argument.  <br>
-In case any input is passed, this method will attempt to aquire the modules to construct based on the mode selected. <br>
-You can pass in any Block-Node names into this method. <br>
 </i>
 <br>
 </font>
@@ -1010,7 +986,7 @@ Trigger method for BLOCK - 'extract control shapes' method. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractControlShapes(ctrls = [], rigTop = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (controls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
@@ -1051,7 +1027,7 @@ A simple method to filter out the "creationOnly" flag for an argument. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterCreationOnlyFromArgs(argsList)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (filtered arguments)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>argsList</b></li>
@@ -1071,7 +1047,7 @@ Filter all pre-defined settings to their corresponding gathering methods, and re
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterSettings(fileSettings, node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (settings), string (current side place holder)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>fileSettings</b></li>
@@ -1104,7 +1080,7 @@ This method is used on rig deconstruction, to store all set default values, in o
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherAllControlsCustomDefaults(rigTop)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (All rig custom defaults)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b></li>
@@ -1118,7 +1094,7 @@ This method is used on rig deconstruction, to store all set default values, in o
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherCustomDefaultDictForCtrl(ctrl)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (Custom Defaults Dict)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
@@ -1157,7 +1133,7 @@ This method is used on rig deconstruction, to store all set default values, in o
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherModuleCustomDefaults(moduleTop)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (module custom defaults)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>moduleTop</b></li>
@@ -1197,7 +1173,7 @@ Gather all guide roots for the passed in rigTop node. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getAllGuideRootsForRigTop(rigTop)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (rootGuides)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b></li>
@@ -1217,7 +1193,7 @@ Collect all 'picker layout guides' from the rig passed in (as rigTop) <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getAllPlgsForRigTop(rigTop)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (All PLGs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b></li>
@@ -1238,7 +1214,7 @@ Collect all 'color associated' nodes within the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getAllcolCtrlforRigTop(rigTop)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (colorControls)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b></li>
@@ -1258,7 +1234,7 @@ Recusrsivly collect all child modules from the given rootGuide's decendents. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getChildModules(rootGuide)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (module decendents)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rootGuide</b></li>
@@ -1278,7 +1254,7 @@ Attempt to collect the 'Control Shapes Group' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCsGrpFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (ctrlShapes group)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1326,7 +1302,7 @@ Get the passed in node's color based on it's type, heirarchy and attributes. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCtrlCol(ctrl, rigTop, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>tuple[3] (color)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
@@ -1377,7 +1353,7 @@ Collect the delete master from a slave's related 'mnsNodeRelationship' node, if 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getDeleteMasterFromSlave(slave)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (master)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>slave</b></li>
@@ -1425,7 +1401,7 @@ Collect existing 'spaces' constraints for a passed in (built) control, in order 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getExistingSpaceConstraintForControl(ctrl = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (mnsMatrixConstraint nodes)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
@@ -1445,7 +1421,7 @@ Wrapper mwthod to collect 'spaces' constraints for multiple controls. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getExistingSpaceConstraintForControls(controls = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (constraintSpaces dictionary)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>controls</b>(<i>list</i>) ; [default: []]</li>
@@ -1466,7 +1442,7 @@ If this method fails to retreive such attribute, it creates one and returns it. 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getGlobalScaleAttrFromTransform(transform = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> Attribute</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transform</b>(<i>str</i>) ; [default: None]</li>
@@ -1486,7 +1462,7 @@ Collect a ctrl type object's 'Guide Authority', or related guide object. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getGuideParent(objectSel = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> PyNode</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectSel</b>(<i>str</i>) ; [default: None]</li>
@@ -1506,7 +1482,7 @@ Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getJointStructGrpFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Offset Skeleton Grp)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1552,7 +1528,7 @@ Collect all given module dendents using a 'wild-card' search method. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleDecendentsWildcard(guideRoot, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (matching decendents)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guideRoot</b></li>
@@ -1575,7 +1551,7 @@ This method also contains override optional arguments to specify a direct path o
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleFromGuide(guideRoot, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyModule (object)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guideRoot</b></li>
@@ -1583,11 +1559,6 @@ This method also contains override optional arguments to specify a direct path o
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>methodName</b>(<i>str</i>) ; [default: jointStructure]</li>
-<li><b>modPath</b>(<i>str</i>) ; [default: None]</li>
-<li><b>modName</b>(<i>str</i>) ; [default: None]</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -1601,7 +1572,7 @@ Collect all of the root guide module relatives for the passed in moduleRoot (or 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleGuideDecendents(guideRoot)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (sorted by ID module decendents)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guideRoot</b></li>
@@ -1621,7 +1592,7 @@ Collect all the given moduleRoot's 'interpolationJoints' relatives. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleInterpJoints(guideRoot, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (matching interJoints)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guideRoot</b></li>
@@ -1642,7 +1613,7 @@ Attempt to collect the root guide relative from the given node. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleRoot(objectA)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode (rootGuide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -1676,7 +1647,7 @@ Attempt to collect a 'root guide' relative from the current selection <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleRootForSel()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode (moduleRoot)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1707,7 +1678,7 @@ Collect the 'Module Top Group' related to the passed in control. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleTopForCtrl(ctrl = None, nameMatch = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Module Top Group)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
@@ -1728,7 +1699,7 @@ Attempt to collect 'Module Top Group' from a given root guide. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleTopFromRootGuide(rootGuide = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Module Top Group)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rootGuide</b>(<i>str</i>) ; [default: None]</li>
@@ -1748,7 +1719,7 @@ Collect the related 'mnsNodeRelationship' node from the given input node. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getNodeRelationshipNodeFromObject(node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>node</b></li>
@@ -1768,7 +1739,7 @@ Collect the offsetGroup related to the passed in control, if it exists. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getOffsetGrpForCtrl(ctrl, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (offset group)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
@@ -1776,9 +1747,6 @@ Collect the offsetGroup related to the passed in control, if it exists. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>type</b>(<i>str</i>) ; [default: offsetGrp]</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -1792,7 +1760,7 @@ Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getOffsetSkeletonGrpFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Offset Skeleton Grp)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1813,7 +1781,7 @@ Only non 'ceneter components' will be tested of course. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getOppositeSideControl(obj = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Opposite object)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b>(<i>str</i>) ; [default: None]</li>
@@ -1833,7 +1801,7 @@ Attempt to collect the 'Picker Guide Group' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerGuidesGrpFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Picker Guide Group)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1853,7 +1821,7 @@ Attempt to collect the 'Picker Layout Base guide' from the passed in rigTop. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerLayoutBaseFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Picker Layout Base guide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1873,7 +1841,7 @@ Attempt to collect the 'Picker Layout Camera' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerLayoutCamFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Picker Layout Base guide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1893,7 +1861,7 @@ Attempt to collect the 'Picker Projection Camera' from the passed in rigTop. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerProjectionCamFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Picker Projection Camera)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1913,7 +1881,7 @@ Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPickerTitleGrpFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Picker Title Group))</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1933,7 +1901,7 @@ Attempt to collect the 'puppet group' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPuppetBaseFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (puppet base)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1953,7 +1921,7 @@ Attempt to collect the 'Puppet World Control' from the passed in rigTop. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPuppetRootFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Puppet world control)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -1975,7 +1943,7 @@ This method will also return the module's methods in a dictionary in order to ru
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPyModuleFromGuide(guide)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyModule, dict (module methods as keys and method objects as entries)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guide</b></li>
@@ -1995,7 +1963,7 @@ Collect a related node from the 'messageOut' attribute of the given node's 'mnsN
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRelatedNodeFromObject(node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>node</b></li>
@@ -2016,7 +1984,7 @@ Collect the delete master from a slave's related 'mnsNodeRelationship' node, if 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRelationMasterFromSlave(slave)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (master)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>slave</b></li>
@@ -2036,7 +2004,7 @@ Attempt to get a rigTop node from the passed in node to check. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRigTop(objectA)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -2067,7 +2035,7 @@ Attempt to get a rigTop node from current selection <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRigTopForSel()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (rigTop)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2084,7 +2052,7 @@ Attempt to collect the related 'rootGuide' from the given control passed in. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRootGuideFromCtrl(obj)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (rootGuide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
@@ -2104,7 +2072,7 @@ Attempt to collect the rig's root guide from the passed in rigTop node <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRootGuideFromRigTop(rigTop = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (rig root guide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
@@ -2139,7 +2107,7 @@ Get setting for the requested setting path. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSettings(settingsPath, node, blkType)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (optionalArgumentsFromFile), string (current side place holder)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>settingsPath</b></li>
@@ -2162,7 +2130,7 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSideModuleBranchRoot(guide = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (branch root)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>guide</b>(<i>str</i>) ; [default: None]</li>
@@ -2176,7 +2144,7 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSimpleRivetsNodeForMesh(mesh = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> PyNode</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mesh</b>(<i>str</i>) ; [default: None]</li>
@@ -2416,7 +2384,7 @@ Load controls predefined and custom defaults: <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>locatePLGBaseVisMdNodes(baseLayoutGuide = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (bodyMdNode), MnsNameStd (facialMDNode)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>baseLayoutGuide</b>(<i>str</i>) ; [default: None]</li>
@@ -2624,7 +2592,7 @@ A simple method to check for argument duplicates within an argument dict <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>preCheckNameForUI(arguments, suffix)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (recompiled arguments)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>arguments</b></li>
@@ -2670,7 +2638,7 @@ Get the passed in Ctrl PLG position, relative to the rig's 'layoutBase'. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>projectPickerLayoutPos(ctrl, cam, layoutBase)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>tuple[3] (posX), tuple[3] (posY)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
@@ -2702,6 +2670,29 @@ A wrapper method that handles plg projection from selected scene objects. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###rebuildJointStructure
+<font color = #5f5f5f size = 3pt>
+<i>
+modes: <br>
+0 = All <br>
+1 = Branch <br>
+2 = Module <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>rebuildJointStructure(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###recGetModuleTopForCtrl
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -2712,7 +2703,7 @@ Recursively attempt to collect the 'Module Top Group' related to the ctrl passed
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recGetModuleTopForCtrl(ctrl = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Module Top Group)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
@@ -2732,7 +2723,7 @@ Recursivly attempt to get a parent joint starting with a given root object, scal
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recGetParentJoint(rootObject = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>mnsNameStd</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rootObject</b>(<i>str</i>) ; [default: None]</li>
@@ -2752,7 +2743,7 @@ Recusrsivly look for a 'rootGuide' from the given node's parent relatives. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recSearchForGuideRootInParents(obj)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> PyNode (rootGuide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
@@ -2787,7 +2778,7 @@ This method is used to delete all 'Authority' from the passsed in slave, if ther
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeAllAuthority(slave = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (oldAuthority)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>slave</b>(<i>str</i>) ; [default: None]</li>
@@ -2811,7 +2802,7 @@ This method is also the one used by the CNS Tool. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeCnsFromCtrls(ctrls = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (success state)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
@@ -2937,13 +2928,6 @@ This is the main wrapper for all pose 'save & load' triggers of BLOCK. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-<td><ul>
-<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
-<li><b>mode</b>(<i>int</i>)</li>
-<li><b>saveLoad</b>(<i>int</i>)</li>
-<li><b>msgPrompt</b>(<i>bool</i>)</li>
-<li><b>pose</b>(<i>str</i>) ; [default: T]</li>
-</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -2980,7 +2964,7 @@ Search for a 'guide authority' or 'rootGuide' in the given node's decendents <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>searchForRootGuideInRelatives(obj)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode (rootGuide)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
@@ -3051,7 +3035,7 @@ Attempt to collect the passed in node's color (based on its type), and set it if
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setCtrlCol(ctrl, rigTop, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (ctrl)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrl</b></li>
@@ -3344,6 +3328,29 @@ OBSELETE. PLG parenting is no longer in use. <br>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>upParentAllPlgTrigger()</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###updateRigStructure
+<font color = #5f5f5f size = 3pt>
+<i>
+Rig structure update required trigger. <br>
+This method will be called in case any 'jntStructMember' attribute was altered, which means the internal joint structure of the module needs to be rebuilt. <br>
+This method will locate and filter the existing module related joint structure, destroy it, and re-build it using the updated settings.  <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRigStructure(softMod = False, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>softMod</b>(<i>bool</i>) ; [default: False]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>

@@ -94,7 +94,6 @@ BLOCK UI Class. <br>
 <li><b><a href="#eventFilterTARGET">eventFilter </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeModelPathTARGET">removeModelPath </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeCustomShapesTARGET">removeCustomShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#updateRigStructureTARGET">updateRigStructure </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#poseSaveLoadTriggerTARGET">poseSaveLoadTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getDefaultsModeTARGET">getDefaultsMode </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -867,26 +866,6 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
-<h5 id = "updateRigStructureTARGET"></h5><font color = 464646 size = 3><b>updateRigStructure <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>Rig structure update required trigger.</i><br>
-<i>This method will be called in case any 'jntStructMember' attribute was altered, which means the internal joint structure of the module needs to be rebuilt.</i><br>
-<i>This method will locate and filter the existing module related joint structure, destroy it, and re-build it using the updated settings. </i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRigStructure(self, softMod = False, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>softMod</b>(<i>bool</i>) ; [default: False]</li>
-<li><b>**kwargs</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
 <h5 id = "poseSaveLoadTriggerTARGET"></h5><font color = 464646 size = 3><b>poseSaveLoadTrigger <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Save/Load pose trigger.</i><br>
@@ -1027,5 +1006,38 @@ BLOCK UI Class. <br>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+##Defenitions
+<hr width = 100%>
+###loadBlock
+<font color = #5f5f5f size = 3pt>
+<i>
+Load the BLOCK UI from globals, avoid UI duplication. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadBlock()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###reloadBlock
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>reloadBlock(previousBlockWindow)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>previousBlockWindow</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
 </table></font>
