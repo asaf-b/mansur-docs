@@ -62,6 +62,7 @@ nav:
         - userGuides/Asset-Scaling.md
         - userGuides/IK-FK-Match.md
         - userGuides/The-Picker.md
+        - userGuides/Volume-Joints.md
         - userGuides/Mocap-And-Game-Tools.md
         - userGuides/Scripted-Builds.md
         - userGuides/license.md
@@ -90,6 +91,7 @@ nav:
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
+      - releaseNotes/v1.4.2.md
       - releaseNotes/v1.4.1.md
       - releaseNotes/v1.4.0.md
       - releaseNotes/v1.3.6.md
