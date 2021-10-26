@@ -24,7 +24,7 @@ Here you can find detailed code documentation, as well as some helful guides to 
 <font size = 20pt color>
 <a href="https://discord.gg/nXfy3Rh5y6" class="fab fa-discord" target="_blank"></a>
 <a href="https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ" class="fa fa-youtube" target="_blank"></a>
-<a href="https://www.facebook.com/MansurRig" class="fa fa-facebook" target="_blank"></a>
+<a href="https://www.facebook.com/MansurRig2" class="fa fa-facebook" target="_blank"></a>
 <a href="https://github.com/asaf-b" class="fa fa-github" target="_blank"></a>
 <a href="https://twitter.com/mansurRig" class="fa fa-twitter" target="_blank"></a>
 <a href="https://www.linkedin.com/in/asaf-ben-zur/" class="fa fa-linkedin" target="_blank"></a>
