@@ -73,10 +73,12 @@ The actual flow of the build is independent of the modules setup internals. <br>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#constructAttrHostCtrlTARGET">constructAttrHostCtrl </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#constructAttrHostSpaceTARGET">constructAttrHostSpace </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createAttrHostCustomGuideTARGET">createAttrHostCustomGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#createExtraChannelsTARGET">createExtraChannels </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#splitControlsBasedOnTypeTARGET">splitControlsBasedOnType </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#collecteModuleSettingsTARGET">collecteModuleSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#filterValidSpacsTARGET">filterValidSpacs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildGuideObjectsTARGET">buildGuideObjects </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#gatherAllDependeciesTARGET">gatherAllDependecies </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#reCollectControlsFromLocalsTARGET">reCollectControlsFromLocals </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -103,6 +105,19 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constructAttrHostCtrl(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "constructAttrHostSpaceTARGET"></h5><font color = 464646 size = 3><b>constructAttrHostSpace <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>constructAttrHostSpace(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -160,6 +175,21 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <td><ul>
 <li><b>self</b></li>
 <li><b>rootGuide</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "filterValidSpacsTARGET"></h5><font color = 464646 size = 3><b>filterValidSpacs <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterValidSpacs(self, sourceSpaces = [], **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>sourceSpaces</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

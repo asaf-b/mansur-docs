@@ -47,6 +47,7 @@ Main UI class <br>
 <li>splitLayout</li>
 <li>dividerLayout</li>
 <li>allCollapsible</li>
+<li>widgetRelationships</li>
 <li>mainVLayout</li>
 <li>rootGuide</li>
 <li>customRunCommand</li>

@@ -47,6 +47,9 @@
 <tr><td>attributeHostControlShape</td>
 <td>plus</td>
 <td>The shape created for the attribute host control</td></tr>
+<tr><td>attrHostSpace</td>
+<td></td>
+<td>The space of which the attribute host control will be parented to. This cannot be changed post construction.</td></tr>
 </table></font>
 ###Space-Attributes
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

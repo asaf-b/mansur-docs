@@ -91,6 +91,7 @@ nav:
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
+      - releaseNotes/v1.4.3.md
       - releaseNotes/v1.4.2.md
       - releaseNotes/v1.4.1.md
       - releaseNotes/v1.4.0.md
@@ -157,6 +158,9 @@ nav:
               - foot:
                 - foot_settings.md
                 - foot.md
+              - hindLimb:
+                - hindLimb_settings.md
+                - hindLimb.md
               - limb:
                 - limb_settings.md
                 - limb.md
@@ -188,6 +192,8 @@ nav:
           - picker2:
             - picker2.md
             - plgSettings.md
+          - volumeJointsUI:
+            - volumeJointsUI.md
           - blockBuildUI.md
 extra_css:
     - extra.css

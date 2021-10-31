@@ -868,6 +868,26 @@ Creates an mnsAutoWheelDrive node based on specified parameters and outputs. <br
 </tr>
 </table></font>
 <hr width = 100%>
+###mnsVolumeJointNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Creates an mnsClosestPointsOnMesh node based on specified parameters and outputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsVolumeJointNode(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###multMatrixNode
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -909,6 +929,51 @@ Create a new inverseMatrix node using the given inputs. <br>
 <li><b>output1D</b>(<i>str</i>) ; [default: None]</li>
 <li><b>output2D</b>(<i>str</i>) ; [default: None]</li>
 <li><b>output3D</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###quatSlerpNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new quatSlerp node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>quatSlerpNode(inputQuatA = None, inputQuatB = None, outputQuat = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputQuatA</b>(<i>str</i>) ; [default: None]</li>
+<li><b>inputQuatB</b>(<i>str</i>) ; [default: None]</li>
+<li><b>outputQuat</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###quatToEulerNode
+<font color = #5f5f5f size = 3pt>
+<i>
+Create a new quatToEuler node using the given inputs. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>quatToEulerNode(inputQuat = None, outputRotate = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>inputQuat</b>(<i>str</i>) ; [default: None]</li>
+<li><b>outputRotate</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>

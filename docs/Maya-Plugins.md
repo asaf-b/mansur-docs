@@ -1,74 +1,5 @@
 #Maya-Plugins
 <body>
-##mns3BIkSolver
-<hr width = 100%>
-<font color = #5f5f5f size = 3pt>
-<i>
-=== Author: Assaf Ben Zur ===
-<br>
-
-<br>
-</i></font>
-<hr width = 100%>
-<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
-<tr><td>boneLengthA</td><td>bla</td><td>float</td><td>Base length A.</td></tr>
-<tr><td>boneLengthB</td><td>blb</td><td>float</td><td>Base length B.</td></tr>
-<tr><td>boneLengthC</td><td>blc</td><td>float</td><td>Base length C.</td></tr>
-<tr><td>blend</td><td>blend</td><td>float</td><td>IK-FK blend value.</td></tr>
-<tr><td>rootFK</td><td>rootFK</td><td>matrix</td><td>Input FK root matrix.</td></tr>
-<tr><td>kneeFK</td><td>kneeFK</td><td>matrix</td><td>Input FK knee matrix.</td></tr>
-<tr><td></td><td></td><td>matrix</td><td>Input FK ankle matrix.</td></tr>
-<tr><td>endFK</td><td>endFK</td><td>matrix</td><td>Input FK end matrix.</td></tr>
-<tr><td>ikTarget</td><td>ikTarget</td><td>matrix</td><td>Input IK target matrix.</td></tr>
-<tr><td>poleVector</td><td>poleVector</td><td>matrix</td><td>Input pole-vector target matrix.</td></tr>
-<tr><td>rootWorldMatrix</td><td>rootWorldMatrix</td><td>matrix</td><td>Module root input matrix.</td></tr>
-<tr><td>roll</td><td>roll</td><td>float</td><td>IK addative roll value.</td></tr>
-<tr><td>slide</td><td>slide</td><td>float</td><td>IK mid slide value.</td></tr>
-<tr><td>softness</td><td>softness</td><td>float</td><td>IK softness parameter.</td></tr>
-<tr><td>stretchLimit</td><td>stretchLimit</td><td>float</td><td>IK stretch limit value. 1 is no stretch, 2 is double the length.</td></tr>
-<tr><td>aimAxis</td><td>aimAxis</td><td>enum</td><td>Aim axis choice.</td></tr>
-<tr><td>upAxis</td><td>upAxis</td><td>enum</td><td>Up axis choice.</td></tr>
-<tr><td>segmentScaleCompensate</td><td>segmentScaleCompensate</td><td>bool</td><td>calculate with segment scale compensate on or off.</td></tr>
-</table></font>
-<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
-<tr><td>rootTranslate</td><td>rootTranslate</td><td>float[3]</td><td>Root out translate output. Child of outRoot.</td></tr>
-<tr><td>rootRotateX</td><td>rootRotateX</td><td>float</td><td>Root out translate X output. Child of outRoot.</td></tr>
-<tr><td>rootRotateY</td><td>rootRotateY</td><td>float</td><td>Root out translate Y output. Child of outRoot.</td></tr>
-<tr><td>rootRotateZ</td><td>rootRotateZ</td><td>float</td><td>Root out translate Z output. Child of outRoot.</td></tr>
-<tr><td>rootRotate</td><td>rootRotate</td><td>angle[3]</td><td>Root out rotate output. Child of outRoot.</td></tr>
-<tr><td>rootScale</td><td>rootScale</td><td>float[3]</td><td>Root out scale output. Child of outRoot.</td></tr>
-<tr><td>outRoot</td><td>outRoot</td><td>compound</td><td>Root output transformation values.</td></tr>
-<tr><td>KneeTranslate</td><td>kneeTranslate</td><td>float[3]</td><td>Knee out translate output. Child of outKnee.</td></tr>
-<tr><td>kneeRotateX</td><td>kneeRotateX</td><td>float</td><td>Knee out translate X output. Child of outKnee.</td></tr>
-<tr><td>kneeRotateY</td><td>kneeRotateY</td><td>float</td><td>Knee out translate Y output. Child of outKnee.</td></tr>
-<tr><td>kneeRotateZ</td><td>kneeRotateZ</td><td>float</td><td>Knee out translate Z output. Child of outKnee.</td></tr>
-<tr><td>kneeRotate</td><td>kneeRotate</td><td>angle[3]</td><td>Knee out rotate output. Child of outKnee.</td></tr>
-<tr><td>kneeScale</td><td>kneeScale</td><td>float[3]</td><td>Knee out scale output. Child of outKnee.</td></tr>
-<tr><td>outKnee</td><td>outKnee</td><td>compound</td><td>Knee output transformation values.</td></tr>
-<tr><td>ankleTranslate</td><td>ankleTranslate</td><td>float[3]</td><td>Ankle out translate output. Child of outAnkle.</td></tr>
-<tr><td>ankleRotateX</td><td>ankleRotateX</td><td>float</td><td>Ankle out translate X output. Child of outAnkle.</td></tr>
-<tr><td>ankleRotateY</td><td>ankleRotateY</td><td>float</td><td>Ankle out translate Y output. Child of outAnkle.</td></tr>
-<tr><td>ankleRotateZ</td><td>ankleRotateZ</td><td>float</td><td>Ankle out translate Z output. Child of outAnkle.</td></tr>
-<tr><td>ankleRotate</td><td>ankleRotate</td><td>angle[3]</td><td>Ankle out rotate output. Child of outAnkle.</td></tr>
-<tr><td>ankleScale</td><td>ankleScale</td><td>float[3]</td><td>Ankle out scale output. Child of outAnkle.</td></tr>
-<tr><td>outAnkle</td><td>outAnkle</td><td>compound</td><td>Ankle output transformation values.</td></tr>
-<tr><td>endTranslate</td><td>endTranslate</td><td>float[3]</td><td>End out translate output. Child of outEnd.</td></tr>
-<tr><td>endRotateX</td><td>endRotateX</td><td>float</td><td>End out translate X output. Child of outEnd.</td></tr>
-<tr><td>endRotateY</td><td>endRotateY</td><td>float</td><td>End out translate Y output. Child of outEnd.</td></tr>
-<tr><td>endRotateZ</td><td>endRotateZ</td><td>float</td><td>End out translate Z output. Child of outEnd.</td></tr>
-<tr><td>endRotate</td><td>endRotate</td><td>angle[3]</td><td>End out rotate output. Child of outEnd.</td></tr>
-<tr><td>endScale</td><td>endScale</td><td>float[3]</td><td>End out scale output. Child of outEnd.</td></tr>
-<tr><td>outEnd</td><td>outEnd</td><td>compound</td><td>End output transformation values.</td></tr>
-<tr><td>ikVis</td><td>ikVis</td><td>bool</td><td>IK mode visibility.</td></tr>
-<tr><td>fkVis</td><td>fkVis</td><td>bool</td><td>FK mode visibility.</td></tr>
-</table></font>
-<body>
 ##mnsAnnotate
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
@@ -607,6 +538,9 @@ This output plug can then be plugged into a custom pivot attribute of any transf
 <tr><td>rotatePivot</td><td>rotatePivot</td><td>float[3]</td><td>Result rotate pivot position.</td></tr>
 </table></font>
 <body>
+##mnsExponential
+<hr width = 100%>
+<body>
 ##mnsIKSolver
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
@@ -1121,6 +1055,9 @@ Primaraly used to embed mnsThreePointArc into an IK setup.
 <tr><td>outCurve</td><td>outCurve</td><td>nurbsCurve</td><td>Result curve.</td></tr>
 </table></font>
 <body>
+##mnsRotationQuatRamp
+<hr width = 100%>
+<body>
 ##mnsSimpleRivets
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
@@ -1403,4 +1340,53 @@ The blend is triggered once with the attribute set to 'Off' - causing the knee t
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>translate</td><td>t</td><td>float</td><td>MObject  MnsTransformSpring::aOutTranslate</td></tr>
+</table></font>
+<body>
+##mnsVolumeJoint
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>globalScale</td><td>globalScale</td><td>double</td><td>Global scale multiplier.</td></tr>
+<tr><td>parentJointWorldMatrix</td><td>parentJointWorldMatrix</td><td>matrix</td><td> Input parent joint world Matrix. Angle source-A.</td></tr>
+<tr><td>childJointWorldMatrix</td><td>childJointWorldMatrix</td><td>matrix</td><td> Input child joint world Matrix. Angle source-B.</td></tr>
+<tr><td>childJointRestWorldMatrix</td><td>childJointRestWorldMatrix</td><td>matrix</td><td> Input child joint rest matrix. This will dictate the zero position for the calculation.</td></tr>
+<tr><td>volumeJoint</td><td>volumeJoint</td><td>compound array</td><td> Input array compound for a volume joint calculation. Unlimited.</td></tr>
+<tr><td>restTranslate</td><td>restTranslate</td><td>vector[3]</td><td> Rest translation values.</td></tr>
+<tr><td>posXTranslate</td><td>posXTranslate</td><td>vector[3]</td><td> Positive X angle translation values.</td></tr>
+<tr><td>negXTranslate</td><td>negXTranslate</td><td>vector[3]</td><td> Negative X angle translation values.</td></tr>
+<tr><td>posYTranslate</td><td>posYTranslate</td><td>vector[3]</td><td> Positive Y angle translation values.</td></tr>
+<tr><td>negYTranslate</td><td>negYTranslate</td><td>vector[3]</td><td> Negative Y angle translation values.</td></tr>
+<tr><td>posZTranslate</td><td>posZTranslate</td><td>vector[3]</td><td> Positive Z angle translation values.</td></tr>
+<tr><td>negZTranslate</td><td>negZTranslate</td><td>vector[3]</td><td> Negative Z angle translation values.</td></tr>
+<tr><td>posXScale</td><td>posXScale</td><td>vector[3]</td><td> Positive X angle scale values.</td></tr>
+<tr><td>negXScale</td><td>negXScale</td><td>vector[3]</td><td> Negative X angle scale values.</td></tr>
+<tr><td>posYScale</td><td>posYScale</td><td>vector[3]</td><td> Positive Y angle scale values.</td></tr>
+<tr><td>negYScale</td><td>negYScale</td><td>vector[3]</td><td> Negative Y angle scale values.</td></tr>
+<tr><td>posZScale</td><td>posZScale</td><td>vector[3]</td><td> Positive Z angle scale values.</td></tr>
+<tr><td>negZScale</td><td>negZScale</td><td>vector[3]</td><td> Negative Z angle scale values.</td></tr>
+<tr><td>rotationBlend</td><td>rotationBlend</td><td>double</td><td> Rotation blend between the 2 sources (parent and child joints) for this volume joint. 0 is parent rotation, 1 is child rotation.</td></tr>
+<tr><td>parentInverseMatrix</td><td>parentInverseMatrix</td><td>matrix</td><td> Target joint's parent inverse matrix to be used to localize the output values.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>result</td><td>result</td><td>compound</td><td>Output transforms array.</td></tr>
+<tr><td>translate</td><td>t</td><td>float[3]</td><td>Translation output. Child of transform.</td></tr>
+<tr><td>rotate</td><td>r</td><td>angle[3]</td><td>Rotation output. Child of transform.</td></tr>
+<tr><td>scale</td><td>s</td><td>angle[3]</td><td>Scale output. Child of transform.</td></tr>
+<tr><td>posXState</td><td>posXState</td><td>double</td><td>Current Positive-X direction state, between 0 and 1.</td></tr>
+<tr><td>negXState</td><td>negXState</td><td>double</td><td>Current Negative-X direction state, between 0 and 1.</td></tr>
+<tr><td>posYState</td><td>posYState</td><td>double</td><td>Current Positive-Y direction state, between 0 and 1.</td></tr>
+<tr><td>negYState</td><td>negYState</td><td>double</td><td>Current Negative-Y direction state, between 0 and 1.</td></tr>
+<tr><td>posZState</td><td>posZState</td><td>double</td><td>Current Positive-Z direction state, between 0 and 1.</td></tr>
+<tr><td>negZState</td><td>negZState</td><td>double</td><td>Current Negative-Z direction state, between 0 and 1.</td></tr>
 </table></font>

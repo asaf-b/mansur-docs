@@ -1319,6 +1319,22 @@ It reruns a baseClass and a formClass to be used when creating any UI. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###optionBoxTextTrigger
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>optionBoxTextTrigger(comboBox = None, lineWditWidget = None, index = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>comboBox</b>(<i>str</i>) ; [default: None]</li>
+<li><b>lineWditWidget</b>(<i>str</i>) ; [default: None]</li>
+<li><b>index</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###recDeleteAllLayoutItems
 <font color = #5f5f5f size = 3pt>
 <i>

@@ -549,6 +549,31 @@ mode 2 = Module <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###copyShape
+<font color = #5f5f5f size = 3pt>
+<i>
+copy shape utility. <br>
+This method is operation on selection. <br>
+Copy the control shape of the first selected component, to the rest of the selection. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copyShape(source = None, targets = [], reposition = True, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>source</b>(<i>str</i>) ; [default: None]</li>
+<li><b>targets</b>(<i>list</i>) ; [default: []]</li>
+<li><b>reposition</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###createAndConnectModuleVisChannelsToPuppetRootCtrl
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -692,6 +717,33 @@ This method will check wether the 'target' has a visibility channel connection. 
 <li><b>source</b>(<i>str</i>) ; [default: None]</li>
 <li><b>target</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createVolumeJoint
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createVolumeJoint(parentJoint = None, childJoint = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>parentJoint</b>(<i>str</i>) ; [default: None]</li>
+<li><b>childJoint</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createVolumeJointForSelection
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createVolumeJointForSelection()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>
@@ -854,6 +906,22 @@ Load controls predefined and custom defaults: <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###detrmineSymmetryDelta
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>detrmineSymmetryDelta(sourceA = None, sourceB = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>sourceA</b>(<i>str</i>) ; [default: None]</li>
+<li><b>sourceB</b>(<i>str</i>) ; [default: None]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
@@ -1431,6 +1499,34 @@ Wrapper mwthod to collect 'spaces' constraints for multiple controls. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getExistingVolumeJointNodeForJoint
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getExistingVolumeJointNodeForJoint(joint = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>joint</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getExistingVolumeJointNodeForVolumeJoint
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getExistingVolumeJointNodeForVolumeJoint(joint = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>joint</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getGlobalScaleAttrFromTransform
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1973,6 +2069,17 @@ Collect a related node from the 'messageOut' attribute of the given node's 'mnsN
 </tr>
 </table></font>
 <hr width = 100%>
+###getRelatedVolJntSourcesForSelection
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getRelatedVolJntSourcesForSelection()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getRelationMasterFromSlave
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -2148,6 +2255,64 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mesh</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getSymAttrBasedOnSymMapping
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSymAttrBasedOnSymMapping(attr = None, attrMapping = {})</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>attr</b>(<i>str</i>) ; [default: None]</li>
+<li><b>attrMapping</b>(<i>dict</i>) ; [default: {}]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getSymmetricalVolumeJoint
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSymmetricalVolumeJoint(vJnt = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>vJnt</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getVJntSources
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getVJntSources(vJnt = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>vJnt</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getVJointData
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getVJointData(vJnt)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>vJnt</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2834,6 +2999,26 @@ This method will remove the corresponding "module vis" channel from the given pu
 </tr>
 </table></font>
 <hr width = 100%>
+###repositionShape
+<font color = #5f5f5f size = 3pt>
+<i>
+Simple method to re-center a control shape to its natural pivot <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>repositionShape(targets = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>targets</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###resetAllControlForRigTop
 <font size = 3pt>
 <table>
@@ -3185,6 +3370,21 @@ A simple wrapper method to symmetrize multiple PLG's (based on scene selection).
 </tr>
 </table></font>
 <hr width = 100%>
+###symmetrizeVJ
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>symmetrizeVJ(vJnt = None, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>vJnt</b>(<i>str</i>) ; [default: None]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###toggleGuideCtrl
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -3350,6 +3550,22 @@ This method will locate and filter the existing module related joint structure, 
 <td><ul>
 <li><b>softMod</b>(<i>bool</i>) ; [default: False]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###volumeJointAngleSymmetryMapping
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>volumeJointAngleSymmetryMapping(symmetryDelta = pm.datatypes.Vector(1.0, 1.0, 1.0))</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>symmetryDelta</b>(<i>str</i>) ; [default: pm.datatypes.Vector(1.0]</li>
+<li><b>1.0</b></li>
+<li><b>1.0)</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
