@@ -210,12 +210,17 @@ The objective of this node is to maintain all curve attributes/data (nSpans, nCv
 <tr><td>inputCurve</td><td>inputCurve</td><td>kNurbsCurve</td><td> Input curve to tweak. Output curve will be the same as this curve while the tweak curve matches the base curve.</td></tr>
 <tr><td>inputBaseCurve</td><td>inputBaseCurve</td><td>kNurbsCurve</td><td>Input base curve. This curve will be used to calculate the delta for the tweak.</td></tr>
 <tr><td>inputTweakCurve</td><td>inputTweakCurve</td><td>kNurbsCurve</td><td>Input twek curve. This curve is intended to match the base curve as bind. This curve should be modified - after the curve is modified, the delta difference between it and the base curve will be projected on the input curve.</td></tr>
+<tr><td>buildOffsetCurve</td><td>buildOffsetCurve</td><td>int</td><td>Initiate offset curve build.</td></tr>
+<tr><td>tweakOffset</td><td>tweakOffset</td><td>int</td><td>This will determine whether the offset curve created will be tweaked or not.</td></tr>
+<tr><td>offsetBaseMatrix</td><td>offsetBaseMatrix</td><td>matrix</td><td>Matrix to build offset vectors from</td></tr>
+<tr><td>offset</td><td>offset</td><td>float</td><td>Output offset curve parameter.</td></tr>
 </table></font>
 <font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>outCurve</td><td>outCurve</td><td>kNurbsCurve</td><td>Result curve shape.</td></tr>
+<tr><td>outOffsetCurve</td><td>outOffsetCurve</td><td>kNurbsCurve</td><td>Result offset curve shape.</td></tr>
 </table></font>
 <body>
 ##mnsCurveVariable
@@ -1054,9 +1059,6 @@ Primaraly used to embed mnsThreePointArc into an IK setup.
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>outCurve</td><td>outCurve</td><td>nurbsCurve</td><td>Result curve.</td></tr>
 </table></font>
-<body>
-##mnsRotationQuatRamp
-<hr width = 100%>
 <body>
 ##mnsSimpleRivets
 <hr width = 100%>
