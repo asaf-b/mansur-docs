@@ -60,12 +60,15 @@ nav:
         - userGuides/Version-Updates.md
         - userGuides/Naming-Convention.md
         - userGuides/Asset-Scaling.md
-        - userGuides/IK-FK-Match.md
-        - userGuides/The-Picker.md
-        - userGuides/Volume-Joints.md
-        - userGuides/Mocap-And-Game-Tools.md
-        - userGuides/Scripted-Builds.md
         - userGuides/license.md
+      - Rigging-Tools:
+        - userGuides/IK-FK-Match.md
+        - userGuides/Volume-Joints.md
+        - userGuides/Scripted-Builds.md
+      - Animation-Tools:
+        - userGuides/The-Picker.md
+        - userGuides/Mocap-And-Game-Tools.md
+        - userGuides/Spring-Tool.md
       - Tutorials:
         - Mansur-Rig 101:
           - userGuides/tutorials/mansurRig101/01_Introduction.md
