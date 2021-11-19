@@ -94,6 +94,7 @@ nav:
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
+      - releaseNotes/v1.4.5.md
       - releaseNotes/v1.4.4.md
       - releaseNotes/v1.4.3.md
       - releaseNotes/v1.4.2.md
@@ -196,6 +197,8 @@ nav:
           - picker2:
             - picker2.md
             - plgSettings.md
+          - springTool:
+            - mnsSpringTool.md
           - volumeJointsUI:
             - volumeJointsUI.md
           - blockBuildUI.md

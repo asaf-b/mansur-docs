@@ -952,13 +952,14 @@ Disconnect the slave passed in from it's master, if there is one. <br>
 ###disconnectTargetSkeleton
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>disconnectTargetSkeleton(defenitionDict = {}, blockNameSpace = "", targetNameSpace = "")</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>disconnectTargetSkeleton(defenitionDict = {}, blockNameSpace = "", targetNameSpace = "", **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>defenitionDict</b>(<i>dict</i>) ; [default: {}]</li>
 <li><b>blockNameSpace</b>(<i>str</i>) ; [default: ""]</li>
 <li><b>targetNameSpace</b>(<i>str</i>) ; [default: ""]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

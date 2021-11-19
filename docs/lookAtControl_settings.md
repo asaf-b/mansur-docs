@@ -67,9 +67,6 @@ The slave control will be the control authority for the joint, as the look-at co
 <tr><td>spaceAWeight</td>
 <td>0.5</td>
 <td>Comment wasn't inserted</td></tr>
-<tr><td>spaceAWeight</td>
-<td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
 <tr><td>doAngleBasedScale</td>
 <td>False</td>
 <td>create an angle based scale driver, to scale the target slave joint when the angle changes between the two sources. Originally designed for double-chin setup</td></tr>

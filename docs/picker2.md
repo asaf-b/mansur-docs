@@ -34,6 +34,7 @@ Picker UI Class. <br>
 <ul>
 <li>iconsDir</li>
 <li>currentAttrChangedCallbackID</li>
+<li>visUpdateInProgress</li>
 <li>puppetPickersDict</li>
 <li>currentTabWidget</li>
 <li>bodyQGV</li>
@@ -46,6 +47,7 @@ Picker UI Class. <br>
 <li>pickerBase</li>
 <li>namespace</li>
 <li>tnPath</li>
+<li>ctrlCBsToDelete</li>
 <li>mayaSelectCallBack</li>
 </ul>
 </td></tr>
@@ -672,6 +674,7 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 <tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
 <td><ul>
 <ul>
+<li>pickerWin</li>
 <li>plgNode</li>
 <li>connectedControls</li>
 <li>directConnectedCtrl</li>
@@ -688,6 +691,7 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 <li>positionV</li>
 <li>scaleH</li>
 <li>scaleV</li>
+<li>visChangedCB</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
@@ -835,6 +839,24 @@ This reimplementation is used to control the button's mouse events, used in 'Edi
 </table></font>
 <hr width = 100%>
 ##Defenitions
+<hr width = 100%>
+###btnVisChangedCB
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>btnVisChangedCB(msg, plug, otherPlug, clientData, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>msg</b></li>
+<li><b>plug</b></li>
+<li><b>otherPlug</b></li>
+<li><b>clientData</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
 <hr width = 100%>
 ###loadPicker
 <font color = #5f5f5f size = 3pt>
