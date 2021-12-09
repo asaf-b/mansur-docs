@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../releaseNotes/v1.4.5/" class="md-tabs__link">
+      <a href="../releaseNotes/v1.4.5.2/" class="md-tabs__link">
         Release-Notes
       </a>
     </li>
@@ -646,6 +646,19 @@
   <li class="md-nav__item">
     <a href="../userGuides/The-Picker/" class="md-nav__link">
       The Picker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../userGuides/Spaces-IK-FK-Tool/" class="md-nav__link">
+      Spaces IK FK Tool
     </a>
   </li>
 
@@ -1087,6 +1100,19 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../releaseNotes/v1.4.5.2/" class="md-nav__link">
+      V1.4.5.2
+    </a>
+  </li>
+
         
           
           
@@ -2743,6 +2769,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getlimbmodulecontrols" class="md-nav__link">
+    getLimbModuleControls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getmoduleanimgrp" class="md-nav__link">
     getModuleAnimGrp
   </a>
@@ -4303,11 +4336,53 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2-4-7" type="checkbox" id="nav-7-2-4-7" >
     
     <label class="md-nav__link" for="nav-7-2-4-7">
+      spacesTool
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="spacesTool" data-md-level="4">
+      <label class="md-nav__title" for="nav-7-2-4-7">
+        <span class="md-nav__icon md-icon"></span>
+        spacesTool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../mnsSpacesTool/" class="md-nav__link">
+      mnsSpacesTool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2-4-8" type="checkbox" id="nav-7-2-4-8" >
+    
+    <label class="md-nav__link" for="nav-7-2-4-8">
       springTool
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="springTool" data-md-level="4">
-      <label class="md-nav__title" for="nav-7-2-4-7">
+      <label class="md-nav__title" for="nav-7-2-4-8">
         <span class="md-nav__icon md-icon"></span>
         springTool
       </label>
@@ -4342,14 +4417,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2-4-8" type="checkbox" id="nav-7-2-4-8" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2-4-9" type="checkbox" id="nav-7-2-4-9" >
     
-    <label class="md-nav__link" for="nav-7-2-4-8">
+    <label class="md-nav__link" for="nav-7-2-4-9">
       volumeJointsUI
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="volumeJointsUI" data-md-level="4">
-      <label class="md-nav__title" for="nav-7-2-4-8">
+      <label class="md-nav__title" for="nav-7-2-4-9">
         <span class="md-nav__icon md-icon"></span>
         volumeJointsUI
       </label>
@@ -5011,6 +5086,13 @@
           <li class="md-nav__item">
   <a href="#getkeyboardmodifiersstate" class="md-nav__link">
     getKeyboardModifiersState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlimbmodulecontrols" class="md-nav__link">
+    getLimbModuleControls
   </a>
   
 </li>
@@ -7378,6 +7460,30 @@ Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
 </tr>
 </table></font>
 <hr width = 100%></p>
+<h3 id="getlimbmodulecontrols">getLimbModuleControls</h3>
+<p><font color = #5f5f5f size = 3pt>
+<i>
+mode 0: fk controls and attrHost <br>
+mode 1: ik controls and attrHost <br>
+mode 2: both and attrHost <br>
+mode 3: attrHost only <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getLimbModuleControls(limbCtrl, mode = 2)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>limbCtrl</b></li>
+<li><b>mode</b>(<i>int</i>) ; [default: 2]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%></p>
 <h3 id="getmoduleanimgrp">getModuleAnimGrp</h3>
 <p><font size = 3pt>
 <table>
@@ -8182,12 +8288,13 @@ mode 1 - Match IK to FK <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>limbMatchFkIK(limbCtrl, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>limbMatchFkIK(limbCtrl, mode = 0, <strong>kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>limbCtrl</b></li>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b></strong>kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
