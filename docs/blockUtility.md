@@ -1600,6 +1600,30 @@ Attempt to collect the 'Picker Title Group' from the passed in rigTop. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###getLimbModuleControls
+<font color = #5f5f5f size = 3pt>
+<i>
+mode 0: fk controls and attrHost <br>
+mode 1: ik controls and attrHost <br>
+mode 2: both and attrHost <br>
+mode 3: attrHost only <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getLimbModuleControls(limbCtrl, mode = 2)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>limbCtrl</b></li>
+<li><b>mode</b>(<i>int</i>) ; [default: 2]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getModuleAnimGrp
 <font size = 3pt>
 <table>
@@ -2404,12 +2428,13 @@ mode 1 - Match IK to FK <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>limbMatchFkIK(limbCtrl, mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>limbMatchFkIK(limbCtrl, mode = 0, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>limbCtrl</b></li>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

@@ -887,6 +887,7 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>curve</td><td>crv</td><td>nurbsCurve</td><td>Input curve to sample.</td></tr>
 <tr><td>upCurve</td><td>upCrv</td><td>nurbsCurve</td><td>Input up curve to sample.</td></tr>
+<tr><td>bindCurve</td><td>bindCrv</td><td>nurbsCurve</td><td>Input bind curve to sample. Used only in parametrically-uniform build mode.</td></tr>
 <tr><td>upObject</td><td>upObj</td><td>matrix</td><td>Input up object matrix to use if requsted.</td></tr>
 <tr><td>aimObject</td><td>aimObj</td><td>matrix</td><td>Input aim object matrix to use if requsted.</td></tr>
 <tr><td>globalScale</td><td>globalScale</td><td>float</td><td>Global scale multiplier.</td></tr>
