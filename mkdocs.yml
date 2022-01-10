@@ -65,6 +65,7 @@ nav:
         - userGuides/IK-FK-Match.md
         - userGuides/Volume-Joints.md
         - userGuides/Scripted-Builds.md
+        - userGuides/LODs-Tool.md
       - Animation-Tools:
         - userGuides/The-Picker.md
         - userGuides/Spaces-IK-FK-Tool.md
