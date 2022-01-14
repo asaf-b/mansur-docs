@@ -81,12 +81,13 @@ If a module path was found invalid, attempt to re-find it in the existing module
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>attemptModulePathFixFroRigTop(rigTop, existingBtns)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>attemptModulePathFixFroRigTop(rigTop, existingBtns, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rigTop</b></li>
 <li><b>existingBtns</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1012,6 +1013,28 @@ A simple wrapper mwthod to handle multiple PLG duplication (Based on scene selec
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>plgNode</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###exportCtrlShapes
+<font color = #5f5f5f size = 3pt>
+<i>
+mode = 0 - All <br>
+mode = 1 - Branch <br>
+mode = 2 - module <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>exportCtrlShapes(mode = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2356,6 +2379,23 @@ In essence look for the highest rootGuide in the selected 'side' heirarchy that 
 <li><b>guides</b>(<i>list</i>) ; [default: []]</li>
 <li><b>**kwargs</b></li>
 </ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###importCtrlShapes
+<font color = #5f5f5f size = 3pt>
+<i>
+Simple import method for control shapes. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importCtrlShapes()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>

@@ -43,6 +43,7 @@ Any name related methods are held by this class. <br>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#setNodeNameTARGET">setNodeName </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildNameTARGET">buildName </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#findNextAlphaIncrementTARGET">findNextAlphaIncrement </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#findNextIncrementTARGET">findNextIncrement </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -53,6 +54,19 @@ Any name related methods are held by this class. <br>
 </table></font>
 ####MnsNameStd  methods
 <hr width = 50%>
+<h5 id = "setNodeNameTARGET"></h5><font color = 464646 size = 3><b>setNodeName <font size = 2pt> [<a href="#MnsNameStd TARGET">MnsNameStd </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setNodeName(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "buildNameTARGET"></h5><font color = 464646 size = 3><b>buildName <font size = 2pt> [<a href="#MnsNameStd TARGET">MnsNameStd </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Build the instance's name based on the current class members defenitions.</i><br>

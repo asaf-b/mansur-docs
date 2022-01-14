@@ -418,6 +418,27 @@ Measure the distance between to maya transforms. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###duplicateNameStd
+<font color = #5f5f5f size = 3pt>
+<i>
+Simple method to duplicate a node embedded within a NameStd object. <br>
+This method will duuplicate the node, and rename it by the nameStd rules. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>duplicateNameStd(nameStd = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>nameStd</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###extractHeaderFromPath
 <font size = 3pt>
 <table>

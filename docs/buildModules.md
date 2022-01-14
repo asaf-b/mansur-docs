@@ -586,6 +586,8 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#connectLODsTARGET">connectLODs </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#createPredefinedCnsControlsTARGET">createPredefinedCnsControls </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#failedConstructionCommandTARGET">failedConstructionCommand </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setVisChannelsBasedOnCunstructModeTARGET">setVisChannelsBasedOnCunstructMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#cunstructRigSpacesTARGET">cunstructRigSpaces </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -616,6 +618,32 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 </table></font>
 ####MnsRig  methods
 <hr width = 50%>
+<h5 id = "connectLODsTARGET"></h5><font color = 464646 size = 3><b>connectLODs <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectLODs(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "createPredefinedCnsControlsTARGET"></h5><font color = 464646 size = 3><b>createPredefinedCnsControls <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createPredefinedCnsControls(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "failedConstructionCommandTARGET"></h5><font color = 464646 size = 3><b>failedConstructionCommand <font size = 2pt> [<a href="#MnsRig TARGET">MnsRig </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>A global method to display and return a message dialog whenever a build fails.</i><br>
@@ -1114,13 +1142,14 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 ###updateModules
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateModules(blkWin = None, rigTop = None, buildModulesBtns = [])</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateModules(blkWin = None, rigTop = None, buildModulesBtns = [], **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>blkWin</b>(<i>str</i>) ; [default: None]</li>
 <li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
 <li><b>buildModulesBtns</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1130,12 +1159,27 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 ###updateRig
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRig(blkWin = None, buildModulesBtns = [])</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRig(blkWin = None, buildModulesBtns = [], **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>blkWin</b>(<i>str</i>) ; [default: None]</li>
 <li><b>buildModulesBtns</b>(<i>list</i>) ; [default: []]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###updateRigTopAttrs
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>updateRigTopAttrs(rigTop = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

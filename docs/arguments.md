@@ -46,6 +46,7 @@ These class members will dectate any behavior derived from an actual function ob
 <li>simpleDivider</li>
 <li>meshComponents</li>
 <li>disabled</li>
+<li>multiRowList</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>

@@ -86,12 +86,15 @@ This node also creates and offset curve shape result, to be used later as an Up-
 <tr><td>offsetZ</td><td>offsetZ</td><td>float</td><td>Output offset curve Z parameter.</td></tr>
 <tr><td>tangentDirection</td><td>tangentDirection</td><td>enum</td><td>If build mode is on Hermite, this paremeter dictates the tangent direction.</td></tr>
 <tr><td>reverse</td><td>reverse</td><td>int</td><td>Reverse output curve and offset curve.</td></tr>
+<tr><td>form</td><td>form</td><td>enum</td><td>Result curve form- open or closed</td></tr>
 <tr><td>HermiteSteps</td><td>HermiteSteps</td><td>int</td><td>Hermite mode steps amount.</td></tr>
 <tr><td>tangentLength</td><td>tangentLength</td><td>float</td><td>Control tangent length (if present)</td></tr>
 <tr><td>OffsetType</td><td>OffsetType</td><td>enum</td><td>Offset build type - world or local.</td></tr>
 <tr><td>buildOffsetCurve</td><td>buildOffsetCurve</td><td>int</td><td>Initiate offset curve build.</td></tr>
 <tr><td>resample</td><td>resample</td><td>bool</td><td>Resample curve before output, based on substeps paremeter.</td></tr>
 <tr><td>substeps</td><td>substeps</td><td>int</td><td>resample substeps.</td></tr>
+<tr><td>localize</td><td>localize</td><td>bool</td><td> In case this attribute is on, the result will be localized based on the input worldToLocal matrix.</td></tr>
+<tr><td>worldToLocalMatrix</td><td>worldToLocalMatrix</td><td>matrix</td><td> In case localize attribute is on, the result will be localized based on this matrix.</td></tr>
 </table></font>
 <font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
 <font size = 3pt>
@@ -721,6 +724,7 @@ Easily add spaces/masters to existing constraint using recalcOffset channel.
 <tr><td>translate</td><td>t</td><td>float[3]</td><td>Translation values result.</td></tr>
 <tr><td>rotate</td><td>r</td><td>angle[3]</td><td>Rotation values result.</td></tr>
 <tr><td>scale</td><td>s</td><td>float[3]</td><td>Scale values result.</td></tr>
+<tr><td>shear</td><td>shear</td><td>float[3]</td><td>Shear values result.</td></tr>
 </table></font>
 <body>
 ##mnsMeshRivets
@@ -994,6 +998,28 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td>customPositionOut</td><td>cusPosOut</td><td>compound</td><td>Custom tweakers offset transformation values array.</td></tr>
 <tr><td>cusTranslate</td><td>cusT</td><td>float[3]</td><td>Custom tweakers offset translation values. Child of customPositionOut.</td></tr>
 <tr><td>cusRotate</td><td>cusR</td><td>angle[3]</td><td>Custom tweakers offset rotation values. Child of customPositionOut.</td></tr>
+</table></font>
+<body>
+##mnsQuaternionBlend
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>inMatrix1</td><td>inMatrix1</td><td>matrix</td><td> Input matrix1. Blend source A.</td></tr>
+<tr><td>inMatrix2</td><td>inMatrix2</td><td>matrix</td><td> Input matrix1. Blend source B.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>rotate</td><td>r</td><td>angle[3]</td><td>Rotation output.</td></tr>
 </table></font>
 <body>
 ##mnsRemapFloatArray

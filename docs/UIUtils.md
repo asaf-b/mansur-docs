@@ -376,6 +376,27 @@ DynUI color-override changed command trigger. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###convertRelativePathToAbs
+<font color = #5f5f5f size = 3pt>
+<i>
+A method for replacing a projectRoot variable within a relative path to the absolute path <br>
+Based on the current project directory <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertRelativePathToAbs(filePath = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>filePath</b>(<i>str</i>) ; [default: ""]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###createAboutWindow
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -915,12 +936,13 @@ Main dynamic 'draw spaces box' creation function. <br>
 </font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawSpacesBox(MnsArgumentObj, layoutParent)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawSpacesBox(MnsArgumentObj, layoutParent, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
 <li><b>layoutParent</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1364,6 +1386,28 @@ A method to delete all widgets/object from a given layout <br>
 <td><ul>
 <li><b>layout</b></li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###relativePathCheck
+<font color = #5f5f5f size = 3pt>
+<i>
+A method for checking if any file path can be converted to a relative path. <br>
+If relative path is available, promt a message asking the user if he want to convert. <br>
+if so, convert and return. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>relativePathCheck(filePath = "")</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>filePath</b>(<i>str</i>) ; [default: ""]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
