@@ -118,6 +118,25 @@ check for a valid internet connection. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###checkForVersionUpdates
+<font color = #5f5f5f size = 3pt>
+<i>
+This method will compare the current mns version against the latest available. <br>
+Return False if the current version is the latest version <br>
+Return True if the current version isn't the latest version <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkForVersionUpdates()</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###checkFunctionRedundencyForPackage
 <font size = 3pt>
 <table>

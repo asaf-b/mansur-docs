@@ -11,6 +11,30 @@ The objective of this library is mainting most Block-Core abilities external and
 </font>
 </i>
 <hr width = 100%>
+##Classes
+<hr width = 100%>
+<h5 id = "MnsRigInfo TARGET"></h5>
+###MnsRigInfo [Class]
+<font color = #5f5f5f size = 3pt>
+<i>
+Mansur - About dialog <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>MnsRigInfo(<b>parent</b>(<i>str</i>) ; [default: mnsUIUtils.get_maya_window()],<b>rigInfoData</b>(<i>dict</i>) ; [default: {}])</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>QtWidgets.QDialog</td></tr>
+<tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
+<td><ul>
+<ul>
+<li>iconsDir</li>
+<li>close_btn</li>
+</ul>
+</td></tr>
+</tr>
+</table></font>
+<hr width = 100%>
 ##Defenitions
 <hr width = 100%>
 ###addDefaultAttrsToPlg
@@ -2590,6 +2614,20 @@ Load controls predefined and custom defaults: <br>
 <td><ul>
 <li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
 <li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###loadRigInfo
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadRigInfo(puppetRoot = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>puppetRoot</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
