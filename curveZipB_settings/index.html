@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../releaseNotes/v1.5.0/" class="md-tabs__link">
+      <a href="../releaseNotes/v1.5.1/" class="md-tabs__link">
         Release-Notes
       </a>
     </li>
@@ -1126,6 +1126,19 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../releaseNotes/v1.5.1/" class="md-nav__link">
+      V1.5.1
+    </a>
+  </li>
+
         
           
           
@@ -3404,6 +3417,9 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <tr><td>reverseRightBindCurves</td>
 <td>False</td>
 <td>In some symmetry cases, the right side curves are reversed. You will know if that is the case when rotating the upper or lower main eyelid controls, which will result in a reversed bahviour. If that is the case, check this attribute on.</td></tr>
+<tr><td>doBindTweak</td>
+<td>False</td>
+<td>This is used to create editable curves at guides state, in order to change the bind position for eyelids. This was designed mainly for a closed eye scenario. If you need to tweak the bind position of your mesh pre-construction, check this attribute on. Pre-Construction, skin your mesh then save a bind pose for this module. Then, tweak the curves to their desired construction pose, and save it T pose for this module. You can move between the bind and t shapes by loading bind or t pose ofr this module.</td></tr>
 <tr><td>aroundCenter</td>
 <td>True</td>
 <td>Around center will normalize the result vectors around a given center matrix (module root in this case). This will provide a better range of motion, tranlating the joints around a sphere (assumed from the center matrix). Place your roog guide at the center of the eye (for example) for this to behave as expected</td></tr>
