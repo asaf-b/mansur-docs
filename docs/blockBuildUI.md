@@ -65,6 +65,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#loadMeshesTARGET">loadMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getToolTipForModuleTARGET">getToolTipForModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshSelectionStateTARGET">refreshSelectionState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#loadSelectionToLineEditTARGET">loadSelectionToLineEdit </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#addMeshesTARGET">addMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeMeshesTARGET">removeMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getCurrentMeshesTARGET">getCurrentMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -72,8 +73,10 @@ BLOCK UI Class. <br>
 <li><b><a href="#meshListWidgetMenuTARGET">meshListWidgetMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#recRenameLowerIndexTARGET">recRenameLowerIndex </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePathsChangeTARGET">applyModulePathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#applyModulePresetPathsChangeTARGET">applyModulePresetPathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#moduleBuildGuideTARGET">moduleBuildGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#addModulePathTARGET">addModulePath </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#addModulePresetPathTARGET">addModulePresetPath </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#constructRigInitTARGET">constructRigInit </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#deconstructRigInitTARGET">deconstructRigInit </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -83,9 +86,11 @@ BLOCK UI Class. <br>
 <li><b><a href="#getCorrespondingModuleButtonForModuleTARGET">getCorrespondingModuleButtonForModule </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#symmetrizeControlShapesTARGET">symmetrizeControlShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#gatherAdditionalModulePathsTARGET">gatherAdditionalModulePaths </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#gatherAdditionalModulePresetPathsTARGET">gatherAdditionalModulePresetPaths </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getConstructModeTARGET">getConstructMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getModuleSettingsTARGET">getModuleSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializeAdditionalModulePathsTARGET">initializeAdditionalModulePaths </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#initializeAdditionalModulePresetsPathsTARGET">initializeAdditionalModulePresetsPaths </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initViewTARGET">initView </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadModuleSettingsTARGET">loadModuleSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadRigSettingsTARGET">loadRigSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -93,6 +98,7 @@ BLOCK UI Class. <br>
 <li><b><a href="#pureDuplicateTARGET">pureDuplicate </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#eventFilterTARGET">eventFilter </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeModelPathTARGET">removeModelPath </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#removeModulePresetPathTARGET">removeModulePresetPath </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#removeCustomShapesTARGET">removeCustomShapes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#poseSaveLoadTriggerTARGET">poseSaveLoadTrigger </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -371,6 +377,20 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "loadSelectionToLineEditTARGET"></h5><font color = 464646 size = 3><b>loadSelectionToLineEdit <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>loadSelectionToLineEdit(self, lEditWidget = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>lEditWidget</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "addMeshesTARGET"></h5><font color = 464646 size = 3><b>addMeshes <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 3pt>
 <table>
@@ -476,6 +496,23 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "applyModulePresetPathsChangeTARGET"></h5><font color = 464646 size = 3><b>applyModulePresetPathsChange <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>'Apply' (in build tab, module paths) trigger.</i><br>
+<i>Write the additional paths entered within the UI in the stor json.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>applyModulePresetPathsChange(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "moduleBuildGuideTARGET"></h5><font color = 464646 size = 3><b>moduleBuildGuide <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Action trigger for any build-module button.</i><br>
@@ -501,6 +538,22 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addModulePath(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "addModulePresetPathTARGET"></h5><font color = 464646 size = 3><b>addModulePresetPath <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Add a module path line to the 'module paths' tree trigger.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addModulePresetPath(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -668,6 +721,22 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 </tr>
 </table></font>
+<h5 id = "gatherAdditionalModulePresetPathsTARGET"></h5><font color = 464646 size = 3><b>gatherAdditionalModulePresetPaths <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Gather all existing additional custom patns from the UI.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherAdditionalModulePresetPaths(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (Paths)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
 <h5 id = "getConstructModeTARGET"></h5><font color = 464646 size = 3><b>getConstructMode <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
 <font size = 2pt color= 595959><br>
 <i>Get current UI radio-buttons construction state (All/Branch/Module).</i><br>
@@ -714,6 +783,25 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeAdditionalModulePaths(self, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (Existing Paths)</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "initializeAdditionalModulePresetsPathsTARGET"></h5><font color = 464646 size = 3><b>initializeAdditionalModulePresetsPaths <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Initialize any custom build-modules paths that already exist within the data collect json.</i><br>
+<i>(Read any paths that were added before, on UI draw).</i><br>
+<i>query flag will return the paths only without drawing the items into the UI.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>initializeAdditionalModulePresetsPaths(self, **kwargs)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (Existing Paths)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -841,6 +929,22 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeModelPath(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "removeModulePresetPathTARGET"></h5><font color = 464646 size = 3><b>removeModulePresetPath <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>Remove a module path line from the 'module paths' tree trigger.</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeModulePresetPath(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

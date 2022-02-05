@@ -36,6 +36,7 @@ Main UI class <br>
 <li>arguments</li>
 <li>optArguments</li>
 <li>txtFields</li>
+<li>attrComponentPairing</li>
 <li>defenitionName</li>
 <li>title</li>
 <li>preDefinedArgs</li>
@@ -49,8 +50,9 @@ Main UI class <br>
 <li>dividerLayout</li>
 <li>allCollapsible</li>
 <li>widgetRelationships</li>
-<li>mainVLayout</li>
 <li>rootGuide</li>
+<li>modArgs</li>
+<li>mainVLayout</li>
 <li>customRunCommand</li>
 <li>fullList</li>
 </ul>

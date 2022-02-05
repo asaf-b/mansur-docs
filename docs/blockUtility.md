@@ -3436,6 +3436,28 @@ Set ALL relevnt controls within a rigTop, to their color based on their type. <b
 </tr>
 </table></font>
 <hr width = 100%>
+###symmetrizeCGShape
+<font color = #5f5f5f size = 3pt>
+<i>
+A simple method to symmetrize custom guides nurbs shapes when aplicable <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>symmetrizeCGShape(mode = 0, direction = 0, cGuides = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>direction</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>cGuides</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###symmetrizePlg
 <font color = #5f5f5f size = 3pt>
 <i>
