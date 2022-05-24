@@ -82,6 +82,15 @@ Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that w
 <tr><td>doSpring</td>
 <td>False</td>
 <td>This feature will create a spring node below the control master. This will result in a procedural simple spring action. In case meshTweaker feature was selected, the slave control will not be visible. This feature will NOT be created in case isLocal is set to ON.</td></tr>
+<tr><td>springX</td>
+<td>True</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>springY</td>
+<td>True</td>
+<td>Comment wasn't inserted</td></tr>
+<tr><td>springZ</td>
+<td>True</td>
+<td>Comment wasn't inserted</td></tr>
 <tr><td>defaultStiffness</td>
 <td>0.5</td>
 <td>Comment wasn't inserted</td></tr>

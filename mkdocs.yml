@@ -188,22 +188,44 @@ nav:
               - curveZipB:
                 - curveZipB_settings.md
                 - curveZipB.md
-              - lips:
-                - lips_settings.md
-                - lips.md
+              - lipsB:
+                - lipsB_settings.md
+                - lipsB.md
             - general:
+              - curveAttachment:
+                - curveAttachment_settings.md
+                - curveAttachment.md
               - FKChain:
                 - FKChain_settings.md
                 - FKChain.md
               - freeControl:
                 - freeControl_settings.md
                 - freeControl.md
+              - localClump:
+                - localClump_settings.md
+                - localClump.md
               - lookAtControl:
                 - lookAtControl_settings.md
                 - lookAtControl.md
               - simpleSquash:
                 - simpleSquash_settings.md
                 - simpleSquash.md
+            - mechanical:
+              - chasis:
+                - chasis_settings.md
+                - chasis.md
+              - hydraulicPiston:
+                - hydraulicPiston_settings.md
+                - hydraulicPiston.md
+              - linkChain:
+                - linkChain_settings.md
+                - linkChain.md
+              - sphereRoll:
+                - sphereRoll_settings.md
+                - sphereRoll.md
+              - wheel:
+                - wheel_settings.md
+                - wheel.md
           - moduleVisUI:
             - moduleVisUI.md
           - picker2:

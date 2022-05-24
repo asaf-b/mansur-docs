@@ -30,12 +30,6 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <tr><td>upCurveOffset</td>
 <td>1.0</td>
 <td>Offset value for the up curve generation</td></tr>
-<tr><td>reverseCorners</td>
-<td>False</td>
-<td>In case you build this module and the zip controls aren't matching their corner (possibly due to a wrong order of vertex selection), set this attribute to True, which should correct the mismatch</td></tr>
-<tr><td>reverseRightBindCurves</td>
-<td>False</td>
-<td>In some symmetry cases, the right side curves are reversed. You will know if that is the case when rotating the upper or lower main eyelid controls, which will result in a reversed bahviour. If that is the case, check this attribute on.</td></tr>
 <tr><td>doBindTweak</td>
 <td>False</td>
 <td>This is used to create editable curves at guides state, in order to change the bind position for eyelids. This was designed mainly for a closed eye scenario. If you need to tweak the bind position of your mesh pre-construction, check this attribute on. Pre-Construction, skin your mesh then save a bind pose for this module. Then, tweak the curves to their desired construction pose, and save it T pose for this module. You can move between the bind and t shapes by loading bind or t pose ofr this module.</td></tr>
@@ -67,7 +61,7 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <td>0.15</td>
 <td>Scale multiplier for the remote control style controls for upper and lower lids</td></tr>
 <tr><td>uiCtrlsPositionOffset</td>
-<td>0.5</td>
+<td>1.0</td>
 <td>Offset value (Pointing away from the root guide) to offset the remote control style controls</td></tr>
 <tr><td>doZipControls</td>
 <td>True</td>

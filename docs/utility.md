@@ -795,11 +795,22 @@ Based on the given flags, lock/unlock, hide/unhide attributes for the given node
 </table></font>
 <hr width = 100%>
 ###mnsLicStatusCheck
+<font color = #5f5f5f size = 3pt>
+<i>
+modes: <br>
+0 = Available for all <br>
+1 = Available for edit only <br>
+</i>
+<br>
+</font>
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsLicStatusCheck()</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mnsLicStatusCheck(mode = 0)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mode</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
 </tr>

@@ -127,6 +127,21 @@ A main CtrlCreate function calls a veriaty of pre-defined shape creation, then h
 </tr>
 </table></font>
 <hr width = 100%>
+###createMirrorGroup
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createMirrorGroup(nameStd, symmetryType = 0)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>nameStd</b></li>
+<li><b>symmetryType</b>(<i>int</i>) ; [default: 0]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###createOffsetRigMasterAttrForTransform
 <font size = 3pt>
 <table>

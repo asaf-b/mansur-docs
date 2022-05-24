@@ -48,6 +48,7 @@ Any name related methods are held by this class. <br>
 <li><b><a href="#findNextAlphaIncrementTARGET">findNextAlphaIncrement </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#findNextIncrementTARGET">findNextIncrement </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#splitNameTARGET">splitName </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#splitDefinedNameTARGET">splitDefinedName </b></a> <font size = 2pt><i>[method]</i></font></li>
 </ul>
 </td>
 </tr>
@@ -124,6 +125,22 @@ Any name related methods are held by this class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitName(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "splitDefinedNameTARGET"></h5><font color = 464646 size = 3><b>splitDefinedName <font size = 2pt> [<a href="#MnsNameStd TARGET">MnsNameStd </a> class method] </font></font></b>
+<font size = 2pt color= 595959><br>
+<i>This function splits a given object name as string into an MnsNameStd object</i><br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitDefinedName(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>

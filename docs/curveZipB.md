@@ -9,7 +9,7 @@ This facial module was created to allow adavnced control over eyelids and eyelas
 Based on settings, this module will create a very flexible control over eyelids, and if choosen (Attachment Curves) to eyelashes on top of the eyelids as well. <br>
 The main features of this modules are: Joint positions based on a center matrix (Around the eye), Blink controls, Blink height control, Eyelid tweak controls (dynamic), Zip controls, and much more. <br>
 The joint structure of this module will be dictated by input vertices on a given mesh. <br>
-Note: Please select upper and lower vertices along a single closed loop, selecting each section from inner corener to outer corenr. <br>
+Note: Please select upper and lower vertices along a single closed loop <br>
  <br>
 </font>
 </i>

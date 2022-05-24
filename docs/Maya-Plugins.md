@@ -663,8 +663,10 @@ Curve based node.
 <tr><td>allToMidPoint</td><td>allToMidPoint</td><td>float</td><td>Blend both curves to mid-curve.</td></tr>
 <tr><td>upperCurlBaseMatrix</td><td>upperCurlBaseMatrix</td><td>matrix</td><td>Base upper matrix to calculate offsets before calculating the curl.</td></tr>
 <tr><td>upperCurlMatrix</td><td>upperCurlMatrix</td><td>matrix</td><td> Upper matrix for calculating the curl.</td></tr>
+<tr><td>upperCurlFalloff</td><td>upperCurlFalloff</td><td>float</td><td> Upper curl falloff</td></tr>
 <tr><td>lowerCurlBaseMatrix</td><td>lowerCurlBaseMatrix</td><td>matrix</td><td>Base lower matrix to calculate offsets before calculating the curl.</td></tr>
 <tr><td>lowerCurlMatrix</td><td>lowerCurlMatrix</td><td>matrix</td><td> Lower matrix for calculating the curl.</td></tr>
+<tr><td>lowerCurlFalloff</td><td>lowerCurlFalloff</td><td>float</td><td> Lower curl falloff</td></tr>
 <tr><td>pushOutA</td><td>pushOutA</td><td>float</td><td>Curves push-out added value.</td></tr>
 <tr><td>pushOutB</td><td>pushOutB</td><td>float</td><td>Curves push-out added value.</td></tr>
 <tr><td>zipStart</td><td>zipStart</td><td>float</td><td>Zip start value.</td></tr>
@@ -892,7 +894,9 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td>curve</td><td>crv</td><td>nurbsCurve</td><td>Input curve to sample.</td></tr>
 <tr><td>upCurve</td><td>upCrv</td><td>nurbsCurve</td><td>Input up curve to sample.</td></tr>
 <tr><td>bindCurve</td><td>bindCrv</td><td>nurbsCurve</td><td>Input bind curve to sample. Used only in parametrically-uniform build mode.</td></tr>
+<tr><td>aimCurve</td><td>aimCurve</td><td>nurbsCurve</td><td>Input aim curve to sample. Used only in curveAim rotation mode.</td></tr>
 <tr><td>upObject</td><td>upObj</td><td>matrix</td><td>Input up object matrix to use if requsted.</td></tr>
+<tr><td>objectOrientUpAxis</td><td>objectOrientUpAxis</td><td>enum</td><td>In case object orient up mode is selected, which axis to use.</td></tr>
 <tr><td>aimObject</td><td>aimObj</td><td>matrix</td><td>Input aim object matrix to use if requsted.</td></tr>
 <tr><td>globalScale</td><td>globalScale</td><td>float</td><td>Global scale multiplier.</td></tr>
 <tr><td>numOutputs</td><td>numO</td><td>int</td><td>Number of outputs/samples.</td></tr>
@@ -1114,7 +1118,9 @@ It is recommended to avoid keeping baseMesh and startPosition plugs live.
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
 <tr><td>mesh</td><td>mesh</td><td>mesh</td><td>Input mesh to rivet to.</td></tr>
-<tr><td>positionMode</td><td>positionMode</td><td>enum</td><td> position mode. 0 is closest face center, 1 is closest vertex</td></tr>
+<tr><td>positionMode</td><td>positionMode</td><td>int</td><td> position mode. 0 is closest face center, 1 is closest vertex</td></tr>
+<tr><td>upMode</td><td>upMode</td><td>int</td><td> up mode. 0 is closest vertex, 1 is input up matrix.</td></tr>
+<tr><td>upMatrix</td><td>upMatrix</td><td>int</td><td> Up matrix to use in case upMode is set to 1.</td></tr>
 <tr><td>targetWorldMatrix</td><td>targetWorldMatrix</td><td>matrix</td><td>Input mesh world matrix.</td></tr>
 <tr><td>rivet</td><td>rivet</td><td>compound (Array)</td><td>Input rivets compound array.</td></tr>
 <tr><td>rivetStartPosition</td><td>rivetStartPosition</td><td>matrix</td><td>Input start position. Rivet position will be calculated from this origin matrix.</td></tr>
