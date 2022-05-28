@@ -1,16 +1,32 @@
 <body>
-#lips
+#curveZip
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>
 <i>
 Author: Asaf Ben-Zur <br>
-Best used for: Lips <br>
-This module has been depreciated, please use LipsB module. <br>
+Best used for:  <br>
+This module is deprecated. Please use CurveZipB. <br>
  <br>
 </font>
 </i>
 <hr width = 100%>
 ##Defenitions
+<hr width = 100%>
+###connectCustomGuidesToPoc
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>connectCustomGuidesToPoc(mansur, guides, cGuides)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mansur</b></li>
+<li><b>guides</b></li>
+<li><b>cGuides</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
 <hr width = 100%>
 ###construct
 <font size = 3pt>
@@ -37,6 +53,28 @@ This module has been depreciated, please use LipsB module. <br>
 <td><ul>
 <li><b>mansur</b></li>
 <li><b>rootGuide</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###createTangentsForCtrl
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createTangentsForCtrl(mansur, MnsBuildModule, ctrl, btcNode, cornerACtrl, cornerBCtrl, nameID, doCornerTangents, mainCtrl)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>mansur</b></li>
+<li><b>MnsBuildModule</b></li>
+<li><b>ctrl</b></li>
+<li><b>btcNode</b></li>
+<li><b>cornerACtrl</b></li>
+<li><b>cornerBCtrl</b></li>
+<li><b>nameID</b></li>
+<li><b>doCornerTangents</b></li>
+<li><b>mainCtrl</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -99,22 +137,6 @@ This module has been depreciated, please use LipsB module. <br>
 <li><b>mansur</b></li>
 <li><b>guides</b></li>
 <li><b>mnsBuildModule</b>(<i>str</i>) ; [default: None]</li>
-<li><b>**kwargs</b></li>
-</ul></td>
-</tr>
-<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
-</tr>
-</table></font>
-<hr width = 100%>
-###postConstruct
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>postConstruct(mansur, MnsBuildModule, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>mansur</b></li>
-<li><b>MnsBuildModule</b></li>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>

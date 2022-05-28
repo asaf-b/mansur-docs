@@ -154,8 +154,6 @@ nav:
             - install:
               - install.md
             - productRelease.md
-          - webAppSimulator:
-            - webAppSimulator.md
         - block:
           - characterDefenition:
             - characterDefenitionUI.md
@@ -210,6 +208,13 @@ nav:
               - simpleSquash:
                 - simpleSquash_settings.md
                 - simpleSquash.md
+            - legacy:
+              - curveZip:
+                - curveZip_settings.md
+                - curveZip.md
+              - lips:
+                - lips_settings.md
+                - lips.md
             - mechanical:
               - chasis:
                 - chasis_settings.md
