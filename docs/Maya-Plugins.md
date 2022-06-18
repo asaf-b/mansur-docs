@@ -897,6 +897,7 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td>aimCurve</td><td>aimCurve</td><td>nurbsCurve</td><td>Input aim curve to sample. Used only in curveAim rotation mode.</td></tr>
 <tr><td>upObject</td><td>upObj</td><td>matrix</td><td>Input up object matrix to use if requsted.</td></tr>
 <tr><td>objectOrientUpAxis</td><td>objectOrientUpAxis</td><td>enum</td><td>In case object orient up mode is selected, which axis to use.</td></tr>
+<tr><td>objectOrientAimAxis</td><td>objectOrientAimAxis</td><td>enum</td><td>In case object orient aim mode is selected, which axis to use.</td></tr>
 <tr><td>aimObject</td><td>aimObj</td><td>matrix</td><td>Input aim object matrix to use if requsted.</td></tr>
 <tr><td>globalScale</td><td>globalScale</td><td>float</td><td>Global scale multiplier.</td></tr>
 <tr><td>numOutputs</td><td>numO</td><td>int</td><td>Number of outputs/samples.</td></tr>

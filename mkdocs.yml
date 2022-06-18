@@ -98,6 +98,7 @@ nav:
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
+      - releaseNotes/v2.0.0.md
       - releaseNotes/v1.5.2.md
       - releaseNotes/v1.5.1.md
       - releaseNotes/v1.5.0.md
@@ -216,9 +217,9 @@ nav:
                 - lips_settings.md
                 - lips.md
             - mechanical:
-              - chasis:
-                - chasis_settings.md
-                - chasis.md
+              - chassis:
+                - chassis_settings.md
+                - chassis.md
               - hydraulicPiston:
                 - hydraulicPiston_settings.md
                 - hydraulicPiston.md
