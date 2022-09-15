@@ -95,6 +95,7 @@ nav:
           - userGuides/tutorials/mansurRig_FacialRigging/09_Tweakers-And-Symmetry.md
           - userGuides/tutorials/mansurRig_FacialRigging/10_Finalizing-The-Rig.md
         - userGuides/tutorials/Variable-FK-Tail.md
+        - userGuides/tutorials/Creating-A-Picker.md
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
