@@ -104,3 +104,44 @@ Use these methods to operate on Block Rig's or specific components within it:
     #construct command with default arguments- selection based(fromNodes = Null, mode = 0)
     blkUtils.deconstructRig()
     ```
+
+<br>
+
+#### Altering Module settings via the API
+<ol>
+    <li>Some settings require an action post change (like joint structure members), so changing the attributes only isn't sufficiant, you need to run an update command.</li>
+    <li>The update command has a few requirements - settings update need to come in a dictionary format, passed in with a double asterisk (**) keyword arguments. The settings must contain a "settingsHolder" definition, which is the root guide, a "rigTop" which is the rig top node, and "originalArguments" dictionary that define the settings format, in order to update the module correctly.</li>
+    <li>Some settings have very specific data format (like channel control) and you'll need to be very accurate when changing settings of this type.</li>
+</ol>
+
+=== "Altering Module settings via the API"
+    
+    ``` python
+    # Libraries import
+    from mansur.block import blockBuildUI
+    from mansur.core import utility as mnsUtils
+    blockWin = blockBuildUI.MnsBlockBuildUI()
+    
+    #defining mandatory variables for the update settings command
+    rigTop = mnsUtils.validateNameStd("c_blkChar_A001_blkRig")
+    rootGuide = mnsUtils.validateNameStd("c_FKChain_A001_rCtrl")
+    origArgs, split = blockWin.getModuleSettings(rootGuide)
+    
+    #creating the settings dictionary
+    settings = {"settingsHolder": rootGuide, #mandatory
+                "origArgs": origArgs, #mandatory
+                "rigTop": rigTop, #mandatory
+                "doInterpolationJoints": True, #exmaple change
+                "interpolationJoints": 10} #example change
+    
+    #running the update command
+    blockWin.updateSettings(**settings)
+    ```
+
+In this example, I created an FK chain module with all default settings.
+<br>
+Now I want to update the settings and change "doInterpJoints" and the number of interpJoints.
+<br>
+I passed all required data, and then the settings I want to change.
+<br>
+Once you run this code, you'll see that not only the attributes have changed, the joint structure is being rebuilt correctly as these are jointStruct members attributes.
