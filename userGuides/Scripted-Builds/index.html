@@ -664,6 +664,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#altering-module-settings-via-the-api" class="md-nav__link">
+    Altering Module settings via the API
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3889,6 +3896,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#altering-module-settings-via-the-api" class="md-nav__link">
+    Altering Module settings via the API
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4002,6 +4016,44 @@ In some cases, you may need to operate on Block rigs extarnaly, without using Bl
 
 </div>
 </div>
+<p><br></p>
+<h4 id="altering-module-settings-via-the-api">Altering Module settings via the API</h4>
+<p><ol>
+    <li>Some settings require an action post change (like joint structure members), so changing the attributes only isn't sufficiant, you need to run an update command.</li>
+    <li>The update command has a few requirements - settings update need to come in a dictionary format, passed in with a double asterisk (**) keyword arguments. The settings must contain a "settingsHolder" definition, which is the root guide, a "rigTop" which is the rig top node, and "originalArguments" dictionary that define the settings format, in order to update the module correctly.</li>
+    <li>Some settings have very specific data format (like channel control) and you'll need to be very accurate when changing settings of this type.</li>
+</ol></p>
+<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Altering Module settings via the API</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1"># Libraries import</span>
+<span class="kn">from</span> <span class="nn">mansur.block</span> <span class="kn">import</span> <span class="n">blockBuildUI</span>
+<span class="kn">from</span> <span class="nn">mansur.core</span> <span class="kn">import</span> <span class="n">utility</span> <span class="k">as</span> <span class="n">mnsUtils</span>
+<span class="n">blockWin</span> <span class="o">=</span> <span class="n">blockBuildUI</span><span class="o">.</span><span class="n">MnsBlockBuildUI</span><span class="p">()</span>
+
+<span class="c1">#defining mandatory variables for the update settings command</span>
+<span class="n">rigTop</span> <span class="o">=</span> <span class="n">mnsUtils</span><span class="o">.</span><span class="n">validateNameStd</span><span class="p">(</span><span class="s2">&quot;c_blkChar_A001_blkRig&quot;</span><span class="p">)</span>
+<span class="n">rootGuide</span> <span class="o">=</span> <span class="n">mnsUtils</span><span class="o">.</span><span class="n">validateNameStd</span><span class="p">(</span><span class="s2">&quot;c_FKChain_A001_rCtrl&quot;</span><span class="p">)</span>
+<span class="n">origArgs</span><span class="p">,</span> <span class="n">split</span> <span class="o">=</span> <span class="n">blockWin</span><span class="o">.</span><span class="n">getModuleSettings</span><span class="p">(</span><span class="n">rootGuide</span><span class="p">)</span>
+
+<span class="c1">#creating the settings dictionary</span>
+<span class="n">settings</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;settingsHolder&quot;</span><span class="p">:</span> <span class="n">rootGuide</span><span class="p">,</span> <span class="c1">#mandatory</span>
+            <span class="s2">&quot;origArgs&quot;</span><span class="p">:</span> <span class="n">origArgs</span><span class="p">,</span> <span class="c1">#mandatory</span>
+            <span class="s2">&quot;rigTop&quot;</span><span class="p">:</span> <span class="n">rigTop</span><span class="p">,</span> <span class="c1">#mandatory</span>
+            <span class="s2">&quot;doInterpolationJoints&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="c1">#exmaple change</span>
+            <span class="s2">&quot;interpolationJoints&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span> <span class="c1">#example change</span>
+
+<span class="c1">#running the update command</span>
+<span class="n">blockWin</span><span class="o">.</span><span class="n">updateSettings</span><span class="p">(</span><span class="o">**</span><span class="n">settings</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+</div>
+<p>In this example, I created an FK chain module with all default settings.
+<br>
+Now I want to update the settings and change "doInterpJoints" and the number of interpJoints.
+<br>
+I passed all required data, and then the settings I want to change.
+<br>
+Once you run this code, you'll see that not only the attributes have changed, the joint structure is being rebuilt correctly as these are jointStruct members attributes.</p>
                 
               
               
