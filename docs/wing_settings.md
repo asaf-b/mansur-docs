@@ -4,11 +4,18 @@
 <font color = #5f5f5f size = 3pt>
 <i>
 Author: Asaf Ben-Zur <br>
-Best used for: Arms, Legs <br>
-This module was designed to create a generic 3 joint limb control. <br>
-This module will create both the FK and IK controls, and the standard blend control. <br>
-On top of the standard behaviour, based on parameters, this module can also include bendy limb controls (as many as you want), Arc layer and Sleeve layer. <br>
-Note: When used as a leg, try using the foot module as a direct child of this module to automatically achive a connected behaviour. <br>
+Best used for: Bird Wings <br>
+This module is designed for birds (feathered) wings. <br>
+This is a compound module. <br>
+The main module is based on the limb module, including most of it's features. <br>
+On top of the main limb module, there is a compound FK chain modules extending from each of the main modules main guides, to create a global feathers silhouette control. <br>
+Out of these compounds, a grid of interp-joints is created to control the shape's deformation, using mnsPointOnCuveNode as a driver. <br>
+As a bird wing is incredibly complex, controlling it precisely is incredibly difficult. <br>
+With that in mind, the grid of interp joints is designed to control the overall shape of the feathers as a group, mid-controls to curl them as a group, as well as control each feather row individually. <br>
+Use featherJoints attribute to define the number of feathers along the wings main skeleton. <br>
+Post joint-struct creation, use the custom position adjustment attribute on the root-guide to adjust the position of the joint grid to match your needs. <br>
+This module also contains multiple features to make animation even better: <br>
+Feathers spring, global wave control, individual feather control, bendy limbs, extension-to-look-at for easy wing fold control. <br>
 </i>
 <br>
 </font>
