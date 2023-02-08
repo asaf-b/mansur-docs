@@ -927,6 +927,9 @@ In combination with mnsBuildTransformsCurve will result in a very advanced and r
 <tr><td>aimAxis</td><td>aimAxis</td><td>enum</td><td>Aim axis choice.</td></tr>
 <tr><td>upAxis</td><td>upAxis</td><td>enum</td><td>Up axis choice.</td></tr>
 <tr><td>customPointsUpMode</td><td>cusPointsUpMode</td><td>enum</td><td>Custom tweakers rotation up mode.</td></tr>
+<tr><td>enableParamAdjust</td><td>enableParamAdjust</td><td>bool</td><td> Enable Manual parameter adjustments.</td></tr>
+<tr><td>paramAdjustment</td><td>paramAdjustment</td><td>double</td><td>Manual parameter adjustments array input. Use this parameter to adjust calculated curve parameters manually. This parameter is addative.</td></tr>
+<tr><td>aimParamAdjustment</td><td>aimParamAdjustment</td><td>double</td><td>Manual parameter adjustments array input for the aim curve param. Use this parameter to adjust calculated aim curve parameters manually. This parameter is addative.</td></tr>
 <tr><td>excludePolesTranslation</td><td>excludePolesTranslation</td><td>bool</td><td>exclude translation set for base and tip.</td></tr>
 <tr><td>excludePolesRotation</td><td>excludePolesRotation</td><td>bool</td><td>exclude rotation set for base and tip.</td></tr>
 <tr><td>excludeBaseRotation</td><td>excludeBaseRotation</td><td>bool</td><td>exclude rotation set for base. Only if excludePolesRotation is set to True.</td></tr>

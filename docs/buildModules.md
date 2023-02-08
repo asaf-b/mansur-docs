@@ -56,6 +56,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <li>pureParent</li>
 <li>attrHostCtrl</li>
 <li>extraChannelsHost</li>
+<li>compundModules</li>
 <li>moduleTop</li>
 <li>animGrp</li>
 <li>animStaticGrp</li>
@@ -210,6 +211,9 @@ The actual flow of the build is independent of the modules setup internals. <br>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+<td><ul>
+<li><b>buildCompound</b>(<i>bool</i>) ; [default: True]</li>
+</ul></td>
 </tr>
 </table></font>
 <h5 id = "gatherAllDependeciesTARGET"></h5><font color = 464646 size = 3><b>gatherAllDependecies <font size = 2pt> [<a href="#MnsBuildModule TARGET">MnsBuildModule </a> class method] </font></font></b>
@@ -291,6 +295,7 @@ The actual flow of the build is independent of the modules setup internals. <br>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
 <td><ul>
+<li><b>buildCompound</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>blkSide</b>(<i>str</i>) ; [default: center]</li>
 <li><b>body</b>(<i>str</i>) ; [default: guideCtrl]</li>
 <li><b>alpha</b>(<i>str</i>) ; [default: A]</li>
@@ -344,7 +349,9 @@ The actual flow of the build is independent of the modules setup internals. <br>
 <td><ul>
 <li><b>skipUI</b>(<i>bool</i>)</li>
 <li><b>skipGuidesCreation</b>(<i>bool</i>)</li>
+<li><b>buildCompound</b>(<i>bool</i>) ; [default: True]</li>
 <li><b>settingsHolder</b>(<i>str</i>) ; [default: None]</li>
+<li><b>preDefinedSettings</b>(<i>str</i>) ; [default: {}]</li>
 <li><b>symmetrize</b>(<i>bool</i>)</li>
 </ul></td>
 </tr>
@@ -1153,6 +1160,24 @@ In case a rigTop already exists, it will first be validated, then it's setting w
 </table></font>
 <hr width = 100%>
 ##Defenitions
+<hr width = 100%>
+###createModuleCompound
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createModuleCompound(compoundMaster, moduleName, bmButtonList, parent, settings)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>compoundMaster</b></li>
+<li><b>moduleName</b></li>
+<li><b>bmButtonList</b></li>
+<li><b>parent</b></li>
+<li><b>settings</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
 <hr width = 100%>
 ###updateModules
 <font size = 3pt>

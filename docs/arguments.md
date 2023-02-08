@@ -47,6 +47,7 @@ These class members will dectate any behavior derived from an actual function ob
 <li>meshComponents</li>
 <li>disabled</li>
 <li>multiRowList</li>
+<li>alphabeticalOnly</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>

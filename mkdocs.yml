@@ -186,6 +186,9 @@ nav:
               - meta:
                 - meta_settings.md
                 - meta.md
+              - wing:
+                - wing_settings.md
+                - wing.md
             - character_face:
               - curveZipB:
                 - curveZipB_settings.md

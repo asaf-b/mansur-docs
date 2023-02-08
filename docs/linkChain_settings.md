@@ -37,6 +37,9 @@ Best used for: Wheels <br>
 <tr><td>mapRoatationToAxis</td>
 <td>0</td>
 <td>Comment wasn't inserted</td></tr>
+<tr><td>rotationMode</td>
+<td>0</td>
+<td>In case your chain links are connected to one another- it is recommended to use lookAtNext. In case there isn't a connection between your links, curveTangent might be a better choice.</td></tr>
 <tr><td>slaveChannelControl</td>
 <td>
 <font size = 2pt>

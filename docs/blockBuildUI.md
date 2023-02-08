@@ -55,7 +55,6 @@ BLOCK UI Class. <br>
 <li><b><a href="#initializePrefDirsTARGET">initializePrefDirs </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#plgMatchTARGET">plgMatch </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#promoteModuleTARGET">promoteModule </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#removeGuidesTARGET">removeGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#resizeWindowBasedOnLogTARGET">resizeWindowBasedOnLog </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#sceneSelectFromWidgetsTARGET">sceneSelectFromWidgets </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#sortMeshListsTARGET">sortMeshLists </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -71,7 +70,6 @@ BLOCK UI Class. <br>
 <li><b><a href="#getCurrentMeshesTARGET">getCurrentMeshes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#echoLogTARGET">echoLog </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#meshListWidgetMenuTARGET">meshListWidgetMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#recRenameLowerIndexTARGET">recRenameLowerIndex </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePathsChangeTARGET">applyModulePathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#applyModulePresetPathsChangeTARGET">applyModulePresetPathsChange </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#moduleBuildGuideTARGET">moduleBuildGuide </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -104,7 +102,6 @@ BLOCK UI Class. <br>
 <li><b><a href="#loadWindowTARGET">loadWindow </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getDefaultsModeTARGET">getDefaultsMode </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#symmetrizeModuleTARGET">symmetrizeModule </b></a> <font size = 2pt><i>[method]</i></font></li>
-<li><b><a href="#insertGuidesTARGET">insertGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#newRigTopTrigTARGET">newRigTopTrig </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#orientGuidesTARGET">orientGuides </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#updateSettingsTARGET">updateSettings </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -235,19 +232,6 @@ BLOCK UI Class. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>promoteModule(self)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "removeGuidesTARGET"></h5><font color = 464646 size = 3><b>removeGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeGuides(self)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
@@ -458,22 +442,6 @@ BLOCK UI Class. <br>
 <td><ul>
 <li><b>self</b></li>
 <li><b>position</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "recRenameLowerIndexTARGET"></h5><font color = 464646 size = 3><b>recRenameLowerIndex <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recRenameLowerIndex(self, root = None, moduleGuides = [], moduleJoints = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>root</b>(<i>str</i>) ; [default: None]</li>
-<li><b>moduleGuides</b>(<i>list</i>) ; [default: []]</li>
-<li><b>moduleJoints</b>(<i>list</i>) ; [default: []]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
@@ -1033,24 +1001,6 @@ BLOCK UI Class. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>self</b></li>
-</ul></td>
-</tr>
-<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
-</tr>
-</table></font>
-<h5 id = "insertGuidesTARGET"></h5><font color = 464646 size = 3><b>insertGuides <font size = 2pt> [<a href="#MnsBlockBuildUI TARGET">MnsBlockBuildUI </a> class method] </font></font></b>
-<font size = 2pt color= 595959><br>
-<i>This method is used primarily through Block UI, to insert guides above/below any guide selection.</i><br>
-<i>This will handle all exceptions, as well as re-analyze and re-orgenize each module based on the action performed.</i><br>
-</font>
-<font size = 3pt>
-<table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>insertGuides(self, mode = "above")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
-<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
-<td><ul>
-<li><b>self</b></li>
-<li><b>mode</b>(<i>str</i>) ; [default: "above"]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

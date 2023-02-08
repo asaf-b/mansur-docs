@@ -1360,6 +1360,20 @@ Recusrsivly collect all child modules from the given rootGuide's decendents. <br
 </tr>
 </table></font>
 <hr width = 100%>
+###getCompundChildren
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCompundChildren(rootGuide = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootGuide</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###getCsGrpFromRigTop
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -1830,6 +1844,30 @@ Attempt to collect a 'root guide' relative from the current selection <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsBuildModule</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###getModuleSettings
+<font color = #5f5f5f size = 3pt>
+<i>
+Get passed in module settings. <br>
+First get the default settings and values from the build-module directory, <br>
+then compare against the rootGuide attributes, and return the filtered and altered settings. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getModuleSettings(rootGuide, firstAttempt = True, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>rootGuide</b></li>
+<li><b>firstAttempt</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -2468,6 +2506,29 @@ Simple import method for control shapes. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###insertGuides
+<font color = #5f5f5f size = 3pt>
+<i>
+This method is used primarily through Block UI, to insert guides above/below any guide selection. <br>
+This will handle all exceptions, as well as re-analyze and re-orgenize each module based on the action performed. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>insertGuides(amount = 0, mode = "above", **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>amount</b>(<i>int</i>) ; [default: 0]</li>
+<li><b>mode</b>(<i>str</i>) ; [default: "above"]</li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###jointRotateToOrientTrigger
 <font size = 3pt>
 <table>
@@ -3002,6 +3063,22 @@ Recursivly attempt to get a parent joint starting with a given root object, scal
 </tr>
 </table></font>
 <hr width = 100%>
+###recRenameLowerIndex
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recRenameLowerIndex(root = None, moduleGuides = [], moduleJoints = [])</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>root</b>(<i>str</i>) ; [default: None]</li>
+<li><b>moduleGuides</b>(<i>list</i>) ; [default: []]</li>
+<li><b>moduleJoints</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###recSearchForGuideRootInParents
 <font color = #5f5f5f size = 3pt>
 <i>
@@ -3075,6 +3152,20 @@ This method is also the one used by the CNS Tool. <br>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ctrls</b>(<i>list</i>) ; [default: []]</li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###removeGuides
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeGuides(**kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
