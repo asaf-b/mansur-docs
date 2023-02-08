@@ -100,6 +100,7 @@ nav:
     - Help-Desk:
       - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
+      - releaseNotes/v2.1.0.md
       - releaseNotes/v2.0.0.md
       - releaseNotes/v1.5.2.md
       - releaseNotes/v1.5.1.md
