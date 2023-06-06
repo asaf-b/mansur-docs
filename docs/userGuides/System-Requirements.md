@@ -6,33 +6,31 @@
 <table cellpadding= 0 cellspacing = 0>
 	<tr>
 		<td></td>
-		<td colspan=2>Maya 2018</td>
-		<td colspan=2>Maya 2019</td>
-		<td colspan=2>Maya 2020</td>
-		<td colspan=2>Maya 2022</td>
+		<td colspan=2>Maya 2018 - 2022</td>
 		<td colspan=2>Maya 2023</td>
+		<td colspan=2>Maya 2024</td>
 	</tr>
 	<tr>
 		<td></td>
 		<td>Win</td><td>Linux</td>
 		<td>Win</td><td>Linux</td>
 		<td>Win</td><td>Linux</td>
-		<td>Win</td><td>Linux</td>
-		<td>Win</td><td>Linux</td>
 	</tr>
 	<tr>
-		<td>2.0.0+</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>2.2.0</td>
 		<td>&#x2726;</td><td>&#x2726;</td>
 		<td>&#x2726;</td><td>&#x2726;</td>
 		<td>&#x2726;</td><td>&#x2726;</td>
 	</tr>
 	<tr>
-		<td>1.5.2-</td>
+		<td>2.1.0</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
 		<td></td><td></td>
-		<td></td><td></td>
-		<td></td><td></td>
+	</tr>
+	<tr>
+		<td>2.0.0</td>
+		<td>&#x2726;</td><td>&#x2726;</td>
 		<td></td><td></td>
 		<td></td><td></td>
 	</tr>
@@ -46,7 +44,7 @@
     In most cases, no action is required to use Mansur-Rig in Maya.
     In some rare cases (incomplete Maya installation), if missing this component needs to be installed manually.
 
-### Maya 2022 (and above) requirements
+### Maya 2022, 2023 requirements
 
 <ol>
 <li>Mansur-Rig requires a native Maya python module - <b>PyMel</b>. For an unknown reason, Maya 2022 (and above) installation has this module for Python 3 presented as an optional feature. Worse then that, it is un-checked by default:</li>
@@ -60,6 +58,18 @@
 <ol type="a">
 	<li>Install PyMel for Python 3 on an existing Maya installation using <a href = "https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2022/ENU/Maya-Scripting/files/GUID-2AA5EFCE-53B1-46A0-8E43-4CD0B2C72FB4-htm.html" target = "_blank"><u><b>this guide</u></b></a>.</li>
 	<li>Re-installing Maya, making sure you tick the PyMel checkbox.</li>
+</ol>
+
+</li>
+</ol>
+
+### Maya 2024 requirements
+
+<ol>
+<li>Mansur-Rig requires a native Maya python module - <b>PyMel</b>. For an unknown reason, Maya 2024 no longer presents PyMel module installation as an option for users.</li>
+<li>Please use the following guide to install it:
+<ol type="a">
+	<li><a href = "https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=GUID-2AA5EFCE-53B1-46A0-8E43-4CD0B2C72FB4" target = "_blank"><u><b>Install PyMel for Python 3 on an existing Maya 2024 installation</u></b></a>.</li>
 </ol>
 
 </li>
