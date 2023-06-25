@@ -58,6 +58,15 @@ You can also use connectToChannelControl attribute to decide which attributes yo
 </font>
 </td>
 <td>This will determine which channels or axes will be connected to the slaves.</td></tr>
+<tr><td>flipRightX</td>
+<td>False</td>
+<td>This will Flip all connections for the local X channel.</td></tr>
+<tr><td>flipRightY</td>
+<td>False</td>
+<td>This will Flip all connections for the local Y channel.</td></tr>
+<tr><td>flipRightZ</td>
+<td>False</td>
+<td>This will Flip all connections for the local Z channel.</td></tr>
 <tr><td>conformPivot</td>
 <td>True</td>
 <td>When ON, the pivot of the target slaves will be conformed to the pivot of this master control. When OFF, the original pivots of the slaves will be preserved.</td></tr>

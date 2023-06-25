@@ -91,6 +91,15 @@ Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that w
 <tr><td>springZ</td>
 <td>True</td>
 <td>Comment wasn't inserted</td></tr>
+<tr><td>flipRightX</td>
+<td>False</td>
+<td>This will Flip all connections for the local X channel.</td></tr>
+<tr><td>flipRightY</td>
+<td>False</td>
+<td>This will Flip all connections for the local Y channel.</td></tr>
+<tr><td>flipRightZ</td>
+<td>False</td>
+<td>This will Flip all connections for the local Z channel.</td></tr>
 <tr><td>defaultStiffness</td>
 <td>0.5</td>
 <td>Comment wasn't inserted</td></tr>

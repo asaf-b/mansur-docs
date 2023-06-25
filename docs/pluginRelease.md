@@ -77,6 +77,7 @@ pluginRelease UI class <br>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
 <li><b><a href="#getCMakeBaseDirTARGET">getCMakeBaseDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#buildPluginTARGET">buildPlugin </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#linux_mnsLicDigest_2024_addExtraCMakeLinesTARGET">linux_mnsLicDigest_2024_addExtraCMakeLines </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#linux_mnsLicDigest_addExtraCMakeLinesTARGET">linux_mnsLicDigest_addExtraCMakeLines </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectDevDirTARGET">selectDevDir </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#selectRelDirTARGET">selectRelDir </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -123,6 +124,20 @@ pluginRelease UI class <br>
 <li><b>newVersionRootDir</b>(<i>str</i>) ; [default: None]</li>
 <li><b>plat</b>(<i>str</i>) ; [default: "win"]</li>
 <li><b>versionString</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "linux_mnsLicDigest_2024_addExtraCMakeLinesTARGET"></h5><font color = 464646 size = 3><b>linux_mnsLicDigest_2024_addExtraCMakeLines <font size = 2pt> [<a href="#MnsPluginRelease TARGET">MnsPluginRelease </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>linux_mnsLicDigest_2024_addExtraCMakeLines(self, cmakeListsFile = None)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>cmakeListsFile</b>(<i>str</i>) ; [default: None]</li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
