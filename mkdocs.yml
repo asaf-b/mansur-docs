@@ -68,6 +68,7 @@ nav:
         - userGuides/Volume-Joints.md
         - userGuides/Scripted-Builds.md
         - userGuides/LODs-Tool.md
+        - userGuides/Joint-Radius.md
       - Animation-Tools:
         - userGuides/The-Picker.md
         - userGuides/Spaces-IK-FK-Tool.md
