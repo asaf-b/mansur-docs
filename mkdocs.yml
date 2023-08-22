@@ -74,6 +74,7 @@ nav:
         - userGuides/Mocap-And-Game-Tools.md
         - userGuides/Spring-Tool.md
         - userGuides/CNS-Tool.md
+        - userGuides/Game-Exporter.md
       - Tutorials:
         - Mansur-Rig 101:
           - userGuides/tutorials/mansurRig101/01_Introduction.md
