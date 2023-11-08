@@ -50,7 +50,7 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <td>Default value for the Blink height. This dictates the height of the Mid-Meet point between the upper and lower sections</td></tr>
 <tr><td>postSymmetryJntStruct</td>
 <td>True</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In case this setting is set to True, an exception will be triggered to re-build this modules joint structure once the module is symmetrized. Normally this shouldn't be changed by the user.</td></tr>
 </table></font>
 ###EyelidsControls
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
@@ -86,13 +86,13 @@ Note: Please select upper and lower vertices along a single closed loop, selecti
 <td>Tweak controls interpolation type</td></tr>
 <tr><td>flipRightX</td>
 <td>False</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In some cases, based on the symmetry type set, this modules right side controls may behave abnormally on some axes. If this is your case, use this setting to un-flip the abnormally bahaving controls back to norm for the X axis</td></tr>
 <tr><td>flipRightY</td>
 <td>False</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In some cases, based on the symmetry type set, this modules right side controls may behave abnormally on some axes. If this is your case, use this setting to un-flip the abnormally bahaving controls back to norm for the Y axis</td></tr>
 <tr><td>flipRightZ</td>
 <td>False</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In some cases, based on the symmetry type set, this modules right side controls may behave abnormally on some axes. If this is your case, use this setting to un-flip the abnormally bahaving controls back to norm for the Z axis</td></tr>
 </table></font>
 ###FollowRotation
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

@@ -4,7 +4,11 @@
 <font color = #5f5f5f size = 3pt>
 <i>
 Author: Asaf Ben-Zur <br>
-Best used for: Wheels <br>
+Best used for: chassis <br>
+This module will yield four corner controls, which will be avaraged determine the main control's translation and orientation.  <br>
+The aim of this module is creating an easy to use control for a chassis orientation on a vehicle. <br>
+Using the four corner controls, the main joint will be avaraged to detrmine the best orientation and translation for the module. <br>
+Best used alongside geometry constraints to follow a ground mesh for automatic orientation and translation of vehicles.   <br>
 </i>
 <br>
 </font>

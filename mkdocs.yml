@@ -150,11 +150,15 @@ nav:
           - UIUtils.md
           - utility.md
         - globalUtils:
+          - animationExporter:
+            - mnsAnimationExporter.md
           - defSearch:
             - defSearch.md
           - facialMocap:
             - facialMocapUtils.md
             - mnsFacialMocapTool.md
+          - jointRadiusTool:
+            - mnsJointRadiusTool.md
           - dynUI.md
         - adminUtils:
           - documentationBuild:

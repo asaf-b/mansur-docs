@@ -26,7 +26,7 @@ Feathers spring, global wave control, individual feather control, bendy limbs, e
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>interpolationJoints</td>
 <td>5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Increments of 4, starting from 5. This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation</td></tr>
 <tr><td>offsetX</td>
 <td>20.0</td>
 <td>Up curve X value offset for the interpolation joints</td></tr>
@@ -50,25 +50,25 @@ Feathers spring, global wave control, individual feather control, bendy limbs, e
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>featherJoints</td>
 <td>15</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The amount of primary feathers. Ideally, a joint chain will be craeted for each primary feather for the most control in animation. This setting sets the mount of primary feathers, or the amount of feather column chains created</td></tr>
 <tr><td>featherFKSections</td>
 <td>3</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The amount of sections each primary feather joint column will consist of. In case the amount of sections set is 3 for example, a column of 4 joints will be created for the amount of feather joints selected above</td></tr>
 <tr><td>doFeathersSpring</td>
 <td>True</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Choose whether create the automatic feather spring feature or not</td></tr>
 <tr><td>doFeatherIsolatedCtrls</td>
 <td>True</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In case this setting is set to true, the isolated-feather controls feature will be created</td></tr>
 <tr><td>featherFKControlShape</td>
 <td>cube</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Feather FK controls shape</td></tr>
 <tr><td>featherIsolatedControlShape</td>
 <td>square</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Feather isolted controls shape</td></tr>
 <tr><td>extensionLookAtControlShape</td>
 <td>lightPin</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Extensions look-at control shape</td></tr>
 </table></font>
 ###IK
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
@@ -80,7 +80,7 @@ Feathers spring, global wave control, individual feather control, bendy limbs, e
 <td>IK handle softness default value</td></tr>
 <tr><td>iKHandleMatchOrient</td>
 <td></td>
-<td>Select a guide to match the IK-Handle's orientation. This will override the native orientation as well as all symmetry options.</td></tr>
+<td>Select a guide to match the IK-Handle's orientation. This will override the native orientation as well as all symmetry options</td></tr>
 </table></font>
 ###Main-Ctrl-Shapes
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

@@ -84,13 +84,13 @@ Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that w
 <td>This feature will create a spring node below the control master. This will result in a procedural simple spring action. In case meshTweaker feature was selected, the slave control will not be visible. This feature will NOT be created in case isLocal is set to ON.</td></tr>
 <tr><td>springX</td>
 <td>True</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Select whether the X axis should be affected by the spring or not</td></tr>
 <tr><td>springY</td>
 <td>True</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Select whether the Y axis should be affected by the spring or not</td></tr>
 <tr><td>springZ</td>
 <td>True</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Select whether the Z axis should be affected by the spring or not</td></tr>
 <tr><td>flipRightX</td>
 <td>False</td>
 <td>This will Flip all connections for the local X channel.</td></tr>
@@ -102,10 +102,10 @@ Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that w
 <td>This will Flip all connections for the local Z channel.</td></tr>
 <tr><td>defaultStiffness</td>
 <td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Spring stiffness default value</td></tr>
 <tr><td>defaultDamping</td>
 <td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Spring damping default value</td></tr>
 <tr><td>springSlaveControlShape</td>
 <td>lightSphere</td>
 <td>Spring slave control shape</td></tr>
@@ -114,29 +114,29 @@ Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that w
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doInterpOrient</td>
 <td>False</td>
-<td>Comment wasn't inserted</td></tr>
+<td>This feature is used to create a weighten split orientation. When you need to create a weighted orientation for a control between two spaces, use this feature.</td></tr>
 <tr><td>spaceA</td>
 <td></td>
-<td>Comment wasn't inserted</td></tr>
+<td>The first space to be interpolated. This can be a guide, joint, or control.</td></tr>
 <tr><td>spaceB</td>
 <td></td>
-<td>Comment wasn't inserted</td></tr>
+<td>The second space to be interpolated. This can be a guide, joint, or control.</td></tr>
 <tr><td>spaceAWeight</td>
 <td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The deafult weight for the first space. The second space weight will be the complimentary weight adding to 1</td></tr>
 <tr><td>doAngleBasedScale</td>
 <td>False</td>
 <td>create an angle based scale driver, to scale the target slave joint when the angle changes between the two sources. Originally designed for double-chin setup</td></tr>
 <tr><td>scaleWhenAngle</td>
 <td>0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>This setting controls the trigger mode for action. Icreases- means that the trigger for action will occur when the intorpolated angle increases, and do nothing when it decreases. decreases- means that the trigger for action will occur when the intorpolated angle decreases, and do nothing when it increases</td></tr>
 <tr><td>maxScale</td>
 <td>2.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The actions maximum value clamp value</td></tr>
 <tr><td>angleMaxRange</td>
 <td>180.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The maximum angle clamp that the action should be targeted to</td></tr>
 <tr><td>connectToTargetAxis</td>
 <td>1</td>
-<td>Comment wasn't inserted</td></tr>
+<td>This setting will set the target axis to act on. Please map the axis needed to be scaled based on the orientation of your guide</td></tr>
 </table></font>

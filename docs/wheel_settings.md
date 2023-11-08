@@ -5,6 +5,11 @@
 <i>
 Author: Asaf Ben-Zur <br>
 Best used for: Wheels <br>
+A simple module to create an auto-drive for wheels. <br>
+This module will calculate the rotation of a wheel based on the input settings, using the module's world position. <br>
+This will yield an auto-drive for wheels. <br>
+The behaviour will not be confined to a single control being moved, but rather to the modules world position. <br>
+This will apply to translation, as well as rotation, in all directions. <br>
 </i>
 <br>
 </font>
@@ -45,17 +50,17 @@ Best used for: Wheels <br>
 <td>Control channel-box settings</td></tr>
 <tr><td>wheelDiameter</td>
 <td>20.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The driven wheel diameter. This is the base of the calculation and needs to be set accurately</td></tr>
 <tr><td>gearRatio</td>
 <td>1.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In case you target is a driven gear, you can set the diameter above to the driver gears diameter, and set the ratio between them for accurate results</td></tr>
 <tr><td>mapRoatationToAxis</td>
 <td>0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Map the rotation axis needs to be acted on. This is based on the orientaton of your guide</td></tr>
 <tr><td>reverseDirection</td>
 <td>False</td>
-<td>Comment wasn't inserted</td></tr>
+<td>In some cases the direction of the drive is flipped. If this is your case, set this setting to True to correct this issue</td></tr>
 <tr><td>autoDriveDefault</td>
 <td>1.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Auto-Drive channel default state</td></tr>
 </table></font>

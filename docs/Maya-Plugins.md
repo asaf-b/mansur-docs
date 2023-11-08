@@ -836,6 +836,49 @@ A simple node to drive seprated shell objects using one combined mesh.
 <tr><td>outMesh</td><td>outMesh</td><td>mesh</td><td>Result shell meshes array.</td></tr>
 </table></font>
 <body>
+##mnsModulo
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt>
+<i>
+=== Author: Assaf Ben Zur ===
+<br>
+A simple math node missing from Maya's native library.
+<br>
+Given a value and a devisor, the node will compute modulo based operations:
+<br>
+- modulos - the remainder or signed remainder of a division, after one number is divided by another- double.
+<br>
+- modulosInt - the remainder or signed remainder of a division, after one number is divided by another- int.
+<br>
+- Cycles - Number of repetitions - double.
+<br>
+- CyclesInt - Number of repetitions - int.
+<br>
+- Alternate - Alternating between 0 and the devisor.
+<br>
+- Alternate - Alternating between 0 and 1, based on the devisor.
+<br>
+</i></font>
+<hr width = 100%>
+<font color = #5f5f5f size = 3pt><b>Inputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>value</td><td>value</td><td>double</td><td>Value to compute.</td></tr>
+<tr><td>devisor</td><td>devisor</td><td>double</td><td>Devisor to compute.</td></tr>
+</table></font>
+<font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
+<tr><td>modulus</td><td>modulus</td><td>double</td><td>The remainder or signed remainder of a division, after value is divided by the devisor.</td></tr>
+<tr><td>modulusInt</td><td>modulusInt</td><td>int</td><td>The remainder or signed remainder of a division, after value is divided by the devisor.</td></tr>
+<tr><td>cycles</td><td>cycles</td><td>double</td><td>Number of repetitions-Double.</td></tr>
+<tr><td>cyclesInt</td><td>cyclesInt</td><td>double</td><td>Number of repetitions-Int.</td></tr>
+<tr><td>alternate</td><td>alternate</td><td>double</td><td>Alternating value between 0 and the devisor.</td></tr>
+<tr><td>alternateNormalized</td><td>alternateNormalized</td><td>double</td><td>Alternating between 0 and 1, based on the devisor.</td></tr>
+</table></font>
+<body>
 ##mnsNodeRelationship
 <hr width = 100%>
 <font color = #5f5f5f size = 3pt>

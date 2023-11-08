@@ -21,7 +21,7 @@ The squash behaviour can be set by the module's settings, and can also be adjust
 <td>Main control shape</td></tr>
 <tr><td>upLocalDirection</td>
 <td>0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Use this setting to choose which up-axis should the module use on calculation. This is based on the orientation of your guide. Choose the correct complimentary axis based on set aim guide</td></tr>
 </table></font>
 ###Squash
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
@@ -45,7 +45,7 @@ The squash behaviour can be set by the module's settings, and can also be adjust
 <td>Stretch Minimum scale value</td></tr>
 <tr><td>stretchMax</td>
 <td>1.2</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Stretch Maximum scale value</td></tr>
 </table></font>
 ###ChanControl
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

@@ -19,7 +19,7 @@ Note: When used as a leg, try using the foot module as a direct child of this mo
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>interpolationJoints</td>
 <td>3</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Increments of 2, starting from 3. This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation</td></tr>
 <tr><td>offsetX</td>
 <td>20.0</td>
 <td>Up curve X value offset for the interpolation joints</td></tr>

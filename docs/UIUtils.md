@@ -1555,6 +1555,22 @@ DynUI color-scheme default command trigger. <br>
 </tr>
 </table></font>
 <hr width = 100%>
+###setIntIncrement
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setIntIncrement(spinner, increment, start)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>spinner</b></li>
+<li><b>increment</b></li>
+<li><b>start</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 ###setLinkToQLabel
 <font size = 3pt>
 <table>

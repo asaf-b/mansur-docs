@@ -5,6 +5,16 @@
 <i>
 Author: Asaf Ben-Zur <br>
 Best used for: Tank-Treads, Bike-Chains, Ferris-Wheel, Tire, Conveyor-Belt <br>
+This is a comprehensive module, to create a link-chain style behaviour. <br>
+Originally created for tank-treads, but can be used for a range of components. <br>
+On creation, based on the number on the numberOfLinks setting, joints will be created on a circle Nurbs curve with shapeSections setting amount. <br>
+After creation, the shape can be tweaked to fit any need.  <br>
+IMPORTANT NOTE: This module requires a joint-struct-rebuild once the Nurbs shape has been tweaked. <br>
+Once the joint-struct is revuilt, the joints will be layed out uniformally along the given shape. <br>
+Upon construction, a main control will be created for controlling the entire position of the module. <br>
+Under, a chain-driver control will be created. Rotating it will drive the joint chain along the curve in both forwards and backwards directions. <br>
+Also, use the shape-tweak layer to create a tweak feature for the shape on construction. This will allow manipulation of the shape dynamically while the chain is driven. <br>
+Automatic drive based on position is also possible wihin this module using the AutoDrive layer. <br>
  <br>
 </font>
 </i>

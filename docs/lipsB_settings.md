@@ -37,7 +37,7 @@ The joint structure of this module will be dictated by input vertices on a given
 <td>These verticies will be used to build the joint structure for the lower section. Please select a sequence of vertices along the same loop, starting from the inner corner. First and last vertices should match between the upper and lower section, representing a single closed loop. Corner vertices will be present twice- once on the lower section, once on the lower section</td></tr>
 <tr><td>midsPosition</td>
 <td>0</td>
-<td>Main mid controls shape</td></tr>
+<td>In case this setting is set to custom, once the settings are updated, 4 new locator guides will become visible- 2 for the upper lip, and 2 for the lower lip. These locators can be manually set to a custom mid-lip position. In some cases, based on the models geometry, the mid-lip automatic control position may not be calculated correctly. If this is your case, turn this setting on and set the guide locators to the required mid-lip position for both upper and lower lips</td></tr>
 </table></font>
 ###ctrlShapes
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

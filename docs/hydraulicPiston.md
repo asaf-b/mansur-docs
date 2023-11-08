@@ -4,10 +4,9 @@
 <font color = #5f5f5f size = 3pt>
 <i>
 Author: Asaf Ben-Zur <br>
-Best used for: Eyes, Generic Orientation based components <br>
-This module was written to function as an eye IK (look at setup), but can be used for many other generic components. <br>
-This module will create a slave control (at root position) which is aim-constraint to custom look-at guide. <br>
-The slave control will be the control authority for the joint, as the look-at control will control its orientation. <br>
+Best used for: Hydraulic Piston, Mechanical Springs <br>
+A simple module to create a piston style control. <br>
+Combining aim and translation constraints, this module will create a piston like behaviour, keeping the main orientation of the module towards the aim control, while stretching an inner piston along its axis regadless of the module orientation, keeping the piston within its outer tube. <br>
  <br>
 </font>
 </i>

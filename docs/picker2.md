@@ -62,6 +62,7 @@ Picker UI Class. <br>
 <li><b><a href="#setThumbnailTARGET">setThumbnail </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setWindowSizeTARGET">setWindowSize </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#refreshBtnStateTARGET">refreshBtnState </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#attemptToGetImagesTARGET">attemptToGetImages </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#connectSignalsTARGET">connectSignals </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#initializePuppetPickerTARGET">initializePuppetPicker </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getPlgPositionandSizeTARGET">getPlgPositionandSize </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -201,6 +202,24 @@ Picker UI Class. <br>
 <td><ul>
 <li><b>self</b></li>
 <li><b>dummy</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "attemptToGetImagesTARGET"></h5><font color = 464646 size = 3><b>attemptToGetImages <font size = 2pt> [<a href="#MnsPicker2 TARGET">MnsPicker2 </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>attemptToGetImages(self, originPath, bodyBgImage, faceBgImage, tn, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>originPath</b></li>
+<li><b>bodyBgImage</b></li>
+<li><b>faceBgImage</b></li>
+<li><b>tn</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

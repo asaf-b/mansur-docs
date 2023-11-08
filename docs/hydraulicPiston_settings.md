@@ -5,6 +5,8 @@
 <i>
 Author: Asaf Ben-Zur <br>
 Best used for: Hydraulic Piston, Mechanical Springs <br>
+A simple module to create a piston style control. <br>
+Combining aim and translation constraints, this module will create a piston like behaviour, keeping the main orientation of the module towards the aim control, while stretching an inner piston along its axis regadless of the module orientation, keeping the piston within its outer tube. <br>
 </i>
 <br>
 </font>
@@ -21,7 +23,7 @@ Best used for: Hydraulic Piston, Mechanical Springs <br>
 <td>Main control shape</td></tr>
 <tr><td>upLocalDirection</td>
 <td>1</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Use this setting to choose which up-axis should the module use on calculation. This is based on the orientation of your guide. Choose the correct complimentary axis based on set aim guide</td></tr>
 <tr><td>channelControl</td>
 <td>
 <font size = 2pt>

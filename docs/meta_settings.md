@@ -97,5 +97,5 @@ This module construction will try to detect a FK module under each guide, and if
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doCurls</td>
 <td>True</td>
-<td>Choose if you want to create curl channels</td></tr>
+<td>If this setting is set to True, global curl channel-box chnnels will be created on the root guide</td></tr>
 </table></font>

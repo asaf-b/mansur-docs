@@ -4,13 +4,11 @@
 <font color = #5f5f5f size = 3pt>
 <i>
 Author: Asaf Ben-Zur <br>
-Best used for: Free objects, General Control, Mesh Tweaker, Mesh Local Tweaker <br>
-This Module is a general single control at it's base state. <br>
-It also contains a Mesh-Tweaker feature that will allow you to create a "Double Directional" tweaker- meaning that the control will follow the input Mesh's position (Rivet) and will also be able to affect it. <br>
-This effect is also commonly knowen as the "Dorito-Effect". <br>
-This feature also includes a "local" mode, to tunnel deformations from the control to a local skinCluster, then a blend-shape to the main Mesh, creating multi-layered skinned mesh. <br>
-All of these features will use the main joint as the effector. <br>
-Note: When using the "Mesh-Tweaker" feture, when needing to affect a mesh that will also be used as the rivet input- make sure "sameMeshAffector" is set to ON. <br>
+Best used for: Balls, BB-8-Style <br>
+A simple module to drive a sphere roll based on position. <br>
+Upon contruction, based on the given settings, the main joint orientation will be driven by the module's position. <br>
+This module will calculate the roll of the sphere needed to reach the target position, without slipping, in any direction. <br>
+This behaviour is not confined to a single control being moved, but rather calculated based on the module's world-position. <br>
  <br>
 </font>
 </i>

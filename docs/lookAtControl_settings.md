@@ -57,43 +57,43 @@ The slave control will be the control authority for the joint, as the look-at co
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doInterpOrient</td>
 <td>False</td>
-<td>Comment wasn't inserted</td></tr>
+<td>This feature is used to create a weighten split orientation. When you need to create a weighted orientation for a control between two spaces, use this feature</td></tr>
 <tr><td>spaceA</td>
 <td></td>
-<td>Comment wasn't inserted</td></tr>
+<td>The first space to be interpolated. This can be a guide, joint, or control.</td></tr>
 <tr><td>spaceB</td>
 <td></td>
-<td>Comment wasn't inserted</td></tr>
+<td>The second space to be interpolated. This can be a guide, joint, or control.</td></tr>
 <tr><td>spaceAWeight</td>
 <td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The deafult weight for the first space. The second space weight will be the complimentary weight adding to 1</td></tr>
 <tr><td>doAngleBasedScale</td>
 <td>False</td>
 <td>create an angle based scale driver, to scale the target slave joint when the angle changes between the two sources. Originally designed for double-chin setup</td></tr>
 <tr><td>scaleWhenAngle</td>
 <td>0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>This setting controls the trigger mode for action. Icreases- means that the trigger for action will occur when the intorpolated angle increases, and do nothing when it decreases. decreases- means that the trigger for action will occur when the intorpolated angle decreases, and do nothing when it increases</td></tr>
 <tr><td>maxScale</td>
 <td>2.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The actions maximum value clamp value</td></tr>
 <tr><td>angleMaxRange</td>
 <td>180.0</td>
-<td>Comment wasn't inserted</td></tr>
+<td>The maximum angle clamp that the action should be targeted to</td></tr>
 <tr><td>connectToTargetAxis</td>
 <td>1</td>
-<td>Comment wasn't inserted</td></tr>
+<td>This setting will set the target axis to act on. Please map the axis needed to be scaled based on the orientation of your guide</td></tr>
 </table></font>
 ###spring
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>doLookAtSpring</td>
 <td>False</td>
-<td>This feature will create a spring node blowe the look-at master. This will result in a rotation-based spring, mostly used for vehicle center suspension to achive secondary motion.</td></tr>
+<td>This feature will create a spring node blowe the look-at master. This will result in a rotation-based spring, mostly used for vehicle center suspension to achive secondary motion</td></tr>
 <tr><td>defaultStiffness</td>
 <td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Spring default stiffness value</td></tr>
 <tr><td>defaultDamping</td>
 <td>0.5</td>
-<td>Comment wasn't inserted</td></tr>
+<td>Spring default damping value</td></tr>
 </table></font>
 ###asEyeLook
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

@@ -21,7 +21,7 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <td>Create interpolation joints for this module</td></tr>
 <tr><td>interpolationJoints</td>
 <td>2</td>
-<td>Amount of interpolation joints</td></tr>
+<td>Minimun is the number of guides. This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation.</td></tr>
 <tr><td>isolatePolesRotation</td>
 <td>False</td>
 <td>If this is set to True, the first and last interpolation joints orientation will be isolated. This is primarily used in combination with the EmbeddedIK feature to achive a stable spine setup</td></tr>
@@ -39,10 +39,13 @@ Use as many layers an in any combination to create any form of FK chain behaviou
 <td>Default squash mode. Please refer to the documentation of mnsPointsOnCurve node to learn more about each mode</td></tr>
 <tr><td>doPrimariesSpaceSwitch</td>
 <td>False</td>
-<td>If this is set to True, primary controls will receive a space switcher</td></tr>
+<td>If this is set to True, primary controls will receive a space switcher. NOTE: This feature cannot work alongside the embeddedIK feature- In case the embeddedIK feature is turned on, this setting will be set to False automatically</td></tr>
 <tr><td>doIntepJntsSpring</td>
 <td>False</td>
 <td>If this is set to True, a mnsSpringCurve node will be created on top of the primary curve controling the interpolation joints</td></tr>
+<tr><td>doCurlAttrs</td>
+<td>True</td>
+<td>If this is set to True, extra curl attributes will be created on the main primary control, to curl the entire primary chain in all axes</td></tr>
 </table></font>
 ###FK
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>

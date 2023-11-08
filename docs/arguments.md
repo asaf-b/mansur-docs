@@ -39,6 +39,7 @@ These class members will dectate any behavior derived from an actual function ob
 <li>side</li>
 <li>pathMode</li>
 <li>pathFileTypes</li>
+<li>intIncrement</li>
 <li>blockCreationOnly</li>
 <li>jntStructMember</li>
 <li>jntStructSoftMod</li>
