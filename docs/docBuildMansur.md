@@ -27,7 +27,6 @@ For each py file: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extract return <br>
 rebuild the yml file given <br>
 write the files within the 'docs' directory <br>
- <br>
 This procedural approach for a code documentation build ensures an up-to-date documentation based on code commenting. <br>
 No additional actions are neccessery. <br>
 This will yeild a readable commented code with will math the documentation 1-to-1. <br>
@@ -72,7 +71,7 @@ Depth independent. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildDocItems(dir, rootDir, level, ymlPath, fileLines)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (yml new file lines)   </td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>dir</b></li>
@@ -119,6 +118,8 @@ Main file def. <br>
 This is a wrapped def as well as a function one. <br>
 Compiles all needed documentation from a given file path. <br>
 Will compile Classes, methods, defenitions (icluding all relevant information for each) <br>
+This is also the main WRITE defenition. After info assembly the info will be written as a new file, overriding existing ones, to create a new doc page. <br>
+Any file doc 'display' is contained within this def. <br>
 </i>
 <br>
 </font>
@@ -195,7 +196,7 @@ The final pythonLib item is passed in, as well as the root directory and the cur
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildSubItemsDir(rootDir, pyLib, level, ymlPath, fileLines)  </td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (fileLines)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rootDir</b></li>
@@ -276,7 +277,7 @@ From the given cpp path given, extract all attribute information. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractAttributeDefenitionsFromCppFile(cppFullPath = None, buildName = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (inuput attributes), list (output attributes)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>cppFullPath</b>(<i>str</i>) ; [default: None]</li>
@@ -297,7 +298,7 @@ Extracts class members from a Class' init method source as list <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractClassMembersFromInitSrc(src = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (class members names)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
@@ -319,7 +320,7 @@ Extracts both Arguments (flattened) and class members <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractConstructorValuesForClass(src = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (constructor), list (class members)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
@@ -340,7 +341,7 @@ Extracts full documentation from a given class source. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractDocsForClass(classSrc = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (title), list (header), string (sontructor), string (inherit object), list (class members), string (return) </td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>classSrc</b>(<i>list</i>) ; [default: []]</li>
@@ -361,7 +362,7 @@ extracts return statement, title, header, arguments and optionalArguments <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractDocsForDef(defSrc = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string(title), list(header), list(arguments), list(optionalArguments, string(return statement)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>defSrc</b>(<i>list</i>) ; [default: []]</li>
@@ -381,7 +382,7 @@ Extracts a header if exsits from a given elemnt src (Class/Def/Method) as list <
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractHeaderFromSrc(src = [], **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (header lines)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
@@ -402,7 +403,7 @@ Splits a given class source to orginized dict containing it's methods sources <b
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractMethodsfromClassSrc(src = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (methodName: methodSource)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
@@ -423,7 +424,7 @@ Extract parametrs from a given def source as list <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractParametersFromDefSrc(src = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (arguments) , list(optionalArguments)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b>(<i>list</i>) ; [default: []]</li>
@@ -444,7 +445,7 @@ compile the data into input/uotput lists containing dict info for all attributes
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>gatherPluginDocumentation(rootBuildPath = "D/mansurProject/mayaPlugins")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (build list containing extracted attributes data)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>rootBuildPath</b>(<i>str</i>) ; [default: "D:/mansurProject/mayaPlugins"]</li>
@@ -480,13 +481,17 @@ Extracts arguments from a given def source lines as list <br>
 This is a complex recursive function that will assemble a file structure from a given path directory. <br>
 The assembly will filter ONLY folders that contain at least one '.py' file, and ONLY '.py' files. <br>
 This function returns a dictionary containing the file and folder structure as keys "dirs" and "files" respectively. <br>
+As this is a recusrsive depth independent function, the return will be a complex compound dict, which contains instances of the same dict structure within. <br>
+This is dependent of depth obviously-  <br>
+if a directory contains another directory within- which contains a '.py' the first item "dirs" key will contain another dictionary containing a "dirs" key and a "files" key. <br>
+Ultimatly, the first dict "dirs" key should contain a single complex dict element. <br>
 </i>
 <br>
 </font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPyLibForDir(root)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (complex library dict)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>root</b></li>

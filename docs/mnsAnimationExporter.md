@@ -16,6 +16,137 @@ This tool also includes Auto-Key switches, as well as a sequence and bake modes.
 <hr width = 100%>
 ##Classes
 <hr width = 100%>
+<h5 id = "ExtraAttributesListWidget TARGET"></h5>
+###ExtraAttributesListWidget [Class]
+<font color = #5f5f5f size = 3pt>
+<i>
+A simple QPushButton re-implementation. <br>
+This reimplementation is used to control the button's mouse events, used in 'Edit' mode. <br>
+</i>
+<br>
+</font>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>ExtraAttributesListWidget(<b>parent</b>(<i>str</i>) ; [default: None],<b>default_extraAttrs</b>(<i>list</i>) ; [default: []],<b>**kwargs</b>)</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>QtWidgets.QListWidget</td></tr>
+<tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
+<td><ul>
+<ul>
+<li>parent</li>
+<li>acceptedAttributeTypes</li>
+</ul>
+</td></tr>
+<tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
+<li><b><a href="#copyListTARGET">copyList </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#getItemsTARGET">getItems </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#removeSelectedItemsTARGET">removeSelectedItems </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#addAttributesToListTARGET">addAttributesToList </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#pasteListTARGET">pasteList </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#validateAttributeTARGET">validateAttribute </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#openExtraAttrsMenuTARGET">openExtraAttrsMenu </b></a> <font size = 2pt><i>[method]</i></font></li>
+</ul>
+</td>
+</tr>
+</table></font>
+####ExtraAttributesListWidget  methods
+<hr width = 50%>
+<h5 id = "copyListTARGET"></h5><font color = 464646 size = 3><b>copyList <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>copyList(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "getItemsTARGET"></h5><font color = 464646 size = 3><b>getItems <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getItems(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "removeSelectedItemsTARGET"></h5><font color = 464646 size = 3><b>removeSelectedItems <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>removeSelectedItems(self)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "addAttributesToListTARGET"></h5><font color = 464646 size = 3><b>addAttributesToList <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addAttributesToList(self, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "pasteListTARGET"></h5><font color = 464646 size = 3><b>pasteList <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pasteList(self, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>**kwargs</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "validateAttributeTARGET"></h5><font color = 464646 size = 3><b>validateAttribute <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateAttribute(self, node, attributeName)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>node</b></li>
+<li><b>attributeName</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "openExtraAttrsMenuTARGET"></h5><font color = 464646 size = 3><b>openExtraAttrsMenu <font size = 2pt> [<a href="#ExtraAttributesListWidget TARGET">ExtraAttributesListWidget </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>openExtraAttrsMenu(self, position)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>position</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
 <h5 id = "MnsAnimationExporter TARGET"></h5>
 ###MnsAnimationExporter [Class]
 <font color = #5f5f5f size = 3pt>
@@ -33,6 +164,7 @@ Spaces Tool UI Class. <br>
 <ul>
 <li>infoNode</li>
 <li>ranges_vs</li>
+<li>extraAttrsClipboard</li>
 </ul>
 </td></tr>
 <tr><td><b><font color = #4caf50>Methods:  </font></b></td><td><ul>
@@ -52,6 +184,7 @@ Spaces Tool UI Class. <br>
 <li><b><a href="#getRangePathTARGET">getRangePath </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getSkinnedMeshesFromJntHeirarchyTARGET">getSkinnedMeshesFromJntHeirarchy </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#extractSkeletonFromRigTopTARGET">extractSkeletonFromRigTop </b></a> <font size = 2pt><i>[method]</i></font></li>
+<li><b><a href="#bakeExtraAttributesTARGET">bakeExtraAttributes </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#getUnusedJointsTARGET">getUnusedJoints </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#restructureJointHeirarchyTARGET">restructureJointHeirarchy </b></a> <font size = 2pt><i>[method]</i></font></li>
 <li><b><a href="#setRangeModeTARGET">setRangeMode </b></a> <font size = 2pt><i>[method]</i></font></li>
@@ -279,6 +412,21 @@ Spaces Tool UI Class. <br>
 <li><b>rotToJointOrient</b></li>
 <li><b>includeMeshes</b></li>
 <li><b>messageLog</b></li>
+</ul></td>
+</tr>
+<tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>
+</tr>
+</table></font>
+<h5 id = "bakeExtraAttributesTARGET"></h5><font color = 464646 size = 3><b>bakeExtraAttributes <font size = 2pt> [<a href="#MnsAnimationExporter TARGET">MnsAnimationExporter </a> class method] </font></font></b>
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bakeExtraAttributes(self, rng, host)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>self</b></li>
+<li><b>rng</b></li>
+<li><b>host</b></li>
 </ul></td>
 </tr>
 <tr><td><b><font color = #4caf50>Optional Arguments:  </font></b></td>

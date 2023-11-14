@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../releaseNotes/v2.3.0/" class="md-tabs__link">
+        <a href="../releaseNotes/v2.4.0/" class="md-tabs__link">
           
   
   Release-Notes
@@ -1718,6 +1718,26 @@
             Release-Notes
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releaseNotes/v2.4.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V2.4.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -6498,7 +6518,7 @@ These class members will dectate any behavior derived from an actual function ob
 <p><font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertChannelControlDictToAttr(channelControlDict = {})</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>channelControlDict</b>(<i>dict</i>) ; [default: {}]</li>
@@ -6519,7 +6539,7 @@ Returns two lists containing MnsArgument instances. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractArgsFromDef(defenition)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (arguments MnsArgument list), list (optional arguments MnsArgument list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>defenition</b></li>
@@ -6540,7 +6560,7 @@ Returns two lists containing MnsArgument instances. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractArgsFromSource(src)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (arguments MnsArgument list), list (optional arguments MnsArgument list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>src</b></li>
@@ -6554,7 +6574,7 @@ Returns two lists containing MnsArgument instances. <br>
 <p><font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>extractChennelControlDefaultFromLine(line = "", argAame = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>line</b>(<i>str</i>) ; [default: ""]</li>
@@ -6590,7 +6610,7 @@ Format given list of arguments into a predefined dictionary structure. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>formatArgumetsAsDict(mnsArgsList = [])</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (Formated arguments)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mnsArgsList</b>(<i>list</i>) ; [default: []]</li>
@@ -6612,7 +6632,7 @@ This function covers this need. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>recompileArgumetsAsString(defenition, arguments, optArgs, values)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (re-compiled arguments as string)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>defenition</b></li>
@@ -6635,7 +6655,7 @@ This function will return a value (as its actual type) and a type (as a type obj
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnValueAndTypeFromArgString(argString = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>value (Dynamic type), type (type object)     </td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>argString</b>(<i>str</i>) ; [default: ""]</li>
@@ -6656,7 +6676,7 @@ It will split the argument string into actual elemnts and values and directly in
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitStringToArg(argAsString)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsArgument</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>argAsString</b></li>

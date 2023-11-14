@@ -32,7 +32,7 @@ Exceptions: <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addAttrToObj(objects = [], **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (added attributes 'attr' objects list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objects</b>(<i>list</i>) ; [default: []]</li>
@@ -40,6 +40,18 @@ Exceptions: <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>name</b>(<i>str</i>) - Added attribute name</li>
+<li><b>replace</b>(<i>bool</i>) - If attr exists and this flag is set to True- delete the existing attribute then recreate according to parameters</li>
+<li><b>type</b>(<i>str</i>) ; [default: string] - Added attribute type</li>
+<li><b>value</b>(<i>str</i>) ; [default: None] - Added attribute value</li>
+<li><b>max</b>(<i>str</i>) ; [default: None] - Added attribute max (only if float or int)</li>
+<li><b>min</b>(<i>str</i>) ; [default: None] - Added attribute min (only if float or int)</li>
+<li><b>locked</b>(<i>bool</i>) - Added attribute lock state</li>
+<li><b>cb</b>(<i>bool</i>) ; [default: True] - Added attribute channelBox/Displayed state</li>
+<li><b>keyable</b>(<i>bool</i>) ; [default: True] - Added attribute keyable state</li>
+<li><b>enumDefault</b>(<i>int</i>) - If added attr is enum, set its default to this value</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -53,7 +65,7 @@ Add a 'blkClassId' Attribute to the given input. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>addBlockClasIDToObj(objectA, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyAttribute ('blkClassID')</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -106,7 +118,7 @@ check for a valid internet connection. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkForInternetConnection(host="8.8.8.8", port=53, timeout=3)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>host</b>(<i>str</i>) ; [default: "8.8.8.8"]</li>
@@ -130,7 +142,7 @@ Return True if the current version isn't the latest version <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkForVersionUpdates()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (isNewVesrionAvailable)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -168,7 +180,7 @@ If so, return it. Else return None. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkIfObjExistsAndSet(objB = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>PyNode if valid, None if not. </td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objB</b>(<i>str</i>) ; [default: None]</li>
@@ -176,6 +188,10 @@ If so, return it. Else return None. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>obj</b>(<i>str</i>) ; [default: objB] - object to act on and return</li>
+<li><b>namespace</b>(<i>str</i>)</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -191,7 +207,7 @@ in order to link local axes correctly, avoiding the need to check aim and up axe
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>checkLocalAxisPairing(origin = None, target = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (pairingDict - {"x", "y","z"})</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>origin</b>(<i>str</i>) ; [default: None]</li>
@@ -227,7 +243,7 @@ Recursive. Convert an Alpha input into an Int ID. Infinite. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertAlphaToInt(alpha = "A")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>int</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>alpha</b>(<i>str</i>) ; [default: "A"]</li>
@@ -247,7 +263,7 @@ Recursive. Convert an Int input into an Alpha ID. Infinite. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertIntToAlpha(intA = 0)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>intA</b>(<i>int</i>) ; [default: 0]</li>
@@ -287,13 +303,19 @@ An axes colored lambert shaders creation function. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createAxisLamberts(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict ('X': xAxisLambert, 'Y': yAixsLambert, 'Z': zAxisLambert)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>doX</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>doY</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>doZ</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>deleteAll</b>(<i>bool</i>) - If true, do not attempt to create any objects- instead look for any existing objects and delete them</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -307,7 +329,7 @@ For the given transform, create a free offset group transform parent. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createFreeOffsetGroup(transformObject)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (offsetGrp)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transformObject</b></li>
@@ -330,7 +352,7 @@ This is used as a "restore factory defaults" option. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createMnsDefaultPrefs(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (prefs file path)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -345,19 +367,40 @@ This is used as a "restore factory defaults" option. <br>
 <i>
 A core major MNS function. <br>
 This function creates a new node, based on it's type passed in, and it's name parameters passed in, and returns it as a MnsNameStd object. <br>
+This function also contains the 'search for next valid name' functionallity: <br>
+In case the given parameter set returns an object name that already exists within the current scene a 'Handle' functionallity will be triggered: <br>
+- In case the 'IncrementAlpha' argument is Flase, recursivly increment the ID value until a new name slot is available within the scene. <br>
+- In case it's Flase, do the same while incrementing the Alpha value instead. <br>
+Unlike Maya's core behavior- This function tests whether an object name exists whithin the entire scene- not only whether it exists whithin the current hirarchy level. <br>
+In a sequence manner creation- the Alpha/ID should be incremented within the caller function loop- meaning while bulding an item sequence the 'search' functionallity should not be used. <br>
+Another funtionallity of this function is the 'Fix Shape Name' functionallity: <br>
+A simple shpe children name test of an object (after creation) and a renaming them. <br>
 </i>
 <br>
 </font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createNodeReturnNameStd(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>side</b>(<i>str</i>) ; [default: center] - side flag</li>
+<li><b>body</b>(<i>str</i>) ; [default: pointsOnCurve] - Node's name body.</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: A] - Node's Alpha id</li>
+<li><b>id</b>(<i>int</i>) ; [default: 1] - Node's ID</li>
+<li><b>incrementAlpha</b>(<i>bool</i>) - Search new node name incrementing Alpha instead of the id if True</li>
+<li><b>buildType</b>(<i>int</i>)</li>
+<li><b>createBlkClassID</b>(<i>bool</i>)</li>
+<li><b>createBlkCtrlTypeID</b>(<i>bool</i>)</li>
+<li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
+<li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
+<li><b>segmentScaleCompensate</b>(<i>bool</i>)</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -371,7 +414,7 @@ For the given transform, create a predefined offset group transform parent. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetGroup(transformObject, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (offsetGrp)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transformObject</b></li>
@@ -379,6 +422,10 @@ For the given transform, create a predefined offset group transform parent. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>type</b>(<i>str</i>) ; [default: offsetGrp]</li>
+<li><b>bodySuffix</b>(<i>str</i>)</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -426,7 +473,7 @@ Measure the distance between to maya transforms. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>distBetween(transformA = None, transformB = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>float (distance)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transformA</b>(<i>str</i>) ; [default: None]</li>
@@ -526,7 +573,7 @@ Get the current mansur product version based on this file directory <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getCurrentVersion()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (version)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -591,7 +638,7 @@ This method retrives the prefs static dict from globals <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getMansurPrefs()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (prefrences)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -623,7 +670,7 @@ In case the 'returnFileDirectory' flag is set to true, this will return the path
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getMansurPrefsFromFile(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> dict (prefrences)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
@@ -657,7 +704,7 @@ Attempt to collect the given input's side. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getSideFromNode(node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string (side)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>node</b></li>
@@ -677,7 +724,7 @@ Recursively attempt to fet the top node of the maya heirarchy, from the given in
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getTopParentForObj(obj)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Top Parent)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>obj</b></li>
@@ -697,7 +744,7 @@ get the top node of the current selected object's maya heirarchy. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getTopParentForSel()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (Top Parent)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -714,7 +761,7 @@ Attempt to import the given path as a python package into the global scope. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>importModuleFromPath(path)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>pythonPkg</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>path</b></li>
@@ -790,7 +837,7 @@ This method is used across to locate the prefs directory for the current user. <
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>locatePreferencesDirectory()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> string (preferences directory path)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -808,7 +855,7 @@ Override flags can be inserted to skip requested channels. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lockAndHideAllTransforms(node = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>node</b>(<i>str</i>) ; [default: None]</li>
@@ -816,6 +863,17 @@ Override flags can be inserted to skip requested channels. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>lock</b>(<i>bool</i>)</li>
+<li><b>keyable</b>(<i>bool</i>)</li>
+<li><b>cb</b>(<i>bool</i>)</li>
+<li><b>t</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>r</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>s</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>x</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>y</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>z</b>(<i>bool</i>) ; [default: True]</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -829,7 +887,7 @@ Based on the given flags, lock/unlock, hide/unhide attributes for the given node
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lockAndHideTransforms(node = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>node</b>(<i>str</i>) ; [default: None]</li>
@@ -837,6 +895,24 @@ Based on the given flags, lock/unlock, hide/unhide attributes for the given node
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>lock</b>(<i>bool</i>)</li>
+<li><b>keyable</b>(<i>bool</i>)</li>
+<li><b>cb</b>(<i>bool</i>)</li>
+<li><b>negateOperation</b>(<i>bool</i>)</li>
+<li><b>t</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>tx</b>(<i>str</i>) ; [default: t]</li>
+<li><b>ty</b>(<i>str</i>) ; [default: t]</li>
+<li><b>tz</b>(<i>str</i>) ; [default: t]</li>
+<li><b>r</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>rx</b>(<i>str</i>) ; [default: r]</li>
+<li><b>ry</b>(<i>str</i>) ; [default: r]</li>
+<li><b>rz</b>(<i>str</i>) ; [default: r]</li>
+<li><b>s</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>sx</b>(<i>str</i>) ; [default: s]</li>
+<li><b>sy</b>(<i>str</i>) ; [default: s]</li>
+<li><b>sz</b>(<i>str</i>) ; [default: s]</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -849,6 +925,22 @@ Based on the given flags, lock/unlock, hide/unhide attributes for the given node
 <td><ul>
 <li><b>targetTransform</b></li>
 <li><b>mirrorTransform</b></li>
+</ul></td>
+</tr>
+<tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+</tr>
+</table></font>
+<hr width = 100%>
+###mirrorPose2
+<font size = 3pt>
+<table>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>mirrorPose2(targetTransform, mirrorTransform, **kwargs)</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+<td><ul>
+<li><b>targetTransform</b></li>
+<li><b>mirrorTransform</b></li>
+<li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -890,13 +982,17 @@ Two main Cases for the mode parameter: <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>objectArrayValidExistsCheckReturn(**kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>List (Valid object list), None (If found invalid)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>**kwargs</b></li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>objectArray</b>(<i>list</i>) ; [default: [' ']] - Objects input list</li>
+<li><b>mode</b>(<i>int</i>) - Validity return mode</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -910,7 +1006,7 @@ Read the input json path into formatted python variables. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>readJson(fullPath)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>FormattedPythonJson</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>fullPath</b></li>
@@ -930,7 +1026,7 @@ Read mns setting from a given file and collect into a dict. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>readSetteingFromFile(settingsPath)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (arguments)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>settingsPath</b></li>
@@ -990,7 +1086,7 @@ Return the corresponding index from the pre-defined input dictionary, for the gi
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnIndexFromSideDict(dict, searchElement)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>int (index)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>dict</b></li>
@@ -1027,7 +1123,7 @@ Use this function to change any elemnt within a given MnsNameStd object based on
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>returnNameStdChangeElement(nameStd = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>nameStd</b>(<i>str</i>) ; [default: None]</li>
@@ -1035,6 +1131,18 @@ Use this function to change any elemnt within a given MnsNameStd object based on
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>autoRename</b>(<i>bool</i>) ; [default: True]</li>
+<li><b>bodyPattern</b>(<i>str</i>) ; [default: None]</li>
+<li><b>node</b>(<i>str</i>) ; [default: nameStd.node] - change node parameter</li>
+<li><b>side</b>(<i>str</i>) ; [default: nameStd.side] - change side parameter</li>
+<li><b>body</b>(<i>str</i>) ; [default: nameStd.body] - change body parameter</li>
+<li><b>type</b>(<i>str</i>) ; [default: nameStd.type] - change type parameter</li>
+<li><b>id</b>(<i>str</i>) ; [default: nameStd.id] - change id parameter</li>
+<li><b>alpha</b>(<i>str</i>) ; [default: nameStd.alpha] - change alpha parameter</li>
+<li><b>suffix</b>(<i>str</i>) ; [default: nameStd.suffix] - change suffix</li>
+<li><b>comment</b>(<i>str</i>) ; [default: nameStd.comment] - change comment parameter</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -1119,7 +1227,7 @@ Attempt to sort the given array based on it's content ID's. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sortNameStdArrayByID(nameStdArray)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (sorted list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>nameStdArray</b></li>
@@ -1139,7 +1247,7 @@ returns an alphanumeric ordered data from input given <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sorted_alphanumeric(data)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (sorted data)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>data</b></li>
@@ -1159,7 +1267,7 @@ Split a 'dateTime' string to a major/minor/patch/timestemp list <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitDateTimeStringToList(dateTime = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>dateTime</b>(<i>str</i>) ; [default: ""]</li>
@@ -1179,7 +1287,7 @@ Split a pre-defined 'channel-control' enum attribute into a formatted python dic
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumAttrToChannelControlList(enumAttrName, node, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>dict (formatted dictionary)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>enumAttrName</b></li>
@@ -1195,7 +1303,7 @@ Split a pre-defined 'channel-control' enum attribute into a formatted python dic
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumAttrToColorSchemeFloatTupleList(enumAttrName, node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (formatted list of tuples)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>enumAttrName</b></li>
@@ -1216,7 +1324,7 @@ Split the given enum attribute is a formated python list. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitEnumToStringList(enumAttrName, node)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (formated list)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>enumAttrName</b></li>
@@ -1237,7 +1345,7 @@ Split a given string object and return a MnsNameStd based on it's structure. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>splitNameStringToNameStd(nameString = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>nameString</b>(<i>str</i>) ; [default: ""]</li>
@@ -1273,7 +1381,7 @@ If the attr exist, get it and return it. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateAttrAndGet(transform = None, attrName = "", default = None, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> bool (return status), unknownType (value)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transform</b>(<i>str</i>) ; [default: None]</li>
@@ -1296,7 +1404,7 @@ For any input - string/PyNode/MnsNameStd - Validate it and attempt to convert it
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>validateNameStd(objectA)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectA</b></li>
@@ -1401,7 +1509,7 @@ Zero all available transforms for the given object passed in. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>zeroTransforms(transform = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>bool</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>transform</b>(<i>str</i>) ; [default: ""]</li>

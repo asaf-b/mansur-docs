@@ -8,7 +8,6 @@ Core MNS Utility UI <br>
 This UI will allow the user to search though all available function within a given library and build a dynamic UI for it, based on it's arguments and keyword arguments drawen as 'type' QObjects into a new UI window. <br>
 This UI class will search thorugh the default library (mns), although has functionallity to add any library into the search. <br>
 IMPORTANT: Any given custom library needs to follow the mns code structure convension in order to work and sraw properly. Please refer to some code examples. <br>
- <br>
 The main process of this UI class is: <br>
 - Load the UI <br>
 - procedurally look through the given libraries and add any found python defenition into the UI list. <br>
@@ -18,7 +17,6 @@ The main process of this UI class is: <br>
 - Uppon a 'Run' call: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Re-construct the function's argument based on the UI fields and recompile into a string <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Call the selected function using the complied arguent string <br>
- <br>
 Features: <br>
 - Prefs tab to control the UI's behavior. <br>
 - Directory addition <br>
@@ -32,7 +30,6 @@ Features: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- When set to False (default) the UI call will create a new UI only if it han't been created before-  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;meaning that the UI objects are kept within the UI class, and when closed will not lose their user-set values.  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;When called again, the UI will simply re-load- not re-create to keep previous set values. The function will not be read again to build. <br>
- <br>
 &nbsp;&nbsp;&nbsp;&nbsp;When set to True, instead of re-loading of a previously created UI- it will be deleted- and recreated, READING THE FUNCTION AGAIN. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;This allows the user to re-read a function every time the UI is called- that means that all previous value set will be lost- as the UI rebuilds it will set all items to default value. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;This gives a very fast way of developing a function- not needing to re-load maya after edit- <br>

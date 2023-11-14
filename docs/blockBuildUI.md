@@ -6,12 +6,10 @@
 === Author: Assaf Ben Zur === <br>
 MANSUR - BLOCK <br>
 Main BLOCK UI. <br>
- <br>
 This is the main UI for rig building (BLOCK). This is the essence of the entire library. <br>
 This tool gathers all user actions, and defines triggers for edditing rigs. <br>
 The main goal of this UI is to collect the available build-modules and draw creation buttons for them. <br>
 The core module library is defined as the block library, but additionals paths can be inserted into the collect loop. <br>
- <br>
 Many UI triggers are available in this UI, but many are kept external to the UI class, to keep things as clean and independent as possible. <br>
 Most core functionalitites belong to the rig classes in 'buildModules'. <br>
  <br>

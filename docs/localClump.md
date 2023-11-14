@@ -13,7 +13,6 @@ The control will be created using local channels in order to not break the FK be
 In case any other method was used (spaces, module parenting), each indevidual strand FK behaviour would have been broken. <br>
 The clump controls can also be parented under one another to create a layered-FK behaviour. <br>
 This will result in a main clump-fk chain, treating the hair as a single unit, and FK chains below to tread each strand indevidually. <br>
- <br>
 In case you want to mimic a normal parenting behaviour, use the conformPivot attribute, which will conform all local driven controls to the pivot of this master clump control. <br>
 Leaving conformPivot OFF, will simply connect to the local channels of the slave, leaving its pivots intact. This will result in a slightly different behaviour. <br>
 You can also use connectToChannelControl attribute to decide which attributes you want to connect to, and the ones you want to leave out. <br>
@@ -27,7 +26,7 @@ You can also use connectToChannelControl attribute to decide which attributes yo
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>construct(mansur, MnsBuildModule, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (controls), dict (internalSpaces)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>mansur</b></li>

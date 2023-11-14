@@ -6,7 +6,6 @@
 === Author: Assaf Ben Zur === <br>
 This tool was created to assist users in creating humanIK character definitions. <br>
 Also, in conjunction with Block, create an animation puppet for predifined skeleton templates. <br>
- <br>
 Use pre-existing prests, as well as create your own presets, to characterize any skeleton in seconds. <br>
 Many workflows and scenrios are covered within this tool, please refer to Mansur-Rig's You-Tube channel for a full video guide demonstratig all of them. <br>
  <br>

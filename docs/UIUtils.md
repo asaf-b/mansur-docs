@@ -7,7 +7,6 @@
 UI Utility function assembly. <br>
 This module holds all UI utility functions as well s any QT dynamic draw functions. <br>
 All UI functions should be held in here for multi-usage of the same UI draw functions. <br>
- <br>
 This module also holds the QT ui dynamic conversion to '.py' and the 'get_maya_window' function. <br>
  <br>
 </font>
@@ -238,7 +237,7 @@ A simple method to acquire an external QT window, into an actual PyQt MianWindow
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>acquireExternalWindow(UIName = None)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QMainWindow (UI Class)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>UIName</b>(<i>str</i>) ; [default: None]</li>
@@ -252,7 +251,7 @@ A simple method to acquire an external QT window, into an actual PyQt MianWindow
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>buildFormBaseClassForUI(script_dir, rel_path)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>baseClass, formClass</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>script_dir</b></li>
@@ -387,7 +386,7 @@ Based on the current project directory <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>convertRelativePathToAbs(filePath = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>filePath</b>(<i>str</i>) ; [default: ""]</li>
@@ -523,7 +522,7 @@ Creates a simple boolean check-box (QCheckBox) as well as a connected 'default' 
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawBooleanChk(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QCheckBox</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -543,13 +542,14 @@ This function makes all relevant connections between the QItems created- <br>
 - 'Load command' from the QPushButton (insert) to the text field <br>
 - 'Clear' trigger for the text field. <br>
 - 'Set default' from the QPushButton 'default' to the text field. <br>
+These connections are made within in order the return the QLEdit only, with no need to worrie about the 'functionallity' buttons created, only the value within the text field. <br>
 </i>
 <br>
 </font>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawButtonAndField(MnsArgumentObj, layoutParent, alphaLimit = False)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QLEdit</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -572,7 +572,7 @@ In case the MnsArgument.type in question is an unknown type, draw a button and f
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawButtonAndFieldUnknown(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QLEdit</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -593,7 +593,7 @@ Draw channel column (part of channel control) into a DynUI. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawChannelColumnAndConnect(MnsArgumentObj, channel, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QVBoxLayout (layout), list (drawen boxes)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -615,7 +615,7 @@ Draw the predefined channel-control slot into a DynUI. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawChannelControl(MnsArgumentObj, layoutParent, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (all channel cbxs)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -639,7 +639,7 @@ An automatic connection to the 'getColor' function is made, as well as a 'defaul
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorBox(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QPushButton</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -654,7 +654,7 @@ An automatic connection to the 'getColor' function is made, as well as a 'defaul
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorBtnAndConnect(default, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QPushButton</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>default</b></li>
@@ -681,7 +681,7 @@ An automatic connection to the 'getColor' function is made, as well as a 'defaul
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorScheme(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -702,7 +702,7 @@ Draw the predefined 'color scheme' slot into a dynUI. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawColorSchemeOverride(MnsArgumentObj, layoutParent, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -711,6 +711,11 @@ Draw the predefined 'color scheme' slot into a dynUI. <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>sideCB</b>(<i>str</i>) ; [default: None]</li>
+<li><b>colOverride</b>(<i>bool</i>)</li>
+<li><b>rigTop</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -724,7 +729,7 @@ draw a "custom scripts" slot into dyn UI. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawCustomScriptsSlot(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QListWidget</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -745,7 +750,7 @@ Main dynamic 'draw blend shape targets box' creation function. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawExtraChannelsBox(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QTreeWidget</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -767,7 +772,7 @@ Creates a Float QDoubleSpinBox widget, and a default button connected to it. <br
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawFloatScroll(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QDoubleSpinBox</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -788,7 +793,7 @@ Draw a simple Horizontal devider into the dynUI. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawHorizontalDevider(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QFrame (Horizontal line devider)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -810,7 +815,7 @@ Creates an int QSpinBox widget, and a default button connected to it. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawIntSpinner(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QSpinBox</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -848,7 +853,7 @@ The QPush buttom created will then to be inserted into a layout by the caller fu
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawModuleButton(MnsBuildModuleObj, connectFunction)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td> QPushButton</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsBuildModuleObj</b></li>
@@ -872,7 +877,7 @@ A default button and connection is made. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawOptionBox(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QComboBox</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -893,7 +898,7 @@ Main Path row draw <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawPathField(MnsArgumentObj, layoutParent)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QLEdit</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -937,7 +942,7 @@ Main dynamic 'draw spaces box' creation function. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>drawSpacesBox(MnsArgumentObj, layoutParent, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>QListWidget</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>MnsArgumentObj</b></li>
@@ -1121,7 +1126,7 @@ When color selected sets the caller QPushButton color to the selected color <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getColor(btn, **kwargs)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>tuple[3] (color)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>btn</b></li>
@@ -1129,6 +1134,9 @@ When color selected sets the caller QPushButton color to the selected color <br>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+<td><ul>
+<li><b>colOverrideCbx</b>(<i>str</i>) ; [default: None]</li>
+</ul></td>
 </tr>
 </table></font>
 <hr width = 100%>
@@ -1142,7 +1150,7 @@ Collect a normalized array of colors from a 'colorSceheme' enum attribute. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getColorArrayFromColorScheme(side, colorScheme)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>list (color sceheme)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>side</b></li>
@@ -1181,7 +1189,7 @@ Get the relative position of the plg to the camera film-gate's top left corener.
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getObjectScreenSpaceByFilmGate(objectProj, cam)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>float, float (posX, posY)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>objectProj</b></li>
@@ -1225,7 +1233,7 @@ Return the local bounding box size as well. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getPlgPosition(plg, pickerBase)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>float,float,float,float (posX,PosY,Width,Height)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>plg</b></li>
@@ -1260,7 +1268,7 @@ Main maya window get for a global UI parent <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>get_maya_window()</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>qtWindow (main maya window as a qt window)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
@@ -1345,7 +1353,7 @@ It reruns a baseClass and a formClass to be used when creating any UI. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>load_ui_type(ui_file)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>baseClass, formClass</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>ui_file</b></li>
@@ -1404,7 +1412,7 @@ if so, convert and return. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>relativePathCheck(filePath = "")</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>string</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>filePath</b>(<i>str</i>) ; [default: ""]</li>
@@ -1698,7 +1706,7 @@ Create a new maya 'tear-off' panel. <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>tearOffWindow(name, title, width, height, cameraToView)</td></tr>
-<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+<tr><td><b><font color = #4caf50>Return:  </font></b></td><td>pymel.core.window (tear-off window)</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>name</b></li>
