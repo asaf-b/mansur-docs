@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../releaseNotes/v2.3.0/" class="md-tabs__link">
+        <a href="../releaseNotes/v2.4.0/" class="md-tabs__link">
           
   
   Release-Notes
@@ -1718,6 +1718,26 @@
             Release-Notes
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releaseNotes/v2.4.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V2.4.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -6333,13 +6353,10 @@ On top of that, the UI will find the latest released version and extract the exi
 In case a plugin build exists in the latest version, but it's build project isn't available, the plugin will add to the release option with a flag "[version]"- <br>
 This means that the plugin can only be copied from the version selected to the next release- it cannot bild. <br>
 Of course this behaviour means that the internal version of the plugin will not change (expected behaviour) to inform the user of the ACTUAL plugin version. <br>
- <br>
 This Tool is meant to BUILD the project on each release as opposed to getting a copy of n .mll file. <br>
 This means that the VS project will have to be maintained (expected) in order to be released- hence keeping up to date with maya's releases. <br>
- <br>
 The tool contains a version release choice between patch/minor/major and none. <br>
 All mnsReleases, including this tool will mark a version with a suffix of the path version . a dateTime stamp. <br>
- <br>
 This tool also includes a maya version choice for release which will access a different build configuration within the VS project. <br>
 The tool accesses the version parameter using a custom macro inserted into the VS project- which will be written with the user version choice- in order for the user to see the correct version when using the plugin-manager "info". <br>
  <br>
