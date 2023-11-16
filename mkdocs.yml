@@ -52,6 +52,8 @@ nav:
       - about.md
     - Support-Us:
       - Support-Us.md
+    - FAQ:
+      - faq/FAQ.md
     - User-Guides:
       - Getting-Started:
         - userGuides/System-Requirements.md
