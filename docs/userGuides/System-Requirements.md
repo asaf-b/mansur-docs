@@ -17,20 +17,32 @@
 		<td>Win</td><td>Linux</td>
 	</tr>
 	<tr>
+		<td>2.4.0</td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+	</tr>
+	<tr>
+		<td>2.3.0</td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+	</tr>
+	<tr>
 		<td>2.2.0</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 	</tr>
 	<tr>
 		<td>2.1.0</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td></td><td></td>
 	</tr>
 	<tr>
 		<td>2.0.0</td>
-		<td>&#x2726;</td><td>&#x2726;</td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td></td><td></td>
 		<td></td><td></td>
 	</tr>
