@@ -68,6 +68,7 @@ nav:
         - userGuides/Module-Preset-Editor.md
         - userGuides/IK-FK-Match.md
         - userGuides/Volume-Joints.md
+        - userGuides/Custom-Scripts.md
         - userGuides/Scripted-Builds.md
         - userGuides/LODs-Tool.md
         - userGuides/Joint-Radius.md
