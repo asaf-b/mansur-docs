@@ -17,9 +17,9 @@ In this video I want to show you how you can easily create a picker for your rig
 * <a href = "../../IK-FK-Match/" class="md-nav__link"><i><u>Creating FK-IK Switch PLG</u></i></a>
 
 ####Picker Images Naming Convention
-* Picker-Body-Image: "%image_name%<b><i>_pickerBody.png</i></b>"
-* Picker-Face-Image: "%image_name%<b><i>_pickerFace.png</i></b>"
-* Picker-Thumbnail-Image: "%image_name%<b><i>_pickerThumbnail.png</i></b>"
+* Picker-Body-Image: "%rig_name%<b><i>_pickerBody.png</i></b>"
+* Picker-Face-Image: "%rig_name%<b><i>_pickerFace.png</i></b>"
+* Picker-Thumbnail-Image: "%rig_name%<b><i>_pickerThumbnail.png</i></b>"
 <figure>
   <img src="../../userGuidesImages/creatingAPicker/deliveryFolder.png"/>
   <figcaption>Delivery Folder Example</figcaption>
