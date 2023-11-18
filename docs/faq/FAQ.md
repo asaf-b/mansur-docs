@@ -117,14 +117,14 @@
 <br>
 
 #### I'm a freelance rigging artist using Mansur-Rig. do my clients require Mansur-Rig?
-> Yes.
-> Mansur-Rig is based on a dedicated custom C++ node library, that is the heart of it's operation.
-> In order for the Rigs created using Mansur-Rig to run, this solver-library is required. Without it, it won't function.
-> Moreover, Mansur-Rig's solvers will only function in case Mansur-Rig is activated using a valid license.
-> So, your clients will require the installation of Mansur-Rig, as well as a valid license to activate it within Maya for them to be able to use the rig you created using Mansur-Rig.
-> With that said, in case your clients only need to animate using the rig (not build it), they will only require the lower tier *Silver* license.
->
-> It is also important to note that in case your clients only need to use Mansur-Rig's extracted skeleton for a game-engine for example- they do not require Mansur-Rig at all.
+> Yes.  
+> Mansur-Rig is based on a dedicated custom C++ node library, that is the heart of it's operation.  
+> In order for the Rigs created using Mansur-Rig to run, this solver-library is required. Without it, it won't function.  
+> Moreover, Mansur-Rig's solvers will only function in case Mansur-Rig is activated using a valid license.  
+> So, your clients will require the installation of Mansur-Rig, as well as a valid license to activate it within Maya for them to be able to use the rig you created using Mansur-Rig.  
+> With that said, in case your clients only need to animate using the rig (not build it), they will only require the lower tier *Silver* license.  
+> <br>
+> It is also important to note that in case your clients only need to use Mansur-Rig's extracted skeleton for a game-engine for example- they do not require Mansur-Rig at all.  
 > Mansur-Rig is only required to build/use puppets within Maya. Once the sekeleton/animated-skeleton is extracted, Mansur-Rig is no longer required.
 
 <a href="#top">↑ Back to top ↑</a>
@@ -255,7 +255,18 @@
 >
 > **Step B**:
 >
-> 1. 
+> 1. In case you can't find *mncLicDigest.mll* in the list, it generally means that you are missing an essential plugin from your installation.
+> 2. In most cases, it is a firewall/antivirus deleting this file due to a false threat trigger. These *.mll* files are a subtype of a *.dll* file-type, which are considered a threat by most firewall/antivirus software. I can guarentee all *.mll* plugin included in Mansur-Rig are 100% safe and contain no threat.
+> 3. So, what you need to do is restore the missing files. Their location within the installation is here: *.../%Mansur_Rig_Installation_Path%/mnsPlugins/%platform%/%maya_version%*. The best thing to do is create an exception within your firewall/antivirus software to that directory, and simply re-dowloading Mansur-Rig's version to restore these files.
+> 4. It is important to say that without these files Mansur-Rig will not function.
+> 5. In case you did find *mnsLicDigest* and it simply fails to load, move to step C.
+>
+> <br>
+>
+> **step C**
+>
+> 1. In case *mnsLicDigest* fails to load, i suggest re-downloading and re-installing Mansur-Rig.
+> 2. If that doesn't work, please sent a support ticket to *support@mansur-rig.com* explaining your issue, with as much information as possible, including the error message you get when trying to load *mnsLicDigest*
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
