@@ -386,14 +386,15 @@
 <br>
 
 #### What's the difference between Mansur-Rig and other rig-builders?
-> * First and foremost, Mansur-Rig's performance is faster. It is based on an extensive custom node-library, dedicated to fast performing rigs.  
-> * Second, it's ability to be deconstructed will speed-up your workflow tremendously. Instead of building a puppet from pre-defined guides, one-way-steet, it's one of a kind ability to be decostructed back to guides state means that your puppet and guides are the same entity.  
-> * This in turn means that your rig building iterations are much faster. Instead of needing to re-open "guides" file and building again, you simply go back and forth between constructed and decustrected states.  
-> * This also means, that <b>ALL</b> rig information is within one scene. No longer you need to manage multiple files containing different types of data. Your guides, controls, rig-poses, control shapes, picker information and skin-data are contained within a single Maya scene.  
-> * This unique ability also allows you to pre-pose your puppet- which is very significant. Instead of being dependent of the Modeling team to deliver a T-Posed model (which isn't optimal), using Mansur-Rig you will be liberated to pre-pose your model, since the skin-data is a part of your rig, instead of being loaded post-construction. The skinning information is preserved in both constructed and deconstructed states, so you can pose your rig before constrcuting the puppet. Your animators will feel the difference- it's MASSIVE.  
-> * Next, Mansur-Rig's components are to the highest possible extent of modularity. Not only you can combine any component with any different one, the components are layered so you can choose the amount of flexibility you provide within your rig based on your performance limitations. You can also connect components using a centralized *spaces* system.
-> * Since Mansur-Rig has dual states, every rig is also a template. You can use ANY Mansur-Rig's puppet and simply deconstruct it- and just like that you have a guide template. Move components to their new location basedon your model, construct, and the puppet will match the original puppet you based you rig on. Of course you can always deconstruct and alter settings/components to your needs.
-> * Finally- completeness. Mansur-Rig contains many tools for rigging and animation workflows to support it's main behaviour. These tools are a part of the product and don't need to be externaly installed. They are simply there whenever you need them:
+> * First and foremost, Mansur-Rig's performance is **faster**. It is based on an extensive custom node-library, dedicated to fast performing rigs.  
+> * Second, it's ability to be deconstructed will speed-up your workflow tremendously. Instead of building a puppet from pre-defined guides, one-way-steet, it's **one of a kind ability to be decostructed back to guides state** means that your puppet and guides are the same entity.  
+> * This in turn means that your **rig building iterations are much faster**. Instead of needing to re-open "guides" file and building again, you simply go back and forth between constructed and decustrected states.  
+> * This also means, that **ALL rig information is within one scene**. No longer you need to manage multiple files containing different types of data. Your guides, controls, rig-poses, control shapes, picker information and skin-data are contained within a single Maya scene.  
+> * This **unique ability** also allows you to pre-pose your puppet- which is very significant. Instead of being dependent of the Modeling team to deliver a T-Posed model (which isn't optimal), using Mansur-Rig you will be liberated to pre-pose your model, since the skin-data is a part of your rig, instead of being loaded post-construction. The skinning information is preserved in both constructed and deconstructed states, so **you can pose your rig before constrcuting the puppet**. Your animators will feel the difference- it's MASSIVE.  
+> * Next, Mansur-Rig's components are to the **highest possible extent of modularity**. Not only you can combine any component with any different one, the components are layered so you can choose the amount of flexibility you provide within your rig based on your performance limitations. You can also connect components using a centralized *spaces* system.
+> * Since Mansur-Rig has dual states, **every rig is also a template**. You can use ANY Mansur-Rig's puppet and simply deconstruct it- and just like that you have a guide template. Move components to their new location based on your model, construct, and the puppet will match the original puppet you based you rig on. Of course you can always deconstruct and alter settings/components to your needs.
+> * Overall, Mansur-Rig is the single high end One-Stop-Shop for all of your rigging needs. **A production ready proven product, suitable for both offline productions and Game-Engines**.
+> * Finally- **completeness**. Mansur-Rig contains many tools for rigging and animation workflows to support it's main behaviour. These tools are a part of the product and don't need to be externaly installed. They are simply there whenever you need them:
 > 1. [LOD Tool](../../userGuides/LODs-Tool/)
 > 2. [Animation Picker](../../userGuides/The-Picker/)
 > 3. Control Visibility Tool
@@ -408,7 +409,6 @@
 > 12. [Module-Preset Editor](../../userGuides/Module-Preset-Editor/)
 > 12. Dynamic UI Creation Tool
 > 13. [Enterprise-Level license Management system](../../userGuides/License-Management/)
-> * Overall, Mansur-Rig is the single high end One-Stop-Shop for all of your rigging needs. A production ready proven product, suitable for both offline productions and Game-Engines.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
