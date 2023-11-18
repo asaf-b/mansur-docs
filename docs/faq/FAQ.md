@@ -2,7 +2,7 @@
 
 ### Pricing/Subscriptions
 - [What is the key difference between the *Gold* and *Silver* subscription plans?](#what-is-the-key-difference-between-the-gold-and-silver-subscription-plans)
-- [Can  sell rigs created using Mansur-Rig?](#can-sell-rigs-created-using-mansur-rig)
+- [Can I sell rigs created using Mansur-Rig?](#can-i-sell-rigs-created-using-mansur-rig)
 - [Is there an option to get an annual subscription?](#is-there-an-option-to-get-an-annual-subscription)
 - [Does Mansur-Rig offer student license discounts?](#does-mansur-rig-offer-student-license-discounts)
 
@@ -67,7 +67,7 @@
 <br>
 <br>
 
-#### Can  sell rigs created using Mansur-Rig?
+#### Can I sell rigs created using Mansur-Rig?
 > Yes, absolutely.  
 > Anyone is free to sell rigs created using Mansur-Rig, without any restrictions, and without any prior approval, and at any price.  
 > Also, there is no requirement to credit Mansur-Rig. Although that will help support Mansur-Rig and will be appreciated.  
@@ -397,7 +397,7 @@
 > * Finally- **completeness**. Mansur-Rig contains many tools for rigging and animation workflows to support it's main behaviour. These tools are a part of the product and don't need to be externaly installed. They are simply there whenever you need them:
 > 1. [LOD Tool](../../userGuides/LODs-Tool/)
 > 2. [Animation Picker](../../userGuides/The-Picker/)
-> 3. Control Visibility Tool
+> 3. [Control Visibility Tool](../../userGuides/Control-Visibility-Tool)
 > 4. [CNS Tool](../../userGuides/CNS-Tool/)
 > 5. [Spring Tool](../../userGuides/Spring-Tool/)
 > 6. [Spaces/IK-FK Tool](../../userGuides/Spaces-IK-FK-Tool/)

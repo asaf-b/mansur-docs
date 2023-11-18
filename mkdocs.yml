@@ -75,6 +75,7 @@ nav:
       - Animation-Tools:
         - userGuides/The-Picker.md
         - userGuides/Spaces-IK-FK-Tool.md
+        - userGuides/Control-Visibility-Tool.md
         - userGuides/Mocap-And-Game-Tools.md
         - userGuides/Spring-Tool.md
         - userGuides/CNS-Tool.md
