@@ -28,21 +28,19 @@
 - [Is Mansur-Rig Game-Engine compatible?](#is-mansur-rig-game-engine-compatible)
 - [Is Mansur-Rig joint based?](#is-mansur-rig-joint-based)
 - [Can I use Mansur-Rig in combination with another Rig-Builder/manual-rig?](#can-i-use-mansur-rig-in-combination-with-another-rig-buildermanual-rig)
-- Im in a custom pipeline, and picker images don't load. Can I specify a static location for picker images?
-- Is there an easy way to extract animations from Mansur-Rig to FBX?
-- MOCAP and Mansur-Rig
+- [I'm using a custom pipeline, and picker images don't load. Can I specify a static location for picker images?](#im-using-a-custom-pipeline-and-picker-images-dont-load-can-i-specify-a-static-location-for-picker-images)
+- [Is there an easy way to extract animations from Mansur-Rig to FBX?](#is-there-an-easy-way-to-extract-animations-from-mansur-rig-to-fbx)
+- [Can I incorporate Motion-Capture (MOCAP) with Mansur-Rig?](#can-i-incorporate-motion-capture-mocap-with-mansur-rig)
 
 ### General
 - [Does Mansur-Rig auto skin?](#does-mansur-rig-auto-skin)
 - [Can I use Mansur-Rig to create Facial-Rigs?](#can-i-use-mansur-rig-to-create-facial-rigs)
-- What's different about Mansur-rig then other rig-builders?
-- Where can I get support?
+- [What's the difference between Mansur-Rig and other rig-builders?](#whats-the-difference-between-mansur-rig-and-other-rig-builders)
+- [Where can I get support?](#where-can-i-get-support)
 
 ### Custom Rigging
 - [Can I add manual steps to Mansur-Rig's build?](#can-i-add-manual-steps-to-mansur-rigs-build)
-- Can I write my own modules?
-- Can I use Mansur-Rig's node-library without block?
-- Can I run Mansur-Rig using code instead of the UI?
+- [Can I run Mansur-Rig using code instead of the UI?](##can-i-run-mansur-rig-using-code-instead-of-the-ui)
 
 ### License Management
 - [I want to use Mansur-Rig in a studio, and I need multiple licenses for my users. What do I do?](#i-want-to-use-mansur-rig-in-a-studio-and-i-need-multiple-licenses-for-my-users-what-do-i-do)
@@ -296,6 +294,34 @@
 <br>
 <br>
 
+#### I'm using a custom pipeline, and picker images don't load. Can I specify a static location for picker images?
+> Yes.  
+> Simply go to *Mansur-Rig -> Preferences* dialog, move to *Picker* tab within the preferences dialog, and set your centralized picker-imaged path into the *pickerImagesFallbakPath* setting.  
+> Click *Save*  
+> Now, if a picker image isn't found, this directory will be used as a fallback directory to try and find it.  
+> **Note:** please use [this-guide](../../userGuides/tutorials/Creating-A-Picker/#picker-images-naming-convention) for correct naming convention for picker images
+
+<a href="#top">↑ Back to top ↑</a>
+<br>
+<br>
+
+#### Is there an easy way to extract animations from Mansur-Rig to FBX?
+> Yes.  
+> Mansur-Rig contains a comprehensive [*Animation-Exporter*](../../userGuides/Game-Exporter/) that allows fast and easy export of assets/animations to *FBX* format.
+
+<a href="#top">↑ Back to top ↑</a>
+<br>
+<br>
+
+#### Can I incorporate Motion-Capture (MOCAP) with Mansur-Rig?
+> Yes.  
+> Mansur-Rig supports Motion-Capture workflows fully.  
+> Here is a [*Guide to Mansur-Rig's Mocap Tools*](../../userGuides/Mocap-And-Game-Tools/)
+
+<a href="#top">↑ Back to top ↑</a>
+<br>
+<br>
+
 ### License Management [Answers]
 
 #### I want to use Mansur-Rig in a studio, and I need multiple licenses for my users. What do I do?
@@ -341,8 +367,52 @@
 > Absolutely.  
 > Mansur-Rig contains both sepecificaly designed Facial-Rigging modules, as well as many more sulotions to create high-end Facial-Rigs.  
 > Moreover, Mansur-Rig's Facial-Rigging methods are one of it's best strengths, and all of them are joint-based as well, so they are also Game-Engine compatible.  
-> Check out some examples over at our [*Art-Station*](#https://www.artstation.com/mansur-rig) profile and our [*You-Tube Channel*](#https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ)  
+> Check out some examples over at our [*Art-Station*](#https://www.artstation.com/mansur-rig) profile and our [*You-Tube Channel*](https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ)  
 > And here is a full tutorial series on [Mansur-Rig's Facial-Rigging](#https://www.youtube.com/playlist?list=PLpTYt5H9lICqxf7wCueB6imuRg1MoE5tU)
+
+<a href="#top">↑ Back to top ↑</a>
+<br>
+<br>
+
+#### What's the difference between Mansur-Rig and other rig-builders?
+> * First and foremost, Mansur-Rig's performance is faster. It is based on an extensive custom node-library, dedicated to fast performing rigs.  
+> * Second, it's ability to be deconstructed will speed-up your workflow tremendously. Instead of building a puppet from pre-defined guides, one-way-steet, it's one of a kind ability to be decostructed back to guides state means that your puppet and guides are the same entity.  
+> * This in turn means that your rig building iterations are much faster. Instead of needing to re-open "guides" file and building again, you simply go back and forth between constructed and decustrected states.  
+> * This also means, that <b>ALL</b> rig information is within one scene. No longer you need to manage multiple files containing different types of data. Your guides, controls, rig-poses, control shapes, picker information and skin-data are contained within a single Maya scene.  
+> * This unique ability also allows you to pre-pose your puppet- which is very significant. Instead of being dependent of the Modeling team to deliver a T-Posed model (which isn't optimal), using Mansur-Rig you will be liberated to pre-pose your model, since the skin-data is a part of your rig, instead of being loaded post-construction. The skinning information is preserved in both constructed and deconstructed states, so you can pose your rig before constrcuting the puppet. Your animators will feel the difference- it's MASSIVE.  
+> * Next, Mansur-Rig's components are to the highest possible extent of modularity. Not only you can combine any component with any different one, the components are layered so you can choose the amount of flexibility you provide within your rig based on your performance limitations. You can also connect components using a centralized *spaces* system.
+> * Since Mansur-Rig has dual states, every rig is also a template. You can use ANY Mansur-Rig's puppet and simply deconstruct it- and just like that you have a guide template. Move components to their new location basedon your model, construct, and the puppet will match the original puppet you based you rig on. Of course you can always deconstruct and alter settings/components to your needs.
+> * Finally- completeness. Mansur-Rig contains many tools for rigging and animation workflows to support it's main behaviour. These tools are a part of the product and don't need to be externaly installed. They are simply there whenever you need them:
+> 1. [LOD Tool](../../userGuides/LODs-Tool/)
+> 2. [Animation Picker](../../userGuides/The-Picker/)
+> 3. Control Visibility Tool
+> 4. [CNS Tool](../../userGuides/CNS-Tool/)
+> 5. [Spring Tool](../../userGuides/Spring-Tool/)
+> 6. [Spaces/IK-FK Tool](../../userGuides/Spaces-IK-FK-Tool/)
+> 7. Facial Mocap Tool
+> 8. [Animation Exporter](../../userGuides/Game-Exporter/)
+> 9. [Volume-Joints Tool](../../userGuides/Volume-Joints/)
+> 10. Deformation Utilities
+> 11. [MOCAP tools](../../userGuides/Mocap-And-Game-Tools/)
+> 12. [Module-Preset Editor](../../userGuides/Module-Preset-Editor/)
+> 12. Dynamic UI Creation Tool
+> 13. [Enterprise-Level license Management system](../../userGuides/License-Management/)
+> * Overall, Mansur-Rig is the single high end One-Stop-Shop for all of your rigging needs. A production ready proven product, suitable for both offline productions and Game-Engines.
+
+<a href="#top">↑ Back to top ↑</a>
+<br>
+<br>
+
+
+#### Where can I get support?
+> In case you are having any issues with your product or your account, here are the ways to get in touch:
+>
+> * Live-Support at [Mansur-Rig's Discord Server](https://discord.gg/nXfy3Rh5y6)
+> * Send an email directly to <b>support@Mansur-Rig.com</b> 
+> * This official [Mansur-Rig documentation page](https://docs.mansur-rig.com/)
+> * The official [Mansur-Rig You-Tube Channel](https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ)
+> * PM using any social media.
+> * Any official and unofficial guides/tutorials.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -353,6 +423,14 @@
 #### Can I add manual steps to Mansur-Rig's build?
 > Yes.  
 > Please follow this guide to [*Custom-Scripts*](../../userGuides/Custom-Scripts/) in order to add python-scripts to Mansur-Rig's automated build.
+
+<a href="#top">↑ Back to top ↑</a>
+<br>
+<br>
+
+#### Can I run Mansur-Rig using code instead of the UI?
+> Yes.  
+> Here is a [*Guide To Scripted Builds*](../../userGuides/Scripted-Builds/)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
