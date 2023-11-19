@@ -68,6 +68,7 @@ nav:
         - userGuides/Module-Preset-Editor.md
         - userGuides/IK-FK-Match.md
         - userGuides/Volume-Joints.md
+        - userGuides/Deformation-Utilities.md
         - userGuides/Custom-Scripts.md
         - userGuides/Scripted-Builds.md
         - userGuides/LODs-Tool.md
@@ -103,8 +104,6 @@ nav:
           - userGuides/tutorials/mansurRig_FacialRigging/10_Finalizing-The-Rig.md
         - userGuides/tutorials/Variable-FK-Tail.md
         - userGuides/tutorials/Creating-A-Picker.md
-    - Help-Desk:
-      - https://mansurrig.freshdesk.com/support/home
     - Release-Notes:
       - releaseNotes/v2.4.0.md
       - releaseNotes/v2.3.0.md

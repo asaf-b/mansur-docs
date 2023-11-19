@@ -404,7 +404,7 @@
 > 7. Facial Mocap Tool
 > 8. [Animation Exporter](../../userGuides/Game-Exporter/)
 > 9. [Volume-Joints Tool](../../userGuides/Volume-Joints/)
-> 10. Deformation Utilities
+> 10. [Deformation Utilities](../../userGuides/Deformation-Utilities/)
 > 11. [MOCAP tools](../../userGuides/Mocap-And-Game-Tools/)
 > 12. [Module-Preset Editor](../../userGuides/Module-Preset-Editor/)
 > 12. Dynamic UI Creation Tool
