@@ -65,6 +65,7 @@ nav:
         - userGuides/Asset-Scaling.md
         - userGuides/license.md
       - Rigging-Tools:
+        - userGuides/Dynamic-UI-Creator.md
         - userGuides/Module-Preset-Editor.md
         - userGuides/IK-FK-Match.md
         - userGuides/Volume-Joints.md

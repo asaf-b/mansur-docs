@@ -100,16 +100,16 @@
 
 #### How do I install Mansur-Rig?
 > Here is a video guide on how to install and activate Mansur-Rig:  
-> [Installation & Activation Tutorial](#https://youtu.be/j6MYR0OO3LY)
+> [Installation & Activation Tutorial](https://youtu.be/j6MYR0OO3LY)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
 <br>
 
 #### I installed Mansur-Rig, and I don't see the menu in Maya
-> * First, make sure the Maya version in question is within Mansur-Rig's supported versions, and that you are using a supported platform: <br>[*System-Requirements*](../../userGuides/System-Requirements/)
-> * If so, make sure PyMel is installed within the Maya version you are using: <br>[*2022 & 2023*](../../userGuides/System-Requirements/#maya-2022-2023-requirements) <br>[*2024*](../../userGuides/System-Requirements/#maya-2024-requirements)
-> * Try to uninstall, then use the [*manual installation*](../../userGuides/installation/#manual-installation) instead. 
+> * First, make sure the Maya version in question is within Mansur-Rig's supported versions, and that you are using a supported platform: <br>[*System-Requirements*](../userGuides/System-Requirements.md)
+> * If so, make sure PyMel is installed within the Maya version you are using: <br>[*2022 & 2023*](../userGuides/System-Requirements.md#maya-2022-2023-requirements) <br>[*2024*](../userGuides/System-Requirements.md#maya-2024-requirements)
+> * Try to uninstall, then use the [*manual installation*](../userGuides/installation.md#manual-installation) instead. 
 > * If non if the above make a difference, please send a support ticket to <br>**support@mansur-rig.com** <br>with as much information possible.
 
 <a href="#top">↑ Back to top ↑</a>
@@ -181,7 +181,7 @@
 
 #### How Do I activate my account in Maya?
 > Here is a video guide on how to install and activate Mansur-Rig:  
-> [Installation & Activation Tutorial](#https://youtu.be/j6MYR0OO3LY)
+> [Installation & Activation Tutorial](https://youtu.be/j6MYR0OO3LY)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -226,7 +226,7 @@
 > <br><br>
 > If any of the above apply to you, or even if you don't know why this happened, here is what you can do:  
 > 
-> 1. Go to [Mansur-Rig's Wep-App](#https://app.mansur-rig.com/)
+> 1. Go to [Mansur-Rig's Wep-App](https://app.mansur-rig.com/)
 > 2. Log-In to your account.
 > 3. Move to *Licenses* tab.
 > 4. Locate the license you are trying to activate within the licenses list. It should be indicated as *Occupied*.
@@ -299,7 +299,7 @@
 > Yes, of course.
 > You can combine Mansur-Rig with any other technics of your choice.  
 > Although Mansur-Rig does not contain pre-defined ways of combining it with other non-native objects, it is completely up to you do choose to do so.  
-> You can choose to use manual actions to connect Mansur-Rig with other entities, or you can use Mansur-Rig's [*Custom-Scripts*](../../userGuides/Custom-Scripts/) to automate this workflow.   
+> You can choose to use manual actions to connect Mansur-Rig with other entities, or you can use Mansur-Rig's [*Custom-Scripts*](../userGuides/Custom-Scripts.md) to automate this workflow.   
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -310,7 +310,7 @@
 > Simply go to *Mansur-Rig -> Preferences* dialog, move to *Picker* tab within the preferences dialog, and set your centralized picker-imaged path into the *pickerImagesFallbakPath* setting.  
 > Click *Save*  
 > Now, if a picker image isn't found, this directory will be used as a fallback directory to try and find it.  
-> **Note:** please use [this-guide](../../userGuides/tutorials/Creating-A-Picker/#picker-images-naming-convention) for correct naming convention for picker images
+> **Note:** please use [this-guide](../userGuides/tutorials/Creating-A-Picker.md#picker-images-naming-convention) for correct naming convention for picker images
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -318,7 +318,7 @@
 
 #### Is there an easy way to extract animations from Mansur-Rig to FBX?
 > Yes.  
-> Mansur-Rig contains a comprehensive [*Animation-Exporter*](../../userGuides/Game-Exporter/) that allows fast and easy export of assets/animations to *FBX* format.
+> Mansur-Rig contains a comprehensive [*Animation-Exporter*](../userGuides/Game-Exporter.md) that allows fast and easy export of assets/animations to *FBX* format.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -327,7 +327,7 @@
 #### Can I incorporate Motion-Capture (MOCAP) with Mansur-Rig?
 > Yes.  
 > Mansur-Rig supports Motion-Capture workflows fully.  
-> Here is a [*Guide to Mansur-Rig's Mocap Tools*](../../userGuides/Mocap-And-Game-Tools/)
+> Here is a [*Guide to Mansur-Rig's Mocap Tools*](../userGuides/Mocap-And-Game-Tools.md)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -378,8 +378,8 @@
 > Absolutely.  
 > Mansur-Rig contains both sepecificaly designed Facial-Rigging modules, as well as many more sulotions to create high-end Facial-Rigs.  
 > Moreover, Mansur-Rig's Facial-Rigging methods are one of it's best strengths, and all of them are joint-based as well, so they are also Game-Engine compatible.  
-> Check out some examples over at our [*Art-Station*](#https://www.artstation.com/mansur-rig) profile and our [*You-Tube Channel*](https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ)  
-> And here is a full tutorial series on [Mansur-Rig's Facial-Rigging](#https://www.youtube.com/playlist?list=PLpTYt5H9lICqxf7wCueB6imuRg1MoE5tU)
+> Check out some examples over at our [*Art-Station*](https://www.artstation.com/mansur-rig) profile and our [*You-Tube Channel*](https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ)  
+> And here is a full tutorial series on [Mansur-Rig's Facial-Rigging](https://www.youtube.com/playlist?list=PLpTYt5H9lICqxf7wCueB6imuRg1MoE5tU)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -395,20 +395,20 @@
 > * Since Mansur-Rig has dual states, **every rig is also a template**. You can use ANY Mansur-Rig's puppet and simply deconstruct it- and just like that you have a guide template. Move components to their new location based on your model, construct, and the puppet will match the original puppet you based you rig on. Of course you can always deconstruct and alter settings/components to your needs.
 > * Overall, Mansur-Rig is the single high end One-Stop-Shop for all of your rigging needs. **A production ready proven product, suitable for both offline productions and Game-Engines**.
 > * Finally- **completeness**. Mansur-Rig contains many tools for rigging and animation workflows to support it's main behaviour. These tools are a part of the product and don't need to be externaly installed. They are simply there whenever you need them:
-> 1. [LOD Tool](../../userGuides/LODs-Tool/)
-> 2. [Animation Picker](../../userGuides/The-Picker/)
-> 3. [Control Visibility Tool](../../userGuides/Control-Visibility-Tool)
-> 4. [CNS Tool](../../userGuides/CNS-Tool/)
-> 5. [Spring Tool](../../userGuides/Spring-Tool/)
-> 6. [Spaces/IK-FK Tool](../../userGuides/Spaces-IK-FK-Tool/)
+> 1. [LOD Tool](../userGuides/LODs-Tool.md)
+> 2. [Animation Picker](../userGuides/The-Picker.md)
+> 3. [Control Visibility Tool](../userGuides/Control-Visibility-Tool.md)
+> 4. [CNS Tool](../userGuides/CNS-Tool.md)
+> 5. [Spring Tool](../userGuides/Spring-Tool.md)
+> 6. [Spaces/IK-FK Tool](../userGuides/Spaces-IK-FK-Tool.md)
 > 7. Facial Mocap Tool
-> 8. [Animation Exporter](../../userGuides/Game-Exporter/)
-> 9. [Volume-Joints Tool](../../userGuides/Volume-Joints/)
-> 10. [Deformation Utilities](../../userGuides/Deformation-Utilities/)
-> 11. [MOCAP tools](../../userGuides/Mocap-And-Game-Tools/)
-> 12. [Module-Preset Editor](../../userGuides/Module-Preset-Editor/)
+> 8. [Animation Exporter](../userGuides/Game-Exporter.md)
+> 9. [Volume-Joints Tool](../userGuides/Volume-Joints.md)
+> 10. [Deformation Utilities](../userGuides/Deformation-Utilities.md)
+> 11. [MOCAP tools](../userGuides/Mocap-And-Game-Tools.md)
+> 12. [Module-Preset Editor](../userGuides/Module-Preset-Editor.md)
 > 12. Dynamic UI Creation Tool
-> 13. [Enterprise-Level license Management system](../../userGuides/License-Management/)
+> 13. [Enterprise-Level license Management system](../userGuides/License-Management.md)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -433,7 +433,7 @@
 
 #### Can I add manual steps to Mansur-Rig's build?
 > Yes.  
-> Please follow this guide to [*Custom-Scripts*](../../userGuides/Custom-Scripts/) in order to add python-scripts to Mansur-Rig's automated build.
+> Please follow this guide to [*Custom-Scripts*](../userGuides/Custom-Scripts.md) in order to add python-scripts to Mansur-Rig's automated build.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -441,7 +441,7 @@
 
 #### Can I run Mansur-Rig using code instead of the UI?
 > Yes.  
-> Here is a [*Guide To Scripted Builds*](../../userGuides/Scripted-Builds/)
+> Here is a [*Guide To Scripted Builds*](../userGuides/Scripted-Builds.md)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
