@@ -903,6 +903,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    UI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    Legend
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-guide" class="md-nav__link">
+    User Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="User Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-create-offset-group" class="md-nav__link">
+    Example 1- create-offset-group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-mnsannotatenode" class="md-nav__link">
+    Example 2- mnsAnnotateNode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6291,6 +6332,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    UI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    Legend
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-guide" class="md-nav__link">
+    User Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="User Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-create-offset-group" class="md-nav__link">
+    Example 1- create-offset-group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-mnsannotatenode" class="md-nav__link">
+    Example 2- mnsAnnotateNode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6309,10 +6391,154 @@
   <h1>Dynamic UI Creator</h1>
 
 <h4 id="general">General</h4>
+<p>Believe it or not, this is one of the very firsts tool to be developed within Mansur-Rig, and many UI behaviours are based on it.<br />
+It is an extremely powerful tool, despite it's simplicity.<br />
+<br>
+This simple UI, hides great strengths.
+On initialization, this tool will list <strong>ALL</strong> methods within Mansur-Rig's entire Python library.<br />
+Then, when you choose to <em>Create-UI</em>- a simple UI will be created for the method selected.<br />
+This means, that you can run <strong>ANY</strong> of Mansur-Rig's methods, using a UI, instead of calling it through code.<br />
+This tool will live-examine the method you select, acquiring all arguments as well as all keyword-argumets, including all of their settings, and compile them into a simple UI for you to be able to use without even touching code.<br />
+In this guide I'm going to show you how to harness this tool's strengths to your advanatage.  </p>
+<h4 id="ui">UI</h4>
 <p><figure>
   <img src="../userGuidesImages/dynUI/dynUIMenu.png"/>
   <figcaption>Menu Entry</figcaption>
 </figure></p>
+<figure>
+  <img src="../userGuidesImages/dynUI/UI.png"/>
+  <figcaption>UI</figcaption>
+</figure>
+
+<h4 id="legend">Legend</h4>
+<ol>
+<li>Methods list</li>
+<li><em>Create UI</em> button- will create a simplified UI for the selected method. Use <em>Mouse-Double-Click</em> on a method as a shortcut.</li>
+<li>Fliter/Search Section<ul>
+<li>Filter methods by entering text into the search field.</li>
+<li><em>A</em> Checkbox - will determine whether the search is case-sensative or not.</li>
+<li><em>Clear</em> button will clear the serach field and reset the list.</li>
+</ul>
+</li>
+<li><em>Pin/Unpin</em>- Toggle methods betwen pinned and unpinned options. Use <em>Mouse-Right-Click</em> on a method as a shortcut.
+    <em>Pinning a method is equivalent to </em>Saving-To-Favorites<em>. Whenever you pin a method on the list, it will be marked in bold font, and moved to the top of the list. Use this feature to save your most used methods instead of needing to search them every time you load the tool. Pinned methods will be saved as a global preference, and will be restored when you restart the tool or restart Maya.
+    </em>Un-Pinning a method will remove it from your pinned methods.
+    <em>Use </em>Clear All Pins* button to clear all of your pinned methods and reset the tool to it's default state.</li>
+<li><em>Reload Library</em>- Use this method in case you are a developer, and you are making live changes to methods, and want to reload your changes.</li>
+<li>Toggle between <em>Pinned Only View</em> and default. In <em>Pinned Only View</em> only pinned methods will be displayed in the methods list.</li>
+</ol>
+<h4 id="user-guide">User Guide</h4>
+<p>The best way to explain how to use this tool is by examples:</p>
+<h5 id="example-1-create-offset-group">Example 1- create-offset-group</h5>
+<p>Let's say that you are happy with your Block rig, but for some pipeline requirements you need to create an additional offset-group for one of the contorls.<br />
+This tool is the easiest way to do that.  <br />
+Here is what you do:  </p>
+<ol>
+<li>Load the <em>Dynamic UI Creator</em> from Mansur-Rig's main menu.</li>
+<li>In the search field, type- <em>createOffset</em>. This will filter all methods with this text in it.
+    <figure>
+      <img src="../userGuidesImages/dynUI/createOffsetFilter.png"/>
+      <figcaption><em>createOffset</em> Filter</figcaption>
+    </figure></li>
+<li>In the filtered results, you can see there is a method named <em>createOffsetGroup</em> which looks like what we are looking for.  </li>
+<li>Now you could simply try and see if that works, but even better is to take a look at this method's documentation.</li>
+<li>In order to do that, oepn a browser and go to the <a href="../../Maya-Plugins/"><em>Code-Documentation</em></a> section in Mansur-Rig's docs page.</li>
+<li>If you know where this method is located within the Python library, you can simply navigate to it, but this is most likely not the case.</li>
+<li>So in top-right-hand side you'll see a search bar- simply type the name of the method into it -<em>createOffsetGroup</em>, and click search.
+    <figure>
+      <img src="../userGuidesImages/dynUI/docsSearchBar.png"/>
+      <figcaption>Documentation page search bar</figcaption>
+    </figure></li>
+<li>There you can simply find the documentation for the given method:
+    <figure>
+      <img src="../userGuidesImages/dynUI/createOffsetSearch.png"/>
+      <figcaption>Method's Documentation Search</figcaption>
+    </figure></li>
+<li>Now click the method's link to navigate directly to <a href="../../utility/#createoffsetgroup">it's documentation</a>
+    <figure>
+      <img src="../userGuidesImages/dynUI/createOffsetDocs.png"/>
+      <figcaption>Method's Documentation</figcaption>
+    </figure></li>
+<li>
+<p>Reading the description of the documentation it is clear this is the method we are looking for. You can also see all arguments and keyword argumets definitions within. For this specific case we see a single <em>argument</em>:</p>
+<ul>
+<li>transformObject </li>
+</ul>
+<p>and 2 <em>keyword argumets</em>: </p>
+<ul>
+<li>type</li>
+<li>bodySuffix</li>
+</ul>
+</li>
+<li>
+<p>Going back to Maya, click the <em>Create UI</em> button while the method is selected, or double click the method to initiate the UI.</p>
+</li>
+<li>Now we see a UI representing the method, with a row for every argument and keyword argument for this method:
+    <figure>
+      <img src="../userGuidesImages/dynUI/createOffsetUI.png"/>
+      <figcaption>Method's UI</figcaption>
+    </figure></li>
+<li>The UI correlates directly to the method's documentation, and is being dynamically created after fetching the method's informaion directly from the Python library. Also, each row within the UI is being created based on the value type for each argument.</li>
+<li>Now let finallly test it out:<ul>
+<li>Select one of your Block-Rig's controls, and click the <em>&lt;</em> button next to the <em>transformObject</em> argument row, to insert it into the UI 
+    <figure>
+      <img src="../userGuidesImages/dynUI/offsetCtrlLoad.png"/>
+      <figcaption>Ctrl Load</figcaption>
+    </figure></li>
+<li>Click <em>Run</em> button- And this is the result. An offset group was created for the target control.
+<figure>
+      <img src="../userGuidesImages/dynUI/offsetResult.png"/>
+      <figcaption>Result</figcaption>
+</figure></li>
+</ul>
+</li>
+<li>This will be equivalent to doing this using Python:
+    <div class="highlight"><pre><span></span><code>from mansur.core import utility as mnsUtils  
+mnsUtils.createOffsetGroup(&quot;c_freeControl_A001_ctrl&quot;)
+</code></pre></div></li>
+<li>You can also expand this, once you tested the behavior manually, to automate this process using the <a href="../Custom-Scripts/"><em>Custom-Scripts user guide</em></a></li>
+<li>This is the simplest way to explain how this tool works. In general, this tool will generate a UI for every single method within Mansur-Rig's custom Python library, which is HUGE. You can use this tool to enhece your rigging process, learn how the code works, experiment, and testing manually before automating.</li>
+<li>Also, you can of course look for methods within Mansur-Rig's <a href="../../Maya-Plugins/"><em>Documentation Page</em></a> and then test it out using this <em>Dynamic-UI</em> tool.</li>
+</ol>
+<h5 id="example-2-mnsannotatenode">Example 2- mnsAnnotateNode</h5>
+<p>Now lets try a differt example, where you need to create a node, whether one from Mansur-Rig's custom plugin library, or a native Maya node, easily without dealing with code or node-connections.<br />
+In this example, we will be ceating a simple mnsAnnotate node.  </p>
+<ol>
+<li>Lets start by assuming you watch this <a href="https://www.youtube.com/watch?v=k6KQ4HGIoYc"><em>mnsAnnotate Node</em></a> You-Tube video, and you would like to to try it out yourself. The easiest way to do that would be to use this Dynamic-UI tool.</li>
+<li>Once again open the Dynamic-UI tool and type mnsAnnotate within the search bar
+    <figure>
+          <img src="../userGuidesImages/dynUI/annotateSearch.png"/>
+          <figcaption>mnsAnnotate Search</figcaption>
+    </figure></li>
+<li>Once you found the relevant method, double click it to load the UI.</li>
+<li>Let's compare again against the <a href="../../nodes/#mnsannotatenode"><em>Method's Documentation</em></a>
+    <figure>
+          <img src="../userGuidesImages/dynUI/mnsAnnotateUI.png"/>
+          <figcaption>mnsAnnotate UI</figcaption>
+    </figure></li>
+<li>Once again we see a direct correlation between the method's definition and UI created, as well as all arguments represnted, based on their type, within the UI.</li>
+<li>After reading the <a href="../../nodes/#mnsannotatenode"><em>Method's Documentation</em></a> and seeing the <a href="https://www.youtube.com/watch?v=k6KQ4HGIoYc"><em>Video</em></a> it is clear the most important argument is the <em>Attributes</em> argument, which is the list of attributes you want to annotate.</li>
+<li>So now make a channel-box selection of the attributes you would like to annotate:
+    <figure>
+          <img src="../userGuidesImages/dynUI/annotateCBSelection.png"/>
+          <figcaption>Channel-Box Selection</figcaption>
+    </figure></li>
+<li>Now click the <em>&lt;</em> button to the right of the <em>Attributes</em> argument row, to input your selection into the UI:
+    <figure>
+          <img src="../userGuidesImages/dynUI/CBInsert.png"/>
+          <figcaption>Channel-Box Attributes Inserted</figcaption>
+    </figure></li>
+<li>Click <em>Run</em> button.</li>
+<li>And as easily as that, a mnsAnnotate node was created, as requested, with all connections made automatically, to the requested attribues.
+    <figure>
+          <img src="../userGuidesImages/dynUI/mnsAnnotateResult.png"/>
+          <figcaption>Result</figcaption>
+    </figure></li>
+<li>Once again this will be equivalent to this Python code:
+    <div class="highlight"><pre><span></span><code>from mansur.core import nodes as mnsNodes
+mnsNodes.mnsAnnotateNode(attributes = [&quot;locator1.tx&quot;, &quot;locator1.ty&quot;, &quot;locator1.tz&quot;])
+</code></pre></div></li>
+</ol>
 
 
 
