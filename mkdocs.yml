@@ -58,12 +58,12 @@ nav:
       - Getting-Started:
         - userGuides/System-Requirements.md
         - userGuides/installation.md
-        - userGuides/Log-In.md
         - userGuides/License-Management.md
         - userGuides/Version-Updates.md
         - userGuides/Naming-Convention.md
         - userGuides/Asset-Scaling.md
         - userGuides/license.md
+        - userGuides/4K-Monitors.md
       - Rigging-Tools:
         - userGuides/Dynamic-UI-Creator.md
         - userGuides/Module-Preset-Editor.md
