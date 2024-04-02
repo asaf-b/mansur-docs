@@ -29,6 +29,7 @@
     </li>
     <li>The settings you selected will be saved within the current scene. So you can define the animation ranges for the selected scene once, then once you re-open the tool the settings will automatically load into the dialog.</li>
     <li>It is possible to export an asset as well as animation ranges in the same batch, in case needed.</li>
+    <li>This tool supports multiple rig exports
   </ol>
   </li>
 </ol>
@@ -53,8 +54,19 @@
       <li>Offset Skeleton - This option will bake and export the offset skeleton instead of the main skeleton, in case it exists.</li>
     </ul>
   </li>
-  <li>Normalize Ranges- If checked, the animation ranges will be normalized to start from frame 1. For example, if the animation range selected is 30f-100f, the exported animation range will be normalized to 1f-70f. In case this isn't chacked, the selected range will be preserved. This is most useful in case you export multiple ranges from the same scene.</li>
-  <li>Delete Unused Nodes- If checked, while extracting the skeleton from the rig, any joints that are not used in any connected skin cluster, will be removed from the heirarchy. This is most useful for performance maximization in game engined. Be-Aware! This means that the extracted skeleton heirarchy will be different then the one present in the rig, and any changes within the skin clusters related to the heirarchy will requst in a different skeleton structure.</li>
-  <li>Include Meshes- If checked, the aniamtion exported will contain the skeleton's connected skinned meshed. This is only relevant in "range" mode. It is always true in "Asset" mode.</li>
-  <li>Joint Rotate To Orient- If checked, after the skeleton is extracted at base state, all joint rotation values will be converted to 'joint orient' values.</li>
+  <li>Export Settings
+    <ul>
+      <li>Normalize Ranges- If checked, the animation ranges will be normalized to start from frame 1. For example, if the animation range selected is 30f-100f, the exported animation range will be normalized to 1f-70f. In case this isn't chacked, the selected range will be preserved. This is most useful in case you export multiple ranges from the same scene.</li>
+      <li>Reset Root Joint - If checked, after asset/animation extraction, animation for the root joint will be deleted, and it will be reset to origin
+      <li>Include Meshes- If checked, the aniamtion exported will contain the skeleton's connected skinned meshed. This is only relevant in "range" mode. It is always true in "Asset" mode.</li>
+      <li>From mdl-Grp Only- Normally, all skinned meshes to the selected skeleton will be extracted. If this is checked, only geometry under Block's Model-Group will be extracted. 
+      <li>Joint Rotate To Orient- If checked, after the skeleton is extracted at base state, all joint rotation values will be converted to 'joint orient' values.</li>
+      <li>Delete Unused Nodes- If checked, while extracting the skeleton from the rig, any joints that are not used in any connected skin cluster, will be removed from the heirarchy. This is most useful for performance maximization in game engined. Be-Aware! This means that the extracted skeleton heirarchy will be different then the one present in the rig, and any changes within the skin clusters related to the heirarchy will requst in a different skeleton structure.</li>
+    </ul>
+  </li>
+  <li>Add Rig- In case you need to export animations from multiple rigs in the same scene, you this button to add another rig tab to the view</li>
+  <li>Reset- Reset current rig tab. i.e. Delete all ranges and rig top name</li>
+  <li>Add Range- Add another range/asset to the current rig view</li>
+  <li>Rig Top Name- Set the rig-top to export. This will be Block's rig top node. Simply select the node, and click the < button on the right to input it into the field</li>
+  <li>Ranges/Assets View- This is where you set all of the targets for your export, for the current rig-top selected.</li>
 </ol>
