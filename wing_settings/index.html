@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../releaseNotes/v2.4.0/" class="md-tabs__link">
+        <a href="../releaseNotes/v2.5.0/" class="md-tabs__link">
           
   
   Release-Notes
@@ -1798,6 +1798,26 @@
             Release-Notes
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releaseNotes/v2.5.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V2.5.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3447,6 +3467,70 @@
   
   <span class="md-ellipsis">
     productRelease
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_3_4" id="__nav_7_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    schemeEditor
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            schemeEditor
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schemeEditor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    schemeEditor
   </span>
   
 
@@ -5174,7 +5258,7 @@
             
   
   <span class="md-ellipsis">
-    simpleSquash
+    remoteControl
   </span>
   
 
@@ -5183,6 +5267,90 @@
         
         <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2_4_6_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            remoteControl
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remoteControl_settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remoteControl settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remoteControl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remoteControl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_4_6_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_4_6_3_7" id="__nav_7_2_4_6_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    simpleSquash
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_4_6_3_7">
             <span class="md-nav__icon md-icon"></span>
             simpleSquash
           </label>
@@ -6402,154 +6570,281 @@
 
 <p><body></p>
 <h1 id="wing-settings">wing Settings</h1>
-<p><hr width = 100%>
-<font color = #5f5f5f size = 3pt>
-<i>
-Author: Asaf Ben-Zur <br>
-Best used for: Bird Wings <br>
-This module is designed for birds (feathered) wings. <br>
-This is a compound module. <br>
-The main module is based on the limb module, including most of it's features. <br>
-On top of the main limb module, there is a compound FK chain modules extending from each of the main modules main guides, to create a global feathers silhouette control. <br>
-Out of these compounds, a grid of interp-joints is created to control the shape's deformation, using mnsPointOnCuveNode as a driver. <br>
-As a bird wing is incredibly complex, controlling it precisely is incredibly difficult. <br>
-With that in mind, the grid of interp joints is designed to control the overall shape of the feathers as a group, mid-controls to curl them as a group, as well as control each feather row individually. <br>
-Use featherJoints attribute to define the number of feathers along the wings main skeleton. <br>
-Post joint-struct creation, use the custom position adjustment attribute on the root-guide to adjust the position of the joint grid to match your needs. <br>
-This module also contains multiple features to make animation even better: <br>
-Feathers spring, global wave control, individual feather control, bendy limbs, extension-to-look-at for easy wing fold control. <br>
-</i>
-<br>
-</font>
-<hr width = 100%></p>
+<hr width = 100%>
+
+<p><font color = #5f5f5f size = 3pt></p>
+<p><i></p>
+<p>Author: Asaf Ben-Zur <br></p>
+<p>Best used for: Bird Wings <br></p>
+<p>This module is designed for birds (feathered) wings. <br></p>
+<p>This is a compound module. <br></p>
+<p>The main module is based on the limb module, including most of it's features. <br></p>
+<p>On top of the main limb module, there is a compound FK chain modules extending from each of the main modules main guides, to create a global feathers silhouette control. <br></p>
+<p>Out of these compounds, a grid of interp-joints is created to control the shape's deformation, using mnsPointOnCuveNode as a driver. <br></p>
+<p>As a bird wing is incredibly complex, controlling it precisely is incredibly difficult. <br></p>
+<p>With that in mind, the grid of interp joints is designed to control the overall shape of the feathers as a group, mid-controls to curl them as a group, as well as control each feather row individually. <br></p>
+<p>Use featherJoints attribute to define the number of feathers along the wings main skeleton. <br></p>
+<p>Post joint-struct creation, use the custom position adjustment attribute on the root-guide to adjust the position of the joint grid to match your needs. <br></p>
+<p>This module also contains multiple features to make animation even better: <br></p>
+<p>Feathers spring, global wave control, individual feather control, bendy limbs, extension-to-look-at for easy wing fold control. <br></p>
+<p></i></p>
+<p><br></p>
+<p></font></p>
+<hr width = 100%>
+
 <h2 id="attributes">Attributes</h2>
 <p></table></font></p>
 <h3 id="globalsettings">GlobalSettings</h3>
-<p><table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+
 <tr><td>interpolationJoints</td>
+
 <td>5</td>
+
 <td>Increments of 4, starting from 5. This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation</td></tr>
+
 <tr><td>offsetX</td>
+
 <td>20.0</td>
+
 <td>Up curve X value offset for the interpolation joints</td></tr>
+
 <tr><td>offsetZ</td>
+
 <td>0.0</td>
+
 <td>Up curve Z value offset for the interpolation joints</td></tr>
+
 <tr><td>FKSymmetryType</td>
+
 <td>0</td>
+
 <td>FK controls symmetry type, in case it needs to differ from the main symmetry type</td></tr>
+
 <tr><td>scaleMode</td>
+
 <td>2</td>
+
 <td>Default scale mode. Please refer to the documentation of mnsPointsOnCurve node to learn more about each mode</td></tr>
+
 <tr><td>squashMode</td>
+
 <td>4</td>
+
 <td>Default squash mode. Please refer to the documentation of mnsPointsOnCurve node to learn more about each mode</td></tr>
+
 <tr><td>ikFkBlendDefault</td>
+
 <td>1.0</td>
+
 <td>Default value for the main IK-FK blend channel. 0 is IK, 1 is FK.</td></tr>
-</table></font></p>
-<h3 id="featherssettings">FeathersSettings</h3>
-<p><table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
-<tr><td>featherJoints</td>
-<td>15</td>
-<td>The amount of primary feathers. Ideally, a joint chain will be craeted for each primary feather for the most control in animation. This setting sets the mount of primary feathers, or the amount of feather column chains created</td></tr>
-<tr><td>featherFKSections</td>
-<td>3</td>
-<td>The amount of sections each primary feather joint column will consist of. In case the amount of sections set is 3 for example, a column of 4 joints will be created for the amount of feather joints selected above</td></tr>
-<tr><td>doFeathersSpring</td>
-<td>True</td>
-<td>Choose whether create the automatic feather spring feature or not</td></tr>
-<tr><td>doFeatherIsolatedCtrls</td>
-<td>True</td>
-<td>In case this setting is set to true, the isolated-feather controls feature will be created</td></tr>
-<tr><td>featherFKControlShape</td>
-<td>cube</td>
-<td>Feather FK controls shape</td></tr>
-<tr><td>featherIsolatedControlShape</td>
-<td>square</td>
-<td>Feather isolted controls shape</td></tr>
-<tr><td>extensionLookAtControlShape</td>
-<td>lightPin</td>
-<td>Extensions look-at control shape</td></tr>
-</table></font></p>
-<h3 id="ik">IK</h3>
-<p><table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
-<tr><td>stretchLimit</td>
-<td>1.0</td>
-<td>IK Handle stratch limit default value</td></tr>
-<tr><td>softness</td>
-<td>0.0</td>
-<td>IK handle softness default value</td></tr>
-<tr><td>iKHandleMatchOrient</td>
-<td></td>
-<td>Select a guide to match the IK-Handle's orientation. This will override the native orientation as well as all symmetry options</td></tr>
-</table></font></p>
-<h3 id="main-ctrl-shapes">Main-Ctrl-Shapes</h3>
-<p><table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
-<tr><td>rootControlShape</td>
-<td>plus</td>
-<td>Module root control control shape</td></tr>
-<tr><td>ikHandleControlShape</td>
-<td>square</td>
-<td>IK Handle control shape</td></tr>
-<tr><td>poleVectorControlShape</td>
-<td>diamond</td>
-<td>Pole Vector control shape</td></tr>
-<tr><td>fkControlShape</td>
-<td>cylinder</td>
-<td>FK controls shape</td></tr>
-<tr><td>tertiariesControlShape</td>
-<td>flatDiamond</td>
-<td>Tweak tertiary controls shape</td></tr>
-</table></font></p>
-<h3 id="tweakersbendy-limbs">tweakers/bendy-Limbs</h3>
-<p><table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
-<tr><td>doTweakers</td>
-<td>False</td>
-<td>This feature will create a secondary tweak layer below the main control chain. This is commonly known as Bendy-Limbs</td></tr>
-<tr><td>tweakersSymmetryType</td>
-<td>3</td>
-<td>Tweak controls symmetry type, in case it needs to differ from the main symmetry type</td></tr>
-<tr><td>tweakersPerSection</td>
-<td>1</td>
-<td>The amount of bendy controls per section. A value of one will create two controls in total - one for the upper section of the limb, on for the lower section</td></tr>
-<tr><td>createExtraAttributes</td>
-<td>True</td>
-<td>If this is set to True, some extra tertiary channel-box control attributes will be added to the attribute-host</td></tr>
-<tr><td>tweakControlShape</td>
-<td>dialSquare</td>
-<td>Tweak controls shape</td></tr>
-<tr><td>negateOffsetOnSymmetry</td>
-<td>False</td>
-<td>If this is set to True, the above offsetX and offsetZ value for the up curve will be negated</td></tr>
-<tr><td>tweakersChannelControl</td>
-<td>
-<font size = 2pt>
-<table><tr><td style="padding:6px"></td>
-<td style="padding:6px"><b>T</b></td>
-<td style="padding:6px"><b>R</b></td>
-<td style="padding:6px"><b>S</b></td>
-</tr>
-<tr><td style="padding:6px"><b>X</b></td>
-<td style="padding:6px">v</td>
-<td style="padding:6px">v</td>
-<td style="padding:6px">v</td>
-</tr>
-<tr><td style="padding:6px"><b>Y</b></td>
-<td style="padding:6px">v</td>
-<td style="padding:6px">v</td>
-<td style="padding:6px">v</td>
-</tr>
-<tr><td style="padding:6px"><b>Z</b></td>
-<td style="padding:6px">v</td>
-<td style="padding:6px">v</td>
-<td style="padding:6px">v</td>
-</tr>
+
 </table>
-</font>
+
+<p></font></p>
+<h3 id="featherssettings">FeathersSettings</h3>
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+
+<tr><td>featherJoints</td>
+
+<td>15</td>
+
+<td>The amount of primary feathers. Ideally, a joint chain will be craeted for each primary feather for the most control in animation. This setting sets the mount of primary feathers, or the amount of feather column chains created</td></tr>
+
+<tr><td>featherFKSections</td>
+
+<td>3</td>
+
+<td>The amount of sections each primary feather joint column will consist of. In case the amount of sections set is 3 for example, a column of 4 joints will be created for the amount of feather joints selected above</td></tr>
+
+<tr><td>doFeathersSpring</td>
+
+<td>True</td>
+
+<td>Choose whether create the automatic feather spring feature or not</td></tr>
+
+<tr><td>doFeatherIsolatedCtrls</td>
+
+<td>True</td>
+
+<td>In case this setting is set to true, the isolated-feather controls feature will be created</td></tr>
+
+<tr><td>featherFKControlShape</td>
+
+<td>cube</td>
+
+<td>Feather FK controls shape</td></tr>
+
+<tr><td>featherIsolatedControlShape</td>
+
+<td>square</td>
+
+<td>Feather isolted controls shape</td></tr>
+
+<tr><td>extensionLookAtControlShape</td>
+
+<td>lightPin</td>
+
+<td>Extensions look-at control shape</td></tr>
+
+</table>
+
+<p></font></p>
+<h3 id="ik">IK</h3>
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+
+<tr><td>stretchLimit</td>
+
+<td>1.0</td>
+
+<td>IK Handle stratch limit default value</td></tr>
+
+<tr><td>softness</td>
+
+<td>0.0</td>
+
+<td>IK handle softness default value</td></tr>
+
+<tr><td>iKHandleMatchOrient</td>
+
+<td></td>
+
+<td>Select a guide to match the IK-Handle's orientation. This will override the native orientation as well as all symmetry options</td></tr>
+
+</table>
+
+<p></font></p>
+<h3 id="main-ctrl-shapes">Main-Ctrl-Shapes</h3>
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+
+<tr><td>rootControlShape</td>
+
+<td>plus</td>
+
+<td>Module root control control shape</td></tr>
+
+<tr><td>ikHandleControlShape</td>
+
+<td>square</td>
+
+<td>IK Handle control shape</td></tr>
+
+<tr><td>poleVectorControlShape</td>
+
+<td>diamond</td>
+
+<td>Pole Vector control shape</td></tr>
+
+<tr><td>fkControlShape</td>
+
+<td>cylinder</td>
+
+<td>FK controls shape</td></tr>
+
+<tr><td>tertiariesControlShape</td>
+
+<td>flatDiamond</td>
+
+<td>Tweak tertiary controls shape</td></tr>
+
+</table>
+
+<p></font></p>
+<h3 id="tweakersbendy-limbs">tweakers/bendy-Limbs</h3>
+<table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
+
+<tr><td>doTweakers</td>
+
+<td>False</td>
+
+<td>This feature will create a secondary tweak layer below the main control chain. This is commonly known as Bendy-Limbs</td></tr>
+
+<tr><td>tweakersSymmetryType</td>
+
+<td>3</td>
+
+<td>Tweak controls symmetry type, in case it needs to differ from the main symmetry type</td></tr>
+
+<tr><td>tweakersPerSection</td>
+
+<td>1</td>
+
+<td>The amount of bendy controls per section. A value of one will create two controls in total - one for the upper section of the limb, on for the lower section</td></tr>
+
+<tr><td>createExtraAttributes</td>
+
+<td>True</td>
+
+<td>If this is set to True, some extra tertiary channel-box control attributes will be added to the attribute-host</td></tr>
+
+<tr><td>tweakControlShape</td>
+
+<td>dialSquare</td>
+
+<td>Tweak controls shape</td></tr>
+
+<tr><td>negateOffsetOnSymmetry</td>
+
+<td>False</td>
+
+<td>If this is set to True, the above offsetX and offsetZ value for the up curve will be negated</td></tr>
+
+<tr><td>tweakersChannelControl</td>
+
+<td>
+
+<font size = 2pt>
+
+<table><tr><td style="padding:6px"></td>
+
+<td style="padding:6px"><b>T</b></td>
+
+<td style="padding:6px"><b>R</b></td>
+
+<td style="padding:6px"><b>S</b></td>
+
+</tr>
+
+<tr><td style="padding:6px"><b>X</b></td>
+
+<td style="padding:6px">v</td>
+
+<td style="padding:6px">v</td>
+
+<td style="padding:6px">v</td>
+
+</tr>
+
+<tr><td style="padding:6px"><b>Y</b></td>
+
+<td style="padding:6px">v</td>
+
+<td style="padding:6px">v</td>
+
+<td style="padding:6px">v</td>
+
+</tr>
+
+<tr><td style="padding:6px"><b>Z</b></td>
+
+<td style="padding:6px">v</td>
+
+<td style="padding:6px">v</td>
+
+<td style="padding:6px">v</td>
+
+</tr>
+
+</table>
+
+<p></font></p>
 </td>
-<td>Tweak controls channel-box settings</td></tr>
-</table></font></p>
+
+<td>Tweak controls channel-box settings</td>
+
+</tr>
+
+<p></table></font></p>
 
 
 

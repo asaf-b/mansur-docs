@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../releaseNotes/v2.4.0/" class="md-tabs__link">
+        <a href="../releaseNotes/v2.5.0/" class="md-tabs__link">
           
   
   Release-Notes
@@ -1798,6 +1798,26 @@
             Release-Notes
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releaseNotes/v2.5.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V2.5.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3447,6 +3467,70 @@
   
   <span class="md-ellipsis">
     productRelease
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_3_4" id="__nav_7_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    schemeEditor
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            schemeEditor
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schemeEditor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    schemeEditor
   </span>
   
 
@@ -5167,7 +5251,7 @@
             
   
   <span class="md-ellipsis">
-    simpleSquash
+    remoteControl
   </span>
   
 
@@ -5176,6 +5260,90 @@
         
         <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2_4_6_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            remoteControl
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remoteControl_settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remoteControl settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remoteControl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remoteControl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_4_6_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_4_6_3_7" id="__nav_7_2_4_6_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    simpleSquash
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_4_6_3_7">
             <span class="md-nav__icon md-icon"></span>
             simpleSquash
           </label>
@@ -6388,92 +6556,153 @@
 
 <p><body></p>
 <h1 id="localclump">localClump</h1>
-<p><hr width = 100%>
-<font color = #5f5f5f size = 3pt>
-<i>
-Author: Asaf Ben-Zur <br>
-Best used for: Clumps of controls. i.e. the first layer of controls in a clump of 5 hair strands (FK chains). <br>
-This module was developed to allow a local control driver, over clumps of controls. <br>
-For example, a block rig contains 10 hair strands, controled by 10 FK-Shain modules, with 3 controls each. <br>
-In some cases it is easier to pose the hair treting it as a single unit instead of indevidual strands. <br>
-So, a clump-control can be created for each layer of controls (3, 1 for every unit in each chain). <br>
-The control will be created using local channels in order to not break the FK behaviour of the strands. <br>
-In case any other method was used (spaces, module parenting), each indevidual strand FK behaviour would have been broken. <br>
-The clump controls can also be parented under one another to create a layered-FK behaviour. <br>
-This will result in a main clump-fk chain, treating the hair as a single unit, and FK chains below to tread each strand indevidually. <br>
-In case you want to mimic a normal parenting behaviour, use the conformPivot attribute, which will conform all local driven controls to the pivot of this master clump control. <br>
-Leaving conformPivot OFF, will simply connect to the local channels of the slave, leaving its pivots intact. This will result in a slightly different behaviour. <br>
-You can also use connectToChannelControl attribute to decide which attributes you want to connect to, and the ones you want to leave out. <br>
- <br>
-</font>
-</i>
-<hr width = 100%></p>
+<hr width = 100%>
+
+<p><font color = #5f5f5f size = 3pt></p>
+<p><i></p>
+<p>Author: Asaf Ben-Zur <br></p>
+<p>Best used for: Clumps of controls. i.e. the first layer of controls in a clump of 5 hair strands (FK chains). <br></p>
+<p>This module was developed to allow a local control driver, over clumps of controls. <br></p>
+<p>For example, a block rig contains 10 hair strands, controled by 10 FK-Shain modules, with 3 controls each. <br></p>
+<p>In some cases it is easier to pose the hair treting it as a single unit instead of indevidual strands. <br></p>
+<p>So, a clump-control can be created for each layer of controls (3, 1 for every unit in each chain). <br></p>
+<p>The control will be created using local channels in order to not break the FK behaviour of the strands. <br></p>
+<p>In case any other method was used (spaces, module parenting), each indevidual strand FK behaviour would have been broken. <br></p>
+<p>The clump controls can also be parented under one another to create a layered-FK behaviour. <br></p>
+<p>This will result in a main clump-fk chain, treating the hair as a single unit, and FK chains below to tread each strand indevidually. <br></p>
+<p>In case you want to mimic a normal parenting behaviour, use the conformPivot attribute, which will conform all local driven controls to the pivot of this master clump control. <br></p>
+<p>Leaving conformPivot OFF, will simply connect to the local channels of the slave, leaving its pivots intact. This will result in a slightly different behaviour. <br></p>
+<p>You can also use connectToChannelControl attribute to decide which attributes you want to connect to, and the ones you want to leave out. <br></p>
+<p><br></p>
+<p></font></p>
+<p></i></p>
+<hr width = 100%>
+
 <h2 id="defenitions">Defenitions</h2>
 <hr width = 100%>
 
 <h3 id="construct">construct</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>construct(mansur, MnsBuildModule, <strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>construct(mansur, MnsBuildModule, **kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (controls), dict (internalSpaces)</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>mansur</b></li>
+
 <li><b>MnsBuildModule</b></li>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="filtervalidclumpslaves">filterValidClumpSlaves</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
+
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>filterValidClumpSlaves(slavesList = [], mansur = None)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>slavesList</b>(<i>list</i>) ; [default: []]</li>
+
 <li><b>mansur</b>(<i>str</i>) ; [default: None]</li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="jointstructure">jointStructure</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>jointStructure(mansur, guides, mnsBuildModule = None, <strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>jointStructure(mansur, guides, mnsBuildModule = None, **kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>mansur</b></li>
+
 <li><b>guides</b></li>
+
 <li><b>mnsBuildModule</b>(<i>str</i>) ; [default: None]</li>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="postconstruct">postConstruct</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>postConstruct(mansur, MnsBuildModule, <strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>postConstruct(mansur, MnsBuildModule, **kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>mansur</b></li>
+
 <li><b>MnsBuildModule</b></li>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font></p>
+
+</table>
+
+<p></font></p>
 
 
 
