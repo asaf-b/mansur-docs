@@ -175,6 +175,8 @@ nav:
             - install:
               - install.md
             - productRelease.md
+          - schemeEditor:
+            - schemeEditor.md
         - block:
           - characterDefenition:
             - characterDefenitionUI.md
@@ -229,6 +231,9 @@ nav:
               - lookAtControl:
                 - lookAtControl_settings.md
                 - lookAtControl.md
+              - remoteControl:
+                - remoteControl_settings.md
+                - remoteControl.md
               - simpleSquash:
                 - simpleSquash_settings.md
                 - simpleSquash.md

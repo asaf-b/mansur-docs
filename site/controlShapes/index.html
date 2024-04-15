@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../releaseNotes/v2.4.0/" class="md-tabs__link">
+        <a href="../releaseNotes/v2.5.0/" class="md-tabs__link">
           
   
   Release-Notes
@@ -1798,6 +1798,26 @@
             Release-Notes
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releaseNotes/v2.5.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    V2.5.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3447,6 +3467,70 @@
   
   <span class="md-ellipsis">
     productRelease
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_3_4" id="__nav_7_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    schemeEditor
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            schemeEditor
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schemeEditor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    schemeEditor
   </span>
   
 
@@ -5471,7 +5555,7 @@
             
   
   <span class="md-ellipsis">
-    simpleSquash
+    remoteControl
   </span>
   
 
@@ -5480,6 +5564,90 @@
         
         <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2_4_6_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            remoteControl
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remoteControl_settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remoteControl settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remoteControl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remoteControl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_4_6_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_4_6_3_7" id="__nav_7_2_4_6_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    simpleSquash
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_4_6_3_7">
             <span class="md-nav__icon md-icon"></span>
             simpleSquash
           </label>
@@ -7000,759 +7168,1437 @@
 
 <p><body></p>
 <h1 id="controlshapes">controlShapes</h1>
-<p><hr width = 100%>
-<font color = #5f5f5f size = 3pt>
-<i>
-=== Author: Assaf Ben Zur === <br>
-Core control shapes creation function assembly. <br>
-A main CtrlCreate function calls a veriaty of pre-defined shape creation, then handles them <br>
-</font>
-</i>
-<hr width = 100%></p>
+<hr width = 100%>
+
+<p><font color = #5f5f5f size = 3pt></p>
+<p><i></p>
+<p>=== Author: Assaf Ben Zur === <br></p>
+<p>Core control shapes creation function assembly. <br></p>
+<p>A main CtrlCreate function calls a veriaty of pre-defined shape creation, then handles them <br></p>
+<p></font></p>
+<p></i></p>
+<hr width = 100%>
+
 <h2 id="defenitions">Defenitions</h2>
 <hr width = 100%>
 
 <h3 id="arrowdodecagonshapecreate">arrowDodecagonShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>arrowDodecagonShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>arrowDodecagonShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="arrowshapecreate">arrowShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>arrowShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>arrowShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="arrowsquareshapecreate">arrowSquareShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>arrowSquareShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>arrowSquareShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="batchcreateallcontrolshapes">batchCreateAllControlShapes</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>batchCreateAllControlShapes(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>batchCreateAllControlShapes(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td> list (MnsNameStd, created shapes)</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>side</b>(<i>str</i>) ; [default: c]</li>
+
 <li><b>color</b>(<i>tuple</i>) ; [default: (0.0, 1.0, 0.0)]</li>
+
 </ul></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="batchcreateallcontrolshapesicons">batchCreateAllControlShapesIcons</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
+
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>batchCreateAllControlShapesIcons()</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="bubblepinshapecreate">bubblePinShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bubblePinShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>bubblePinShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="circleshapecreate">circleShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>circleShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>circleShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>sections</b>(<i>int</i>) ; [default: 8]</li>
+
 </ul></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="coneshapecreate">coneShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>coneShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>coneShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="createmirrorgroup">createMirrorGroup</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
+
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createMirrorGroup(nameStd, symmetryType = 0)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>nameStd</b></li>
+
 <li><b>symmetryType</b>(<i>int</i>) ; [default: 0]</li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="createoffsetrigmasterattrfortransform">createOffsetRigMasterAttrForTransform</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetRigMasterAttrForTransform(ctrl = None, <strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createOffsetRigMasterAttrForTransform(ctrl = None, **kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>ctrl</b>(<i>str</i>) ; [default: None]</li>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>offsetRigMaster</b>(<i>str</i>) ; [default: None] - If passed in, an attribute connecting the master joint to the control will be created.</li>
+
 </ul></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="createremotecontrolstylectrl">createRemoteControlStyleCtrl</h3>
-<p><font color = #5f5f5f size = 3pt>
-<i>
-creates a frames ui remote-control style ctrl based on the input params. <br>
-</i>
-<br>
-</font>
-<font size = 3pt>
+<p><font color = #5f5f5f size = 3pt></p>
+<p><i></p>
+<p>creates a frames ui remote-control style ctrl based on the input params. <br></p>
+<p></i></p>
+<p><br></p>
+<p></font></p>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createRemoteControlStyleCtrl(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>createRemoteControlStyleCtrl(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td> MnsNameStd (ctrl), MnsNameStd (uiOffsetGrp), MnsNameStd (Frame)</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>horizontalMin</b>(<i>float</i>) ; [default: -1.0]</li>
+
 <li><b>horizontalMax</b>(<i>float</i>) ; [default: 1.0]</li>
+
 <li><b>verticalMin</b>(<i>float</i>) ; [default: -1.0]</li>
+
 <li><b>verticalMax</b>(<i>float</i>) ; [default: 1.0]</li>
+
 <li><b>bodySuffix</b>(<i>str</i>)</li>
+
 <li><b>uiScale</b>(<i>float</i>) ; [default: 1.0]</li>
+
 </ul></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="crossshapecreate">crossShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>crossShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>crossShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="ctrlcreate">ctrlCreate</h3>
-<p><font color = #5f5f5f size = 3pt>
-<i>
-Main creation function. <br>
-This function takes user defined parameters and creates a ctrl transform node following the mns naming convention. <br>
-Based on the choice passed in, a shape node will be created with the shape selected, and will be parented under the transform ceated. <br>
-Then a color selected will be assigned to it. <br>
-The ctrl can be set to be created along all axes and in every color. <br>
-The default color is white when used as standalone, and based on the rig's global color coding defined- based on the side flag. <br>
-</i>
-<br>
-</font>
-<font size = 3pt>
+<p><font color = #5f5f5f size = 3pt></p>
+<p><i></p>
+<p>Main creation function. <br></p>
+<p>This function takes user defined parameters and creates a ctrl transform node following the mns naming convention. <br></p>
+<p>Based on the choice passed in, a shape node will be created with the shape selected, and will be parented under the transform ceated. <br></p>
+<p>Then a color selected will be assigned to it. <br></p>
+<p>The ctrl can be set to be created along all axes and in every color. <br></p>
+<p>The default color is white when used as standalone, and based on the rig's global color coding defined- based on the side flag. <br></p>
+<p></i></p>
+<p><br></p>
+<p></font></p>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>ctrlCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>ctrlCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>MnsNameStd (MnsNameStd class instance containing all info for the new node created)</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>side</b>(<i>str</i>) ; [default: side] - side flag</li>
+
 <li><b>body</b>(<i>str</i>) ; [default: body] - Node's name body</li>
+
 <li><b>alpha</b>(<i>str</i>) ; [default: alpha] - Node's Alpha id</li>
+
 <li><b>id</b>(<i>str</i>) ; [default: id] - Node's id</li>
+
 <li><b>isFacial</b>(<i>bool</i>)</li>
+
 <li><b>bodySuffix</b>(<i>str</i>)</li>
+
 <li><b>incrementAlpha</b>(<i>bool</i>) - In case of a 'free' creation, if True will name the node to the first possible name- searching for new Alpha instead of the ID</li>
+
 <li><b>ctrlType</b>(<i>str</i>) ; [default: ctrl]</li>
+
 <li><b>createBlkClassID</b>(<i>bool</i>) ; [default: True]</li>
+
 <li><b>createBlkCtrlTypeID</b>(<i>bool</i>) ; [default: True]</li>
+
 <li><b>blkCtrlTypeID</b>(<i>int</i>)</li>
+
 <li><b>customParentTransform</b>(<i>str</i>)</li>
+
 <li><b>skipColor</b>(<i>bool</i>)</li>
+
 <li><b>createOffsetGrp</b>(<i>bool</i>)</li>
+
 <li><b>createSpaceSwitchGroup</b>(<i>bool</i>)</li>
+
 <li><b>symmetryType</b>(<i>int</i>)</li>
+
 <li><b>doMirror</b>(<i>bool</i>)</li>
+
 <li><b>forceMirrorGrp</b>(<i>bool</i>)</li>
+
 <li><b>parentNode</b>(<i>str</i>) ; [default: None]</li>
+
 <li><b>chennelControl</b>(<i>str</i>) ; [default: None]</li>
+
 <li><b>controlShape</b>(<i>str</i>) ; [default: circle] - Control's NURBS shape</li>
+
 <li><b>scale</b>(<i>float</i>) ; [default: 1.0] - Ctrl scale. Relative to global settings.</li>
+
 <li><b>color</b>(<i>tuple</i>) ; [default: (1.0, 1.0, 1.0)] - Shape's color</li>
+
 <li><b>alongAxis</b>(<i>int</i>) ; [default: 1] - Along which axis to create the shape</li>
+
 <li><b>matchTransform</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's transforms.</li>
+
 <li><b>freezeScale</b>(<i>bool</i>)</li>
+
 <li><b>matchScale</b>(<i>bool</i>)</li>
+
 <li><b>matchPosition</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's position.</li>
+
 <li><b>matchOrientation</b>(<i>str</i>) - if not empty, look for a node within the scene matching the string specefied. If found, match it's Orientation.</li>
+
 <li><b>sections</b>(<i>int</i>) ; [default: 1] - Aplicable only for circle creation</li>
+
 <li><b>offsetRigMaster</b>(<i>str</i>) ; [default: None] - If passed in, an attribute connecting the master joint to the control will be created.</li>
+
 </ul></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="cubeshapecreate">cubeShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>cubeShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>cubeShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="curvedfourarrowshapecreate">curvedFourArrowShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>curvedFourArrowShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>curvedFourArrowShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="cylindershapecreate">cylinderShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>cylinderShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>cylinderShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="dialroundshapecreate">dialRoundShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialRoundShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialRoundShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="dialshapecreate">dialShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="dialsquareshapecreate">dialSquareShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialSquareShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dialSquareShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="diamondshapecreate">diamondShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>diamondShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>diamondShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="directioncircle">directionCircle</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionCircle(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionCircle(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="directioncubeshape">directionCubeShape</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionCubeShape(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionCubeShape(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="directiondiamond">directionDiamond</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionDiamond(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionDiamond(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="directionsphereshape">directionSphereShape</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionSphereShape(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>directionSphereShape(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="dodecagonshapecreate">dodecagonShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dodecagonShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>dodecagonShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="doublearrowshapecreate">doubleArrowShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>doubleArrowShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>doubleArrowShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="flatdiamondrootshapecreate">flatDiamondRootShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>flatDiamondRootShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>flatDiamondRootShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="flatdiamondshapecreate">flatDiamondShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>flatDiamondShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>flatDiamondShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="fourarrowshapecreate">fourArrowShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>fourArrowShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>fourArrowShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="guidesrootshape">guidesRootShape</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>guidesRootShape(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>guidesRootShape(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="hexagonshapecreate">hexagonShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>hexagonShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>hexagonShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="lightsphereshapecreate">lightSphereShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lightSphereShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>lightSphereShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="octagonshapecreate">octagonShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>octagonShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>octagonShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="pickshapecreate">pickShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pickShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pickShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="pinshapecreate">pinShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pinShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pinShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>light</b>(<i>bool</i>) ; [default: True]</li>
+
 </ul></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="pinchedcircleshapecreate">pinchedCircleShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pinchedCircleShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pinchedCircleShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="plusshapecreate">plusShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>plusShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>plusShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="pointarrowshapecreate">pointArrowShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pointArrowShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pointArrowShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="puppetrootshapecreate">puppetRootShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>puppetRootShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>puppetRootShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="pyramidshapecreate">pyramidShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pyramidShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>pyramidShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="sphereshapecreate">sphereShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sphereShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>sphereShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="squareroundshapecreate">squareRoundShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareRoundShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareRoundShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="squareshapecreate">squareShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="squarewithmiddividersshapecreate">squareWithMidDividersShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareWithMidDividersShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>squareWithMidDividersShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="teardropshapecreate">teardropShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>teardropShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>teardropShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="textshapecreate">textShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
+
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>textShapeCreate(text = "")</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
+
 <li><b>text</b>(<i>str</i>) ; [default: ""]</li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="triangleshapecreate">triangleShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>triangleShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>triangleShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font>
-<hr width = 100%></p>
+
+</table>
+
+<p></font></p>
+<hr width = 100%>
+
 <h3 id="triplearrowshapecreate">tripleArrowShapeCreate</h3>
-<p><font size = 3pt>
+<p><font size = 3pt></p>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>tripleArrowShapeCreate(<strong>kwargs)</td></tr>
+
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>tripleArrowShapeCreate(**kwargs)</td></tr>
+
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
+
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
+
 <td><ul>
-<li><b></strong>kwargs</b></li>
+
+<li><b>**kwargs</b></li>
+
 </ul></td>
+
 </tr>
+
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>
+
 </tr>
-</table></font></p>
+
+</table>
+
+<p></font></p>
 
 
 
