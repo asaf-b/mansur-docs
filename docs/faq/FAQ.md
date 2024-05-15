@@ -1,10 +1,8 @@
 # Frequently Asked Questions
 
 ### Pricing/Subscriptions
-- [What is the key difference between the *Gold* and *Silver* subscription plans?](#what-is-the-key-difference-between-the-gold-and-silver-subscription-plans)
+- [Is Mansur-Rig free to use?](#Is-Mansur-Rig-free-to-use)
 - [Can I sell rigs created using Mansur-Rig?](#can-i-sell-rigs-created-using-mansur-rig)
-- [Is there an option to get an annual subscription?](#is-there-an-option-to-get-an-annual-subscription)
-- [Does Mansur-Rig offer student license discounts?](#does-mansur-rig-offer-student-license-discounts)
 
 ### Installation
 - [How do I install Mansur-Rig?](#how-do-i-install-mansur-rig)
@@ -42,9 +40,7 @@
 - [Can I add manual steps to Mansur-Rig's build?](#can-i-add-manual-steps-to-mansur-rigs-build)
 - [Can I run Mansur-Rig using code instead of the UI?](##can-i-run-mansur-rig-using-code-instead-of-the-ui)
 
-### License Management
-- [I want to use Mansur-Rig in a studio, and I need multiple licenses for my users. What do I do?](#i-want-to-use-mansur-rig-in-a-studio-and-i-need-multiple-licenses-for-my-users-what-do-i-do)
-- [I want to test Mansur-Rig for studio use, and m Trial is expired. what do I do?](#i-want-to-test-mansur-rig-for-studio-use-and-my-trial-is-expired-what-do-i-do)
+### Credits
 - [I use Mansur-Rig in a studio environment, do I need to credit it?](#i-use-mansur-rig-in-a-studio-environment-do-i-need-to-credit-it)
 
 ### Development
@@ -57,11 +53,10 @@
 
 ### Pricing/Subscriptions [Answers]
 
-#### What is the key difference between the *Gold* and *Silver* subscription plans?
-> The key difference is the fact the the *Gold* subscription is targeted for Riggers, while the *Silver* subscription is targeted for Animators.
+#### Is Mansur-Rig free to use?
+> Yes. Mansur-Rig is 100% free to use. For both personal and commercial use.
 >
-> * The *Gold* license has no restrictions. All actions/tools/nodes within Mansur-Rig are open for *Gold* subscribers.
-> * The *Silver* license is a 'Read-Only' subscription. Meaning that all *Build* actions, or *Change* actions are not avilable. Although all animation related tools are avilable. This license is designed for Animators who only need to **use** rigs created using Mansur-Rig, rather then build/change them.
+> Mansur-Rig only requires a sign-up at our app, and a simple activation in Maya using the sign-up credentials used.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -74,23 +69,6 @@
 > <br>
 > With that said, remember that Mansur-Rig is required (installation and license) in order for the rigs your are selling to function.  
 > So anyone you sell your rigs to, will require to install and validate Mansur-Rig.  
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Is there an option to get an annual subscription?
-> Not currently.  
-> It is on the road-map, but there is no ETA at the moment.  
-> <br>
-> Note: An exception can be made for studio teams, please contact us at<br>**support@mansur-rig.com**<br> if that is your case and you are interested.
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Does Mansur-Rig offer student license discounts?
-> Unfortunately, not currently.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -121,8 +99,7 @@
 > Mansur-Rig is based on a dedicated custom C++ node library, that is the heart of it's operation.  
 > In order for the Rigs created using Mansur-Rig to run, this solver-library is required. Without it, it won't function.  
 > Moreover, Mansur-Rig's solvers will only function in case Mansur-Rig is activated using a valid license.  
-> So, your clients will require the installation of Mansur-Rig, as well as a valid license to activate it within Maya for them to be able to use the rig you created using Mansur-Rig.  
-> With that said, in case your clients only need to animate using the rig (not build it), they will only require the lower tier *Silver* license.  
+> So, your clients will require the installation of Mansur-Rig.
 > <br>
 > It is also important to note that in case your clients only need to use Mansur-Rig's extracted skeleton for a game-engine for example- they do not require Mansur-Rig at all.  
 > Mansur-Rig is only required to build/use puppets within Maya. Once the sekeleton/animated-skeleton is extracted, Mansur-Rig is no longer required.
@@ -133,8 +110,8 @@
 
 #### Do animators require Mansur-Rig?
 > Yes.
-> Mansur-Rig is required to build/use puppets created using Mansur-Rig within Maya.
-> With that said, Animators only require the lower tier *Silver* license.
+> Mansur-Rig's installation and activation is required to build/use puppets created using Mansur-Rig within Maya.
+> Although it is complete free.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -333,30 +310,11 @@
 <br>
 <br>
 
-### License Management [Answers]
-
-#### I want to use Mansur-Rig in a studio, and I need multiple licenses for my users. What do I do?
-> No problem at all.  
-> Mansur-Rig has an enterprise-level license management system.  
-> Using [*Mansur-Rig's Web-App*](https://app.mansur-rig.com/) you can easily acquire multiple licenses (of both *Gold* and *Silver*) and assign these licenses to your users.  
-> Your users will only be able to log-in and log-out using these assigned licenses, while you as the licenses owner will be able to manage them.  
-> Assigned licenses can always be retreived and re-used for changing users, and the amount of licenses you own can always be changed according to you needs.  
-> Here is a [video guide to the license management system](https://youtu.be/wMmrZVSf9tk?si=9Ildam5eX_rwKbbu)
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
+### Credits [Answers]
 
 #### I use Mansur-Rig in a studio environment, do I need to credit it?
 > No.  
 > Although that will help support Mansur-Rig and will be very appreciated.
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### I want to test Mansur-Rig for studio use, and my Trial is expired. what do I do?
-> Please contact us at<br>**support@mansur-rig.com**<br> and we will gladly support your needs.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
