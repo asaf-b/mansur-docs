@@ -17,6 +17,12 @@
 		<td>Win</td><td>Linux</td>
 	</tr>
 	<tr>
+		<td>2.5.0</td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+	</tr>
+	<tr>
 		<td>2.4.0</td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>

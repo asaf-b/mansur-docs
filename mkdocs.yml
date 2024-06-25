@@ -58,7 +58,6 @@ nav:
       - Getting-Started:
         - userGuides/System-Requirements.md
         - userGuides/installation.md
-        - userGuides/License-Management.md
         - userGuides/Version-Updates.md
         - userGuides/Naming-Convention.md
         - userGuides/Asset-Scaling.md

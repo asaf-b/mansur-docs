@@ -1,7 +1,7 @@
 # Frequently Asked Questions
 
 ### Pricing/Subscriptions
-- [Is Mansur-Rig free to use?](#Is-Mansur-Rig-free-to-use)
+- [Is Mansur-Rig free to use?](#is-mansur-rig-free-to-use)
 - [Can I sell rigs created using Mansur-Rig?](#can-i-sell-rigs-created-using-mansur-rig)
 
 ### Installation
@@ -67,8 +67,9 @@
 > Anyone is free to sell rigs created using Mansur-Rig, without any restrictions, and without any prior approval, and at any price.  
 > Also, there is no requirement to credit Mansur-Rig. Although that will help support Mansur-Rig and will be appreciated.  
 > <br>
-> With that said, remember that Mansur-Rig is required (installation and license) in order for the rigs your are selling to function.  
-> So anyone you sell your rigs to, will require to install and validate Mansur-Rig.  
+> With that said, remember that Mansur-Rig is required (installation and activation) in order for the rigs your are selling to function.  
+> So anyone you sell your rigs to, will require to install and activate Mansur-Rig. 
+> Although it is completely free.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -78,7 +79,7 @@
 
 #### How do I install Mansur-Rig?
 > Here is a video guide on how to install and activate Mansur-Rig:  
-> [Installation & Activation Tutorial](https://youtu.be/j6MYR0OO3LY)
+> [Installation & Activation Tutorial](../userGuides/installation.md)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -98,7 +99,8 @@
 > Yes.  
 > Mansur-Rig is based on a dedicated custom C++ node library, that is the heart of it's operation.  
 > In order for the Rigs created using Mansur-Rig to run, this solver-library is required. Without it, it won't function.  
-> Moreover, Mansur-Rig's solvers will only function in case Mansur-Rig is activated using a valid license.  
+> Moreover, Mansur-Rig's solvers will only function in case Mansur-Rig is activated using a valid license.
+> Although Mansur-Rig is free to use.  
 > So, your clients will require the installation of Mansur-Rig.
 > <br>
 > It is also important to note that in case your clients only need to use Mansur-Rig's extracted skeleton for a game-engine for example- they do not require Mansur-Rig at all.  
@@ -111,7 +113,7 @@
 #### Do animators require Mansur-Rig?
 > Yes.
 > Mansur-Rig's installation and activation is required to build/use puppets created using Mansur-Rig within Maya.
-> Although it is complete free.
+> Although it is completely free.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -158,7 +160,7 @@
 
 #### How Do I activate my account in Maya?
 > Here is a video guide on how to install and activate Mansur-Rig:  
-> [Installation & Activation Tutorial](https://youtu.be/j6MYR0OO3LY)
+> [Installation & Activation Tutorial](../userGuides/installation.md)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -184,7 +186,7 @@
 
 #### Activation failed. Message: *Couldn't find license. Please check your inputs.*
 > This means that the user credentials were found, although the license ID did not match any records for this user.  
-> Please check your licenceid input and try again.  
+> Please check your licence-ID input and try again.  
 > Make sure there arn't any hidden spaces within your inputs.  
 
 <a href="#top">↑ Back to top ↑</a>
