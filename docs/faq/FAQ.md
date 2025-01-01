@@ -368,7 +368,6 @@
 > 11. [MOCAP tools](../userGuides/Mocap-And-Game-Tools.md)
 > 12. [Module-Preset Editor](../userGuides/Module-Preset-Editor.md)
 > 12. [Dynamic UI Creation Tool](../userGuides/Dynamic-UI-Creator.md)
-> 13. [Enterprise-Level license Management system](../userGuides/License-Management.md)
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
