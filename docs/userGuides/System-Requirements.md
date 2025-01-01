@@ -6,8 +6,8 @@
 <table cellpadding= 0 cellspacing = 0>
 	<tr>
 		<td></td>
-		<td colspan=2>Maya 2018</td>
-		<td colspan=2>Maya 2019 - 2022</td>
+		<td colspan=2>Maya 2018 - 2019</td>
+		<td colspan=2>Maya 2020 - 2022</td>
 		<td colspan=2>Maya 2023</td>
 		<td colspan=2>Maya 2024</td>
 		<td colspan=2>Maya 2025</td>
@@ -26,7 +26,7 @@
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td></td>
 	</tr>
 	<tr>
 		<td>2.5.0</td>
