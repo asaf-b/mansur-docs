@@ -166,19 +166,6 @@ nav:
           - jointRadiusTool:
             - mnsJointRadiusTool.md
           - dynUI.md
-        - adminUtils:
-          - documentationBuild:
-            - docBuildMansur.md
-          - pluginRelease:
-            - pluginRelease.md
-          - productRelease:
-            - install:
-              - install.md
-            - productRelease.md
-            - _userSetup_.md
-          - schemeEditor:
-            - schemeEditor.md
-          - keygenUtils.md
         - block:
           - characterDefenition:
             - characterDefenitionUI.md
@@ -277,6 +264,10 @@ nav:
           - volumeJointsUI:
             - volumeJointsUI.md
           - blockBuildUI.md
+        - preferences:
+          - preferences.md
+        - versionManager:
+          - versionManager.md
 extra_css:
     - extra.css
 
