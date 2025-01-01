@@ -3456,6 +3456,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../_userSetup_/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+     userSetup 
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3523,6 +3543,26 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keygenUtils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    keygenUtils
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -5384,6 +5424,90 @@
 
               
             
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_4_6_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2_4_6_3_8" id="__nav_7_2_4_6_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    splay
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_2_4_6_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2_4_6_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            splay
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../splay_settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Splay settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../splay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Splay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6581,7 +6705,13 @@
 
 <td>5</td>
 
-<td>Increments of 4, starting from 5. This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation</td></tr>
+<td>Increments of (numOfGuides - 1), starting from (numOfGuides). This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation. This value must be higher or equal to numOfGuides</td></tr>
+
+<tr><td>asBatWing</td>
+
+<td>False</td>
+
+<td>Technically this means that the interpolatiom joints created will span from the first guide to the third, exluding anything elese down the chain. When using this module for a bat wing, the wrist and finger extensions are used for the fingers, hence the main chain behaviour should be limited to the shoulder, elbow and wrist.</td></tr>
 
 <tr><td>offsetX</td>
 
@@ -6619,6 +6749,12 @@
 
 <td>Default value for the main IK-FK blend channel. 0 is IK, 1 is FK.</td></tr>
 
+<tr><td>doIndexFingerTweak</td>
+
+<td>False</td>
+
+<td>if this is set to true, a tweaker setup will be created for the last finger in the chain (the index finger).</td></tr>
+
 </table>
 
 <p></font></p>
@@ -6639,7 +6775,7 @@
 
 <tr><td>doFeathersSpring</td>
 
-<td>True</td>
+<td>False</td>
 
 <td>Choose whether create the automatic feather spring feature or not</td></tr>
 
