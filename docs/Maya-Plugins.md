@@ -952,7 +952,7 @@ This node will be used by block to cleanup the input graph for the visibility co
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Long-Name</font></b></td><td><b><font color = #4caf50>Short-Name</b></td><td><font color = #4caf50><b>Type</b></td><td><font color = #4caf50><b>Description</b></td></tr>
-<tr><td>inputVisibility</td><td>inputVisibility</td><td>enum</td><td>Input visibility enum</td></tr>
+<tr><td>inputVisibility</td><td>inputVisibility</td><td>enum</td><td>Input visibility enum.</td></tr>
 </table></font>
 <font color = #5f5f5f size = 3pt><b>Outputs</b></font><p>
 <font size = 3pt>

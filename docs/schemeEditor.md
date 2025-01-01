@@ -262,7 +262,7 @@ pluginRelease UI class <br>
 <font size = 3pt>
 <table>
 <tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>setColorUndoCommand(<b>oldColor</b>,<b>newColor</b>,<b>parent</b>(<i>str</i>) ; [default: None])</td></tr>
-<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>QtWidgets.QUndoCommand</td></tr>
+<tr><td><b><font color = #4caf50>Inherits from:  </font></b></td><td>QUndoCommand</td></tr>
 <tr><td><b><font color = #4caf50>Class Members:  </font></b></td>
 <td><ul>
 <ul>

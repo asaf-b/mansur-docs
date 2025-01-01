@@ -123,12 +123,13 @@ Transfer interJoints control back to the main joints. <br>
 ###getNumSections
 <font size = 3pt>
 <table>
-<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getNumSections(tweakersPerSection, doTweakers = False)</td></tr>
+<tr><td><b><font color = #4caf50>Constructor:  </font></b></td><td>getNumSections(tweakersPerSection, doTweakers = False, asBatWing = False)</td></tr>
 <tr><td><b><font color = #4caf50>Return:  </font></b></td><td>None</td></tr>
 <tr><td><b><font color = #4caf50>Arguments:  </font></b></td>
 <td><ul>
 <li><b>tweakersPerSection</b></li>
 <li><b>doTweakers</b>(<i>bool</i>) ; [default: False]</li>
+<li><b>asBatWing</b>(<i>bool</i>) ; [default: False]</li>
 </ul></td>
 </tr>
 <tr width=150px><td><b><font color = #4caf50>Keyword Arguments:  </font></b></td>

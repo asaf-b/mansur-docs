@@ -174,8 +174,10 @@ nav:
             - install:
               - install.md
             - productRelease.md
+            - _userSetup_.md
           - schemeEditor:
             - schemeEditor.md
+          - keygenUtils.md
         - block:
           - characterDefenition:
             - characterDefenitionUI.md
@@ -236,6 +238,9 @@ nav:
               - simpleSquash:
                 - simpleSquash_settings.md
                 - simpleSquash.md
+              - splay:
+                - splay_settings.md
+                - splay.md
             - legacy:
               - curveZip:
                 - curveZip_settings.md

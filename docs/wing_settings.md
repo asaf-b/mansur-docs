@@ -26,7 +26,10 @@ Feathers spring, global wave control, individual feather control, bendy limbs, e
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
 <tr><td>interpolationJoints</td>
 <td>5</td>
-<td>Increments of 4, starting from 5. This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation</td></tr>
+<td>Increments of (numOfGuides - 1), starting from (numOfGuides). This setting controls the number of driven interpolation joints needed. This interpolation joint chain will behave according to the module's design, and will inherit transformations that are required by this module. Usually the driven interpolation joint-chain is the compenents result behaviour in animation. This value must be higher or equal to numOfGuides</td></tr>
+<tr><td>asBatWing</td>
+<td>False</td>
+<td>Technically this means that the interpolatiom joints created will span from the first guide to the third, exluding anything elese down the chain. When using this module for a bat wing, the wrist and finger extensions are used for the fingers, hence the main chain behaviour should be limited to the shoulder, elbow and wrist.</td></tr>
 <tr><td>offsetX</td>
 <td>20.0</td>
 <td>Up curve X value offset for the interpolation joints</td></tr>
@@ -45,6 +48,9 @@ Feathers spring, global wave control, individual feather control, bendy limbs, e
 <tr><td>ikFkBlendDefault</td>
 <td>1.0</td>
 <td>Default value for the main IK-FK blend channel. 0 is IK, 1 is FK.</td></tr>
+<tr><td>doIndexFingerTweak</td>
+<td>False</td>
+<td>if this is set to true, a tweaker setup will be created for the last finger in the chain (the index finger).</td></tr>
 </table></font>
 ###FeathersSettings
 <table><tr><td><b><font size = 3pt color = #4caf50>Attribute Name</td><td><font color = #4caf50><b>Default</td><td><font color = #4caf50><b>Description</td></tr>
@@ -55,7 +61,7 @@ Feathers spring, global wave control, individual feather control, bendy limbs, e
 <td>3</td>
 <td>The amount of sections each primary feather joint column will consist of. In case the amount of sections set is 3 for example, a column of 4 joints will be created for the amount of feather joints selected above</td></tr>
 <tr><td>doFeathersSpring</td>
-<td>True</td>
+<td>False</td>
 <td>Choose whether create the automatic feather spring feature or not</td></tr>
 <tr><td>doFeatherIsolatedCtrls</td>
 <td>True</td>
