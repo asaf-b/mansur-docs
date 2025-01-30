@@ -15,6 +15,9 @@
 				<a href="https://www.artstation.com/mansur-rig" target = "_blank">![logo](images/artStation.png)</a>
 			</td>
 			<td>
+				<a href="https://www.twitch.tv/mansurrig" target = "_blank">![logo](images/twitchLogo.png)</a>
+			</td>
+			<td>
 				<a href="https://www.linkedin.com/company/mansur-rig" target = "_blank">![logo](images/linkedin.png)</a>
 			</td>
 			<td>
