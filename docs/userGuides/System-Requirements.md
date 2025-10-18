@@ -22,7 +22,7 @@
 	</tr>
 	<tr>
 		<td>2.7.0</td>
-		<td></td><td></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td></td>
@@ -30,11 +30,11 @@
 	</tr>
 	<tr>
 		<td>2.6.0</td>
-		<td></td><td></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td></td>
+		<td><td></td>
 	</tr>
 	<tr>
 		<td>2.5.0</td>
