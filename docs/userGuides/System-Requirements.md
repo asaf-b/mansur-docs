@@ -6,11 +6,11 @@
 <table cellpadding= 0 cellspacing = 0>
 	<tr>
 		<td></td>
-		<td colspan=2>Maya 2018 - 2019</td>
 		<td colspan=2>Maya 2020 - 2022</td>
 		<td colspan=2>Maya 2023</td>
 		<td colspan=2>Maya 2024</td>
 		<td colspan=2>Maya 2025</td>
+		<td colspan=2>Maya 2026</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -19,6 +19,14 @@
 		<td>Win</td><td>Linux</td>
 		<td>Win</td><td>Linux</td>
 		<td>Win</td><td>Linux</td>
+	</tr>
+	<tr>
+		<td>2.7.0</td>
+		<td></td><td></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
+		<td><span><CENTER>&#10022;</span></td><td></td>
+		<td><span><CENTER>&#10022;</span></td><td></td>
 	</tr>
 	<tr>
 		<td>2.6.0</td>
