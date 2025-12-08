@@ -1,6 +1,5 @@
 ### Compatible Platforms
 - Windows
-- Linux (Tested on CentOS 7.9)
 
 ### Compatible Maya versions
 <table cellpadding= 0 cellspacing = 0>
@@ -21,7 +20,7 @@
 		<td>Win</td><td>Linux</td>
 	</tr>
 	<tr>
-		<td>2.7.0</td>
+		<td>3.0.0</td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
 		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
