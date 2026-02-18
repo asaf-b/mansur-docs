@@ -266,8 +266,6 @@ nav:
           - blockBuildUI.md
         - preferences:
           - preferences.md
-        - versionManager:
-          - versionManager.md
 extra_css:
     - extra.css
 
