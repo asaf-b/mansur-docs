@@ -12,15 +12,6 @@
 - [After extracting the skeleton, do I still need Mansur-Rig?](#after-extracting-the-skeleton-do-i-still-need-mansur-rig)
 - [Can I install Mansur-Rig in other softwares other then Maya?](#can-i-install-mansur-rig-in-other-softwares-other-then-maya)
 - [Can I use Mansur-Rig without an internet conection?](#can-i-use-mansur-rig-without-an-internet-conection)
-- [I'm in a studio environment, and I have a firewall. Are there any URL's I need to white-list to use Mansur-Rig?](#im-in-a-studio-environment-and-i-have-a-firewall-are-there-any-urls-i-need-to-white-list-to-use-mansur-rig)
-
-### Activation in Maya
-- [How Do I activate my account in Maya?](#how-do-i-activate-my-account-in-maya)
-- [Activation failed. Message: **email, password and License-ID inputs are required.**](#activation-failed-message-email-password-and-license-id-inputs-are-required)
-- [Activation failed. Message: **Invalid Credentials.**](#activation-failed-message-invalid-credentials)
-- [Activation failed. Message: **Couldn't find license. Please check your inputs.**](#activation-failed-message-couldnt-find-license-please-check-your-inputs)
-- [Activation failed. Message: **This seat is already occupied. Couldn't Log-In.**](#activation-failed-message-this-seat-is-already-occupied-couldnt-log-in)
-- [Activation failed. Message: **mnsLicDigest command wans't found. Please check your environment.**](#activation-failed-message-mnslicdigest-command-wanst-found-please-check-your-environment)
 
 ### Compatibility
 - [Is Mansur-Rig Game-Engine compatible?](#is-mansur-rig-game-engine-compatible)
@@ -51,12 +42,10 @@
 
 <hr>
 
-### Pricing/Subscriptions [Answers]
+### Pricing [Answers]
 
 #### Is Mansur-Rig free to use?
 > Yes. Mansur-Rig is 100% free to use. For both personal and commercial use.
->
-> Mansur-Rig only requires a sign-up at our app, and a simple activation in Maya using the sign-up credentials used.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -67,8 +56,8 @@
 > Anyone is free to sell rigs created using Mansur-Rig, without any restrictions, and without any prior approval, and at any price.  
 > Also, there is no requirement to credit Mansur-Rig. Although that will help support Mansur-Rig and will be appreciated.  
 > <br>
-> With that said, remember that Mansur-Rig is required (installation and activation) in order for the rigs your are selling to function.  
-> So anyone you sell your rigs to, will require to install and activate Mansur-Rig. 
+> With that said, remember that Mansur-Rig is required (installation) in order for the rigs your are selling to function.  
+> So anyone you sell your rigs to, will require to install Mansur-Rig. 
 > Although it is completely free.
 
 <a href="#top">↑ Back to top ↑</a>
@@ -89,7 +78,7 @@
 > * First, make sure the Maya version in question is within Mansur-Rig's supported versions, and that you are using a supported platform: <br>[*System-Requirements*](../userGuides/System-Requirements.md)
 > * If so, make sure PyMel is installed within the Maya version you are using: <br>[*2022 & 2023*](../userGuides/System-Requirements.md#maya-2022-2023-requirements) <br>[*2024*](../userGuides/System-Requirements.md#maya-2024-requirements)
 > * Try to uninstall, then use the [*manual installation*](../userGuides/installation.md#manual-installation) instead. 
-> * If non if the above make a difference, please send a support ticket to <br>**support@mansur-rig.com** <br>with as much information possible.
+> * If non if the above make a difference, please send a support ticket to <br>**hello@mansur-rig.com** <br>with as much information possible.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -99,7 +88,6 @@
 > Yes.  
 > Mansur-Rig is based on a dedicated custom C++ node library, that is the heart of it's operation.  
 > In order for the Rigs created using Mansur-Rig to run, this solver-library is required. Without it, it won't function.  
-> Moreover, Mansur-Rig's solvers will only function in case Mansur-Rig is activated using a valid license.
 > Although Mansur-Rig is free to use.  
 > So, your clients will require the installation of Mansur-Rig.
 > <br>
@@ -112,7 +100,7 @@
 
 #### Do animators require Mansur-Rig?
 > Yes.
-> Mansur-Rig's installation and activation is required to build/use puppets created using Mansur-Rig within Maya.
+> Mansur-Rig's installation is required to build/use puppets created using Mansur-Rig within Maya.
 > Although it is completely free.
 
 <a href="#top">↑ Back to top ↑</a>
@@ -137,115 +125,7 @@
 <br>
 
 #### Can I use Mansur-Rig without an internet conection?
-> Currently, No.  
-> Mansur-Rig license system is validating against a web-based server. Without an internet connection, your license cannot be validated.  
-> Offline authentication is a future possibility, although it is not on the roadmap for now.
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### I'm in a studio environment, and I have a firewall. Are there any URL's I need to white-list to use Mansur-Rig?
-> Yes.  
-> In case you have a firewall preventing you from authenticating Mansur-Rig you need to white-list these URL's:
->
-> * https://api.keygen.sh
-> * https://dist.keygen.sh
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-### Activation in Maya [Answers]
-
-#### How Do I activate my account in Maya?
-> Here is a video guide on how to install and activate Mansur-Rig:  
-> [Installation & Activation Tutorial](../userGuides/installation.md)
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Activation failed. Message: *email, password and License-ID inputs are required.*
-> All three of these feilds are required.  
-> This means one of them was not inputted into the dialog.  
-> Please fill the requird feilds and try again.
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Activation failed. Message: *Invalid Credentials.*
-> This means the creadentials inserted were not found in the system.  
-> Please make sure the information you inserted is correct.  
-> Make sure there arn't any hidden spaces within your inputs.  
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Activation failed. Message: *Couldn't find license. Please check your inputs.*
-> This means that the user credentials were found, although the license ID did not match any records for this user.  
-> Please check your licence-ID input and try again.  
-> Make sure there arn't any hidden spaces within your inputs.  
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Activation failed. Message: *This seat is already occupied. Couldn't Log-In.*
-> This message means that the licensing system detected a "double use" of the same license.  
-> If only you are using this license, it means that for some reason your comupter fingerprint has changed.  
-> there are a few reasons this could happen:
->
-> 1. You are using multiple computers with the saem license (for example a home office and a work computer)
-> 2. Your computer fingerprint changed. Maybe because you are using a VPN, or maybe your IP changed.
-> 3. You are using different platforms (Windows/Linux) with the same license.
-> 
-> <br><br>
-> If any of the above apply to you, or even if you don't know why this happened, here is what you can do:  
-> 
-> 1. Go to [Mansur-Rig's Wep-App](https://app.mansur-rig.com/)
-> 2. Log-In to your account.
-> 3. Move to *Licenses* tab.
-> 4. Locate the license you are trying to activate within the licenses list. It should be indicated as *Occupied*.
-> 5. Click the license row to open the drop-down menu.
-> 6. Click the *Log-Out* button.
-> 7. Your license has now been unoccupied, go back to Maya and activate successfully.
-
-<a href="#top">↑ Back to top ↑</a>
-<br>
-<br>
-
-#### Activation failed. Message: *mnsLicDigest command wans't found. Please check your environment.*
-> This message means that Mansur-Rig's licensing plugin was not found.  
-> If this is the message you are seeing please follow these guides:  
->
-> <br>
->
-> **Step A**:
->
-> 1. In Maya, go to *Windows -> Settings/Preferences -> Plug-In Manager*.
-> 2. In the serach bar, type *mnsLicDigest*
-> 3. In case you find the plugin and it is unloaded, check both *Loaded* & *Auto-Load* checkboxes, and activate your account successfully.
-> 4. In case you don't find the plugin, or it fails to load, move to step B.
-> 
-> <br>
->
-> **Step B**:
->
-> 1. In case you can't find *mncLicDigest.mll* in the list, it generally means that you are missing an essential plugin from your installation.
-> 2. In most cases, it is a firewall/antivirus deleting this file due to a false threat trigger. These *.mll* files are a subtype of a *.dll* file-type, which are considered a threat by most firewall/antivirus software. I can guarentee all *.mll* plugin included in Mansur-Rig are 100% safe and contain no threat.
-> 3. So, what you need to do is restore the missing files. Their location within the installation is here: *.../%Mansur_Rig_Installation_Path%/mnsPlugins/%platform%/%maya_version%*. The best thing to do is create an exception within your firewall/antivirus software to that directory, and simply re-dowloading Mansur-Rig's version to restore these files.
-> 4. It is important to say that without these files Mansur-Rig will not function.
-> 5. In case you did find *mnsLicDigest* and it simply fails to load, move to step C.
->
-> <br>
->
-> **step C**
->
-> 1. In case *mnsLicDigest* fails to load, i suggest re-downloading and re-installing Mansur-Rig.
-> 2. If that doesn't work, please sent a support ticket to *support@mansur-rig.com* explaining your issue, with as much information as possible, including the error message you get when trying to load *mnsLicDigest*
+> Yes. An internet connection is only needed to download the product.
 
 <a href="#top">↑ Back to top ↑</a>
 <br>
@@ -378,7 +258,7 @@
 > In case you are having any issues with your product or your account, here are the ways to get in touch:
 >
 > * Live-Support at [Mansur-Rig's Discord Server](https://discord.gg/nXfy3Rh5y6)
-> * Send an email directly to <b>support@Mansur-Rig.com</b> 
+> * Send an email directly to <b>hello@Mansur-Rig.com</b> 
 > * This official [Mansur-Rig documentation page](https://docs.mansur-rig.com/)
 > * The official [Mansur-Rig You-Tube Channel](https://www.youtube.com/channel/UCMjNlJjSxIam--3u87oh5PQ)
 > * PM using any social media.
@@ -426,7 +306,7 @@
 
 #### I have a bug to report, where can I do that?
 > First, you can try our live support at our [*Discord Server*](https://discord.gg/nXfy3Rh5y6)  
-> You can also send a support ticket to<br>**support@mansur-rig.com**  
+> You can also send a support ticket to<br>**hello@mansur-rig.com**  
 > In case your report was reproduced successfully, it will be logged to our [*Development Board*](https://trello.com/b/dBw02z9a/mansur-rig-development)
 
 <a href="#top">↑ Back to top ↑</a>
@@ -435,7 +315,7 @@
 
 #### I have a feature request, where can I send it to?
 > First, you can try our live support at our [*Discord Server*](https://discord.gg/nXfy3Rh5y6)  
-> You can also send a feature request to<br>**support@mansur-rig.com**  
+> You can also send a feature request to<br>**hello@mansur-rig.com**  
 > In case your feature request was accepted, it will be logged to our [*Development Board*](https://trello.com/b/dBw02z9a/mansur-rig-development)
 
 <a href="#top">↑ Back to top ↑</a>

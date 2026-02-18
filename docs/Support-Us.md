@@ -26,9 +26,6 @@
 			<td>
 				<a href="https://www.instagram.com/mansurrig/" target = "_blank">![logo](images/instagram.png)</a>
 			</td>
-			<td>
-				<a href="https://www.facebook.com/MansurRig2" target = "_blank">![logo](images/facebook.png)</a>
-			</td>
 		</tr>
 	</table>
 	</div>
@@ -37,7 +34,7 @@
 	<br>Exposure and user-base is the key to keep this project going, so don't hold back !</li>
 	<br>
 	<li><b>Write a testimonial</b>
-	<br>In case you want to write a testimonial to be featured in the testimonial section in our main website <a href = "https://mansur-rig.com"><b><u>Mansur-Rig.com</u></b></a>, we will greatly appreciate it! Please contact us at <b>support@mansur-rig.com</b></li>
+	<br>In case you want to write a testimonial to be featured in the testimonial section in our main website <a href = "https://mansur-rig.com"><b><u>Mansur-Rig.com</u></b></a>, we will greatly appreciate it! Please contact us at <b>hello@mansur-rig.com</b></li>
 	<br>
 	<li><b>Mention Mansur-Rig on posts</b>
 	<br>Hashtags and mentions in social-media increase the exposure and credibility of the product, so when you can- mantion Mansur-Rig</li>
