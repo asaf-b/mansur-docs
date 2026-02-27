@@ -1,9 +1,4 @@
-<iframe width="728" height="409.5" src="https://www.youtube.com/embed/HH-pWdmOlPg?si=M2Y92sEocwjlVCFS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-* Go to Mansur-Rig.com and create an account (if you haven't already).
-* Log in to your account.
-* You will be automatically given a free Mansur-Rig unlimited license.
-* Download the latest version of Mansur-Rig.
+* Download the latest release of Mansur-Rig from <a href = "https://github.com/asaf-b/Mansur-Rig/releases" target = "_blank">Git-Hub</a>.
 * Extract the .zip library to your preferred location.
    * If you have another version already installed, preferably extract to the same location (version root folder should be placed in the same root folder of the previous version) 
    * .../ANY_DIRECTORY
