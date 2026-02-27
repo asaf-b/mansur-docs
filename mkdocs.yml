@@ -60,7 +60,6 @@ nav:
         - userGuides/installation.md
         - userGuides/Naming-Convention.md
         - userGuides/Asset-Scaling.md
-        - userGuides/license.md
         - userGuides/4K-Monitors.md
       - Rigging-Tools:
         - userGuides/Dynamic-UI-Creator.md
