@@ -5,83 +5,21 @@
 <table cellpadding= 0 cellspacing = 0>
 	<tr>
 		<td></td>
-		<td colspan=2>Maya 2020 - 2022</td>
-		<td colspan=2>Maya 2023</td>
-		<td colspan=2>Maya 2024</td>
-		<td colspan=2>Maya 2025</td>
-		<td colspan=2>Maya 2026</td>
+		<td colspan=3>Maya 2020 - 2026</td>
+		<td colspan=3>Maya 2027</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>Win</td><td>Linux</td>
-		<td>Win</td><td>Linux</td>
-		<td>Win</td><td>Linux</td>
-		<td>Win</td><td>Linux</td>
-		<td>Win</td><td>Linux</td>
+		<td>Win</td><td>Linux</td><td>macOS</td>
+		<td>Win</td><td>Linux</td><td>macOS</td>
 	</tr>
 	<tr>
+		<td>3.1.0</td>
+		<td><span><CENTER>&#10022;</span></td><td></td><td></td><td><span><CENTER>&#10022;</span></td><td></td><td></td>
+	</tr>
+		<tr>
 		<td>3.0.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td></td>
-		<td><span><CENTER>&#10022;</span></td><td></td>
-	</tr>
-	<tr>
-		<td>2.6.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td></td>
-		<td></td><td></td>
-	</tr>
-	<tr>
-		<td>2.5.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td></td><td></td>
-		<td></td><td></td>
-	</tr>
-	<tr>
-		<td>2.4.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td></td><td></td>
-		<td></td><td></td>
-	</tr>
-	<tr>
-		<td>2.3.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td></td><td></td>
-		<td></td><td></td>
-	</tr>
-	<tr>
-		<td>2.2.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td></td><td></td>
-		<td></td><td></td>
-	</tr>
-	<tr>
-		<td>2.1.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td></td><td></td>
-		<td></td><td></td>
-		<td></td><td></td>
-	</tr>
-	<tr>
-		<td>2.0.0</td>
-		<td><span><CENTER>&#10022;</span></td><td><span><CENTER>&#10022;</span></td>
-		<td></td><td></td>
-		<td></td><td></td>
-		<td></td><td></td>
-		<td></td><td></td>
+		<td><span><CENTER>&#10022;</span></td><td></td><td></td><td><span></td><td></td><td></td>
 	</tr>
 </table>
 
